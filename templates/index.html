@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Personal Genome Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="PersonalGenomes.org">
+ 
+  <!-- Styles -->
+    <!-- Styles -->
+    <link href="{{STATIC_URL}}css/bootstrap.css" rel="stylesheet">
+    <link href="{{STATIC_URL}}css/bootstrap-responsive.css" rel="stylesheet">
+
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- This file store project specific CSS -->
+    <!-- <link href="{{STATIC_URL}}css/project.css" rel="stylesheet"> -->
+
+    <!-- Use this to quickly test CSS changes in a template, 
+        then move to project.css -->
+    {% block extra_css %}{% endblock extra_css %}
+
+  <style type="text/css">
+    body {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    }
+    .navbar .brand {
+    font-weight:bold;
+    }
+    a {
+    font-weight:bold;
+    }
+    .bio h4,.bio h5,.bio p {
+    margin:12px;
+    }
+    .bio img {
+    float:right;
+    margin:12px;
+    }
+  </style>
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->    
+</head>
+
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="/">Personal Genome Project</a>
+      <div class="nav-collapse collapse">
+
+    <ul class="nav pull-right">
+            <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+	  <li><a href="/mission.html">Our Mission</a></li>
+	  <li class="divider"></li>
+	  <li><a href="/people.html">About Us</a></li>
+	  <li><a href="/faq.html">FAQ</a></li>
+	  <li><a href="/news.html">News</a></li>
+	  <li><a href="/international.html">New PGP Groups</a></li>
+	  <li class="divider"></li>
+	  <li class="nav-header">related sites</li>
+	  <li><a href="http://blog.personalgenomes.org"><i class="icon-external-link-sign"></i> PGP Blog</a></li>
+	  <li><a href="http://www.getconference.org"><i class="icon-external-link-sign"></i> GET Conference</a></li>
+        </ul>
+      </li>
+
+            <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Participate <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+	  <li><a href="/whyparticipate.html">Why Participate?</a></li>
+	  <li><a href="/participate.html">Participation Overview</a></li>
+	  <li><a href="/howitworks.html">Protocols Summary</a></li>
+	  <li><a href="/considerations.html">Considerations</a></li>
+	  <li><a href="/consent.html">Documents</a></li>
+	  <li><a href="/medicalcenters.html">Medical Centers</a></li>
+	  <li><a href="/signup.html">Sign Up</a><li>
+	  <li class="divider"></li>
+	  <li><a href="https://my.personalgenomes.org/login"><i class="icon-external-link-sign"></i> Participant Log In</a></li>
+        </ul>
+      </li>
+
+            <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+	  <li><a href="/sharing.html">Resource Sharing</a></li>
+	  <li><a href="/data.html">Get Data</a></li>
+        </ul>
+      </li>
+
+      <li><a href="/donate.html">Support</a></li>
+    </ul>
+              </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container main">
+
+      <div class="hero-unit">
+	<div class="row-fluid">
+          <div class="span9">
+            <h1>Sharing Personal Genomes</h1>
+            <p class="info">The Personal Genome Project was founded in 2005 and is dedicated to creating public genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices&mdash;our approach is to invite willing participants to publicly share their personal data for the greater good.</p>
+            <p><a href="/mission.html" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+	  </div>
+          <div class="span3">
+	    <a href="/mission.html"><img src="/static/img/pgp-logo-only-transp.png"/></a>
+          </div>
+	</div>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span4">
+          <h2>Why participate?</h2>
+	  <p>Donating your genome and health data to science is a great way to enable advances in understanding human genetics, biology, and health. We seek volunteers willing to donate diverse personal information to become a public resource.</p>
+          <p><a class="btn" href="/whyparticipate.html">Learn about participating &raquo;</a></p>
+        </div>
+        <div class="span4">
+          <h2>Open Data</h2>
+          <p>Open data is a critical component of the scientific method, but genomes are both identifiable and predictive. As a result, most studies can't freely share their data for privacy reasons. The PGP's public data is a common ground for researchers to discuss the genomes and human biology.
+          <p><a class="btn" href="/data.html">Use PGP data &raquo;</a></p>
+       </div>
+        <div class="span4">
+          <h2>International Network</h2>
+          <p>The pilot group for the Personal Genome Project has been based at Harvard, but we are a global group, with projects starting around the world.</p>
+          <p><a class="btn" href="/people.html">Meet our PGP groups &raquo;</a></p>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+        <div class="container">
+      <hr>
+      <footer>
+	<p>&copy; PersonalGenomes.Org 2013</p>
+      </footer>
+    </div>
+
+    <!-- JS placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="{{STATIC_URL}}js/bootstrap.js"></script>
+
+    <!-- Set menu items to "active" if it matches our current page. -->
+    <script>$(function () {
+      $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+      });
+    </script>
+
+    <!-- Fix mobile device bug, see this issue and solution:
+         https://github.com/twbs/bootstrap/issues/4550#issuecomment-21361314 -->
+    <script>
+      $('.dropdown-toggle').click(function(e) {
+        e.preventDefault();
+        setTimeout($.proxy(function() {
+          if ('ontouchstart' in document.documentElement) {
+            $(this).siblings('.dropdown-backdrop').off().remove();
+          }
+        }, this), 0);
+      });
+    </script>
+
+
+
+  </body>
+</html>
