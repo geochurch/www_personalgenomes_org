@@ -67,17 +67,6 @@
 
 	  <ul class="nav pull-right">
 
-	    {% block navbar_globalnetwork %}
-	    <li class="dropdown">
-	      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Global Network <b class="caret"></b></a>
-	      <ul class="dropdown-menu">
-		<li><a href="{% url 'network' %}">PGP Network</a></li>
-		<li><a href="{% url 'join-network' %}">Starting a PGP Site</a></li>
-		<li><a href="{% url 'harvard' %}">Harvard PGP</a></li>
-		<li><a href="{% url 'mclaughlin-centre' %}">McLaughlin Centre PGP</a></li>
-	      </ul>
-	    </li>
-	    {% endblock navbar_globalnetwork %}
 
 	    {% block navbar_learn %}
             <li class="dropdown">
@@ -123,6 +112,18 @@
               </ul>
 	    </li>
 	    {% endblock navbar_research %}
+
+	    {% block navbar_globalnetwork %}
+	    <li class="dropdown">
+	      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Global Network <b class="caret"></b></a>
+	      <ul class="dropdown-menu">
+		<li><a href="{% url 'network' %}">PGP Network</a></li>
+		<li><a href="{% url 'join-network' %}">Starting a PGP Site</a></li>
+		<li><a href="{% url 'harvard' %}">Harvard PGP</a></li>
+		<li><a href="{% url 'mclaughlin-centre' %}">McLaughlin Centre PGP</a></li>
+	      </ul>
+	    </li>
+	    {% endblock navbar_globalnetwork %}
 
 	    <li><a href="/donate">Support</a></li>
 	  </ul>
