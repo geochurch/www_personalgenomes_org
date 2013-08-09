@@ -49,8 +49,14 @@ urlpatterns = patterns(
         TemplateView.as_view(template_name='www_personalgenomes_org/publications.html'),
         name='publications'),
 
+    # Participate pages
+    url(r'^pgp/?$',
+        TemplateView.as_view(template_name='www_personalgenomes_org/pgp.html'),
+        name='pgp'),
+
     # Redirects
     url(r'^international.html/?$', ReverseRedirectView.as_view(url='network')),
     url(r'^about.html/?$', ReverseRedirectView.as_view(url='about-us')),
     url(r'^people.html/?$', ReverseRedirectView.as_view(url='about-us')),
+    url(r'^project.html/?$', ReverseRedirectView.as_view(url='pgp')),
 )
