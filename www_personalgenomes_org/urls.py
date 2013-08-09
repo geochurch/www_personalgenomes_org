@@ -36,12 +36,15 @@ urlpatterns = patterns(
         name='mclaughlin-centre'),
 
     # About pages
+    url(r'^about-us/?$',
+        TemplateView.as_view(template_name='www_personalgenomes_org/about-us.html'),
+        name='about-us'),
     url(r'^mission/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/mission.html'),
         name='mission'),
 
-
     # Redirects
     url(r'^international.html/?$', ReverseRedirectView.as_view(url='network')),
-
+    url(r'^about.html/?$', ReverseRedirectView.as_view(url='about-us')),
+    url(r'^people.html/?$', ReverseRedirectView.as_view(url='about-us')),
 )
