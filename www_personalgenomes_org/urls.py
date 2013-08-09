@@ -1,5 +1,7 @@
 from django.conf.urls import patterns, include, url
-from django.views.generic import TemplateView
+from django.core.urlresolvers import reverse_lazy
+from django.views.generic import TemplateView, RedirectView
+from .views import ReverseRedirectView
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -17,14 +19,16 @@ urlpatterns = patterns(
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
 
-    (r'^$', TemplateView.as_view(template_name='www_personalgenomes_org/index.html')),
+    url(r'^$', TemplateView.as_view(template_name='www_personalgenomes_org/index.html')),
 
     # Global network pages
-    (r'^international.html', TemplateView.as_view(template_name='www_personalgenomes_org/network.html')),
-    (r'^network(.html|/|)$', TemplateView.as_view(template_name='www_personalgenomes_org/network.html')),
-    (r'^start-pgp(.html|/|)$', TemplateView.as_view(template_name='www_personalgenomes_org/start-pgp.html')),
+    url(r'^network(.html|/|)$', TemplateView.as_view(template_name='www_personalgenomes_org/network.html'), name='network'),
+    url(r'^start-pgp(.html|/|)$', TemplateView.as_view(template_name='www_personalgenomes_org/start-pgp.html')),
 
     # About pages
-    (r'^mission(.html|/|)$', TemplateView.as_view(template_name='www_personalgenomes_org/mission.html')),
+    url(r'^mission(.html|/|)$', TemplateView.as_view(template_name='www_personalgenomes_org/mission.html')),
+
+    # Redirects
+    url(r'^international.html/$', ReverseRedirectView.as_view(url='network')),
 
 )
