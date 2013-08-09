@@ -71,10 +71,10 @@
 	    <li class="dropdown">
 	      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Global Network <b class="caret"></b></a>
 	      <ul class="dropdown-menu">
-		<li><a href="/network.html">PGP Network</a></li>
-		<li><a href="/international.html">Starting a PGP Site</a></li>
-		<li><a href="#">Harvard PGP</a></li>
-		<li><a href="#">Toronto PGP</a></li>
+		<li><a href="{% url 'network' %}">PGP Network</a></li>
+		<li><a href="{% url 'join-network' %}">Starting a PGP Site</a></li>
+		<li><a href="{% url 'harvard' %}">Harvard PGP</a></li>
+		<li><a href="{% url 'mclaughlin-centre' %}">McLaughlin Centre PGP</a></li>
 	      </ul>
 	    </li>
 	    {% endblock navbar_globalnetwork %}
@@ -83,12 +83,12 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Learn <b class="caret"></b></a>
               <ul class="dropdown-menu">
-		<li><a href="/mission.html">Our Mission</a></li>
+		<li><a href="{% url 'mission' %}">Our Mission</a></li>
 		<li class="divider"></li>
-		<li><a href="/people.html">About Us</a></li>
-		<li><a href="/faq.html">FAQ</a></li>
-		<li><a href="/news.html">News</a></li>
-		<li><a href="/international.html">New PGP Groups</a></li>
+		<li><a href="/people">About Us</a></li>
+		<li><a href="/faq">FAQ</a></li>
+		<li><a href="/news">News</a></li>
+		<li><a href="/international">New PGP Groups</a></li>
 		<li class="divider"></li>
 		<li class="nav-header">related sites</li>
 		<li><a href="http://blog.personalgenomes.org"><i class="icon-external-link-sign"></i> PGP Blog</a></li>
@@ -101,13 +101,13 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Participate <b class="caret"></b></a>
               <ul class="dropdown-menu">
-		<li><a href="/whyparticipate.html">Why Participate?</a></li>
-		<li><a href="/participate.html">Participation Overview</a></li>
-		<li><a href="/howitworks.html">Protocols Summary</a></li>
-		<li><a href="/considerations.html">Considerations</a></li>
-		<li><a href="/consent.html">Documents</a></li>
-		<li><a href="/medicalcenters.html">Medical Centers</a></li>
-		<li><a href="/signup.html">Sign Up</a><li>
+		<li><a href="/whyparticipate">Why Participate?</a></li>
+		<li><a href="/participate">Participation Overview</a></li>
+		<li><a href="/howitworks">Protocols Summary</a></li>
+		<li><a href="/considerations">Considerations</a></li>
+		<li><a href="/consent">Documents</a></li>
+		<li><a href="/medicalcenters">Medical Centers</a></li>
+		<li><a href="/signup">Sign Up</a><li>
 		<li class="divider"></li>
 		<li><a href="https://my.personalgenomes.org/login"><i class="icon-external-link-sign"></i> Participant Log In</a></li>
               </ul>
@@ -118,13 +118,13 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
               <ul class="dropdown-menu">
-		<li><a href="/sharing.html">Resource Sharing</a></li>
-		<li><a href="/data.html">Get Data</a></li>
+		<li><a href="/sharing">Resource Sharing</a></li>
+		<li><a href="/data">Get Data</a></li>
               </ul>
 	    </li>
 	    {% endblock navbar_research %}
 
-	    <li><a href="/donate.html">Support</a></li>
+	    <li><a href="/donate">Support</a></li>
 	  </ul>
 	</div><!--/.nav-collapse -->
       </div>
@@ -142,10 +142,10 @@
         <div class="span9">
           <h1>Sharing Personal Genomes</h1>
           <p class="info">The Personal Genome Project was founded in 2005 and is dedicated to creating public genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices&mdash;our approach is to invite willing participants to publicly share their personal data for the greater good.</p>
-          <p><a href="/mission.html" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+          <p><a href="/mission" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
 	</div>
         <div class="span3">
-	  <a href="/mission.html"><img src="/static/img/pgp-logo-only-transp.png"/></a>
+	  <a href="/mission"><img src="/static/img/pgp-logo-only-transp.png"/></a>
         </div>
       </div>
     </div>
@@ -154,17 +154,17 @@
       <div class="span4">
         <h2>Why participate?</h2>
 	<p>Donating your genome and health data to science is a great way to enable advances in understanding human genetics, biology, and health. We seek volunteers willing to donate diverse personal information to become a public resource.</p>
-        <p><a class="btn" href="/whyparticipate.html">Learn about participating &raquo;</a></p>
+        <p><a class="btn" href="/whyparticipate">Learn about participating &raquo;</a></p>
       </div>
       <div class="span4">
         <h2>Open Data</h2>
         <p>Open data is a critical component of the scientific method, but genomes are both identifiable and predictive. As a result, most studies can't freely share their data for privacy reasons. The PGP's public data is a common ground for researchers to discuss the genomes and human biology.
-        <p><a class="btn" href="/data.html">Use PGP data &raquo;</a></p>
+        <p><a class="btn" href="/data">Use PGP data &raquo;</a></p>
       </div>
       <div class="span4">
         <h2>International Network</h2>
         <p>The pilot group for the Personal Genome Project has been based at Harvard, but we are a global group, with projects starting around the world.</p>
-        <p><a class="btn" href="/people.html">Meet our PGP groups &raquo;</a></p>
+        <p><a class="btn" href="/people">Meet our PGP groups &raquo;</a></p>
       </div>
     </div>
     {% endblock main %}
