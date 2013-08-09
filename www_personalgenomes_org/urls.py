@@ -42,6 +42,9 @@ urlpatterns = patterns(
     url(r'^mission/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/mission.html'),
         name='mission'),
+    url(r'^news/?',
+        TemplateView.as_view(template_name='www_personalgenomes_org/news.html'),
+        name='news'),
 
     # Redirects
     url(r'^international.html/?$', ReverseRedirectView.as_view(url='network')),
