@@ -32,10 +32,12 @@ urlpatterns = patterns(
     url(r'^mission/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/mission.html'),
         name='mission'),
+    url(r'^mission.html/?$', ReverseRedirectView.as_view(url='mission')),
 
-    url(r'^news/?',
-        TemplateView.as_view(template_name='www_personalgenomes_org/news.html'),
-        name='news'),
+    url(r'^press/?',
+        TemplateView.as_view(template_name='www_personalgenomes_org/press.html'),
+        name='press'),
+    url(r'^news.html/?$', ReverseRedirectView.as_view(url='press')),
 
     url(r'^publications/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/publications.html'),
