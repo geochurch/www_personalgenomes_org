@@ -21,46 +21,55 @@ urlpatterns = patterns(
 
     url(r'^$', TemplateView.as_view(template_name='www_personalgenomes_org/index.html')),
 
-    # Global network pages
-    url(r'^network/?$', 
-        TemplateView.as_view(template_name='www_personalgenomes_org/network.html'),
-        name='network'),
-    url(r'^join-network/?$',
-        TemplateView.as_view(template_name='www_personalgenomes_org/join-network.html'),
-        name='join-network'),
-    url(r'^harvard/?$',
-        TemplateView.as_view(template_name='www_personalgenomes_org/harvard.html'),
-        name='harvard'),
-    url(r'^mclaughlin-centre/?$',
-        TemplateView.as_view(template_name='www_personalgenomes_org/mclaughlin-centre.html'),
-        name='mclaughlin-centre'),
-
     # About pages
+
     url(r'^about-us/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/about-us.html'),
         name='about-us'),
+    url(r'^about.html/?$', ReverseRedirectView.as_view(url='about-us')),
+    url(r'^people.html/?$', ReverseRedirectView.as_view(url='about-us')),
+
     url(r'^mission/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/mission.html'),
         name='mission'),
+
     url(r'^news/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/news.html'),
         name='news'),
+
     url(r'^publications/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/publications.html'),
         name='publications'),
 
     # Participate pages
+
     url(r'^pgp/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/pgp.html'),
         name='pgp'),
+    url(r'^project.html/?$', ReverseRedirectView.as_view(url='pgp')),
+
     url(r'^why-participate/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/why-participate.html'),
         name='why-participate'),
-
-    # Redirects
-    url(r'^international.html/?$', ReverseRedirectView.as_view(url='network')),
-    url(r'^about.html/?$', ReverseRedirectView.as_view(url='about-us')),
-    url(r'^people.html/?$', ReverseRedirectView.as_view(url='about-us')),
-    url(r'^project.html/?$', ReverseRedirectView.as_view(url='pgp')),
     url(r'^whyparticipate.html/?$', ReverseRedirectView.as_view(url='why-participate')),
+
+    # Global network pages
+
+    url(r'^network/?$',
+        TemplateView.as_view(template_name='www_personalgenomes_org/network.html'),
+        name='network'),
+    url(r'^international.html/?$', ReverseRedirectView.as_view(url='network')),
+
+    url(r'^join-network/?$',
+        TemplateView.as_view(template_name='www_personalgenomes_org/join-network.html'),
+        name='join-network'),
+
+    url(r'^harvard/?$',
+        TemplateView.as_view(template_name='www_personalgenomes_org/harvard.html'),
+        name='harvard'),
+
+    url(r'^mclaughlin-centre/?$',
+        TemplateView.as_view(template_name='www_personalgenomes_org/mclaughlin-centre.html'),
+        name='mclaughlin-centre'),
+
 )
