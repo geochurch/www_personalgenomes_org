@@ -55,6 +55,10 @@ urlpatterns = patterns(
         name='why-participate'),
     url(r'^whyparticipate.html/?$', ReverseRedirectView.as_view(url='why-participate')),
 
+    url(r'^non-anonymous/?',
+        TemplateView.as_view(template_name='www_personalgenomes_org/non-anonymous.html'),
+        name='non-anonymous'),
+
     # Global network pages
 
     url(r'^network/?$',
