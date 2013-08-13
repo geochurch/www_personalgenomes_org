@@ -73,6 +73,17 @@ urlpatterns = patterns(
         name='pgp-sign-up'),
     url(r'^eligibility.html/?$', ReverseRedirectView.as_view(url='pgp-sign-up')),
 
+    # Research pages
+
+    url(r'^data/?$',
+        TemplateView.as_view(template_name='www_personalgenomes_org/data.html'),
+        name='data'),
+
+    url(r'^sharing/?',
+        TemplateView.as_view(template_name='www_personalgenomes_org/sharing.html'),
+        name='sharing'),
+    url(r'^sharing.html/?$', ReverseRedirectView.as_view(url='sharing')),
+
     # Global network pages
 
     url(r'^network/?$',
