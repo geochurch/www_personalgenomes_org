@@ -63,6 +63,16 @@ urlpatterns = patterns(
         TemplateView.as_view(template_name='www_personalgenomes_org/non-anonymous.html'),
         name='non-anonymous'),
 
+    url(r'^risks-benefits/?',
+        TemplateView.as_view(template_name='www_personalgenomes_org/risks-benefits.html'),
+        name='risks-benefits'),
+    url(r'^considerations.html/?$', ReverseRedirectView.as_view(url='risks-benefits')),
+
+    url(r'^pgp-sign-up/?',
+        TemplateView.as_view(template_name='www_personalgenomes_org/pgp-sign-up.html'),
+        name='pgp-sign-up'),
+    url(r'^eligibility.html/?$', ReverseRedirectView.as_view(url='pgp-sign-up')),
+
     # Global network pages
 
     url(r'^network/?$',
