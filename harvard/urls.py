@@ -9,6 +9,8 @@ urlpatterns = patterns(
         name='people'),
     url(r'^/documents/?', TemplateView.as_view(template_name='harvard/documents.html'),
         name='documents'),
-    url(r'^/protocls/?', TemplateView.as_view(template_name='harvard/protocols.html'),
+    url(r'^/protocols/?', TemplateView.as_view(template_name='harvard/protocols.html'),
         name='protocols'),
+    url(r'^/data/?', TemplateView.as_view(template_name='harvard/data.html'),
+        name='data'),
     )
