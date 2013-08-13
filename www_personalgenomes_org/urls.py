@@ -1,7 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.core.urlresolvers import reverse_lazy
 from django.views.generic import TemplateView, RedirectView
-from .views import ReverseRedirectView
+from .views import redirect_to_name
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -26,22 +26,22 @@ urlpatterns = patterns(
     url(r'^about-us/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/about-us.html'),
         name='about-us'),
-    url(r'^about.html/?$', ReverseRedirectView.as_view(url='about-us')),
+    url(r'^about.html/?$', redirect_to_name, {'url_name': 'about-us'}),
 
     url(r'^mission/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/mission.html'),
         name='mission'),
-    url(r'^mission.html/?$', ReverseRedirectView.as_view(url='mission')),
+    url(r'^mission.html/?$', redirect_to_name, {'url_name': 'mission'}),
 
     url(r'^people/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/people.html'),
         name='people'),
-    url(r'^people.html/?$', ReverseRedirectView.as_view(url='people')),
+    url(r'^people.html/?$', redirect_to_name, {'url_name': 'people'}),
 
     url(r'^press/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/press.html'),
         name='press'),
-    url(r'^news.html/?$', ReverseRedirectView.as_view(url='press')),
+    url(r'^news.html/?$', redirect_to_name, {'url_name': 'press'}),
 
     url(r'^publications/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/publications.html'),
@@ -52,12 +52,12 @@ urlpatterns = patterns(
     url(r'^pgp/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/pgp.html'),
         name='pgp'),
-    url(r'^project.html/?$', ReverseRedirectView.as_view(url='pgp')),
+    url(r'^project.html/?$', redirect_to_name, {'url_name': 'pgp'}),
 
     url(r'^why-participate/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/why-participate.html'),
         name='why-participate'),
-    url(r'^whyparticipate.html/?$', ReverseRedirectView.as_view(url='why-participate')),
+    url(r'^whyparticipate.html/?$', redirect_to_name, {'url_name': 'why-participate'}),
 
     url(r'^non-anonymous/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/non-anonymous.html'),
@@ -66,12 +66,12 @@ urlpatterns = patterns(
     url(r'^risks-benefits/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/risks-benefits.html'),
         name='risks-benefits'),
-    url(r'^considerations.html/?$', ReverseRedirectView.as_view(url='risks-benefits')),
+    url(r'^considerations.html/?$', redirect_to_name, {'url_name': 'risks-benefits'}),
 
     url(r'^pgp-sign-up/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/pgp-sign-up.html'),
         name='pgp-sign-up'),
-    url(r'^eligibility.html/?$', ReverseRedirectView.as_view(url='pgp-sign-up')),
+    url(r'^eligibility.html/?$', redirect_to_name, {'url_name': 'pgp-sign-up'}),
 
     # Research pages
 
@@ -82,14 +82,14 @@ urlpatterns = patterns(
     url(r'^sharing/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/sharing.html'),
         name='sharing'),
-    url(r'^sharing.html/?$', ReverseRedirectView.as_view(url='sharing')),
+    url(r'^sharing.html/?$', redirect_to_name, {'url_name': 'sharing'}),
 
     # Global network pages
 
     url(r'^network/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/network.html'),
         name='network'),
-    url(r'^international.html/?$', ReverseRedirectView.as_view(url='network')),
+    url(r'^international.html/?$', redirect_to_name, {'url_name':'network'}),
 
     url(r'^join-network/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/join-network.html'),
