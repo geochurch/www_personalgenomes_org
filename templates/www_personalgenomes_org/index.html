@@ -54,6 +54,7 @@
 
 <body>
 
+  {% block navbar %}
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
@@ -113,7 +114,7 @@
 	      <ul class="dropdown-menu">
 		<li><a href="{% url 'network' %}">PGP Network</a></li>
 		<li><a href="{% url 'join-network' %}">Starting a PGP Site</a></li>
-		<li><a href="{% url 'harvard' %}">Harvard PGP</a></li>
+		<li><a href="{% url 'harvard:index' %}">Harvard PGP</a></li>
 		<li><a href="{% url 'mclaughlin-centre' %}">McLaughlin Centre PGP</a></li>
 	      </ul>
 	    </li>
@@ -125,6 +126,7 @@
       </div>
     </div>
   </div>
+  {% endblock navbar %}
 
 
   <div class="container main">

@@ -1,0 +1,41 @@
+{% extends "www_personalgenomes_org/index.html" %}
+
+{% block title %}Personal Genome Project: Harvard{% endblock title %}
+
+{% block navbar %}
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="{% url 'harvard:index' %}">PGP Harvard</a>
+      <a class="btn btn-primary pull-right" href="/">Return to PersonalGenomes.org</a>
+      <div class="nav-collapse collapse">
+	<ul class="nav pull-right">
+	    <li><a href="#">People</a></li>
+	    <li><a href="#">Documents</a></li>
+	    <li><a href="#">Protocols</a></li>
+	    <li><a href="#" style="margin-right:20px">Data</a></li>
+	</ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock navbar %}
+
+{% block main %}
+<div class="hero-unit">
+  <div class="row-fluid">
+    <div class="span9">
+      <h1>PGP Harvard</h1>
+      <p>The Harvard Personal Genome Project is the first Personal Genome Project site. Initiated by George Church in 2005, PGP Harvard has piloted the "open consent" framework to create the world's richest public resource combiing human genetic data and tissues with diverse health and biological traits.</p>
+    </div>
+    <div class="span3">
+      <img style="max-width:200px;float:right" src="/static/img/harvard/Harvard-Logo.png"/>
+    </div>
+  </div>
+</div>
+{% endblock main %}

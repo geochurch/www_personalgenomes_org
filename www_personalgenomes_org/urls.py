@@ -95,9 +95,8 @@ urlpatterns = patterns(
         TemplateView.as_view(template_name='www_personalgenomes_org/join-network.html'),
         name='join-network'),
 
-    url(r'^harvard/?$',
-        TemplateView.as_view(template_name='www_personalgenomes_org/harvard.html'),
-        name='harvard'),
+    url(r'^harvard',
+        include('harvard.urls', namespace="harvard")),
 
     url(r'^mclaughlin-centre/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/mclaughlin-centre.html'),
