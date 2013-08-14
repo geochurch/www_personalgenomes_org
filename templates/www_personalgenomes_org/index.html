@@ -9,22 +9,6 @@
   <meta name="author" content="PersonalGenomes.org">
  
   <!-- Styles -->
-  <link href="{{STATIC_URL}}css/bootstrap.css" rel="stylesheet">
-  <link href="{{STATIC_URL}}css/bootstrap-responsive.css" rel="stylesheet">
-
-  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif]-->
-
-  <!-- This file store project specific CSS -->
-  <!-- <link href="{{STATIC_URL}}css/project.css" rel="stylesheet"> -->
-
-  <!-- Use this to quickly test CSS changes in a template, 
-       then move to project.css -->
-  {% block extra_css %}{% endblock extra_css %}
-
   <style type="text/css">
     body {
     padding-top: 70px;
@@ -36,19 +20,19 @@
     a {
     font-weight:bold;
     }
-    .bio h4,.bio h5,.bio p {
-    margin:12px;
-    }
-    .bio img {
-    float:right;
-    margin:12px;
+    i {
+    white-space:pre;  // Hack to allow more spacing around Font Awesome icons.
     }
   </style>
 
+  <link href="{{STATIC_URL}}css/bootstrap.css" rel="stylesheet">
+  <link href="{{STATIC_URL}}css/bootstrap-responsive.css" rel="stylesheet">
+
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif]-->    
+      <![endif]-->
 </head>
 
 
