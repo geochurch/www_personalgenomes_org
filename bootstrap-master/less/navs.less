@@ -100,9 +100,9 @@
 }
 .nav-tabs > li > a,
 .nav-pills > li > a {
-  padding-right: 12px;
-  padding-left: 12px;
-  margin-right: 2px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: 4px;
   line-height: 14px; // keeps the overall height an even number
 }
 
@@ -150,7 +150,15 @@
   padding-bottom: 8px;
   margin-top: 2px;
   margin-bottom: 2px;
+  color: @pgpurpleDark;
+  background-color: lighten(@pgblueLighter, 7%);
   .border-radius(5px);
+}
+
+// Hover
+.nav-pills > li > a:hover {
+  color: @pgpurpleDarker;
+  background-color: @pgblueLighter;
 }
 
 // Active state
@@ -158,7 +166,7 @@
 .nav-pills > .active > a:hover,
 .nav-pills > .active > a:focus {
   color: @white;
-  background-color: @linkColor;
+  background-color: @pgblue;
 }
 
 

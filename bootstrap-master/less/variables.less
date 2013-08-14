@@ -7,6 +7,24 @@
 // --------------------------------------------------
 
 
+// PersonalGenomes.Org Colors
+// -------------------------
+@pgblueDarker:          #002C48;
+@pgblueDark:            #2E5269;
+@pgblue:                #0072BC;
+@pgblueLight:           #6CC0F7;
+@pgblueLighter:         #C3E3F7;
+@pggreenDarker:         #2C4C03;
+@pggreenDark:           #5D6F45;
+@pggreen:               #8BC63F;
+@pggreenLight:          #CFF899;
+@pggreenLighter:        #E9F8D5;
+@pgpurpleDarker:        #1D013D;
+@pgpurpleDark:          #433158;
+@pgpurple:              #5A1F9D;
+@pgpurpleLight:         #B986F3;
+@pgpurpleLighter:       #DDCAF3;
+
 // Grays
 // -------------------------
 @black:                 #000;
@@ -33,12 +51,12 @@
 // Scaffolding
 // -------------------------
 @bodyBackground:        @white;
-@textColor:             @grayDark;
+@textColor:             @grayDarker;
 
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @pgblue;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -48,21 +66,21 @@
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
-@baseFontSize:          14px;
+@baseFontSize:          15px;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
 
 @headingsFontFamily:    inherit; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
-@headingsColor:         inherit; // empty to use BS default, @textColor
+@headingsColor:         @pgpurpleDarker;
 
 
 // Component sizing
 // -------------------------
 // Based on 14px font-size and 20px line-height
 
-@fontSizeLarge:         @baseFontSize * 1.25; // ~18px
+@fontSizeLarge:         @baseFontSize * 1.15;  // ~18px
 @fontSizeSmall:         @baseFontSize * 0.85; // ~12px
 @fontSizeMini:          @baseFontSize * 0.75; // ~11px
 
@@ -84,12 +102,12 @@
 
 // Buttons
 // -------------------------
-@btnBackground:                     @white;
-@btnBackgroundHighlight:            darken(@white, 10%);
+@btnBackground:                     @pggreenLighter;
+@btnBackgroundHighlight:            darken(@btnBackground, 15%);
 @btnBorder:                         #ccc;
 
-@btnPrimaryBackground:              @linkColor;
-@btnPrimaryBackgroundHighlight:     spin(@btnPrimaryBackground, 20%);
+@btnPrimaryBackground:              @pggreen;
+@btnPrimaryBackgroundHighlight:     @pggreenDark;
 
 @btnInfoBackground:                 #5bc0de;
 @btnInfoBackgroundHighlight:        #2f96b4;
@@ -103,8 +121,8 @@
 @btnDangerBackground:               #ee5f5b;
 @btnDangerBackgroundHighlight:      #bd362f;
 
-@btnInverseBackground:              #444;
-@btnInverseBackgroundHighlight:     @grayDarker;
+@btnInverseBackground:              @pggreenDark;
+@btnInverseBackgroundHighlight:     @pggreenDarker;
 
 
 // Forms
@@ -195,16 +213,17 @@
 @navbarBrandColor:                @navbarLinkColor;
 
 // Inverted navbar
-@navbarInverseBackground:                #111111;
-@navbarInverseBackgroundHighlight:       #222222;
-@navbarInverseBorder:                    #252525;
+// Inverted navbar
+@navbarInverseBackground:                @pgpurpleDark;
+@navbarInverseBackgroundHighlight:       @pgpurpleDarker;
+@navbarInverseBorder:                    lighten(@navbarInverseBackgroundHighlight, 7%);
 
-@navbarInverseText:                      @grayLight;
-@navbarInverseLinkColor:                 @grayLight;
+@navbarInverseText:                      @pgblueLighter;
+@navbarInverseLinkColor:                 @pgblueLighter;
 @navbarInverseLinkColorHover:            @white;
 @navbarInverseLinkColorActive:           @navbarInverseLinkColorHover;
 @navbarInverseLinkBackgroundHover:       transparent;
-@navbarInverseLinkBackgroundActive:      @navbarInverseBackground;
+@navbarInverseLinkBackgroundActive:      darken(@pgpurpleDarker, 3%);
 
 @navbarInverseSearchBackground:          lighten(@navbarInverseBackground, 25%);
 @navbarInverseSearchBackgroundFocus:     @white;
@@ -223,14 +242,14 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              @grayLighter;
-@heroUnitHeadingColor:            inherit;
+@heroUnitBackground:              @pgblueLighter;
+@heroUnitHeadingColor:            @pgpurpleDarker;
 @heroUnitLeadColor:               inherit;
 
 
 // Form states and alerts
 // -------------------------
-@warningText:             #c09853;
+@warningText:             #bf7900;
 @warningBackground:       #fcf8e3;
 @warningBorder:           darken(spin(@warningBackground, -10), 3%);
 

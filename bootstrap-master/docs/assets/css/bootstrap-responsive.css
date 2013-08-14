@@ -1023,13 +1023,13 @@
   }
   .navbar-inverse .nav-collapse .nav > li > a,
   .navbar-inverse .nav-collapse .dropdown-menu a {
-    color: #999999;
+    color: #c3e3f7;
   }
   .navbar-inverse .nav-collapse .nav > li > a:hover,
   .navbar-inverse .nav-collapse .nav > li > a:focus,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:focus {
-    background-color: #111111;
+    background-color: #433158;
   }
   .nav-collapse.in .btn-group {
     padding: 0;
@@ -1080,8 +1080,8 @@
   }
   .navbar-inverse .nav-collapse .navbar-form,
   .navbar-inverse .nav-collapse .navbar-search {
-    border-top-color: #111111;
-    border-bottom-color: #111111;
+    border-top-color: #433158;
+    border-bottom-color: #433158;
   }
   .navbar .nav-collapse .nav.pull-right {
     float: none;
