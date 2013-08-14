@@ -98,8 +98,9 @@
 	      <ul class="dropdown-menu">
 		<li><a href="{% url 'network' %}">PGP Network</a></li>
 		<li><a href="{% url 'join-network' %}">Starting a PGP Site</a></li>
-		<li><a href="{% url 'harvard:index' %}">Harvard PGP</a></li>
-		<li><a href="{% url 'mclaughlin-centre' %}">McLaughlin Centre PGP</a></li>
+		<li class="divider"></li>
+		<li><a href="{% url 'harvard:index' %}"><i class="icon-double-angle-right">  </i>Harvard PGP</a></li>
+		<li><a href="{% url 'mclaughlin-centre' %}"><i class="icon-double-angle-right">  </i>McLaughlin Centre PGP</a></li>
 	      </ul>
 	    </li>
 	    {% endblock navbar_globalnetwork %}
@@ -123,7 +124,7 @@
         <div class="span9">
           <h1>Sharing Personal Genomes</h1>
           <p class="info">The Personal Genome Project was founded in 2005 and is dedicated to creating public genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices&mdash;our approach is to invite willing participants to publicly share their personal data for the greater good.</p>
-          <p><a href="{% url 'pgp' %}" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+          <p><a href="{% url 'pgp' %}" class="btn btn-primary btn-large">Learn more <i class="icon-angle-right"></i></a></p>
 	</div>
         <div class="span3">
 	  <a href="{% url 'pgp' %}"><img src="/static/img/pgp-logo-only-transp.png"/></a>
@@ -135,17 +136,17 @@
       <div class="span4">
         <h2>Why participate?</h2>
 	<p>Donating your genome and health data to science is a great way to enable advances in understanding human genetics, biology, and health. We seek volunteers willing to donate diverse personal information to become a public resource.</p>
-        <p><a class="btn" href="{% url 'why-participate' %}">Learn about participating &raquo;</a></p>
+        <p><a class="btn" href="{% url 'why-participate' %}">Learn about participating <i class="icon-angle-right"></i></a></p>
       </div>
       <div class="span4">
         <h2>Open Data</h2>
         <p>Open data is a critical component of the scientific method, but genomes are both identifiable and predictive. As a result, most studies can't freely share their data for privacy reasons. The PGP's public data is a common ground for researchers to discuss the genomes and human biology.
-        <p><a class="btn" href="/data">Use PGP data &raquo;</a></p>
+        <p><a class="btn" href="/data">Use PGP data <i class="icon-angle-right"></i></a></p>
       </div>
       <div class="span4">
         <h2>Global Network</h2>
         <p>The pilot group for the Personal Genome Project has been based at Harvard, but we are a global group, with projects starting around the world.</p>
-        <p><a class="btn" href="{% url 'network' %}">Meet our PGP groups &raquo;</a></p>
+        <p><a class="btn" href="{% url 'network' %}">Meet our PGP groups <i class="icon-angle-right"></i></a></p>
       </div>
     </div>
     {% endblock main %}
