@@ -100,4 +100,11 @@ urlpatterns = patterns(
     url(r'^mclaughlin_centre/?$',
         include('mclaughlin_centre.urls', namespace="mclaughlin_centre")),
 
+    # Support page
+
+    url(r'^donate/?$',
+        TemplateView.as_view(template_name='www_personalgenomes_org/donate.html'),
+        name='donate'),
+    url(r'donate.html/?$', redirect_to_name, {'url_name':'donate'})
+
 )
