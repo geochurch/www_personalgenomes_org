@@ -15,9 +15,10 @@
 
 {% block navpills %}
 <ul class="nav nav-tabs">
+  <li><a href="{% url 'harvard:index' %}">Main</a></li>
   <li><a href="{% url 'harvard:people' %}">People</a></li>
   <li><a href="{% url 'harvard:documents' %}">Documents</a></li>
-  <li><a href="{% url 'harvard:protocols' %}">Protocols</a></li>
+  <li><a href="{% url 'harvard:protocols' %}">Enrollment & Protocols</a></li>
   <li><a href="{% url 'harvard:data' %}" style="margin-right:20px">Data & Samples</a></li>
 </ul>
 {% endblock navpills %}
@@ -28,6 +29,7 @@
     <div class="span9">
       <h1>PGP Harvard</h1>
       <p>The Harvard Personal Genome Project is the first Personal Genome Project site. Initiated by George Church in 2005, PGP Harvard has piloted the "open consent" framework to create the world's richest public resource combining human genetic data and tissues with diverse health and biological traits.</p>
+      <a class="btn btn-primary btn-large" href="{% url 'harvard:protocols' %}">Read about enrollment</a>
     </div>
     <div class="span3">
       <img style="max-width:200px;float:right" src="/static/img/harvard/NRB_Ave_Louis_Pasteur.jpg"/>
