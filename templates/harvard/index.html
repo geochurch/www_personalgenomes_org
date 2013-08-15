@@ -2,29 +2,17 @@
 
 {% block title %}Personal Genome Project: Harvard{% endblock title %}
 
-{% block navbar %}
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="navbar-inner">
-    <div class="container">
-      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="brand" href="/">Personal Genome Project</a><a class="brand" href="{% url 'harvard:index' %}"><i class="icon-double-angle-right">   </i>Harvard</a>
-      <a class="btn btn-primary pull-right" href="/"><i class="icon-double-angle-left">  </i>Return to main site</a>
-      <div class="nav-collapse collapse">
-	<ul class="nav pull-right">
-	    <li><a href="{% url 'harvard:people' %}">People</a></li>
-	    <li><a href="{% url 'harvard:documents' %}">Documents</a></li>
-	    <li><a href="{% url 'harvard:protocols' %}">Protocols</a></li>
-	    <li><a href="{% url 'harvard:data' %}" style="margin-right:20px">Data & Samples</a></li>
-	</ul>
-      </div>
-    </div>
-  </div>
-</div>
-{% endblock navbar %}
+{% block brand %}<a class="brand" href="/">Personal Genome Project</a><a class="brand" href="/harvard"><i class="icon-double-angle-right">   </i>Harvard</a>{% endblock brand %}
+
+
+{% block navpills %}
+<ul class="nav nav-tabs">
+  <li><a href="{% url 'harvard:people' %}">People</a></li>
+  <li><a href="{% url 'harvard:documents' %}">Documents</a></li>
+  <li><a href="{% url 'harvard:protocols' %}">Protocols</a></li>
+  <li><a href="{% url 'harvard:data' %}" style="margin-right:20px">Data & Samples</a></li>
+</ul>
+{% endblock navpills %}
 
 {% block main %}
 <div class="hero-unit">
