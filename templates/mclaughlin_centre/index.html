@@ -1,0 +1,34 @@
+{% extends "www_personalgenomes_org/index.html" %}
+
+{% block title %}Personal Genome Project: McLaughlin Centre{% endblock title %}
+
+{% block css-overrides %}
+<style>
+  body {
+  padding-top: 50px;
+  }
+</style>
+{% endblock css-overrides %}
+
+{% block brand %}<a class="brand" href="/">Personal Genome Project</a><a class="brand" href="/mclaughlin_centre"><i class="icon-double-angle-right">   </i>McLaughlin Centre</a>{% endblock brand %}
+
+{% block navpills %}
+<ul class="nav nav-tabs">
+  <li><a href="{% url 'mclaughlin_centre:index' %}">Main</a></li>
+</ul>
+{% endblock navpills %}
+
+{% block main %}
+<div class="hero-unit">
+  <div class="row-fluid">
+    <div class="span9">
+      <h1>PGP McLaughlin Centre</h1>
+      <p>Volunteers from the public working together with researchers to advance personal genomics.</p>
+      <a class="btn btn-primary btn-large" href="http://www.personalgenomes.ca/">Visit our site to learn more!</a>
+    </div>
+    <div class="span3">
+      <img style="max-width:200px;float:right" src="/static/img/pgp-logo-only-transp.png"/>
+    </div>
+  </div>
+</div>
+{% endblock main %}

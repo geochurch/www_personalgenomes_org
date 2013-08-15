@@ -97,9 +97,7 @@ urlpatterns = patterns(
 
     url(r'^harvard',
         include('harvard.urls', namespace="harvard")),
-
-    url(r'^mclaughlin-centre/?$',
-        TemplateView.as_view(template_name='www_personalgenomes_org/mclaughlin-centre.html'),
-        name='mclaughlin-centre'),
+    url(r'^mclaughlin_centre/?$',
+        include('mclaughlin_centre.urls', namespace="mclaughlin_centre")),
 
 )
