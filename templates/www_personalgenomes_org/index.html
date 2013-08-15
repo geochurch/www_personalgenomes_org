@@ -11,7 +11,7 @@
   <!-- Styles -->
   <style type="text/css">
     body {
-    padding-top: 70px;
+    padding-top: 45px;
     padding-bottom: 40px;
     }
     .navbar .brand {
@@ -30,10 +30,15 @@
     float:right;
     margin:12px;
     }
+    .top-heading {
+    margin-top:0px;
+    }
   </style>
 
   <link href="{{STATIC_URL}}css/bootstrap.css" rel="stylesheet">
   <link href="{{STATIC_URL}}css/bootstrap-responsive.css" rel="stylesheet">
+
+  {% block css-overrides %}{% endblock css-overrides %}
 
   <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -122,11 +127,11 @@
 
 
   <div class="container main">
-
-    {% block navpills %}{% endblock navpills %}
-
+    <div class="row">
+      {% block navpills %}{% endblock navpills %}
+    </div>
     {% block main %}
-    <div class="hero-unit">
+    <div class="hero-unit" style="margin-top:25px">
       <div class="row-fluid">
         <div class="span9">
           <h1>Sharing Personal Genomes</h1>
@@ -157,7 +162,6 @@
       </div>
     </div>
     {% endblock main %}
-
   </div> <!-- /container -->
 
   <div class="container">
