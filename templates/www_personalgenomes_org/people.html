@@ -60,8 +60,13 @@
 
 <p class="lead">We are building a global network of PGP sites, each with their own team of staff members and contributors.</p>
 
-<p><a class="btn btn-large" href="{% url 'harvard:people' %}">Harvard PGP Team (USA)</a></p>
-
-<p class="muted">McLaughlin Centre Team (Canada)</p>
+<div class="row-fluid">
+  <div class="span4">
+    <p><a class="btn btn-large" href="{% url 'harvard:people' %}"><i class="icon-double-angle-right">  </i>Harvard PGP Team (USA)</a></p>
+  </div>
+  <div class="span4">
+    <p><a class="btn btn-large" href="{% url 'mclaughlin_centre:index' %}"><i class="icon-double-angle-right">  </i>McLaughlin Centre Team (Canada)</a></p>
+  </div>
+</div>
 
 {% endblock main %}
