@@ -13,9 +13,16 @@
 {% block brand %}<a class="brand" href="/">Personal Genome Project</a><a class="brand" href="/mclaughlin_centre"><i class="icon-double-angle-right">  </i>McLaughlin Centre</a>{% endblock brand %}
 
 {% block navpills %}
-<ul class="nav nav-tabs">
-  <li><a href="{% url 'mclaughlin_centre:index' %}">Main</a></li>
-</ul>
+<div class="row-fluid">
+  <div class="span10">
+    <ul class="nav nav-tabs">
+      <li><a href="{% url 'mclaughlin_centre:index' %}">McLaughlin Centre PGP</a></li>
+    </ul>
+  </div>
+  <div class="span2">
+    <a class="btn pull-right" style="margin-top:8px;" href="{% url 'network' %}">Other PGP sites</a>
+  </div>
+</div>
 {% endblock navpills %}
 
 {% block main %}

@@ -14,13 +14,20 @@
 
 
 {% block navpills %}
-<ul class="nav nav-tabs">
-  <li><a href="{% url 'harvard:index' %}">Main</a></li>
-  <li><a href="{% url 'harvard:people' %}">People</a></li>
-  <li><a href="{% url 'harvard:documents' %}">Documents</a></li>
-  <li><a href="{% url 'harvard:protocols' %}">Enrollment & Protocols</a></li>
-  <li><a href="{% url 'harvard:data' %}" style="margin-right:20px">Data & Samples</a></li>
-</ul>
+<div class="row-fluid">
+  <div class="span10">
+    <ul class="nav nav-tabs">
+      <li><a href="{% url 'harvard:index' %}">Harvard PGP</a></li>
+      <li><a href="{% url 'harvard:people' %}">People</a></li>
+      <li><a href="{% url 'harvard:documents' %}">Documents</a></li>
+      <li><a href="{% url 'harvard:protocols' %}">Enrollment & Protocols</a></li>
+      <li><a href="{% url 'harvard:data' %}" style="margin-right:20px">Data & Samples</a></li>
+    </ul>
+  </div>
+  <div class="span2">
+    <a class="btn pull-right" style="margin-top:8px;" href="{% url 'network' %}">Other PGP sites</a>
+  </div>
+</div>
 {% endblock navpills %}
 
 {% block main %}
