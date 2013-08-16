@@ -117,6 +117,10 @@ urlpatterns = patterns(
         TemplateView.as_view(template_name='www_personalgenomes_org/contact-us.html'),
         name='contact-us'),
     url(r'contact.html', redirect_to_name, {'url_name':'contact-us'}),
+    url(r'^tos/?$',
+        TemplateView.as_view(template_name='www_personalgenomes_org/tos.html'),
+        name='tos'),
+    url(r'tos.html', redirect_to_name, {'url_name':'tos'}),
 
     # Additional redirects
 
