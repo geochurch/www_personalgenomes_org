@@ -111,6 +111,13 @@ urlpatterns = patterns(
     url(r'donate/?$', redirect_to_name, {'url_name':'donate'}),
     url(r'donate/index.html/?$', redirect_to_name, {'url_name':'donate'}),
 
+    # Footer pages
+
+    url(r'^contact-us/?$',
+        TemplateView.as_view(template_name='www_personalgenomes_org/contact-us.html'),
+        name='contact-us'),
+    url(r'contact.html', redirect_to_name, {'url_name':'contact-us'}),
+
     # Additional redirects
 
     url(r'^consent/?$', redirect_to_name, {'url_name':'harvard:documents'}),
