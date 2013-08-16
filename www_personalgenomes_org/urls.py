@@ -46,6 +46,7 @@ urlpatterns = patterns(
     url(r'^publications/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/publications.html'),
         name='publications'),
+    url(r'^research.html/?$', redirect_to_name, {'url_name': 'publications'}),
 
     # Participate pages
 
@@ -71,7 +72,8 @@ urlpatterns = patterns(
     url(r'^pgp-sign-up/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/pgp-sign-up.html'),
         name='pgp-sign-up'),
-    url(r'^eligibility.html/?$', redirect_to_name, {'url_name': 'pgp-sign-up'}),
+    url(r'^signup.html/?$', redirect_to_name, {'url_name':'pgp-sign-up'}),
+    url(r'^eligibility.html/?$', redirect_to_name, {'url_name':'pgp-sign-up'}),
 
     # Research pages
 
@@ -82,7 +84,7 @@ urlpatterns = patterns(
     url(r'^sharing/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/sharing.html'),
         name='sharing'),
-    url(r'^sharing.html/?$', redirect_to_name, {'url_name': 'sharing'}),
+    url(r'^sharing.html/?$', redirect_to_name, {'url_name':'sharing'}),
 
     # Global network pages
 
@@ -105,6 +107,14 @@ urlpatterns = patterns(
     url(r'^donate/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/donate.html'),
         name='donate'),
-    url(r'donate.html/?$', redirect_to_name, {'url_name':'donate'})
+    url(r'donate.html/?$', redirect_to_name, {'url_name':'donate'}),
+    url(r'donate/?$', redirect_to_name, {'url_name':'donate'}),
+    url(r'donate/index.html/?$', redirect_to_name, {'url_name':'donate'}),
+
+    # Additional redirects
+
+    url(r'^consent/?$', redirect_to_name, {'url_name':'harvard:documents'}),
+    url(r'^consent/index.html/?$', redirect_to_name, {'url_name':'harvard:documents'}),
+    url(r'^medicalcenters.html/?$', redirect_to_name, {'url_name':'harvard:protocols'}),
 
 )
