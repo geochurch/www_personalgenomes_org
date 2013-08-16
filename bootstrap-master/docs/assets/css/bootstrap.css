@@ -6163,6 +6163,23 @@ a.badge:focus {
   line-height: 30px;
 }
 
+.heroine-unit {
+  padding: 20px 30px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 20px;
+  color: inherit;
+  background-color: #c3e3f7;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.heroine-unit li {
+  line-height: 26px;
+}
+
 .pull-right {
   float: right;
 }
