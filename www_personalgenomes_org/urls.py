@@ -110,6 +110,8 @@ urlpatterns = patterns(
     url(r'donate.html/?$', redirect_to_name, {'url_name':'donate'}),
     url(r'donate/?$', redirect_to_name, {'url_name':'donate'}),
     url(r'donate/index.html/?$', redirect_to_name, {'url_name':'donate'}),
+    url(r'donate/other.html/?$', redirect_to_name, {'url_name':'donate'}),
+    url(r'donate/matching.html/?$', redirect_to_name, {'url_name':'donate'}),
 
     # Footer pages
 
