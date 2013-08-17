@@ -6164,11 +6164,11 @@ a.badge:focus {
 }
 
 .heroine-unit {
-  padding: 20px 30px;
+  padding: 20px 40px;
   margin-bottom: 15px;
-  font-size: 15px;
+  font-size: 16.5px;
   font-weight: 200;
-  line-height: 20px;
+  line-height: 23px;
   color: inherit;
   background-color: #c3e3f7;
   -webkit-border-radius: 6px;
