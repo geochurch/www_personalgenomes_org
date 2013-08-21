@@ -39,5 +39,21 @@ If you open a new terminal you should now be able to access the virtualenvwrappe
 2. Start using this virtual environment: `workon www_pg_org`
 3. Navigate to top directory in this project. Install the Python packages required for development with 
 `pip install -r requirements.txt`
+4. Also while in the top directory in the project, run the following to add the directory to your
+virtualenv's python path: `add2virtualenv $PWD`
 
 In the future, you should run the `workon www_pg_org` command whenever you work on and run this code.
+
+### Set up MySQL ###
+
+1. **(Root user action)** Install MySQL: `sudo apt-get install mysql-client libmysqlclient-dev mysql-server`
+2. Log in to MySQL as root: `mysql -u root -p`
+3. Within MySQL, create the new database: `CREATE DATABASE www_personalgenomes_org;`
+4. Within MySQL, add the user to access the database:
+`grant all privileges on www_personalgenomes_org.* to pgorg@localhost identified by 'glassworks';`
+
+### Running locally ###
+
+You can run the site now by navigating to the top directory of the project and running
+`python manage.py runserver`. You can then load the site by opening a web browser and
+navigating to `http://localhost:8000`.
