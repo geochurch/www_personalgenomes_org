@@ -132,6 +132,6 @@ urlpatterns = patterns(
 
     url(r'^consent/?$', redirect_to_name, {'url_name':'harvard:documents'}),
     url(r'^consent/index.html/?$', redirect_to_name, {'url_name':'harvard:documents'}),
-    url(r'^medicalcenters.html/?$', redirect_to_name, {'url_name':'harvard:protocols'}),
+    url(r'^medicalcenters.html/?$', redirect_to_name, {'url_name':'harvard:collection-centers'}),
 
 )
