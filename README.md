@@ -23,7 +23,7 @@ If you aren't familiar with pip and virtualenv: these are standard aspects of Py
 greatly facilitating package management. Whenever working on this software you should do so within
 the virtual environment.
 
-1. **(Root user action)** Install pip: `sudo apt-get install python-pip` 
+1. **(Root user action)** Install python/pip/MySQL dependencies: `sudo apt-get install python-pip python-dev mysql-client libmysqlclient-dev`
 2. **(Root user action)** Use pip to install virtualenv and virtualenvwrapper: `sudo pip install virtualenv virtualenvwrapper`
 3. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
 4. To make virtualenv and virtualenvwrapper commands work in future terminals, add the 
@@ -46,12 +46,13 @@ In the future, you should run the `workon www_pg_org` command whenever you work 
 
 ### Set up MySQL ###
 
-1. **(Root user action)** Install MySQL: `sudo apt-get install mysql-client libmysqlclient-dev mysql-server`
+1. **(Root user action)** Install MySQL server: `sudo apt-get install mysql-server`
 2. Log in to MySQL as root: `mysql -u root -p`
 3. Within MySQL, create the new database: `CREATE DATABASE www_personalgenomes_org;`
 4. Within MySQL, add the user to access the database:
 `grant all privileges on www_personalgenomes_org.* to pgorg@localhost identified by 'glassworks';`
-5. Navigate to the top directory in the project and initialize the databaes by running: `python manage.py syncdb`.
+5. Edit `www_personalgenomes_org/settings.py` in the project tree: change the database password to the one you actually used in the previous step.
+6. Navigate to the top directory in the project and initialize the database by running: `python manage.py syncdb`.
 This will prompt you to create a superuser for Django's auth system, go ahead and do that too.
 
 Running the site
