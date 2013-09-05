@@ -23,15 +23,11 @@ urlpatterns = patterns(
 
     # About pages
 
-    url(r'^about-us/?$',
-        TemplateView.as_view(template_name='www_personalgenomes_org/about-us.html'),
-        name='about-us'),
-    url(r'^about.html/?$', redirect_to_name, {'url_name': 'about-us'}),
-
     url(r'^mission/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/mission.html'),
         name='mission'),
     url(r'^mission.html/?$', redirect_to_name, {'url_name': 'mission'}),
+    url(r'^about.html/?$', redirect_to_name, {'url_name': 'mission'}),
 
     url(r'^people/?$',
         TemplateView.as_view(template_name='www_personalgenomes_org/people.html'),
@@ -99,8 +95,8 @@ urlpatterns = patterns(
 
     url(r'^harvard',
         include('harvard.urls', namespace="harvard")),
-    url(r'^mclaughlin_centre/?$',
-        include('mclaughlin_centre.urls', namespace="mclaughlin_centre")),
+    url(r'^canada',
+        include('canada.urls', namespace="canada")),
 
     # Support page
 
