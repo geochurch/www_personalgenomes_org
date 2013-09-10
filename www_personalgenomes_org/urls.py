@@ -73,9 +73,9 @@ urlpatterns = patterns(
 
     # Research pages
 
-    url(r'^data/?$',
-        TemplateView.as_view(template_name='www_personalgenomes_org/data.html'),
-        name='data'),
+    url(r'^get-data/?$',
+        TemplateView.as_view(template_name='www_personalgenomes_org/get-data.html'),
+        name='get-data'),
 
     url(r'^sharing/?',
         TemplateView.as_view(template_name='www_personalgenomes_org/sharing.html'),
