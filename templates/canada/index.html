@@ -17,6 +17,9 @@
   <div class="span10">
     <ul class="nav nav-tabs">
       <li><a href="{% url 'canada:index' %}">PGP Canada</a></li>
+      <li><a href="{% url 'canada:project' %}">Project Overview</a></li>
+      <li><a href="{% url 'canada:consent' %}">Consent Form</a></li>
+      <li><a href="{% url 'canada:contact' %}">Contact</a></li>
     </ul>
   </div>
   <div class="span2">
@@ -28,13 +31,29 @@
 {% block main %}
 <div class="hero-unit">
   <div class="row-fluid">
-    <div class="span9">
+    <div class="span8">
       <h1>PGP Canada</h1>
-      <p>Volunteers from the public working together with researchers to advance personal genomics.</p>
-      <a class="btn btn-primary btn-large" href="http://www.personalgenomes.ca/"><i class="icon-external-link">   </i>Visit our site to learn more!</a>
+      <h3>Volunteers from the public working together with researchers to advance personal genomics.</h3>
+    </div>
+    <div class="span4">
+      <img src="/static/img/canada/pgp_canada_logo.png"/>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <p>We believe individuals from the general public have a vital role to play in making personal genomes useful. We are recruiting volunteers who are willing to share their genome sequence and many types of personal information with the research community and the general public, so that together we will be better able to advance our understanding of genetic and environmental contributions to human health and disease.</p>
+  </div>
+  <div class="row-fluid">
+    <div class="span3">
+      <a class="btn btn-primary" href="{% url 'canada:project' %}">Project Overview</a>
     </div>
     <div class="span3">
-      <img style="max-width:200px;float:right" src="/static/img/pgp-logo-only-transp.png"/>
+      <a class="btn btn-primary" href="{% url 'canada:consent' %}">Consent Form</a>
+    </div>
+    <div class="span3">
+      <a class="btn btn-primary" href="{% url 'canada:contact' %}">Contact Us</a>
+    </div>
+    <div class="span3">
+      <a class="btn btn-primary" href="http://www.personalgenomes.ca/"><i class="icon-external-link">   </i>Visit our external site!</a>
     </div>
   </div>
 </div>

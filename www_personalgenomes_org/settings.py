@@ -129,6 +129,9 @@ INSTALLED_APPS = (
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
+    'www_personalgenomes_org',
+    'harvard',
+    'canada',
 )
 
 # A sample logging configuration. The only tangible logging
