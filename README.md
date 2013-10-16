@@ -29,15 +29,28 @@ You can use any plain text editing tool for editing various files (like .bashrc)
 
 These instructions are adapted from [here](http://hackercodex.com/guide/mac-osx-mountain-lion-10.8-configuration/) and [here](http://hackercodex.com/guide/python-virtualenv-on-mac-osx-mountain-lion-10.8/).
 
-1. Go to Apple's Developer Downloads area (Apple ID login will be required) and download the *Command Line Tools for Xcode* and install it.
-2. Install Homebrew following the instructions on their site [http://brew.sh/](http://brew.sh/)
-3. run `brew doctor` to check all is well.
-4. run `brew update` to make sure it's up-to-date.
-5. run `brew install python --with-brewed-openssl` to install Python from Homebrew.
-6. run `brew install mysql` to install MySQL.
-7. run `pip install virtualenv virtualenvwrapper` to install virtualenv using pip, our Python package manager of choice.
-8. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
-9. To make virtualenv and virtualenvwrapper commands work in future terminals, add the following
+1. To make sure compilers know what architecture your system is (64 bits), add the following to your `~/.bash_profile` (or create a `.bash_profile` in your home directory if it doesn't already exist).
+
+```
+# Set architecture flags
+export ARCHFLAGS="-arch x86_64"
+# Ensure user-installed binaries take precedence
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# Load .bashrc if it exists
+test -f ~/.bashrc && source ~/.bashrc
+```
+
+2. Close and open a new terminal (or tab) to have this configuration take effect.
+
+3. Go to Apple's Developer Downloads area (Apple ID login will be required) and download the *Command Line Tools for Xcode* and install it.
+4. Install Homebrew following the instructions on their site [http://brew.sh/](http://brew.sh/)
+5. run `brew doctor` to check all is well.
+6. run `brew update` to make sure it's up-to-date.
+7. run `brew install python --with-brewed-openssl` to install Python from Homebrew.
+8. run `brew install mysql` to install MySQL.
+9. run `pip install virtualenv virtualenvwrapper` to install virtualenv using pip, our Python package manager of choice.
+10. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
+11. To make virtualenv and virtualenvwrapper commands work in future terminals, add the following
 to your `~/.bashrc` (or create a `.bashrc` file in your home directory if one doesn't exist):
 `export WORKON_HOME=$HOME/.virtualenvs` and
 `source /usr/local/bin/virtualenvwrapper.sh`.
