@@ -13,8 +13,10 @@ urlpatterns = patterns(
         name='historic-documents'),
     url(r'^/protocols/?', TemplateView.as_view(template_name='harvard/protocols.html'),
         name='protocols'),
-    url(r'^/collection-centers/?', TemplateView.as_view(template_name='harvrd/collection-centers.html'),
+    url(r'^/collection-centers/?', TemplateView.as_view(template_name='harvard/collection-centers.html'),
         name='collection-centers'),
     url(r'^/data/?', TemplateView.as_view(template_name='harvard/data.html'),
         name='data'),
+    url(r'^third-party-studies/?', TemplateView.as_view(template_name='harvard/third-party-studies.html'),
+        name='third-party-studies'),
     )
