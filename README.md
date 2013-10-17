@@ -104,14 +104,7 @@ You can use WSGI to run the site with an Apache server with the following steps:
 
 1. **(Root user action)** Install Apache's WSGI mod with `sudo apt-get install libapache2-mod-wsgi`
 2. **(Root user action)** Enable it with `sudo a2enmod wsgi`
-3. **(Root user action)** Edit Apache's httpd.conf (`/etc/apache2/httpd.conf`) to contain lines
-like the following:
-
-```
-WSGIScriptAlias / /path/to/project/www_personalgenomes_org/www_personalgenomes_org/wsgi.py
-WSGIPythonPath /path/to/project/www_personalgenomes_org:/path/to/homedir/.virtualenvs/www_pg_org/lib/python2.7/site-packages
-```
-4. **(Root user action)** Edit Apache's default in sites-available (`/etc/apache2/sites-available/default`)
+3. **(Root user action)** Edit Apache's default in sites-available (`/etc/apache2/sites-available/default`)
 to contain lines like the following:
 
 ```
@@ -125,6 +118,10 @@ to contain lines like the following:
   </Directory>
 
   Alias /static/ /path/to/project/www_personalgenomes_org/static/
+
+  WSGIDaemonProcess pgpsite python-path=/path/to/project/www_personalgenomes_org/path/to/homedir/.virtualenvs/www_pg_org/lib/python2.7/site-packages
+  WSGIProcessGroup pgpsite
+  WSGIScriptAlias / /path/to/project/www_personalgenomes_org-master/www_personalgenomes_org/wsgi.py/
 
   <Directory /path/to/project/www_personalgenomes_org/static>
     Order deny,allow
