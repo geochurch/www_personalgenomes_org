@@ -124,6 +124,11 @@ urlpatterns = patterns(
         name='website-privacy-policy'),
     url(r'privacypolicy.html/?$', redirect_to_name, {'url_name':'website-privacy-policy'}),
 
+    # Unlinked by existing pages
+    url(r'getlabs2014/?$',
+        TemplateView.as_view(template_name='www_personalgenomes_org/getlabs2014.html'),
+        name='getlabs2014'),
+
     # Additional redirects
 
     url(r'^consent/?$', redirect_to_name, {'url_name':'harvard:documents'}),
