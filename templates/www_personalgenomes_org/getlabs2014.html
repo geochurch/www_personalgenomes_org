@@ -1,0 +1,76 @@
+{% extends "www_personalgenomes_org/index.html" %}
+
+{% block css-overrides %}
+<style type="text/css">
+  h1 {
+    color: #d91f29;
+    font-size: 500%;
+    line-height: 110%;
+    font-weight: 700;
+  }
+  h3 {
+    color: #ed9523;
+    font-size: 200%;
+    line-height: 100%;
+    font-weight: 400;
+  }
+  .red-background {
+    background-color: #d91f29;
+    color: #ffffff;
+  }
+  a.get-link {
+    font-weight: 700;
+    color: #e45e32;
+  }
+  a.get-link:hover {
+    font-weight: 700;
+    color: #b34a27;
+  }
+
+</style>
+{% endblock css-overrides %}
+
+{% block main %}
+<div class="row-fluid">
+  <div class="span6">
+    <img src="/static/img/GETlogo.png" style="margin-top:20px;"/>
+  </div>
+  <div class="span6">
+    <h1>GET Labs 2014</h1>
+    <h3 style="text-align:center;">
+      Do you want to study<br/>
+      the most well-characterized</br>
+      humans on earth?
+    </h3>
+  </div>
+</div>
+<div class="row-fluid">
+  <div class="heroine-unit red-background">
+    <p class="lead" style="font-size:140%;margin-bottom:0px;text-align:center;">GET Labs is a unique event that brings together researchers and highly characterized participants<br/>— many with whole genomes, body microbiomes and other rich data —<br/>to improve our knowledge about how Genomes + Environments = Traits.</p>
+  </div>
+</div>
+<div class="lead">
+<p>
+  We are organizing a special event called GET Labs 2014 that will take place on <b>Wednesday, April 30, 2014</b>, in Boston.  We are putting the word out to researchers who study some aspect of health or other human traits, to see who is interested in participating in this event.
+</p>
+<p>
+  One of the most valuable aspects of GET Labs is that it is attended by some of the most well-characterized humans on earth.  Many of these individuals already have whole genome data and microbiome data sets they can share with researchers.  Past events have included numerous traits, and we have already confirmed that the 2014 GET Labs will be joined by:
+</p>
+<div class="row-fluid">
+<div class="span8 offset2">
+  <ul>
+    <li>American Gut project, University of Colorado</li>
+    <li>Flu Near You, Boston Children’s Hospital</li>
+    <li>Personal Genome Project, Harvard Medical School</li>
+  </ul>
+</div>
+</div>
+<p>
+If you are unfamiliar with GET Labs, you can check out <a class="get-link" href="http://www.getconference.org/GET2013/labs.html">what went on in 2013</a>.
+</p>
+
+<p>
+If you are interested in participating, or know another researcher who might be, please contact the GET Labs team at <a class="get-link" href="mailto:info@getlabs.org">info@getlabs.org</a> and we will be happy to send you more information about the event.
+</p>
+
+{% endblock main %}
