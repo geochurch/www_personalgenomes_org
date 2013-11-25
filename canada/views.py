@@ -5,24 +5,30 @@ from django.contrib import messages
 def contact(request):
     errors = []
     if request.method == 'POST':
+        has_req_entries = True
         if not request.POST.get('subject', ''):
+            has_req_entries = False
             errors.append('Enter a subject.')
-        if not request.POST.get('message', ''):
-            errors.append('Enter a message.')
-        if request.POST.get('email') and '@' not in request.POST['email']:
+        if not (request.POST.get('email', '') and '@' in request.POST['email']):
+            has_req_entries = False
             errors.append('Enter a valid e-mail address.')
-        if errors:
-            messages.error(request,
-                           '<h4>Error with contact form submission:</h4>' +
-                           '<li>' + '</li><li>'.join(errors) + '</li>',
-                           extra_tags='htmlsafe')
-        else:
-            send_mail(
-                request.POST['subject'],
-                request.POST['message'],
-                request.POST.get('email', 'noreply@example.com'),
-                ['siteowner@example.com'],
-                fail_silently=True,
+        if not request.POST.get('message', ''):
+            has_req_entries = False
+            errors.append('Enter a message.')
+        if has_req_entries:
+            try:
+                send_mail(
+                    request.POST['subject'],
+                    request.POST['message'],
+                    request.POST['email'],
+                    ['crm@sickkids.ca'],
+                    fail_silently=False,
                 )
-            messages.success(request, "Thanks! Your message has been sent.")
+                messages.success(request, "Thanks! Your message has been sent.")
+            except BadHeaderError:
+                errors.append('Do not use newlines in subject or email.')
+    if errors:
+        messages.error(request, '<h4>Error with contact form submission:</h4>' +
+                                '<li>' + '</li><li>'.join(errors) + '</li>',
+                                extra_tags='htmlsafe')
     return render(request, 'canada/contact.html')
