@@ -132,6 +132,7 @@ INSTALLED_APPS = (
     'www_personalgenomes_org',
     'harvard',
     'canada',
+    'uk',
 )
 
 # A sample logging configuration. The only tangible logging

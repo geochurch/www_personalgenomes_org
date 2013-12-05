@@ -97,6 +97,8 @@ urlpatterns = patterns(
         include('harvard.urls', namespace="harvard")),
     url(r'^canada',
         include('canada.urls', namespace="canada")),
+    url(r'^uk',
+        include('uk.urls', namespace="uk")),
 
     # Support page
 
