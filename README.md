@@ -4,6 +4,22 @@ www_personalgenomes_org
 This is the website for [www.personalgenomes.org](http://www.personalgenomes.org), implemented using Django.
 So far no database features have been used, although there's a good chance we'll use such features in the future.
 
+Submitting updates to the site
+------------------------------
+Personal Genome Project sites (e.g. Harvard, Canada, UK) each have a subsite within www_personalgenomes_org in the form of an app directory. This gives you a lot of flexibility to add features and content relevant to your PGP site.
+
+By default we are giving developers "read only" access to the PersonalGenomesOrg repository. You can submit changes to the site in the form of pull requests.
+
+To do this, you should:
+
+1. [Fork the repository](https://help.github.com/articles/fork-a-repo) to create a copy in your own GitHub account.
+2. Clone the repository to your local machine from the version in your Github account: `git clone git@github.com:YourUsername/www_personalgenomes_org`
+3. Add the PersonalGenomesOrg as an "upstream" repository [as described here](https://help.github.com/articles/fork-a-repo).
+4. Edit the site on the local machine and commit changes.
+5. (Necessary before doing step 7.) Pull upstream changes from the PersonalGenomesOrg repository (and have these in your Github repository) before sending a pull request.
+6. Push changes to your Github repository.
+7. [Send a "pull request"](https://help.github.com/articles/creating-a-pull-request) to the PersonalGenomesOrg repository on Github.
+
 Installation
 ------------
 So far these instructions have been used for Ubuntu Linux 12.10 and OSX Mountain Lion. If you use
@@ -13,11 +29,6 @@ instructions. Thanks!
 If you aren't familiar with pip and virtualenv: these are standard aspects of Python development,
 greatly facilitating package management. Whenever working on this software you should do so within
 the virtual environment.
-
-### Clone the Git repository (OSX/Linux) ###
-
-* Navigate to the directory you want to have the code in, and clone the repository with:
-* `git clone git@github.com:PersonalGenomeProject/www_personalgenomes_org`
 
 ### Set up Python/Django developer tools ###
 
@@ -99,6 +110,8 @@ You can run the site now by navigating to the top directory of the project and r
 navigating to `http://localhost:8000`.
 
 ### Apache server with WSGI ###
+
+(These instructions are useful if you want to set up a demo site to stage and share potential updates.)
 
 You can use WSGI to run the site with an Apache server with the following steps:
 
