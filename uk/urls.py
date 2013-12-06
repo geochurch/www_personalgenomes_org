@@ -11,4 +11,6 @@ urlpatterns = patterns(
         name='people'),
     url(r'^/enrollment/?', TemplateView.as_view(template_name='uk/enrollment.html'),
         name='enrollment'),
+    url(r'^/documents/?', TemplateView.as_view(template_name='uk/documents.html'),
+        name='documents'),
     )
