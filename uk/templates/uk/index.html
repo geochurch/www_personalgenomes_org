@@ -6,7 +6,7 @@
 
 {% block navpills %}
 <div class="row-fluid">
-  <div class="span10">
+  <div class="span9">
     <ul class="nav nav-tabs">
       <li><a href="{% url 'uk:index' %}">PGP UK</a></li>
       <li><a href="{% url 'uk:people' %}">People</a></li>
@@ -14,8 +14,11 @@
       <li><a href="{% url 'uk:enrollment' %}">Enrollment</a></li>
     </ul>
   </div>
-  <div class="span2">
-    <a class="btn pull-right" style="margin-top:8px;" href="{% url 'network' %}">Other PGP sites</a>
+  <div class="span3">
+    <div class="pull-right">
+      <a class="btn" style="margin-top:8px;" href="{% url 'network' %}">Other PGP sites</a>
+      <a class="btn btn-primary" style="margin-top:8px;" href="https://my.personalgenomes.org.uk/international_participants"><i class="icon-external-link"> </i>Sign up</a>
+    </div>
   </div>
 </div>
 {% endblock navpills %}
