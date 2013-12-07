@@ -17,5 +17,9 @@ def get_client_ip(request):
 def index(request):
     """Displays index with IP..."""
     ip = get_client_ip(request)
+    # Use the below to test local behavior during development
+    #ip = '128.40.250.113' # UK
+    #ip = '134.174.150.3' # US
+    #ip = '192.75.158.248' # CA
     g = GeoIP()
     return render(request, 'www_personalgenomes_org/index.html', {'ip': ip, 'country': g.country(ip)})
