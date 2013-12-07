@@ -163,3 +163,8 @@ LOGGING = {
         },
     }
 }
+
+# GeoIP configuration
+# This includes GeoLite data created by MaxMind,
+# available from http://www.maxmind.com
+GEOIP_PATH = os.path.normpath(os.path.join(SITE_ROOT, 'extras/geoip'))
