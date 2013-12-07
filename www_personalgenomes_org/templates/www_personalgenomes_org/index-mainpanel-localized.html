@@ -34,8 +34,14 @@
         <a href="{% url 'canada:index' %}" class="btn btn-primary btn-large">Learn about<br/>PGP Canada</a>
       </p>
     </div>
-    {% else %}
-    <p>I don't get it, you're from '{{country.country_code}}'??</p>
+    {% elif country.country_code == 'GB' %}
+    <div class="heroine-unit" style="margin-top:25px">
+      <h2>PGP UK</h2>
+      <p style="margin-bottom:18px">Founded in 2013, PGP United Kingdom is located at University College London.</p>
+      <p>
+        <a href="{% url 'uk:index' %}" class="btn btn-primary btn-large">Learn about<br/>PGP UK</a>
+      </p>
+    </div>
     {% endif %}
   </div>
 </div>

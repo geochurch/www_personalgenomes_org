@@ -2,7 +2,7 @@
 
 {% block main %}
 
-{% if country.country_code == 'CA' or country.country_code == 'US' %}
+{% if country.country_code == 'US' or country.country_code == 'CA' or country.country_code == 'GB' %}
 {% include "www_personalgenomes_org/index-mainpanel-localized.html" %}
 {% else %}
 {% include "www_personalgenomes_org/index-mainpanel-default.html" %}
