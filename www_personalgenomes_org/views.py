@@ -9,10 +9,8 @@ def redirect_to_name(request, url_name):
     return redirect(url_name)
 
 def get_client_ip(request):
-    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
-    if x_forwarded_for:
-        ip = x_forwarded_for.split(',')[-1].strip()
-    else:
+    ip = request.META.get('HTTP_X_REAL_IP')
+    if not ip:
         ip = request.META.get('REMOTE_ADDR')
     return ip
 
