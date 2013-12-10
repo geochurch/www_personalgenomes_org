@@ -9,16 +9,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="PersonalGenomes.org">
- 
+
+  <link href="{{STATIC_URL}}css/bootstrap.css" rel="stylesheet">
+
   <!-- Styles -->
   <style type="text/css">
-    body {
-    padding-top: 45px;
-    padding-bottom: 40px;
+
+    /* Sticky footer styles
+    -------------------------------------------------- */
+    html,
+      body {
+      height: 100%;
+      /* The html and body elements cannot have any padding or margin. */
     }
+
+    /* Wrapper for page content to push down footer */
+    #wrap {
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      /* Negative indent footer by it's height */
+      margin: 0 auto -80px;
+    }
+
+    /* Set the fixed height of the footer here */
+    #push,
+    #footer {
+      height: 80px;
+    }
+
+    /* Lastly, apply responsive CSS fixes as necessary */
+    @media (max-width: 767px) {
+      #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    /* Hack to allow more spacing around Font Awesome icons */
     i {
-    white-space:pre;  // Hack to allow more spacing around Font Awesome icons.
+    white-space:pre;
     }
+
+    /* Stuff for our staff pages */
     .bio h4,.bio h5,.bio p {
     margin:12px;
     }
@@ -26,12 +61,16 @@
     float:right;
     margin:12px;
     }
+
+    /* Margin for correct spacing of the top and heading */
+    .main-container {
+      padding-top:45px;
+    }
     .top-heading {
     margin-top:0px;
     }
   </style>
 
-  <link href="{{STATIC_URL}}css/bootstrap.css" rel="stylesheet">
   <link href="{{STATIC_URL}}css/bootstrap-responsive.css" rel="stylesheet">
 
   {% block css-overrides %}{% endblock css-overrides %}
@@ -46,6 +85,10 @@
 
 <body>
 
+<!-- Wrap all content other than footer here. -->
+<div id="wrap">
+
+  <!-- Navbar content -->
   {% block navbar %}
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
@@ -121,14 +164,13 @@
   </div>
   {% endblock navbar %}
 
-
-  <div class="container main">
-
+  <!-- Main page content -->
+  <div class="container main-container">
     {% if messages %}
     {% for message in messages %}
     <div class="alert{% if message.tags %}
-		{% for tag in message.tags|split_on_space %} alert-{{ tag }}{% endfor %}
-		{% endif %}">
+	        {% for tag in message.tags|split_on_space %} alert-{{ tag }}{% endfor %}
+	        {% endif %}">
       {% if 'htmlsafe' in message.tags %}{{ message|safe }}{% else %}{{ message }}{% endif %}
     </div>
     {% endfor %}
@@ -136,46 +178,56 @@
 
     <div class="row">
       <div class="span12">
-	{% block navpills %}{% endblock navpills %}
+        {% block navpills %}{% endblock navpills %}
       </div>
     </div>
     {% block main %}
     {% endblock main %}
-  </div> <!-- /container -->
-
-  <div class="container">
-    <hr>
-    <footer>
-      {% block footer %}
-      <p>PersonalGenomes.Org 2013 &bull; <a href="{% url 'contact-us' %}">Contact Us</a> &bull; <a href="{% url 'tos' %}">Terms of Service</a> &bull; <a href="{% url 'website-privacy-policy' %}">Privacy Policy</a></p>
-      {% endblock footer %}
-    </footer>
+    <div id="push"></div>
   </div>
+</div>
 
-  <!-- JS placed at the end of the document so the pages load faster -->
-  <script src="//code.jquery.com/jquery-latest.js"></script>
-  <script src="{{STATIC_URL}}js/bootstrap.js"></script>
-
-  <!-- Set menu items to "active" if it matches our current page. -->
-  <script>$(function () {
-      $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
-    });
-  </script>
-
-  <!-- Fix mobile device bug, see this issue and solution:
-       https://github.com/twbs/bootstrap/issues/4550#issuecomment-21361314 -->
-  <script>
-    $('.dropdown-toggle').click(function(e) {
-      e.preventDefault();
-      setTimeout($.proxy(function() {
-        if ('ontouchstart' in document.documentElement) {
-          $(this).siblings('.dropdown-backdrop').off().remove();
-        }
-      }, this), 0);
-    });
-  </script>
+<div id="footer">
+  <div class="container">
+    <hr />
+    <p>PersonalGenomes.Org 2013 &bull; <a href="{% url 'contact-us' %}">Contact Us</a> &bull; <a href="{% url 'tos' %}">Terms of Service</a> &bull; <a href="{% url 'website-privacy-po
+licy' %}">Privacy Policy</a></p>
+  </div>
+</div>
 
 
+<!-- JS placed at the end of the document so the pages load faster -->
+<script src="//code.jquery.com/jquery-latest.js"></script>
+<script src="{{STATIC_URL}}js/bootstrap.js"></script>
+
+<!-- Set menu items to "active" if it matches our current page. -->
+<script>$(function () {
+    $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+  });
+</script>
+
+<!-- Fix mobile device bug, see this issue and solution:
+     https://github.com/twbs/bootstrap/issues/4550#issuecomment-21361314 -->
+<script>
+  $('.dropdown-toggle').click(function(e) {
+    e.preventDefault();
+    setTimeout($.proxy(function() {
+      if ('ontouchstart' in document.documentElement) {
+        $(this).siblings('.dropdown-backdrop').off().remove();
+      }
+    }, this), 0);
+  });
+</script>
+<script>
+  $('.dropdown-toggle').click(function(e) {
+    e.preventDefault();
+    setTimeout($.proxy(function() {
+      if ('ontouchstart' in document.documentElement) {
+        $(this).siblings('.dropdown-backdrop').off().remove();
+      }
+    }, this), 0);
+  });
+</script>
 
 </body>
 </html>
