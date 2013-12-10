@@ -38,6 +38,20 @@
       height: 80px;
     }
 
+    #footer {
+      background-color: #f5f8f1;
+    }
+    #footer p {
+      margin: 0px;
+    }
+    #footer h5 {
+      margin: 12px 0px 5px;
+    }
+    #footer hr {
+      border-top: 3px solid #e9f8d5;
+      border-bottom: 0px solid #ffffff;
+    }
+
     /* Lastly, apply responsive CSS fixes as necessary */
     @media (max-width: 767px) {
       #footer {
@@ -188,10 +202,38 @@
 </div>
 
 <div id="footer">
+  <hr style="margin:0px;"/>
   <div class="container">
-    <hr />
-    <p>PersonalGenomes.Org 2013 &bull; <a href="{% url 'contact-us' %}">Contact Us</a> &bull; <a href="{% url 'tos' %}">Terms of Service</a> &bull; <a href="{% url 'website-privacy-po
-licy' %}">Privacy Policy</a></p>
+    <div class="row-fluid">
+      <div class="span4">
+        <h5>PersonalGenomes.org</h5>
+        <p>
+          <a href="{% url 'contact-us' %}">Contact Us</a>
+          <i>  </i>&bull;<i>  </i>
+          <a href="{% url 'tos' %}">Terms of Service</a>
+          <i>  </i>&bull;<i>  </i>
+          <a href="{% url 'website-privacy-policy' %}">Privacy Policy</a>
+        </p>
+      </div>
+      <div class="span5">
+        <h5>Links</h5>
+        <p>
+          <a href="http://blog.personalgenomes.org"><i class="icon-pencil">  </i>Blog</a>
+          <i>   </i>&bull;<i>  </i>
+          <a href="https://twitter.com/pgorg"><i class="icon-twitter">  </i>Twitter</a>
+          <i>   </i>&bull;<i>  </i>
+          <a href="http://www.youtube.com/user/PersonalGenomesOrg"><i class="icon-youtube">  </i>Youtube</a>
+          <i>   </i>&bull;<i>  </i>
+          <a href="https://github.com/PersonalGenomesOrg/www_personalgenomes_org"><i class="icon-github">  </i>Github</a>
+        </p>
+      </div>
+      <div class="span3">
+        <h5>Additional sites</h5>
+        <p>
+          <a href="http://getconference.com">GET Conference</a>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
