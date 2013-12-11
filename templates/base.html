@@ -29,27 +29,26 @@
       height: auto !important;
       height: 100%;
       /* Negative indent footer by it's height */
-      margin: 0 auto -80px;
+      margin: 0 auto -120px;
     }
 
     /* Set the fixed height of the footer here */
     #push,
     #footer {
-      height: 80px;
+      height: 120px;
+      line-height: 22px;
     }
 
     #footer {
-      background-color: #f5f8f1;
-    }
-    #footer p {
-      margin: 0px;
+      background-image: linear-gradient( to bottom, #F5F8F1, rgba(255,255,255,0) );
     }
     #footer h5 {
-      margin: 12px 0px 5px;
+      margin: 15px 0px 8px;
     }
     #footer hr {
-      border-top: 3px solid #e9f8d5;
+      border-top: 3px solid #E9F8D5;
       border-bottom: 0px solid #ffffff;
+      margin: 0px;
     }
 
     /* Lastly, apply responsive CSS fixes as necessary */
@@ -79,6 +78,7 @@
     /* Margin for correct spacing of the top and heading */
     .main-container {
       padding-top:45px;
+      padding-bottom:10px;
     }
     .top-heading {
     margin-top:0px;
@@ -202,35 +202,39 @@
 </div>
 
 <div id="footer">
-  <hr style="margin:0px;"/>
+  <hr />
   <div class="container">
     <div class="row-fluid">
       <div class="span4">
         <h5>PersonalGenomes.org</h5>
         <p>
           <a href="{% url 'contact-us' %}">Contact Us</a>
-          <i>  </i>&bull;<i>  </i>
+          <i> </i>&bull;<i> </i>
           <a href="{% url 'tos' %}">Terms of Service</a>
-          <i>  </i>&bull;<i>  </i>
+          <i> </i>&bull;<i> </i>
           <a href="{% url 'website-privacy-policy' %}">Privacy Policy</a>
         </p>
       </div>
-      <div class="span5">
-        <h5>Links</h5>
+      <div class="span4">
+        <h5>Stay connected</h5>
         <p>
-          <a href="http://blog.personalgenomes.org"><i class="icon-pencil">  </i>Blog</a>
-          <i>   </i>&bull;<i>  </i>
           <a href="https://twitter.com/pgorg"><i class="icon-twitter">  </i>Twitter</a>
-          <i>   </i>&bull;<i>  </i>
+          <i> </i>&bull;<i> </i>
+          <a href="https://www.facebook.com/PersonalGenomesOrg"><i class="icon-facebook">  </i>Facebook</a>
+          <i> </i>&bull;<i> </i>
+          <a href="http://www.linkedin.com/company/personalgenomes-org"><i class="icon-linkedin">  </i>LinkedIn</a>
+          <br />
           <a href="http://www.youtube.com/user/PersonalGenomesOrg"><i class="icon-youtube">  </i>Youtube</a>
-          <i>   </i>&bull;<i>  </i>
+          <i> </i>&bull;<i> </i>
           <a href="https://github.com/PersonalGenomesOrg/www_personalgenomes_org"><i class="icon-github">  </i>Github</a>
         </p>
       </div>
-      <div class="span3">
+      <div class="span4">
         <h5>Additional sites</h5>
         <p>
-          <a href="http://getconference.com">GET Conference</a>
+          <a href="http://blog.personalgenomes.org"><i class="icon-pencil">  </i>Blog</a>
+          <i>   </i>&bull;<i>  </i>
+          <a href="http://getconference.com"><i class="icon-group">  </i>GET Conference</a>
         </p>
       </div>
     </div>
