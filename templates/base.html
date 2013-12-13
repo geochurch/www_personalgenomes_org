@@ -9,16 +9,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="PersonalGenomes.org">
- 
+
+  <link href="{{STATIC_URL}}css/bootstrap.css" rel="stylesheet">
+
   <!-- Styles -->
   <style type="text/css">
-    body {
-    padding-top: 45px;
-    padding-bottom: 40px;
+
+    /* Sticky footer styles
+    -------------------------------------------------- */
+    html,
+      body {
+      height: 100%;
+      /* The html and body elements cannot have any padding or margin. */
     }
+
+    /* Wrapper for page content to push down footer */
+    #wrap {
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      /* Negative indent footer by it's height */
+      margin: 0 auto -120px;
+    }
+
+    /* Set the fixed height of the footer here */
+    #push,
+    #footer {
+      height: 120px;
+      line-height: 22px;
+    }
+
+    #footer {
+      background-image: linear-gradient( to bottom, #F5F8F1, rgba(255,255,255,0) );
+    }
+    #footer h5 {
+      margin: 15px 0px 8px;
+    }
+    #footer hr {
+      border-top: 3px solid #E9F8D5;
+      border-bottom: 0px solid #ffffff;
+      margin: 0px;
+    }
+
+    /* Lastly, apply responsive CSS fixes as necessary */
+    @media (max-width: 767px) {
+      #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    /* Hack to allow more spacing around Font Awesome icons */
     i {
-    white-space:pre;  // Hack to allow more spacing around Font Awesome icons.
+    white-space:pre;
     }
+
+    /* Stuff for our staff pages */
     .bio h4,.bio h5,.bio p {
     margin:12px;
     }
@@ -26,12 +74,17 @@
     float:right;
     margin:12px;
     }
+
+    /* Margin for correct spacing of the top and heading */
+    .main-container {
+      padding-top:45px;
+      padding-bottom:10px;
+    }
     .top-heading {
     margin-top:0px;
     }
   </style>
 
-  <link href="{{STATIC_URL}}css/bootstrap.css" rel="stylesheet">
   <link href="{{STATIC_URL}}css/bootstrap-responsive.css" rel="stylesheet">
 
   {% block css-overrides %}{% endblock css-overrides %}
@@ -46,6 +99,10 @@
 
 <body>
 
+<!-- Wrap all content other than footer here. -->
+<div id="wrap">
+
+  <!-- Navbar content -->
   {% block navbar %}
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
@@ -122,14 +179,13 @@
   </div>
   {% endblock navbar %}
 
-
-  <div class="container main">
-
+  <!-- Main page content -->
+  <div class="container main-container">
     {% if messages %}
     {% for message in messages %}
     <div class="alert{% if message.tags %}
-		{% for tag in message.tags|split_on_space %} alert-{{ tag }}{% endfor %}
-		{% endif %}">
+	        {% for tag in message.tags|split_on_space %} alert-{{ tag }}{% endfor %}
+	        {% endif %}">
       {% if 'htmlsafe' in message.tags %}{{ message|safe }}{% else %}{{ message }}{% endif %}
     </div>
     {% endfor %}
@@ -137,46 +193,88 @@
 
     <div class="row">
       <div class="span12">
-	{% block navpills %}{% endblock navpills %}
+        {% block navpills %}{% endblock navpills %}
       </div>
     </div>
     {% block main %}
     {% endblock main %}
-  </div> <!-- /container -->
-
-  <div class="container">
-    <hr>
-    <footer>
-      {% block footer %}
-      <p>PersonalGenomes.Org 2013 &bull; <a href="{% url 'contact-us' %}">Contact Us</a> &bull; <a href="{% url 'tos' %}">Terms of Service</a> &bull; <a href="{% url 'website-privacy-policy' %}">Privacy Policy</a></p>
-      {% endblock footer %}
-    </footer>
+    <div id="push"></div>
   </div>
+</div>
 
-  <!-- JS placed at the end of the document so the pages load faster -->
-  <script src="//code.jquery.com/jquery-latest.js"></script>
-  <script src="{{STATIC_URL}}js/bootstrap.js"></script>
+<div id="footer">
+  <hr />
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span4">
+        <h5>PersonalGenomes.org</h5>
+        <p>
+          <a href="{% url 'contact-us' %}">Contact Us</a>
+          <i> </i>&bull;<i> </i>
+          <a href="{% url 'tos' %}">Terms of Service</a>
+          <i> </i>&bull;<i> </i>
+          <a href="{% url 'website-privacy-policy' %}">Privacy Policy</a>
+        </p>
+      </div>
+      <div class="span4">
+        <h5>Stay connected</h5>
+        <p>
+          <a href="https://twitter.com/pgorg"><i class="icon-twitter">  </i>Twitter</a>
+          <i> </i>&bull;<i> </i>
+          <a href="https://www.facebook.com/PersonalGenomesOrg"><i class="icon-facebook">  </i>Facebook</a>
+          <i> </i>&bull;<i> </i>
+          <a href="http://www.linkedin.com/company/personalgenomes-org"><i class="icon-linkedin">  </i>LinkedIn</a>
+          <br />
+          <a href="http://www.youtube.com/user/PersonalGenomesOrg"><i class="icon-youtube">  </i>Youtube</a>
+          <i> </i>&bull;<i> </i>
+          <a href="https://github.com/PersonalGenomesOrg/www_personalgenomes_org"><i class="icon-github">  </i>Github</a>
+        </p>
+      </div>
+      <div class="span4">
+        <h5>Additional sites</h5>
+        <p>
+          <a href="http://blog.personalgenomes.org"><i class="icon-pencil">  </i>Blog</a>
+          <i>   </i>&bull;<i>  </i>
+          <a href="http://getconference.com"><i class="icon-group">  </i>GET Conference</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <!-- Set menu items to "active" if it matches our current page. -->
-  <script>$(function () {
-      $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
-    });
-  </script>
 
-  <!-- Fix mobile device bug, see this issue and solution:
-       https://github.com/twbs/bootstrap/issues/4550#issuecomment-21361314 -->
-  <script>
-    $('.dropdown-toggle').click(function(e) {
-      e.preventDefault();
-      setTimeout($.proxy(function() {
-        if ('ontouchstart' in document.documentElement) {
-          $(this).siblings('.dropdown-backdrop').off().remove();
-        }
-      }, this), 0);
-    });
-  </script>
+<!-- JS placed at the end of the document so the pages load faster -->
+<script src="//code.jquery.com/jquery-latest.js"></script>
+<script src="{{STATIC_URL}}js/bootstrap.js"></script>
 
+<!-- Set menu items to "active" if it matches our current page. -->
+<script>$(function () {
+    $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+  });
+</script>
 
+<!-- Fix mobile device bug, see this issue and solution:
+     https://github.com/twbs/bootstrap/issues/4550#issuecomment-21361314 -->
+<script>
+  $('.dropdown-toggle').click(function(e) {
+    e.preventDefault();
+    setTimeout($.proxy(function() {
+      if ('ontouchstart' in document.documentElement) {
+        $(this).siblings('.dropdown-backdrop').off().remove();
+      }
+    }, this), 0);
+  });
+</script>
+<script>
+  $('.dropdown-toggle').click(function(e) {
+    e.preventDefault();
+    setTimeout($.proxy(function() {
+      if ('ontouchstart' in document.documentElement) {
+        $(this).siblings('.dropdown-backdrop').off().remove();
+      }
+    }, this), 0);
+  });
+</script>
 
 </body>
 </html>
