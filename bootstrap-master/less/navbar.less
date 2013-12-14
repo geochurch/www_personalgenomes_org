@@ -53,7 +53,7 @@
   padding: ((@navbarHeight - @baseLineHeight) / 2) 15px ((@navbarHeight - @baseLineHeight) / 2);
   margin-left: -12px; // negative indent to left-align the text down the page
   font-size: @fontSizeLarge;
-  font-weight: 700;
+  font-weight: 400;
   color: @navbarBrandColor;
   text-shadow: 0 1px 0 @navbarBackgroundHighlight;
   &:hover,
@@ -229,6 +229,7 @@
   display: block;
   float: left;
   margin: 0 10px 0 0;
+  font-size: @fontSizeSmall;
 }
 .navbar .nav.pull-right {
   float: right; // redeclare due to specificity
@@ -244,7 +245,7 @@
   // Vertically center the text given @navbarHeight
   padding: ((@navbarHeight - @baseLineHeight) / 2) 10px ((@navbarHeight - @baseLineHeight) / 2);
   color: @navbarLinkColor;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: none;
   text-shadow: 0 1px 0 @navbarBackgroundHighlight;
 }
