@@ -248,6 +248,9 @@
 <script src="//code.jquery.com/jquery-latest.js"></script>
 <script src="{{STATIC_URL}}js/bootstrap.js"></script>
 
+{% block extrajs %}
+{% endblock extrajs %}
+
 <!-- Set menu items to "active" if it matches our current page. -->
 <script>$(function () {
     $('a[href="' + this.location.pathname + '"]').parent().addClass('active');

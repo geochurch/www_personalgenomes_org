@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block css-overrides %}
+<style>
+.infobox {
+  padding-bottom: 10px;
+}
+</style>
+{% endblock css-overrides %}
+
 {% block main %}
 
 {% if country.country_code == 'US' or country.country_code == 'CA' or country.country_code == 'GB' %}
@@ -10,19 +18,44 @@
 
 <div class="row-fluid">
   <div class="span4">
-    <h2>Why participate?</h2>
-    <p>Donating your genome and health data to science is a great way to enable advances in understanding human genetics, biology, and health. We seek volunteers willing to donate diverse personal information to become a public resource.</p>
+    <div class="infobox">
+      <h2>Why participate?</h2>
+      <p>Donating your genome and health data to science is a great way to enable advances in understanding human genetics, biology, and health. We seek volunteers willing to donate diverse personal information to become a public resource.</p>
+    </div>
     <p><a class="btn" href="{% url 'why-participate' %}">Learn about participating <i class="icon-angle-right"></i></a></p>
   </div>
   <div class="span4">
-    <h2>Open Data</h2>
-    <p>Open data is a critical component of the scientific method, but genomes are both identifiable and predictive. As a result, many studies choose to withhold data from participants and restrict access to researchers.  The PGP's public data is a common ground to collaborate and improve knowledge about genomes.
+    <div class="infobox">
+      <h2>Open Data</h2>
+      <p>Open data is a critical component of the scientific method, but genomes are both identifiable and predictive. As a result, many studies choose to withhold data from participants and restrict access to researchers.  The PGP's public data is a common ground to collaborate and improve knowledge about genomes.</p>
+    </div>
     <p><a class="btn" href="{% url 'get-data' %}">Use PGP data <i class="icon-angle-right"></i></a></p>
   </div>
   <div class="span4">
-    <h2>Global Network</h2>
-    <p>The pilot group for the Personal Genome Project has been based at Harvard, but we are a global group, with projects starting around the world.</p>
+    <div class="infobox">
+      <h2>Global Network</h2>
+      <p>The pilot group for the Personal Genome Project has been based at Harvard, but we are a global group, with projects starting around the world.</p>
+    </div>
     <p><a class="btn" href="{% url 'network' %}">Meet our PGP groups <i class="icon-angle-right"></i></a></p>
   </div>
 </div>
 {% endblock main %}
+
+{% block extrajs %}
+    <script>
+    resize_infobox = function() {
+      $(".infobox").css("height", "auto")
+      if ( $( window ).width() >= 768) {
+        var maxHeight = Math.max.apply(null, $(".infobox").map(function ()
+        {
+          return $(this).height();
+        }).get());
+        console.log($(".infobox").height())
+        console.log(maxHeight);
+        $(".infobox").height(maxHeight);
+      }
+    }
+    resize_infobox();
+    $( window ).resize(resize_infobox);
+    </script>
+{% endblock extrajs %}
