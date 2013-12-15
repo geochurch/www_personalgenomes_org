@@ -1,6 +1,6 @@
 <div class="row-fluid">
   <div class="span9">
-    <div class="heroine-unit" style="margin-top:25px">
+    <div class="heroine-unit" id="mainpanel1" style="margin-top:25px">
       <div class="row-fluid">
         <div class="span9">
           <h1>Sharing Personal Genomes</h1>
@@ -15,25 +15,25 @@
   </div>
   <div class="span3">
     {% if country.country_code == 'US' %}
-    <div class="heroine-unit" style="margin-top:25px">
+    <div class="heroine-unit" id="mainpanel2" style="margin-top:25px">
       <h1 style="font-size:30px;">PGP Harvard</h1>
-      <p style="margin-bottom:23px">Founded in 2005, the pilot site at Harvard University has over 3,000 participants!</p>
+      <p>The pilot PGP site at Harvard University was founded in 2005 and has over 3,000 participants!</p>
       <p>
         <a href="{% url 'harvard:index' %}" class="btn btn-primary btn-large">Learn about<br/>PGP Harvard</a>
       </p>
     </div>
     {% elif country.country_code == 'CA' %}
-    <div class="heroine-unit" style="margin-top:25px;">
+    <div class="heroine-unit" id="mainpanel2" style="margin-top:25px;">
       <h1 style="font-size:30px;">PGP Canada</h1>
-      <p style="margin-bottom:23px">Founded in 2012, PGP Canada is at the McLaughlin Centre at University of Toronto.</p>
+      <p>Founded in 2012, PGP Canada is located at the McLaughlin Centre at the University of Toronto.</p>
       <p>
         <a href="{% url 'canada:index' %}" class="btn btn-primary btn-large">Learn about<br/>PGP Canada</a>
       </p>
     </div>
     {% elif country.country_code == 'GB' %}
-    <div class="heroine-unit" style="margin-top:25px;">
+    <div class="heroine-unit" id="mainpanel2" style="margin-top:25px;">
       <h1 style="font-size:35px;">PGP UK</h1>
-      <p style="margin-bottom:18px">Founded in 2013, PGP United Kingdom is located at University College London.</p>
+      <p>Founded in 2013, PGP United Kingdom is located at University College London.</p>
       <p>
         <a href="{% url 'uk:index' %}" class="btn btn-primary btn-large">Learn about<br/>PGP UK</a>
       </p>

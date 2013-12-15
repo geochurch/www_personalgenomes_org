@@ -44,12 +44,25 @@
 {% block extrajs %}
     <script>
     resize_infobox = function() {
-      $("#infobox1").css("height", "auto")
-      $("#infobox3").css("height", "auto")
+      $("#infobox1").css("height", "auto");
+      $("#infobox3").css("height", "auto");
+      if ($("#mainpanel1").length > 0) {
+        $("#mainpanel1").css("height", "auto");
+        $("#mainpanel2").css("height", "auto");
+      }
       if ( $( window ).width() >= 768) {
-        target_height = $("#infobox2").height()
-        $("#infobox1").height(target_height)
-        $("#infobox3").height(target_height)
+        target_height = $("#infobox2").height();
+        $("#infobox1").height(target_height);
+        $("#infobox3").height(target_height);
+        if ($("#mainpanel1").length > 0) {
+          var height1 = $("#mainpanel1").height();
+          var height2 = $("#mainpanel2").height();
+          if (height1 > height2) {
+            $("#mainpanel2").height(height1);
+          } else {
+            $("#mainpanel1").height(height2);
+          }
+        }
       }
     }
     $( window ).load(resize_infobox);
