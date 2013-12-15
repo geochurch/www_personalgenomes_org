@@ -17,9 +17,8 @@ p {
 }
 .lead li {
   margin-bottom: @baseLineHeight;
-  font-size: @baseFontSize * 1.2;
-  font-weight: 200;
-  line-height: @baseLineHeight * 1.2;
+  font-size: @baseFontSize * 1.1;
+  line-height: @baseLineHeight * 1.1;
 }
 
 
@@ -67,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: @headingsFontFamily;
   line-height: @baseLineHeight;
   color: @headingsColor;
+  font-weight: @headingsFontWeight;
   text-rendering: optimizelegibility; // Fix the character spacing for headings
   small {
     font-weight: normal;
@@ -74,23 +74,17 @@ h1, h2, h3, h4, h5, h6 {
     color: @grayLight;
   }
 }
-h1 {
-  font-weight: @headingsFontWeight;
-}
-h2, h3, h4, h5, h6 {
-  font-weight: 600;
-}
 
 h1,
 h2,
 h3 { line-height: @baseLineHeight * 1.75; }
 
-h1 { font-size: @baseFontSize * 2.4; } // ~38px
-h2 { font-size: @baseFontSize * 2; } // 32px
-h3 { font-size: @baseFontSize * 1.5; } // 24px
-h4 { font-size: @baseFontSize * 1.2; } // ~19px
-h5 { font-size: @baseFontSize; } // 16px
-h6 { font-size: @baseFontSize * 0.85; } // ~14px
+h1 { font-size: @baseFontSize * 2.5; } // ~38px
+h2 { font-size: @baseFontSize * 2.2; } // 33px
+h3 { font-size: @baseFontSize * 1.6; } // 24px
+h4 { font-size: @baseFontSize * 1.2; } // 18px
+h5 { font-size: @baseFontSize; } // 15px
+h6 { font-size: @baseFontSize * 0.85; } // ~13px
 
 h1 small { font-size: @baseFontSize * 1.5; } // 24px
 h2 small { font-size: @baseFontSize * 1.2; } // ~19px

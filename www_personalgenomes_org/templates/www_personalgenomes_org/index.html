@@ -2,9 +2,9 @@
 
 {% block css-overrides %}
 <style>
-.infobox {
-  padding-bottom: 10px;
-}
+  .infobox {
+    padding-bottom: 10px;
+  }
 </style>
 {% endblock css-overrides %}
 
@@ -18,21 +18,21 @@
 
 <div class="row-fluid">
   <div class="span4">
-    <div class="infobox">
+    <div class="infobox" id="infobox1">
       <h2>Why participate?</h2>
       <p>Donating your genome and health data to science is a great way to enable advances in understanding human genetics, biology, and health. We seek volunteers willing to donate diverse personal information to become a public resource.</p>
     </div>
     <p><a class="btn" href="{% url 'why-participate' %}">Learn about participating <i> </i><i class="icon-angle-right"></i></a></p>
   </div>
   <div class="span4">
-    <div class="infobox">
+    <div class="infobox" id="infobox2">
       <h2>Open Data</h2>
-      <p>Open data is a critical component of the scientific method, but genomes are both identifiable and predictive. As a result, many studies choose to withhold data from participants and restrict access to researchers.  The PGP's public data is a common ground to collaborate and improve knowledge about genomes.</p>
+      <p>Open data is a critical component of the scientific method, but genomes are both identifiable and predictive. As a result, many studies choose to withhold data from participants and restrict access to researchers.  The PGP's public data is a common ground to collaborate and improve our understanding of genomes.</p>
     </div>
-    <p><a class="btn" href="{% url 'get-data' %}">Use PGP data <i> </i><i class="icon-angle-right"></i></a></p>
+    <p><a class="btn" style="margin-top:0px;" href="{% url 'get-data' %}">Use PGP data <i> </i><i class="icon-angle-right"></i></a></p>
   </div>
   <div class="span4">
-    <div class="infobox">
+    <div class="infobox" id="infobox3">
       <h2>Global Network</h2>
       <p>The pilot group for the Personal Genome Project has been based at Harvard, but we are a global group, with projects starting around the world.</p>
     </div>
@@ -44,18 +44,15 @@
 {% block extrajs %}
     <script>
     resize_infobox = function() {
-      $(".infobox").css("height", "auto")
+      $("#infobox1").css("height", "auto")
+      $("#infobox3").css("height", "auto")
       if ( $( window ).width() >= 768) {
-        var maxHeight = Math.max.apply(null, $(".infobox").map(function ()
-        {
-          return $(this).height();
-        }).get());
-        console.log($(".infobox").height())
-        console.log(maxHeight);
-        $(".infobox").height(maxHeight);
+        target_height = $("#infobox2").height()
+        $("#infobox1").height(target_height)
+        $("#infobox3").height(target_height)
       }
     }
-    resize_infobox();
+    $( window ).load(resize_infobox);
     $( window ).resize(resize_infobox);
     </script>
 {% endblock extrajs %}

@@ -11,14 +11,12 @@
   <meta name="author" content="PersonalGenomes.org">
 
   <link href="{{STATIC_URL}}css/bootstrap.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:600,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
   <!-- Styles -->
   <style type="text/css">
-    /* Use Google Fonts for Raleway */
-    body {
-      font-family: 'Raleway', sans-serif;
-    }
+    /* Use Google Fonts Raleway and Open Sans*/
 
     /* Sticky footer styles
     -------------------------------------------------- */
@@ -47,6 +45,7 @@
     #footer {
       background: linear-gradient(#EEF8E2, rgba(255,255,255,0) );
       background: -webkit-linear-gradient(#EEF8E2, rgba(255,255,255,0) );
+      font-family: "Raleway";
     }
     #footer h5 {
       margin: 15px 0px 8px;
@@ -253,9 +252,6 @@
 <script src="//code.jquery.com/jquery-latest.js"></script>
 <script src="{{STATIC_URL}}js/bootstrap.js"></script>
 
-{% block extrajs %}
-{% endblock extrajs %}
-
 <!-- Set menu items to "active" if it matches our current page. -->
 <script>$(function () {
     $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
@@ -284,6 +280,9 @@
     }, this), 0);
   });
 </script>
+
+{% block extrajs %}
+{% endblock extrajs %}
 
 </body>
 </html>

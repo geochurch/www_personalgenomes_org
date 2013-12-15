@@ -229,7 +229,8 @@
   display: block;
   float: left;
   margin: 0 10px 0 0;
-  font-size: @fontSizeSmall;
+  font-size: @baseFontSize;
+  font-family: "Raleway";
 }
 .navbar .nav.pull-right {
   float: right; // redeclare due to specificity
@@ -298,6 +299,10 @@
 
 // Dropdown menus
 // --------------
+
+.dropdown-menu {
+    font-family: @baseFontFamily;
+}
 
 // Menu position and menu carets
 .navbar .nav > li > .dropdown-menu {
