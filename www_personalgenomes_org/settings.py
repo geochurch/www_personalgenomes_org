@@ -2,6 +2,7 @@
 
 import os
 
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SITE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DEBUG = True
@@ -15,12 +16,8 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'www_personalgenomes_org',
-        'USER': 'pgorg',
-        'PASSWORD': 'glassworks',
-        'HOST': '',
-        'PORT': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
