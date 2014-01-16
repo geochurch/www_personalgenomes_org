@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-16 04:20-0500\n"
+"POT-Creation-Date: 2014-01-16 05:14-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,124 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: templates/base.html:116
+msgid "Personal Genome Project"
+msgstr ""
+
+#: templates/base.html:123
+msgid "About"
+msgstr "Über"
+
+#: templates/base.html:125
+msgid "Our mission"
+msgstr "Unsere Mission"
+
+#: templates/base.html:126
+msgid "People"
+msgstr "Menschen"
+
+#. Translators: "Press" here refers to news/media coverage.
+#: templates/base.html:129
+msgid "Press"
+msgstr ""
+
+#: templates/base.html:130
+msgid "Publications"
+msgstr "Veröffentlichungen"
+
+#. Translators: "sites" refers to websites
+#: templates/base.html:133
+msgid "related sites"
+msgstr "verwandten seiten"
+
+#: templates/base.html:134
+msgid "PGP Blog"
+msgstr "PGP Blog"
+
+#: templates/base.html:135 templates/base.html.py:244
+msgid "GET Conference"
+msgstr "GET-Konferenz"
+
+#: templates/base.html:142
+#, fuzzy
+msgid "Participate"
+msgstr "Teilnehmen"
+
+#: templates/base.html:144
+msgid "About the PGP"
+msgstr "Über die PGP"
+
+#: templates/base.html:145
+msgid "Why participate"
+msgstr "Warum teilnehmen"
+
+#: templates/base.html:146
+msgid "Non-Anonymous"
+msgstr "Nicht anonym"
+
+#: templates/base.html:147
+msgid "Risks & Benefits"
+msgstr "Risiken und Vorteile"
+
+#: templates/base.html:148
+msgid "Sign-up"
+msgstr "Anmelde"
+
+#: templates/base.html:155
+msgid "Research"
+msgstr "Forschung"
+
+#: templates/base.html:157
+msgid "Get Data"
+msgstr "Erhalten Daten"
+
+#: templates/base.html:158
+msgid "Sharing Policies"
+msgstr "Freigaberichtlinien"
+
+#: templates/base.html:165
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:37
+msgid "Global Network"
+msgstr "Globales Netzwerk"
+
+#: templates/base.html:167
+msgid "PGP Network"
+msgstr "PGP Netzwerk"
+
+#. Translators: "site" refers to geographic location
+#: templates/base.html:169
+msgid "Starting a PGP Site"
+msgstr "Starten eines PGP-Website"
+
+#: templates/base.html:178
+msgid "Support us"
+msgstr "unterstützen Sie uns"
+
+#: templates/base.html:217
+msgid "Contact Us"
+msgstr "Kontaktieren Sie uns"
+
+#: templates/base.html:219
+msgid "Terms of Service"
+msgstr "Nutzungsbedingungen"
+
+#: templates/base.html:221
+msgid "Privacy Policy"
+msgstr "Datenschutz"
+
+#: templates/base.html:225
+msgid "Stay connected"
+msgstr "Bleiben"
+
+#. Translators: "sites" is websites, not geographic locations.
+#: templates/base.html:240
+msgid "Additional sites"
+msgstr "Weitere Websites"
+
+#: templates/base.html:242
+msgid "Blog"
+msgstr "Blog"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-default.html:6
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:8
@@ -62,6 +180,8 @@ msgid ""
 "Founded in 2012, PGP Canada is located at the McLaughlin Centre at the "
 "University of Toronto."
 msgstr ""
+"Im Jahr 2012 gegründet, ist PGP Kanada an der McLaughlin Center an der "
+"Universität von Toronto."
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:33
 msgid "Learn about<br/>PGP Canada"
@@ -119,10 +239,6 @@ msgstr ""
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:33
 msgid "Use PGP data"
 msgstr "Verwenden Sie PGP-Daten"
-
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:37
-msgid "Global Network"
-msgstr "Globales Netzwerk"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:38
 msgid ""

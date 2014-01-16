@@ -1,4 +1,5 @@
 {% load base_extras %}
+{% load i18n %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -112,57 +113,60 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
 	</button>
-	{% block brand %}<a class="brand" href="/">Personal Genome Project</a>{% endblock brand %}
+	{% block brand %}<a class="brand" href="/">{% trans "Personal Genome Project" %}</a>{% endblock brand %}
 	<div class="nav-collapse collapse">
 
 	  <ul class="nav pull-right">
 
 	    {% block navbar_about %}
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "About" %} <b class="caret"></b></a>
               <ul class="dropdown-menu">
-		<li><a href="{% url 'mission' %}">Our mission</a></li>
-		<li><a href="{% url 'people' %}">People</a></li>
+		<li><a href="{% url 'mission' %}">{% trans "Our mission" %}</a></li>
+		<li><a href="{% url 'people' %}">{% trans "People" %}</a></li>
 		<li class="divider"></li>
-		<li><a href="{% url 'press' %}">Press</a></li>
-		<li><a href="{% url 'publications' %}">Publications</a></li>
+                {% comment %} Translators: "Press" here refers to news/media coverage. {% endcomment %}
+		<li><a href="{% url 'press' %}">{% trans "Press" %}</a></li>
+		<li><a href="{% url 'publications' %}">{% trans "Publications" %}</a></li>
 		<li class="divider"></li>
-		<li class="nav-header">related sites</li>
-		<li><a href="http://blog.personalgenomes.org"><i class="icon-external-link-sign"></i> PGP Blog</a></li>
-		<li><a href="http://www.getconference.org"><i class="icon-external-link-sign"></i> GET Conference</a></li>
+                {% comment %} Translators: "sites" refers to websites {% endcomment %}
+		<li class="nav-header">{% trans "related sites" %}</li>
+		<li><a href="http://blog.personalgenomes.org"><i class="icon-external-link-sign"></i> {% trans "PGP Blog" %}</a></li>
+		<li><a href="http://www.getconference.org"><i class="icon-external-link-sign"></i> {% trans "GET Conference" %}</a></li>
               </ul>
 	    </li>
 	    {% endblock navbar_about %}
 
 	    {% block navbar_participate %}
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Participate <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Participate" %} <b class="caret"></b></a>
               <ul class="dropdown-menu">
-		<li><a href="{% url 'pgp' %}">About the PGP</a></li>
-		<li><a href="{% url 'why-participate' %}">Why participate</a></li>
-		<li><a href="{% url 'non-anonymous' %}">Non-Anonymous</a></li>
-		<li><a href="{% url 'risks-benefits' %}">Risks & Benefits</a></li>
-		<li><a href="{% url 'pgp-sign-up' %}">Sign-up</a></li>
+		<li><a href="{% url 'pgp' %}">{% trans "About the PGP" %}</a></li>
+		<li><a href="{% url 'why-participate' %}">{% trans "Why participate" %}</a></li>
+		<li><a href="{% url 'non-anonymous' %}">{% trans "Non-Anonymous" %}</a></li>
+		<li><a href="{% url 'risks-benefits' %}">{% trans "Risks & Benefits" %}</a></li>
+		<li><a href="{% url 'pgp-sign-up' %}">{% trans "Sign-up" %}</a></li>
               </ul>
 	    </li>
 	    {% endblock navbar_participate %}
 
 	    {% block navbar_research %}
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Research" %} <b class="caret"></b></a>
               <ul class="dropdown-menu">
-		<li><a href="{% url 'get-data' %}">Get Data</a></li>
-		<li><a href="{% url 'sharing' %}">Sharing Policies</a></li>
+		<li><a href="{% url 'get-data' %}">{% trans "Get Data" %}</a></li>
+		<li><a href="{% url 'sharing' %}">{% trans "Sharing Policies" %}</a></li>
               </ul>
 	    </li>
 	    {% endblock navbar_research %}
 
 	    {% block navbar_globalnetwork %}
 	    <li class="dropdown">
-	      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Global Network <b class="caret"></b></a>
+	      <a href="#" class="dropdown-toggle" data-toggle="dropdown">{% trans "Global Network" %} <b class="caret"></b></a>
 	      <ul class="dropdown-menu">
-		<li><a href="{% url 'network' %}">PGP Network</a></li>
-		<li><a href="{% url 'join-network' %}">Starting a PGP Site</a></li>
+		<li><a href="{% url 'network' %}">{% trans "PGP Network" %}</a></li>
+                {% comment %} Translators: "site" refers to geographic location {% endcomment %}
+		<li><a href="{% url 'join-network' %}">{% trans "Starting a PGP Site" %}</a></li>
 		<li class="divider"></li>
 		<li><a href="{% url 'harvard:index' %}"><i class="icon-double-angle-right">  </i>PGP Harvard</a></li>
 		<li><a href="{% url 'canada:index' %}"><i class="icon-double-angle-right">  </i>PGP Canada</a></li>
@@ -171,7 +175,7 @@
 	    </li>
 	    {% endblock navbar_globalnetwork %}
 
-	    <li><a href="/donate">Support</a></li>
+	    <li><a href="/donate">{% trans "Support us" %}</a></li>
 	  </ul>
 	</div><!--/.nav-collapse -->
       </div>
@@ -210,15 +214,15 @@
       <div class="span4">
         <h5>PersonalGenomes.org</h5>
         <p>
-          <a href="{% url 'contact-us' %}">Contact Us</a>
+          <a href="{% url 'contact-us' %}">{% trans "Contact Us" %}</a>
           <i> </i>&bull;<i> </i>
-          <a href="{% url 'tos' %}">Terms of Service</a>
+          <a href="{% url 'tos' %}">{% trans "Terms of Service" %}</a>
           <i> </i>&bull;<i> </i>
-          <a href="{% url 'website-privacy-policy' %}">Privacy Policy</a>
+          <a href="{% url 'website-privacy-policy' %}">{% trans "Privacy Policy" %}</a>
         </p>
       </div>
       <div class="span4">
-        <h5>Stay connected</h5>
+        <h5>{% trans "Stay connected" %}</h5>
         <p>
           <a href="https://twitter.com/pgorg"><i class="icon-twitter">  </i>Twitter</a>
           <i> </i>&bull;<i> </i>
@@ -232,11 +236,12 @@
         </p>
       </div>
       <div class="span4">
-        <h5>Additional sites</h5>
+        {% comment %} Translators: "sites" is websites, not geographic locations. {% endcomment %}
+        <h5>{% trans "Additional sites" %}</h5>
         <p>
-          <a href="http://blog.personalgenomes.org"><i class="icon-pencil">  </i>Blog</a>
+          <a href="http://blog.personalgenomes.org"><i class="icon-pencil">  </i>{% trans "Blog" %}</a>
           <i>   </i>&bull;<i>  </i>
-          <a href="http://getconference.com"><i class="icon-group">  </i>GET Conference</a>
+          <a href="http://getconference.com"><i class="icon-group">  </i>{% trans "GET Conference" %}</a>
         </p>
       </div>
     </div>
