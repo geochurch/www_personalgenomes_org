@@ -1,5 +1,5 @@
-# Tranlations for www.personalgenomes.org
-# Copyright (C) 2014 PersonalGenomes.org
+# German translations for www_personalgenomes_org
+# Copyright (C) 2014, PersonalGenomes.org
 # This file is distributed under the same license as the www_personalgenomes_org package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-15 21:34-0500\n"
+"POT-Creation-Date: 2014-01-16 04:20-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/www_personalgenomes_org/index-mainpanel-default.html:7
-#: templates/www_personalgenomes_org/index-mainpanel-localized.html:9
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-default.html:6
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:8
+msgid "Sharing Personal Genomes"
+msgstr "Austausch von persönlichen Genome"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-default.html:7
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:9
 msgid ""
 "The Personal Genome Project was founded in 2005 and is dedicated to creating "
 "public genome, health, and trait data. Sharing data is critical to "
@@ -34,16 +39,13 @@ msgstr ""
 "Teilnehmer einladen bereit, öffentlich zu teilen ihre persönlichen Daten für "
 "das Wohl behindert."
 
-#: templates/www_personalgenomes_org/index-mainpanel-localized.html:8
-msgid "Sharing Personal Genomes"
-msgstr "Austausch von persönlichen Genome"
-
-#: templates/www_personalgenomes_org/index-mainpanel-localized.html:10
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-default.html:8
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:10
 msgid "Learn more"
 msgstr "Erfahren Sie mehr"
 
 #. Translators: "Site" is geographic location, not website.
-#: templates/www_personalgenomes_org/index-mainpanel-localized.html:23
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:23
 msgid ""
 "The pilot PGP site at Harvard University was founded in 2005 and has over "
 "3,000 participants!"
@@ -51,35 +53,35 @@ msgstr ""
 "Der Pilot PGP-Website an der Harvard University wurde 2005 gegründet und hat "
 "über 3.000 Teilnehmern!"
 
-#: templates/www_personalgenomes_org/index-mainpanel-localized.html:25
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:25
 msgid "Learn about<br/>PGP Harvard"
 msgstr "Erfahren Sie<br/>mehr über<br/>PGP Harvard"
 
-#: templates/www_personalgenomes_org/index-mainpanel-localized.html:31
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:31
 msgid ""
 "Founded in 2012, PGP Canada is located at the McLaughlin Centre at the "
 "University of Toronto."
 msgstr ""
 
-#: templates/www_personalgenomes_org/index-mainpanel-localized.html:33
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:33
 msgid "Learn about<br/>PGP Canada"
 msgstr "Erfahren Sie<br/>mehr über<br/>PGP Canada"
 
-#: templates/www_personalgenomes_org/index-mainpanel-localized.html:39
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:39
 msgid ""
 "Founded in 2013, PGP United Kingdom is located at University College London."
 msgstr ""
 "Im Jahr 2013 gegründet, ist PGP Großbritannien am University College London."
 
-#: templates/www_personalgenomes_org/index-mainpanel-localized.html:41
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:41
 msgid "Learn about<br/>PGP UK"
 msgstr "Erfahren Sie<br/>mehr über<br/>PGP UK"
 
-#: templates/www_personalgenomes_org/index.html:23
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:23
 msgid "Why participate?"
 msgstr "Warum teilnehmen?"
 
-#: templates/www_personalgenomes_org/index.html:24
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:24
 msgid ""
 "Donating your genome and health data to science is a great way to enable "
 "advances in understanding human genetics, biology, and health. We seek "
@@ -92,15 +94,15 @@ msgstr ""
 "spenden vielfältigen persönlichen Informationen, um eine öffentliche "
 "Ressource geworden."
 
-#: templates/www_personalgenomes_org/index.html:26
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:26
 msgid "Learn about participating"
 msgstr "Erfahren Sie mehr über die Teilnahme"
 
-#: templates/www_personalgenomes_org/index.html:30
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:30
 msgid "Open Data"
 msgstr "Offene Daten"
 
-#: templates/www_personalgenomes_org/index.html:31
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:31
 msgid ""
 "Open data is a critical component of the scientific method, but genomes are "
 "both identifiable and predictive. As a result, many studies choose to "
@@ -114,15 +116,15 @@ msgstr ""
 "auf Forscher. Die Daten des öffentlichen PGP ist eine gemeinsame Basis für "
 "die Zusammenarbeit und verbessern unser Verständnis der Genome."
 
-#: templates/www_personalgenomes_org/index.html:33
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:33
 msgid "Use PGP data"
 msgstr "Verwenden Sie PGP-Daten"
 
-#: templates/www_personalgenomes_org/index.html:37
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:37
 msgid "Global Network"
 msgstr "Globales Netzwerk"
 
-#: templates/www_personalgenomes_org/index.html:38
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:38
 msgid ""
 "The pilot group for the Personal Genome Project has been based at Harvard, "
 "but we are a global group, with projects starting around the world."
@@ -130,6 +132,6 @@ msgstr ""
 "Die Pilotgruppe für das Personal Genome Project hat in Harvard basiert, aber "
 "wir sind eine globale Gruppe, beginnend mit Projekten auf der ganzen Welt."
 
-#: templates/www_personalgenomes_org/index.html:40
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:40
 msgid "Meet our PGP groups"
 msgstr "Treffen Sie unsere PGP Gruppen"
