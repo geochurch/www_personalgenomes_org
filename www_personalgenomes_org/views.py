@@ -11,6 +11,8 @@ def redirect_to_name(request, url_name):
 def get_client_ip(request):
     ip = request.META.get('HTTP_X_REAL_IP')
     if not ip:
+        ip = request.META.get('HTTP_X_FORWARDED_FOR')
+    if not ip:
         ip = request.META.get('REMOTE_ADDR')
     return ip
 
