@@ -1,11 +1,13 @@
+{% load i18n %}
+
 <div class="row-fluid">
   <div class="span9">
     <div class="heroine-unit" id="mainpanel1" style="margin-top:25px">
       <div class="row-fluid">
         <div class="span9">
-          <h1>Sharing Personal Genomes</h1>
-          <p class="info" style="margin-bottom:10px;line-height:24px;">The Personal Genome Project was founded in 2005 and is dedicated to creating public genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices&mdash;our approach is to invite willing participants to publicly share their personal data for the greater good.</p>
-          <p><a href="{% url 'pgp' %}" class="btn btn-primary btn-large">Learn more<i>  </i><i class="icon-angle-right"></i></a></p>
+          <h1>{% trans "Sharing Personal Genomes" %}</h1>
+          <p class="info" style="margin-bottom:10px;line-height:24px;">{% trans "The Personal Genome Project was founded in 2005 and is dedicated to creating public genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices&mdash;our approach is to invite willing participants to publicly share their personal data for the greater good." %}</p>
+          <p><a href="{% url 'pgp' %}" class="btn btn-primary btn-large">{% trans "Learn more" %}<i>  </i><i class="icon-angle-right"></i></a></p>
         </div>
         <div class="span3">
           <a href="{% url 'pgp' %}"><img src="/static/img/pgp-logo-only-transp.png" style="max-height:182px;"/></a>
@@ -17,25 +19,26 @@
     {% if country.country_code == 'US' %}
     <div class="heroine-unit" id="mainpanel2" style="margin-top:25px">
       <h1 style="font-size:30px;">PGP Harvard</h1>
-      <p>The pilot PGP site at Harvard University was founded in 2005 and has over 3,000 participants!</p>
+      {% comment %} Translators: "Site" is geographic location, not website. {% endcomment %}
+      <p>{% trans "The pilot PGP site at Harvard University was founded in 2005 and has over 3,000 participants!" %}</p>
       <p>
-        <a href="{% url 'harvard:index' %}" class="btn btn-primary btn-large">Learn about<br/>PGP Harvard</a>
+        <a href="{% url 'harvard:index' %}" class="btn btn-primary btn-large">{% blocktrans %}Learn about<br/>PGP Harvard{% endblocktrans %}</a>
       </p>
     </div>
     {% elif country.country_code == 'CA' %}
     <div class="heroine-unit" id="mainpanel2" style="margin-top:25px;">
       <h1 style="font-size:30px;">PGP Canada</h1>
-      <p>Founded in 2012, PGP Canada is located at the McLaughlin Centre at the University of Toronto.</p>
+      <p>{% trans "Founded in 2012, PGP Canada is located at the McLaughlin Centre at the University of Toronto." %}</p>
       <p>
-        <a href="{% url 'canada:index' %}" class="btn btn-primary btn-large">Learn about<br/>PGP Canada</a>
+        <a href="{% url 'canada:index' %}" class="btn btn-primary btn-large">{% blocktrans %}Learn about<br/>PGP Canada{% endblocktrans %}</a>
       </p>
     </div>
     {% elif country.country_code == 'GB' %}
     <div class="heroine-unit" id="mainpanel2" style="margin-top:25px;">
       <h1 style="font-size:35px;">PGP UK</h1>
-      <p>Founded in 2013, PGP United Kingdom is located at University College London.</p>
+      <p>{% trans "Founded in 2013, PGP United Kingdom is located at University College London." %}</p>
       <p>
-        <a href="{% url 'uk:index' %}" class="btn btn-primary btn-large">Learn about<br/>PGP UK</a>
+        <a href="{% url 'uk:index' %}" class="btn btn-primary btn-large">{% blocktrans %}Learn about<br/>PGP UK{% endblocktrans %}</a>
       </p>
     </div>
     {% endif %}
