@@ -1,22 +1,28 @@
 {% extends "www_personalgenomes_org/menu_research.html" %}
+{% load i18n %}
 
 {% block main %}
 <div class="lead">
-<h2 class="top-heading">Get Data</h2>
+<h2 class="top-heading">{% trans "Get Data" %}</h2>
 
-<p class="lead">Almost all current public data from PGP sites is from the <a href="{% url 'harvard:index' %}">Harvard site</a>. As new sites grow we expect to share more data from around the world.</p>
+<p class="lead">
+  {% url 'harvard:index' as harvard_url %}
+  {% blocktrans %}
+  Almost all current public data from PGP sites is from the <a href="{{ harvard_url }}">Harvard site</a>. As new sites grow we expect to share more data from around the world.
+  {% endblocktrans %}
+</p>
 
 <hr />
 
-<h3>Harvard PGP Data</h3>
+<h3>{% trans "Harvard PGP Data" %}</h3>
 <div class="hero-unit">
   <div class="row-fluid">
     <div class="span8">
-      <h2>Genome data</h2>
-      <p>In addition to whole genome sequencing, the Harvard PGP has a variety of donated genetic data (ranging from externally-performed genomes and exomes to direct-to-consumer genotyping).</p>
+      <h2>{% trans "Genome data" %}</h2>
+      <p>{% trans "In addition to whole genome sequencing, the Harvard PGP has a variety of donated genetic data (ranging from externally-performed genomes and exomes to direct-to-consumer genotyping)." %}</p>
     </div>
     <div class="span4">
-      <a class="btn btn-primary btn-large" href="https://my.personalgenomes.org/public_genetic_data" style="margin-top:40px;float:right;"><i class="icon-external-link">  </i> Harvard PGP Genetic Data</a>
+      <a class="btn btn-primary btn-large" href="https://my.personalgenomes.org/public_genetic_data" style="margin-top:40px;float:right;"><i class="icon-external-link">  </i> {% trans "Harvard PGP Genetic Data" %}</a>
     </div>
   </div>
 </div>
@@ -24,11 +30,11 @@
 <div class="hero-unit">
   <div class="row-fluid">
     <div class="span8">
-      <h2>Trait and survey data</h2>
-      <p>The Harvard PGP data is uniquely valuable because it combines trait and health information with genetic data in a publicly available resource. Our trait surveys query participants regarding 239 self-reported traits.</p>
+      <h2>{% trans "Trait and survey data" %}</h2>
+      <p>{% trans "The Harvard PGP data is uniquely valuable because it combines trait and health information with genetic data in a publicly available resource. Our trait surveys query participants regarding 239 self-reported traits." %}</p>
     </div>
     <div class="span4">
-      <a class="btn btn-primary btn-large" href="https://my.personalgenomes.org/google_surveys" style="margin-top:40px;float:right"><i class="icon-external-link">  </i> Harvard PGP Trait & Survey Data</a>
+      <a class="btn btn-primary btn-large" href="https://my.personalgenomes.org/google_surveys" style="margin-top:40px;float:right"><i class="icon-external-link">  </i> {% trans "Harvard PGP Trait & Survey Data" %}</a>
     </div>
   </div>
 </div>
@@ -36,11 +42,11 @@
 <div class="hero-unit">
   <div class="row-fluid">
     <div class="span8">
-      <h2>Participant profiles</h2>
-      <p>Participant profiles present all public data associated with a participant, presenting genetic and trait data in the same place. Profiles also include medical data imported from electronic health records and diverse other types of data uploaded by participants.</p>
+      <h2>{% trans "Participant profiles" %}</h2>
+      <p>{% trans "Participant profiles present all public data associated with a participant, presenting genetic and trait data in the same place. Profiles also include medical data imported from electronic health records and diverse other types of data uploaded by participants." %}</p>
     </div>
     <div class="span4">
-      <a class="btn btn-primary btn-large" href="https://my.personalgenomes.org/users" style="margin-top:40px;float:right"><i class="icon-external-link">  </i> Browse Harvard PGP Participant Profiles</a>
+      <a class="btn btn-primary btn-large" href="https://my.personalgenomes.org/users" style="margin-top:40px;float:right"><i class="icon-external-link">  </i> {% trans "Browse Harvard PGP Participant Profiles" %}</a>
     </div>
   </div>
 </div>
@@ -48,11 +54,11 @@
 <div class="hero-unit">
   <div class="row-fluid">
     <div class="span8">
-      <h2>Microbiome data</h2>
-      <p>Microbiome profiles investigate the types of bacteria in and on a participant's body. Understanding the microbiome helps build a more complete of a participant: it is a form of biological profiling that captures personal environment and may be an important aspect in human health.</p>
+      <h2>{% trans "Microbiome data" %}</h2>
+      <p>){% trans "Microbiome profiles investigate the types of bacteria in and on a participant's body. Understanding the microbiome helps build a more complete of a participant: it is a form of biological profiling that captures personal environment and may be an important aspect in human health." %}</p>
     </div>
     <div class="span4">
-      <a class="btn btn-primary btn-large" href="https://my.personalgenomes.org/public_genetic_data?data_type=Microbiome" style="margin-top:40px;float:right"><i class="icon-external-link">  </i> Harvard PGP Microbiome Data</a>
+      <a class="btn btn-primary btn-large" href="https://my.personalgenomes.org/public_genetic_data?data_type=Microbiome" style="margin-top:40px;float:right"><i class="icon-external-link">  </i> {% trans "Harvard PGP Microbiome Data" %}</a>
     </div>
   </div>
 </div>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-16 05:14-0500\n"
+"POT-Creation-Date: 2014-01-16 13:00-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,11 +31,13 @@ msgid "Our mission"
 msgstr "Unsere Mission"
 
 #: templates/base.html:126
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:6
 msgid "People"
 msgstr "Menschen"
 
 #. Translators: "Press" here refers to news/media coverage.
 #: templates/base.html:129
+#: www_personalgenomes_org/templates/www_personalgenomes_org/press.html:6
 msgid "Press"
 msgstr ""
 
@@ -57,11 +59,11 @@ msgid "GET Conference"
 msgstr "GET-Konferenz"
 
 #: templates/base.html:142
-#, fuzzy
 msgid "Participate"
-msgstr "Teilnehmen"
+msgstr ""
 
 #: templates/base.html:144
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp.html:6
 msgid "About the PGP"
 msgstr "Über die PGP"
 
@@ -86,15 +88,18 @@ msgid "Research"
 msgstr "Forschung"
 
 #: templates/base.html:157
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:6
 msgid "Get Data"
 msgstr "Erhalten Daten"
 
 #: templates/base.html:158
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sharing.html:6
 msgid "Sharing Policies"
 msgstr "Freigaberichtlinien"
 
 #: templates/base.html:165
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:37
+#: www_personalgenomes_org/templates/www_personalgenomes_org/network.html:6
 msgid "Global Network"
 msgstr "Globales Netzwerk"
 
@@ -135,6 +140,176 @@ msgstr "Weitere Websites"
 #: templates/base.html:242
 msgid "Blog"
 msgstr "Blog"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:8
+msgid "Donation Information"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:10
+msgid ""
+"We are looking to expand the capacity of the Personal Genome Project via the "
+"generosity of foundations, private companies, and individual donors. "
+"PersonalGenomes.org is qualified as a charitable organization under Section "
+"501(c)(3) of the Internal Revenue Code. Contributions to PersonalGenomes.org "
+"are tax-deductible to the extent permitted by law."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:12
+msgid "Ways to Give"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:15
+msgid ""
+"<strong>Send a check</strong> payable to PersonalGenomes.org at the "
+"following address:"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:19
+msgid ""
+"\n"
+"          PersonalGenomes.org<br />\n"
+"\t  423 Brookline Avenue, #323<br />\n"
+"\t  Boston MA 02215-5410\n"
+"          "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:28
+msgid ""
+"<strong>Double your contribution</strong> by participating in your company’s "
+"matching gifts program."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:30
+#, python-format
+msgid ""
+"\n"
+"    <strong>Gifts of Stock</strong>: Please send an email to <a href="
+"\"%(giving_contact)s\">giving@personalgenomes.org</a> for more information.\n"
+"    "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:35
+#, python-format
+msgid ""
+"\n"
+"    <strong>Corporate Giving</strong>: Please send an email to <a href="
+"\"%(giving_contact)s\">giving@personalgenomes.org</a> for more information.\n"
+"    "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:41
+#, python-format
+msgid ""
+"\n"
+"For further information about charitable giving, please <a href="
+"\"%(giving_contact)s\">contact us</a>.\n"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:45
+msgid "Employee Matching Gifts"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:46
+msgid ""
+"Hundreds of companies and corporations offer matching gift programs for "
+"employees who wish to make financial contributions to 501(c)(3) charitable "
+"organizations such as PersonalGenomes.org. If you are planning to make a "
+"financial contribution, you should inquire at your company to see if they "
+"have a matching gift program. It can be easy way to double the size of your "
+"contribution!"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:48
+msgid "Tax information"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/donate.html:50
+#, python-format
+msgid ""
+"\n"
+"  PersonalGenomes.org is a registered 501(c)(3) nonprofit corporation.<br /"
+">\n"
+"  Federal Employer Identification Number (FEIN): 26-2973607<br />\n"
+"  IRS Determination Letter: PersonalGenomes.org 501(c)(3)  (<a href="
+"\"%(irsletter_url)s\">PDF</a>)\n"
+"  "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:10
+#, python-format
+msgid ""
+"\n"
+"  Almost all current public data from PGP sites is from the <a href="
+"\"%(harvard_url)s\">Harvard site</a>. As new sites grow we expect to share "
+"more data from around the world.\n"
+"  "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:17
+msgid "Harvard PGP Data"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:21
+msgid "Genome data"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:22
+msgid ""
+"In addition to whole genome sequencing, the Harvard PGP has a variety of "
+"donated genetic data (ranging from externally-performed genomes and exomes "
+"to direct-to-consumer genotyping)."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:25
+msgid "Harvard PGP Genetic Data"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:33
+msgid "Trait and survey data"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:34
+msgid ""
+"The Harvard PGP data is uniquely valuable because it combines trait and "
+"health information with genetic data in a publicly available resource. Our "
+"trait surveys query participants regarding 239 self-reported traits."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:37
+msgid "Harvard PGP Trait & Survey Data"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:45
+msgid "Participant profiles"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:46
+msgid ""
+"Participant profiles present all public data associated with a participant, "
+"presenting genetic and trait data in the same place. Profiles also include "
+"medical data imported from electronic health records and diverse other types "
+"of data uploaded by participants."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:49
+msgid "Browse Harvard PGP Participant Profiles"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:57
+msgid "Microbiome data"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:58
+msgid ""
+"Microbiome profiles investigate the types of bacteria in and on a "
+"participant's body. Understanding the microbiome helps build a more complete "
+"of a participant: it is a form of biological profiling that captures "
+"personal environment and may be an important aspect in human health."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/get-data.html:61
+msgid "Harvard PGP Microbiome Data"
+msgstr ""
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-default.html:6
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:8
@@ -198,6 +373,7 @@ msgid "Learn about<br/>PGP UK"
 msgstr "Erfahren Sie<br/>mehr über<br/>PGP UK"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:23
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp.html:21
 msgid "Why participate?"
 msgstr "Warum teilnehmen?"
 
@@ -219,6 +395,7 @@ msgid "Learn about participating"
 msgstr "Erfahren Sie mehr über die Teilnahme"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:30
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sharing.html:33
 msgid "Open Data"
 msgstr "Offene Daten"
 
@@ -251,3 +428,903 @@ msgstr ""
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:40
 msgid "Meet our PGP groups"
 msgstr "Treffen Sie unsere PGP Gruppen"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:6
+#, fuzzy
+msgid "What defines a PGP site?"
+msgstr "Starten eines PGP-Website"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:8
+msgid ""
+"Members of the Personal Genome Project (PGP) global network adhere to the "
+"following criteria:"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:12
+#, fuzzy
+msgid "Public Data"
+msgstr "Veröffentlichungen"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:12
+msgid ""
+"Genomic and trait data are made available in a timely manner and in an "
+"integrated, publicly-accessible format using a CC0 waiver or equivalent "
+"public domain license."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:13
+#, fuzzy
+msgid "Non-anonymous"
+msgstr "Nicht anonym"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:13
+msgid ""
+"The risks of participant re-identification are addressed up front, as an "
+"integral part of the consent and enrollment process; neither anonymity nor "
+"confidentiality of participant identities or their data are promised to "
+"research participants."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:14
+msgid "Data return"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:14
+msgid ""
+"Research results are shared in a timely and complete fashion (i.e., raw data "
+"and not just summary results, where feasible) with participants."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:19
+msgid "Oversight"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:19
+msgid ""
+"The PGP site must at all times maintain current Institutional Review Board "
+"(IRB) approval or local equivalent, and will work with PG.org to continue to "
+"implement identified best practices for responsible public genomics research."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:20
+msgid "Not for profit"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:20
+msgid ""
+"The research project is managed or sponsored by a non-profit organization "
+"(or local equivalent). In addition, other than purposes of reasonable cost "
+"recovery, neither the PGP Site, Member nor any affiliate thereof or any "
+"investigator therein shall sell or license PGP Site participant data or "
+"tissues to any third party for financial gain or commercial profit."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/join-network.html:26
+#, python-format
+msgid ""
+"\n"
+"    In order to be recognized as a conforming implementation of the PGP and "
+"receive the benefits of being a network member there is a competitive "
+"application and annual review process. For more information about becoming a "
+"PGP site, please <a href=\"%(contact_us)s\">contact us</a>.\n"
+"    "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/mission.html:5
+msgid "Our Mission"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/mission.html:8
+msgid ""
+"Our mission is to make a wide spectrum of data about humans accessible to "
+"increase biological literacy and improve human health. PersonalGenomes.org "
+"is a nonprofit organization working to generate, aggregate and interpret "
+"human biological and trait data on an unprecedented scale using open-source, "
+"open-access and open-consent  frameworks. Our efforts are informed by values "
+"encouraging greater transparency and collaboration between researchers and "
+"participants."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/mission.html:10
+msgid "Our Vision"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/mission.html:11
+msgid ""
+"We believe obtaining a personal genome sequence is an activity that soon "
+"will be shared by millions of individuals around the world. To improve our "
+"understanding of how human traits are formed through the interactions "
+"between genomes and their environments, a much more holistic picture of the "
+"human experience is needed.  The ideal scientific resource would be to "
+"create a collection of many human genomes that remain connected to their "
+"owners who contribute additional information over their lifetime, such as "
+"longitudinal health status, medical and social history, environmental "
+"exposures, nutrition, lifestyle, physical measurements, blood chemistry, "
+"presence or absence of microbes and viruses, and many other kinds of data."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/mission.html:13
+msgid "The Dilemma"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/mission.html:14
+msgid ""
+"Even if a person’s name, home address or facial photograph is specifically "
+"excluded, a dataset like the one we are building is far from anonymous. It "
+"is simply too easy for someone to connect the dots and reveal a person’s "
+"identity. Moreover, data breaches are not uncommon even in the most highly "
+"regulated arenas like national intelligence where secrets are heavily "
+"guarded with extensive security clearance protocols and background checks. "
+"We think it is very important to be honest about how difficult it is to "
+"simultaneously share and protect data."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/mission.html:16
+msgid ""
+"Sharing data is critical for enabling discovery. Assembling under one roof a "
+"research team with the requisite expertise to generate, aggregate and "
+"interpret this dream dataset is unrealistic. Expertise is too diffuse. Major "
+"contributions might come from unconventional actors residing in far flung "
+"corners of the globe. Einstein started off as a patent clerk after all. "
+"Citizen scientists, hobbyists, amateurs and the participants themselves will "
+"undoubtedly make significant contributions."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/mission.html:18
+msgid "Our Model"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/mission.html:19
+msgid ""
+"We feel the most ethical and practical solution to this dilemma is to turn "
+"the privacy problem on its head and collaborate with individuals who are "
+"willing to share their data publicly with the understanding that re-"
+"identification is possible. We also will reduce potential misunderstandings "
+"by requiring prospective participants to demonstrate that they comprehend "
+"the public, non-anonymous nature of this endeavor as part of our unique "
+"consent process."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/mission.html:21
+msgid ""
+"We will grow this exceptional public resource by seeding a cohort of well-"
+"consented individuals with extensive genomic data and then invite a network "
+"of researchers to recruit from this cohort for additional phenotyping and "
+"molecular profiling, under the condition that they return computable "
+"datasets to the research participants.  These participants, in turn, may "
+"donate their data to the public domain for others to use, thereby "
+"reinforcing the virtuous circle of sharing."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/mission.html:23
+msgid ""
+"We will encourage widespread use of this public data resource as a platform "
+"for scientific research, education, improvement of the public health, "
+"public- and private-sector innovation, benchmarking and standardization, and "
+"personal exploration."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/network.html:9
+#, python-format
+msgid ""
+"\n"
+"    We work with world-class institutions and leading researchers to "
+"establish new Personal Genome Project (PGP) sites around the globe. Each PGP "
+"site in our network adheres to a set of guidelines and best practices for "
+"creating open genomic data. Learn how to <a href=\"%(joinnetwork_url)s"
+"\">establish a PGP site</a> in your country.\n"
+"    "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/network.html:17
+msgid "North America"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/network.html:20
+msgid "PGP Harvard (United States)"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/network.html:21
+msgid ""
+"\n"
+"      George Church Lab<br />\n"
+"      Harvard Medical School<br />\n"
+"      Founded Aug 2005\n"
+"      "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/network.html:27
+msgid "Visit PGP Harvard subsite"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/network.html:34
+msgid "Visit PGP Canada subsite"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/network.html:46
+msgid "Visit PGP UK subsite"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/network.html:49
+msgid "Second European site in development for early 2014."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/network.html:58
+#: www_personalgenomes_org/templates/www_personalgenomes_org/network.html:69
+msgid "Site in development."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/non-anonymous.html:6
+msgid "Participation is non-anonymous"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/non-anonymous.html:8
+msgid ""
+"A surprisingly small amount of data is necessary to uniquely identify a "
+"person by name. For example, a zip code, birthdate and gender may be enough "
+"to infer someone’s identity with a high degree of accuracy. One of the most "
+"identifiable pieces of information is human DNA sequence: it can be used to "
+"predict a variety of medical conditions and traits, like hair and eye color, "
+"facial features and even surname."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/non-anonymous.html:10
+msgid ""
+"Because we cannot guarantee privacy and we are committed to sharing data for "
+"the advancement of science, we feel the most ethical and practical solution "
+"is to collaborate with individuals who are comfortable sharing their data "
+"without any promises of privacy, confidentiality or anonymity. We call this "
+"“open consent”."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/non-anonymous.html:12
+msgid ""
+"If you are considering enrolling in the Personal Genome Project (PGP) it is "
+"important that you understand that your data may become publicly identified, "
+"by name, as yours -- even if you exclude your full name or other identifiers "
+"like a facial photograph from your public profile. Any hesitation now could "
+"be cause for regret later, after it is too late to remove your data from the "
+"public domain."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/non-anonymous.html:14
+#, fuzzy
+msgid "Risks and benefits of participating"
+msgstr "Erfahren Sie mehr über die Teilnahme"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:12
+msgid "Board Member"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:14
+#, python-format
+msgid ""
+"\n"
+"      Misha Angrist, PhD was the fourth participant in the Harvard Personal "
+"Genome Project (PGP). He has chronicled the development of the PGP and his "
+"own participation in it in his book, <a href=\"%(book_url)s\">Here is a "
+"Human Being: At the Dawn of Personal Genomics</a> (HarperCollins, 2010). He "
+"is an Assistant Professor in the Duke University Institute for Genome "
+"Sciences & Policy and a Visiting Lecturer at Duke's Sanford School of Public "
+"Policy.\n"
+"      "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:22
+msgid "Executive Director"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:24
+#, python-format
+msgid ""
+"\n"
+"      Jason Bobe is the founding Executive Director of PersonalGenomes.org "
+"and has served as the Director of Community for the Harvard Personal Genome "
+"Project since 2007. Jason is also curator and executive producer of the "
+"annual Genomes, Environments and Traits Conference (<a href=\"%(getconf_url)s"
+"\">www.getconference.org</a> ). He was an invited speaker to the "
+"Presidential Commission for the Study of Bioethical Issues and is a regular "
+"commentator on the importance of citizen science, decentralized access to "
+"genomic technologies and DIYbio.\n"
+"      "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:32
+msgid "Treasurer"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:34
+msgid ""
+"\n"
+"      John Cammack is the Founder and Managing Partner of Cammack "
+"Associates, a holding company with diversified interests in educational "
+"technology and brain fitness. In addition, John is a co-founder of "
+"Curiosityville, an early education start up located in Baltimore. John also "
+"serves as Chairman of the United Way of Central Maryland, a member of the "
+"CureViolence national board and on the Executive Committee of the Alpha "
+"Group. From 1991 to 2009, John was a senior executive at T. Rowe Price and "
+"served as Chairman of the Mutual Fund Education Alliance, a member of the "
+"Finra Investment Committee, the CFP Board of Standards and the Phi Beta "
+"Kappa Investment Committee. John is a graduate of Denison University and "
+"received his MBA from Columbia University.\n"
+"      "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:42
+msgid "Founder and Board member"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:44
+msgid ""
+"\n"
+"      George Church, PhD is the principal investigator, founder and guinea "
+"pig #1 of the Personal Genome Project (PGP) research study based at Harvard "
+"Medical School. He is also Professor of Genetics, Harvard Medical School, "
+"Wyss Institute, Director of the Center for Computational Genetics, and "
+"Director of the NIH Center for Excellence in Genomic Science (on human "
+"genome engineering). He is a member of the NAS and NAE and Franklin Laureate "
+"for Achievement in Science.\n"
+"      "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:52
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:62
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:72
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:78
+msgid "Board member"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:54
+msgid ""
+"\n"
+"      Esther Dyson is chairman of EDventure Holdings and sits on the boards "
+"of 23andMe, Voxiva and PersonalGenomes.org, among many other entitites. She "
+"is a believer in user-generated health as the best way to reduce the costs "
+"of health care, and is looking for investments in that new market. She is "
+"also PGP#3. Her other investments include Applied Proteomics, Genomera, "
+"Greengoose, Habit Labs, Health Engage, Health Rally, Health Tap, Keas, "
+"Medico, Medivo, Omada Health, Organized Wisdom, PatientsLikeMe, "
+"PatientsKnowBest, Resilient, Tocagen, Vita Portal (Russia), Valkee. (Photo "
+"credit: Tom Gruber)\n"
+"    "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:64
+msgid ""
+"\n"
+"      Juan Enriquez is an experienced business leader, author, and academic "
+"who is recognized as a leading authority on the economic and political "
+"impacts of life sciences. He is a Managing Director in Excel Venture "
+"Management, a venture capital firm that invests in life science companies. "
+"He was the founding director of Harvard Business School’s Life Sciences "
+"Project. He then founded Biotechonomy LLC, a life sciences research and "
+"investment firm. In 2005, he co-founded Synthetic Genomics, Inc., a "
+"synthetic biology company. He is the author of the best-selling <em>As the "
+"Future Catches You</em>, an analysis of the impact of genomics on business "
+"and society. His latest book, <em>The Untied States of America</em>, "
+"explores why, as technology advances, some countries are successful while "
+"others disappear. Mr. Enriquez serves on a number of boards including "
+"PersonalGenomes.org, Cabot Corp., The Chairman’s International Council of "
+"the America’s Society, and the Visiting Committee of Harvard’s David "
+"Rockefeller Center. He earned a BA and MBA from Harvard, with Honors.\n"
+"      "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:80
+msgid ""
+"\n"
+"      Ryan Phelan is the Executive Director of Revive and Restore, a project "
+"within The Long Now Foundation, with a mission to provide deep ecological "
+"enrichment through extinct species revival. Phelan was founder and former "
+"CEO of DNA Direct, which provides genetic testing services and decision "
+"support for patients, providers and health care payors. In 2010, DNA Direct "
+"became a wholly owned subsidiary of Medco Health Solutions, one of the "
+"country's largest pharmacy benefit managers. Phelan has been a strong "
+"consumer health advocate for the past 25 years, having started the first "
+"medical library for consumers in 1978. As Founding Director of Planetree, a "
+"nonprofit consumer health care organization, she helped create a national "
+"model for humanizing hospitals, and a national model for providing health "
+"information to the public, the Planetree Resource Center. In 1995 she "
+"founded Direct Medical Knowledge (DMK). DMK was an extensive consumer health "
+"web site highly regarded for its unique content depth and innovative search "
+"interface. In 1999 WebMD, a leader in the Internet health information "
+"industry acquired Direct Medical Knowledge. She was also co-founder of the "
+"ALL Species Foundation in 2002, a global science initiative to discover all "
+"life on Earth, which evolved into the Encyclopedia of Life.\n"
+"      "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:88
+msgid "Secretary"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:90
+msgid ""
+"\n"
+"      Daniel Vorhaus, JD  has served as an ELSI advisor to the Personal "
+"Genome Project and PersonalGenomes.org since 2006. Dan graduated cum laude "
+"from Harvard Law School and holds a masters degree in bioethics from "
+"Lancaster University in England, where he was a Fulbright Scholar. Dan is "
+"also the founding editor of the Genomics Law Report and has written widely "
+"on a variety of topics at the intersection of law, science and policy. Dan "
+"is currently an Associate General Counsel at McKinsey & Company.\n"
+"      "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:100
+msgid ""
+"We are building a global network of PGP sites, each with their own team of "
+"staff members and contributors."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:104
+msgid "PGP Harvard Team (USA)"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:107
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:36
+msgid "PGP Canada"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/people.html:110
+msgid "PGP UK Team"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:6
+#, fuzzy
+msgid "Sign up at a PGP site"
+msgstr "Starten eines PGP-Website"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:10
+msgid "Currently available sites and eligibility requirements"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:16
+msgid "PGP Harvard"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:17
+msgid "Founded in Aug 2005."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:19
+msgid ""
+"\n"
+"          George Church Lab at Harvard Medical School<br />\n"
+"\t  Boston, MA  United States of America\n"
+"          "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:24
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:45
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:68
+msgid "Requirements:"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:26
+msgid "United States citizen or permanent resident"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:27
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:71
+msgid "At least 21 years of age"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:29
+msgid "Read about HPGP enrollment"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:37
+msgid "Founded in Dec 2012."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:39
+msgid ""
+"\n"
+"          McLaughlin Centre, University of Toronto and <br/>\n"
+"          The Centre for Applied Genomics, Hospital for Sick Children<br/>\n"
+"          Toronto, ON  Canada\n"
+"          "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:47
+msgid "Canadian citizen"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:48
+msgid "At least 18 years of age"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:50
+#, fuzzy
+msgid "Read about PGP Canada enrollment"
+msgstr "Erfahren Sie<br/>mehr über<br/>PGP Canada"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:60
+msgid "Founded in Nov 2013."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:62
+msgid ""
+"\n"
+"          Stephan Beck Lab<br />\n"
+"          University College London<br />\n"
+"          London, United Kingdom\n"
+"          "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:70
+msgid "United Kingdom citizen or permanent resident"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:73
+msgid "Read about PGP UK enrollment"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:81
+msgid "Don't meet requirements for the sites above?"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:83
+msgid ""
+"For individuals unable to join our existing projects due to citizenship and "
+"residency requirements, we invite you to record your interest in the PGP. "
+"Knowing your country helps us prioritize international expansion efforts. "
+"Also, by registering your interest we will be able to notify you if an "
+"opportunity later appears."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp-sign-up.html:85
+msgid "Register your interest in a PGP for your country"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp.html:10
+msgid ""
+"The Personal Genome Project (PGP) is creating a freely available scientific "
+"resource that brings together genomic, environmental and human trait data. "
+"These data are donated by volunteers enrolled in a PGP study from our global "
+"network. Initiated by George Church at Harvard Medical School in 2005, the "
+"PGP has pioneered ethical, legal, and technical aspects related to the "
+"creation of public resources involving highly identifiable data like human "
+"genomes."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp.html:12
+msgid "Public Data, Methods, and Materials"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp.html:13
+msgid ""
+"We believe sharing is good for science and society. The PGP is dedicated to "
+"creating public resources that everyone can access. Privacy, confidentiality "
+"and anonymity are impossible to guarantee in a context like the PGP where "
+"public sharing of genetic data is an explicit goal. Therefore, the PGP "
+"collaborates with participants willing to waive expectations of privacy. "
+"This waiver is not for everyone, but the volunteers who join make a valuable "
+"and lasting contribution to science."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp.html:15
+msgid "Ongoing Participatory Research"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp.html:16
+msgid ""
+"We love the people behind the data. Our project aims to maintain lifelong "
+"relationships with participants. We want to collaborate on tracking health "
+"and other traits as they unfold over the course of a participant’s life. We "
+"also want to better understand the benefits and risks related to accessing "
+"and sharing extensive genomic and other personal data."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp.html:18
+msgid "Genomes, Environments, and Traits"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/pgp.html:19
+msgid ""
+"The genome is just a part of the story: genes interact with the environment "
+"to form traits. Participants may choose to contribute other public data to "
+"build public records of their health and traits. We also try to connect "
+"participants with research projects interested in profiling other aspects of "
+"human experience to produce even more extensive collections of associated "
+"data."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/press.html:13
+#, python-format
+msgid ""
+"\n"
+"      The <a href=\"%(pgpblog_url)s\">Personal Genome Project blog</a> posts "
+"news related to our project, including photos, interviews, and updates.\n"
+"      "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/press.html:17
+msgid "Visit the PGP blog"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/press.html:23
+msgid "Selected articles about the Personal Genome Project"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/press.html:293
+#, fuzzy
+msgid "Press Contact"
+msgstr "Kontaktieren Sie uns"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/publications.html:6
+#, fuzzy
+msgid "Research articles"
+msgstr "Forschung"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/publications.html:8
+msgid "Selected articles related to the PGP effort and/or using PGP resources."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/publications.html:12
+#, fuzzy
+msgid "Publication"
+msgstr "Veröffentlichungen"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/publications.html:12
+msgid "Topics"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:6
+#, fuzzy
+msgid "Risks and Benefits"
+msgstr "Risiken und Vorteile"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:8
+#, fuzzy
+msgid "Risks of participation"
+msgstr "Erfahren Sie mehr über die Teilnahme"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:10
+msgid ""
+"Because personal genome sequencing is a new human endeavor, as a society we "
+"lack a detailed understanding of all risks posed by an individual's genome "
+"sequence being known and widely shared.  At a minimum, individuals should be "
+"comfortable with a variety of worst-case scenarios and known risks.  In "
+"principle, anyone with sufficient knowledge could take a participant's "
+"genome and/or other personal information and use them to:"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:13
+msgid "infer paternity or other features of the participant's genealogy"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:14
+msgid ""
+"claim statistical evidence that could affect employment or insurance or the "
+"ability to obtain financial services for the participant"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:15
+msgid "claim relatedness to criminals or incriminate relatives"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:16
+msgid ""
+"make synthetic DNA corresponding to the participant and plant it at a crime "
+"scene"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:17
+msgid ""
+"reveal propensity for a disease currently lacking effective treatment options"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:20
+msgid ""
+"The improvement of our understanding and management of these risks is as "
+"important a contribution to the long-term utility of personal genomics as "
+"any other this project and its participants may achieve."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:24
+#, fuzzy
+msgid "Benefits of participation"
+msgstr "Erfahren Sie mehr über die Teilnahme"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:25
+msgid ""
+"We wish to emphasize that there may be no personal benefit for participants "
+"in the PGP. Most benefits are expected to be societal in nature and are not "
+"likely to be realized immediately. Although one of our goals is to increase "
+"understanding of human health and disease, this is but one preliminary step "
+"in building the capability to apply these learnings to medical practice, "
+"improve clinical decision-making, or positively impact personal health. "
+"Moreover, we should not expect to make statistically significant discoveries "
+"while the number of participants is small. Although we expect a high level "
+"of interest from volunteers, the actual pace at which the project will "
+"expand to large numbers is unknown."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:27
+msgid ""
+"While there may be opportunities to provide participants with "
+"recommendations for diagnostic tests or medical consultation, in the near-"
+"term, the most likely outcomes of participation are the generation of large "
+"numbers of hypotheses by researchers about specific traits, the scientific "
+"evaluation of these hypotheses, and an expansion of our understanding of how "
+"genetic variation contributes to both the diversity and connectedness of "
+"human experience."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:29
+msgid ""
+"Motivations for participating in the Personal Genome Project might include:"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:32
+msgid ""
+"the participation in a cause that aims to advance medicine and global health"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:33
+msgid "to contribute directly to a scientific endeavor"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:34
+msgid "self-curiosity"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:37
+msgid ""
+"Confining motivations to participate in the project to curiosity, science, "
+"and eventual societal impact is an intentional attempt to minimize "
+"potentially coercive lures of personal benefit. We also want to be realistic "
+"and set accurate expectations."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/risks-benefits.html:39
+#, fuzzy
+msgid "Sign up to participate"
+msgstr "Warum teilnehmen"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sharing.html:8
+msgid ""
+"PersonalGenomes.org is committed to sharing resources with the scientific "
+"community and the general public, so that people may collaborate in ways "
+"that have not been possible before.  We think this will promote discovery "
+"and accelerate our ability to understand how genomes and the environment "
+"combine to form human traits.  To this end, these are some of the legal "
+"tools we use in our research."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sharing.html:11
+msgid "Open Consent"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sharing.html:14
+#, python-format
+msgid ""
+"\n"
+"    Our <a href=\"%(harvard_docs_url)s\">\"open consent\" protocol is "
+"available</a> for use and modification by PGP affiliates or other similar "
+"\"public genomics\" research studies.\n"
+"    "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sharing.html:19
+#, python-format
+msgid ""
+"\n"
+"        Read the Nature Reviews Genetics publication from April 2008.  (<a "
+"href=\"%(article_url)s\">PDF</a>)\n"
+"        "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sharing.html:24
+#, python-format
+msgid ""
+"\n"
+"        Read the original white paper on open consent from April 2007, "
+"published by George Church, Jeantine Lunshof, and Daniel Vorhaus. (<a href="
+"%(article_url)s>PDF</a>)\n"
+"        "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sharing.html:34
+msgid ""
+"We are creating a public repository of integrated genomic, environmental, "
+"and trait datasets."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sharing.html:43
+msgid "Open Source Software Licenses"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sharing.html:44
+msgid ""
+"Our software development efforts are committed to using GPL and less "
+"restrictive (permissive and GPL compatible) open source licenses."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sharing.html:70
+msgid "Open Access Text and Other Media Licenses"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/why-participate.html:6
+#, fuzzy
+msgid "Why Participate in the PGP?"
+msgstr "Warum teilnehmen?"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/why-participate.html:8
+msgid "Medical Advancement"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/why-participate.html:12
+msgid "Examples of participant involvement in research"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/why-participate.html:12
+msgid ""
+"(clockwise from top left): Augusto Odone and his son Lorenzo for "
+"Adrenoleucodystrophy; Betty Ford for addiction; Douglas Melton and his son "
+"for diabetes; Heywood family for ALS; Hugh Rienhoff and his daughter."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/why-participate.html:13
+msgid ""
+"Photo credits: Heywood family photo &copy; Richard Horward; Hugh Rienhoff "
+"&copy; Nature Publishing Group)"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/why-participate.html:16
+msgid ""
+"Whether one is healthy or dealing with illness, everyone possesses "
+"information that may ultimately contribute toward improving the health of "
+"others and future generations. The information in our medical records, our "
+"DNA, our lifestyles, and our environmental exposures has the potential to "
+"provide insights that can change our ability to manage and prevent "
+"debilitating diseases."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/why-participate.html:17
+msgid ""
+"Scientific research is an ongoing source of hope for individuals and "
+"families affected by illness. The promise of improved diagnoses, therapies, "
+"and prevention strategies has motivated many individuals to get more "
+"directly involved in the promotion of scientific research on conditions "
+"affecting themselves and their loved ones. Disease advocates have made "
+"significant contributions to medical advancement and human welfare."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/why-participate.html:19
+msgid "Scientific Discovery"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/why-participate.html:20
+msgid ""
+"The answers to many fundamental questions about basic human biology, our "
+"experiences as individuals, and our history as a species will be illuminated "
+"by better access to large datasets that contain many human genomes tied to "
+"other forms of personal information, such as medical history and physical "
+"traits. Thus far, only a handful of individuals in the world have been "
+"extensively sequenced and studied. The PGP aims to change this by giving "
+"individuals a platform to share their genome, health and trait data."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/why-participate.html:22
+msgid "Self-curiosity"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/why-participate.html:24
+msgid ""
+"Like other areas in human history, personal genomics will likely benefit "
+"greatly from \"early adopters\" who are willing and able to endure the "
+"difficulties and uncertainties that go along with exploring relatively "
+"uncharted territories. Early adopters of genome sequencing might be driven "
+"by self-curiosity or the pursuit of personal interests in biology or "
+"computing. Professional interests might be another reason for being an early "
+"adopter of personal genomics, especially for individuals whose work may be "
+"impacted significantly by genomics in the near future, such as certain "
+"health care workers, policy-makers, and IT professionals."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/why-participate.html:27
+msgid "Open consent and non-anonymous participation"
+msgstr ""
