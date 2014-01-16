@@ -58,7 +58,7 @@ test -f ~/.bashrc && source ~/.bashrc
 5. run `brew doctor` to check all is well.
 6. run `brew update` to make sure it's up-to-date.
 7. run `brew install python --with-brewed-openssl` to install Python from Homebrew.
-8. run `brew install mysql` to install MySQL.
+8. ~~run `brew install mysql` to install MySQL.~~ Default settings now use SQLite, hopefully this works immediately as SQLite is included in Python.
 9. run `pip install virtualenv virtualenvwrapper` to install virtualenv using pip, our Python package manager of choice.
 10. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
 11. To make virtualenv and virtualenvwrapper commands work in future terminals, add the following
@@ -68,7 +68,7 @@ to your `~/.bashrc` (or create a `.bashrc` file in your home directory if one do
 
 #### Linux ####
 
-1. **(Root user action)** Install python/pip/MySQL dependencies: `sudo apt-get install python-pip python-dev mysql-client libmysqlclient-dev`
+1. **(Root user action)** ~~Install python/pip/MySQL dependencies: `sudo apt-get install python-pip python-dev mysql-client libmysqlclient-dev`~~ Default settings now use SQLite, hopefully this works immediately as SQLite is included in Python.
 2. **(Root user action)** Use pip to install virtualenv and virtualenvwrapper: `sudo pip install virtualenv virtualenvwrapper`
 3. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
 4. To make virtualenv and virtualenvwrapper commands work in future terminals, add the 
@@ -89,15 +89,9 @@ virtualenv's python path: `add2virtualenv $PWD`
 
 In the future, you should run the `workon www_pg_org` command whenever you work on and run this code.
 
-### Set up MySQL (untested for Mac) ###
+### Initialize the database ###
 
-1. **(Root user action)** Install MySQL server: `sudo apt-get install mysql-server`
-2. Log in to MySQL as root: `mysql -u root -p`
-3. Within MySQL, create the new database: `CREATE DATABASE www_personalgenomes_org;`
-4. Within MySQL, add the user to access the database:
-`grant all privileges on www_personalgenomes_org.* to pgorg@localhost identified by 'glassworks';`
-5. Edit `www_personalgenomes_org/settings.py` in the project tree: change the database password to the one you actually used in the previous step.
-6. Navigate to the top directory in the project and initialize the database by running: `python manage.py syncdb`.
+Navigate to the top directory in the project and initialize the database by running: `python manage.py syncdb`.
 This will prompt you to create a superuser for Django's auth system, go ahead and do that too.
 
 Running the site
