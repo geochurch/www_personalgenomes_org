@@ -68,7 +68,7 @@ to your `~/.bashrc` (or create a `.bashrc` file in your home directory if one do
 
 #### Linux ####
 
-1. **(Root user action)** ~~Install python/pip/MySQL dependencies: `sudo apt-get install python-pip python-dev mysql-client libmysqlclient-dev`~~ Default settings now use SQLite, hopefully this works immediately as SQLite is included in Python.
+1. **(Root user action)** Install python/pip ~~/MySQL~~ dependencies: `sudo apt-get install python-pip python-dev` ~~` mysql-client libmysqlclient-dev`~~ Default settings now use SQLite, hopefully this works immediately as SQLite is included in Python.
 2. **(Root user action)** Use pip to install virtualenv and virtualenvwrapper: `sudo pip install virtualenv virtualenvwrapper`
 3. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
 4. To make virtualenv and virtualenvwrapper commands work in future terminals, add the 
