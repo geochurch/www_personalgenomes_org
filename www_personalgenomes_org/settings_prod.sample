@@ -1,0 +1,28 @@
+# Sample settings for production
+#
+############################################
+#  READ ALL COMMENTS TO SET UP PRODUCTION  #
+############################################
+
+# Production should always have Debug = False
+# Otherwise you will leak private things!
+DEBUG = False
+
+# When DEBUG is False, ALLOWED_HOSTS also needs to be set your domain.
+# For example...
+ALLOWED_HOSTS = [ '.example.com' ]
+
+# The admin might also add private database credentials to this settings.
+# Because of this, we should make sure not to track this file.
+#
+# e.g.
+# DATABASES = {
+#   'default': {
+#     'ENGINE': 'django.db.backends.mysql',
+#     'NAME': 'mysite_db',
+#     'USER': 'mysite',
+#     'PASSWORD': 'mysecretpassword',
+#     'HOST': '',
+#     'PORT': '',
+#   }
+# }
