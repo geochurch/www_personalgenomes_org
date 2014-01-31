@@ -137,6 +137,7 @@ urlpatterns = patterns(
     url(r'^consent/?$', views.redirect_to_name, {'url_name':'harvard:documents'}),
     url(r'^consent/index.html/?$', views.redirect_to_name, {'url_name':'harvard:documents'}),
     url(r'^medicalcenters.html/?$', views.redirect_to_name, {'url_name':'harvard:collection-centers'}),
+    url(r'^howitworks.html/?$', views.redirect_to_name, {'url_name':'harvard:howitworks'}),
     url(r'consent/PGP_Consent_Approved_02212013.pdf',
         RedirectView.as_view(url='/static/docs/harvard/PGP_Consent_Approved_02212013.pdf')),
     url(r'exam/v20120430-study-guide.pdf',
