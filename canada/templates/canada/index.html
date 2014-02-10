@@ -4,24 +4,18 @@
 
 {% block brand %}<a class="brand" href="/">Personal Genome Project</a><a class="brand" href="/canada"><i class="icon-double-angle-right">   </i>Canada</a>{% endblock brand %}
 
-{% block navpills %}
-<div class="row-fluid" style="margin-top:4px;">
-  <div class="span10">
-    <ul class="nav nav-tabs">
-      <li><a href="{% url 'canada:index' %}">PGP Canada</a></li>
-      <li><a href="{% url 'canada:project' %}">Project Overview</a></li>
-      <li><a href="{% url 'canada:consent' %}">Consent Form</a></li>
-      <li><a href="{% url 'canada:contact' %}">Contact</a></li>
-    </ul>
-  </div>
-  <div class="span2">
-    <a class="btn pull-right" style="margin-top:8px;" href="{% url 'organization:network' %}">Other PGP sites</a>
-  </div>
-</div>
-{% endblock navpills %}
+{% block navbar_contents %}
+<li style="margin-right:15px;"><a href="{% url 'canada:index' %}">PGP Canada</a></li>
+<li style="margin-right:15px;"><a href="{% url 'canada:project' %}">Project Overview</a></li>
+<li style="margin-right:15px;"><a href="{% url 'canada:consent' %}">Consent Form</a></li>
+<li style="margin-right:15px;"><a href="{% url 'canada:contact' %}">Contact</a></li>
+<form class="navbar-form form-inline pull-right">
+  <a class="btn btn-small btn-primary" href="{% url 'organization:network' %}">Other PGP sites</a>
+</form>
+{% endblock navbar_contents %}
 
 {% block main %}
-<div class="hero-unit">
+<div class="hero-unit" style="margin-top:25px;">
   <div class="row-fluid">
     <div class="span8">
       <h1>PGP Canada</h1>

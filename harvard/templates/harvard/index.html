@@ -4,28 +4,19 @@
 
 {% block brand %}<a class="brand" href="/">Personal Genome Project</a><a class="brand" href="/harvard"><i class="icon-double-angle-right">   </i>Harvard</a>{% endblock brand %}
 
-{% block navpills %}
-<div class="row-fluid" style="margin-top:4px;">
-  <div class="span8">
-    <ul class="nav nav-tabs">
-      <li><a href="{% url 'harvard:index' %}">Harvard PGP</a></li>
-      <li><a href="{% url 'harvard:people' %}">People</a></li>
-      <li><a href="{% url 'harvard:documents' %}">Documents</a></li>
-      <li><a href="{% url 'harvard:protocols' %}">Enrollment & Protocols</a></li>
-      <li><a href="{% url 'harvard:data' %}" style="margin-right:20px">Data & Samples</a></li>
-    </ul>
-  </div>
-  <div class="span4">
-    <div class="pull-right">
-      <a class="btn" style="margin-top:8px;" href="{% url 'organization:network' %}">Other PGP sites</a>
-      <a class="btn btn-primary" style="margin-top:8px;" href="http://my.personalgenomes.org"><i class="icon-external-link"> </i>Participant log in</a>
-      </div>
-  </div>
-</div>
-{% endblock navpills %}
+{% block navbar_contents %}
+<li><a href="{% url 'harvard:people' %}">People</a></li>
+<li><a href="{% url 'harvard:documents' %}">Documents</a></li>
+<li><a href="{% url 'harvard:protocols' %}">Enrollment & Protocols</a></li>
+<li><a href="{% url 'harvard:data' %}" style="margin-right:20px">Data & Samples</a></li>
+<form class="navbar-form form-inline pull-right">
+  <a class="btn btn-small btn-primary" href="{% url 'organization:network' %}">Other PGP sites</a>
+  <a class="btn btn-small" style="margin-top:8px;" href="http://my.personalgenomes.org"><i class="icon-external-link"> </i>Participant log in</a>
+</form>
+{% endblock navbar_contents %}
 
 {% block main %}
-<div class="hero-unit">
+<div class="hero-unit" style="margin-top:25px;">
   <div class="row-fluid">
     <div class="span9">
       <h1>PGP Harvard</h1>
