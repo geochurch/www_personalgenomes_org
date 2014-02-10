@@ -1,0 +1,18 @@
+{% extends "organization/index.html" %}
+
+{% block navbar_about %}
+<li class="active"><a href="#">About <b class="caret"></b></a></li>
+{% endblock navbar_about %}
+
+{% block navpills %}
+<div class="row">
+  <ul class="nav nav-pills pull-right" style="margin-bottom:0px;margin-top:2px;">
+    <li><a href="{% url 'organization:mission' %}">Our mission</a></li>
+    <li><a href="{% url 'organization:people' %}">People</a></li>
+    <li><a href="{% url 'organization:sharing' %}">Sharing Policies</a></li>
+    <li><a href="{% url 'organization:contact-us' %}">Contact Us</a></li>
+    <li><a href="{% url 'organization:press' %}">Press</a></li>
+    <li><a href="{% url 'organization:publications' %}">Publications</a></li>
+  </ul>
+</div>
+{% endblock navpills %}

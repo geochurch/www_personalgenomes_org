@@ -117,61 +117,9 @@
 
 	  <ul class="nav pull-right">
 
-	    {% block navbar_about %}
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-		<li><a href="{% url 'mission' %}">Our mission</a></li>
-		<li><a href="{% url 'people' %}">People</a></li>
-		<li class="divider"></li>
-		<li><a href="{% url 'press' %}">Press</a></li>
-		<li><a href="{% url 'publications' %}">Publications</a></li>
-		<li class="divider"></li>
-		<li class="nav-header">related sites</li>
-		<li><a href="http://blog.personalgenomes.org"><i class="icon-external-link-sign"></i> PGP Blog</a></li>
-		<li><a href="http://www.getconference.org"><i class="icon-external-link-sign"></i> GET Conference</a></li>
-              </ul>
-	    </li>
-	    {% endblock navbar_about %}
+            {% block navbar_contents %}
 
-	    {% block navbar_participate %}
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Participate <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-		<li><a href="{% url 'pgp' %}">About the PGP</a></li>
-		<li><a href="{% url 'why-participate' %}">Why participate</a></li>
-		<li><a href="{% url 'non-anonymous' %}">Non-Anonymous</a></li>
-		<li><a href="{% url 'risks-benefits' %}">Risks & Benefits</a></li>
-		<li><a href="{% url 'pgp-sign-up' %}">Sign-up</a></li>
-              </ul>
-	    </li>
-	    {% endblock navbar_participate %}
-
-	    {% block navbar_research %}
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-		<li><a href="{% url 'get-data' %}">Get Data</a></li>
-		<li><a href="{% url 'sharing' %}">Sharing Policies</a></li>
-              </ul>
-	    </li>
-	    {% endblock navbar_research %}
-
-	    {% block navbar_globalnetwork %}
-	    <li class="dropdown">
-	      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Global Network <b class="caret"></b></a>
-	      <ul class="dropdown-menu">
-		<li><a href="{% url 'network' %}">PGP Network</a></li>
-		<li><a href="{% url 'join-network' %}">Starting a PGP Site</a></li>
-		<li class="divider"></li>
-		<li><a href="{% url 'harvard:index' %}"><i class="icon-double-angle-right">  </i>PGP Harvard</a></li>
-		<li><a href="{% url 'canada:index' %}"><i class="icon-double-angle-right">  </i>PGP Canada</a></li>
-		<li><a href="{% url 'uk:index' %}"><i class="icon-double-angle-right">  </i>PGP UK</a></li>
-	      </ul>
-	    </li>
-	    {% endblock navbar_globalnetwork %}
-
-	    <li><a href="/donate">Support</a></li>
+            {% endblock navbar_contents %}
 	  </ul>
 	</div><!--/.nav-collapse -->
       </div>
@@ -206,40 +154,7 @@
 <div id="footer">
   <hr />
   <div class="container">
-    <div class="row-fluid">
-      <div class="span4">
-        <h5>PersonalGenomes.org</h5>
-        <p>
-          <a href="{% url 'contact-us' %}">Contact Us</a>
-          <i> </i>&bull;<i> </i>
-          <a href="{% url 'tos' %}">Terms of Service</a>
-          <i> </i>&bull;<i> </i>
-          <a href="{% url 'website-privacy-policy' %}">Privacy Policy</a>
-        </p>
-      </div>
-      <div class="span4">
-        <h5>Stay connected</h5>
-        <p>
-          <a href="https://twitter.com/pgorg"><i class="icon-twitter">  </i>Twitter</a>
-          <i> </i>&bull;<i> </i>
-          <a href="https://www.facebook.com/PersonalGenomesOrg"><i class="icon-facebook">  </i>Facebook</a>
-          <i> </i>&bull;<i> </i>
-          <a href="http://www.linkedin.com/company/personalgenomes-org"><i class="icon-linkedin">  </i>LinkedIn</a>
-          <br />
-          <a href="http://www.youtube.com/user/PersonalGenomesOrg"><i class="icon-youtube">  </i>Youtube</a>
-          <i> </i>&bull;<i> </i>
-          <a href="https://github.com/PersonalGenomesOrg/"><i class="icon-github">  </i>Github</a>
-        </p>
-      </div>
-      <div class="span4">
-        <h5>Additional sites</h5>
-        <p>
-          <a href="http://blog.personalgenomes.org"><i class="icon-pencil">  </i>Blog</a>
-          <i>   </i>&bull;<i>  </i>
-          <a href="http://getconference.com"><i class="icon-group">  </i>GET Conference</a>
-        </p>
-      </div>
-    </div>
+    {% include "footer.html" %}
   </div>
 </div>
 

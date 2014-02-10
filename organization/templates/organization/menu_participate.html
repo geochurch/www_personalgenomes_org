@@ -1,0 +1,15 @@
+{% extends "organization/index.html" %}
+
+{% block navbar_participate %}
+<li class="active"><a href="#">Participate <b class="caret"></b></a></li>
+{% endblock navbar_participate %}
+
+{% block navpills %}
+<ul class="nav nav-pills pull-right" style="margin-bottom:0px;margin-top:2px;" >
+  <li><a href="{% url 'organization:pgp' %}">About the PGP</a></li>
+  <li><a href="{% url 'organization:why-participate' %}">Why participate</a></li>
+  <li><a href="{% url 'organization:non-anonymous' %}">Non-Anonymous</a></li>
+  <li><a href="{% url 'organization:risks-benefits' %}">Risks & Benefits</a></li>
+  <li><a href="{% url 'organization:pgp-sign-up' %}">Sign-up</a></li>
+</ul>
+{% endblock navpills %}

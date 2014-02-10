@@ -94,6 +94,8 @@ urlpatterns = patterns(
         TemplateView.as_view(template_name='www_personalgenomes_org/join-network.html'),
         name='join-network'),
 
+    url(r'^organization',
+        include('organization.urls', namespace="organization")),
     url(r'^harvard',
         include('harvard.urls', namespace="harvard")),
     url(r'^canada',

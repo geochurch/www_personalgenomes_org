@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Personal Genome Project: PersonalGenomes.org{% endblock title %}
+
+{% block brand %}<a class="brand" href="/">Personal Genome Project</a><a class="brand" href="/organization"><i class="icon-double-angle-right">   </i>PersonalGenomes.org</a>{% endblock brand %}
+
+{% block navbar_contents %}
+
+{% block navbar_about %}
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="{% url 'organization:mission' %}">Our mission</a></li>
+    <li><a href="{% url 'organization:people' %}">People</a></li>
+    <li><a href="{% url 'organization:sharing' %}">Sharing Policies</a></li>
+    <li><a href="{% url 'organization:contact-us' %}">Contact Us</a></li>
+    <li class="divider"></li>
+    <li><a href="{% url 'organization:press' %}">Press</a></li>
+    <li><a href="{% url 'organization:publications' %}">Publications</a></li>
+  </ul>
+</li>
+{% endblock navbar_about %}
+
+{% block navbar_participate %}
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Participate <b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="{% url 'organization:pgp' %}">About the PGP</a></li>
+    <li><a href="{% url 'organization:why-participate' %}">Why participate</a></li>
+    <li><a href="{% url 'organization:non-anonymous' %}">Non-Anonymous</a></li>
+    <li><a href="{% url 'organization:risks-benefits' %}">Risks & Benefits</a></li>
+    <li><a href="{% url 'organization:pgp-sign-up' %}">Sign-up</a></li>
+  </ul>
+</li>
+{% endblock navbar_participate %}
+
+{% block navbar_globalnetwork %}
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Global Network <b class="caret"></b></a>
+  <ul class="dropdown-menu">
+    <li><a href="{% url 'organization:network' %}">PGP Network</a></li>
+    <li><a href="{% url 'organization:join-network' %}">Starting a PGP Site</a></li>
+    <li class="divider"></li>
+    <li><a href="{% url 'harvard:index' %}"><i class="icon-double-angle-right">  </i>PGP Harvard</a></li>
+    <li><a href="{% url 'canada:index' %}"><i class="icon-double-angle-right">  </i>PGP Canada</a></li>
+    <li><a href="{% url 'uk:index' %}"><i class="icon-double-angle-right">  </i>PGP UK</a></li>
+  </ul>
+</li>
+{% endblock navbar_globalnetwork %}
+
+<li><a href="{% url 'organization:donate' %}">Donate</a></li>
+
+{% endblock navbar_contents %}
+
+{% block main %}
+
+<div class="hero-unit" style="margin-top:25px;">
+  <h1>PersonalGenomes.org</h1>
+  <p class="lead">PersonalGenomes.org is a 501(c)(3) nonprofit organization working to generate, aggregate and interpret human biological and trait data on an unprecedented scale. Our mission is to make a wide spectrum of data about humans accessible to increase biological literacy and improve human health. PersonalGenomes.org's efforts are informed by values encouraging greater transparency and collaboration between researchers and participants. The organization supports the Personal Genome Project (PGP) global network. The first PGP research study was founded at Harvard Medical School in 2005, and PGP sites now exist at leading institutions in four countries. We also produce the annual <a href="http://www.getconference.org">Genomes, Environments and Traits (GET) Conference</a>.</p>
+  <p>
+    <a class="btn btn-large btn-primary" href="{% url 'organization:mission' %}">Read about our mission  <i> </i><i class="icon-angle-right"></i></a>
+  </p>
+</div>
+
+{% endblock main %}

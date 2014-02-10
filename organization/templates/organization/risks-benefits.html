@@ -1,4 +1,4 @@
-{% extends "www_personalgenomes_org/menu_participate.html" %}
+{% extends "organization/menu_participate.html" %}
 
 {% block main %}
 
@@ -35,6 +35,6 @@
 
 <p>Confining motivations to participate in the project to curiosity, science, and eventual societal impact is an intentional attempt to minimize potentially coercive lures of personal benefit. We also want to be realistic and set accurate expectations.</p>
 
-<p><a href="{% url 'pgp-sign-up' %}" class="btn btn-primary btn-large" style="margin:30px">Sign up to participate <i class="icon-angle-right"></i></a></p>
+<p><a href="{% url 'organization:pgp-sign-up' %}" class="btn btn-primary btn-large" style="margin:30px">Sign up to participate <i class="icon-angle-right"></i></a></p>
 
 {% endblock main %}
