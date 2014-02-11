@@ -5,10 +5,10 @@
 {% block brand %}<a class="brand" href="/">Personal Genome Project</a><a class="brand" href="{% url 'uk:index' %}"><i class="icon-double-angle-right">   </i>United Kingdom</a>{% endblock brand %}
 
 {% block navbar_contents %}
-<li style="margin-right:15px;"><a href="{% url 'uk:index' %}">PGP UK</a></li>
-<li style="margin-right:15px;"><a href="{% url 'uk:people' %}">People</a></li>
-<li style="margin-right:15px;"><a href="{% url 'uk:documents' %}">Documents</a></li>
-<li style="margin-right:15px;"><a href="{% url 'uk:enrollment' %}">Enrollment</a></li>
+<li><a href="{% url 'uk:index' %}">PGP UK</a></li>
+<li><a href="{% url 'uk:people' %}">People</a></li>
+<li><a href="{% url 'uk:documents' %}">Documents</a></li>
+<li><a href="{% url 'uk:enrollment' %}">Enrollment</a></li>
 <form class="navbar-form form-inline pull-right">
   <a class="btn btn-small btn-primary" href="{% url 'organization:network' %}">Other PGP sites</a>
 </form>
