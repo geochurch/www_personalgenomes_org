@@ -10,86 +10,16 @@
   <meta name="description" content="">
   <meta name="author" content="PersonalGenomes.org">
 
-  <link href="{{STATIC_URL}}css/bootstrap.css" rel="stylesheet">
+  <!-- Styles -->
   <link href='http://fonts.googleapis.com/css?family=Raleway:400' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-
-  <!-- Styles -->
-  <style type="text/css">
-    /* Use Google Fonts Raleway and Open Sans*/
-
-    /* Sticky footer styles
-    -------------------------------------------------- */
-    html,
-      body {
-      height: 100%;
-      /* The html and body elements cannot have any padding or margin. */
-    }
-
-    /* Wrapper for page content to push down footer */
-    #wrap {
-      min-height: 100%;
-      height: auto !important;
-      height: 100%;
-      /* Negative indent footer by it's height */
-      margin: 0 auto -120px;
-    }
-
-    /* Set the fixed height of the footer here */
-    #push,
-    #footer {
-      height: 120px;
-      line-height: 22px;
-    }
-
-    #footer {
-      background: linear-gradient(#EEF8E2, rgba(255,255,255,0) );
-      background: -webkit-linear-gradient(#EEF8E2, rgba(255,255,255,0) );
-      font-family: "Raleway";
-    }
-    #footer h5 {
-      margin: 15px 0px 8px;
-    }
-    #footer hr {
-      border-top: 3px solid #E9F8D5;
-      border-bottom: 0px solid #ffffff;
-      margin: 0px;
-    }
-
-    /* Lastly, apply responsive CSS fixes as necessary */
-    @media (max-width: 767px) {
-      #footer {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-    }
-
-    /* Hack to allow more spacing around Font Awesome icons */
-    i {
-    white-space:pre;
-    }
-
-    /* Stuff for our staff pages */
-    .bio h4,.bio h5,.bio p {
-    margin:12px;
-    }
-    .bio img {
-    float:right;
-    margin:12px;
-    }
-    /* Remove top margin for correct spacing of the top and heading */
-    .top-heading {
-    margin-top:0px;
-    }
-  </style>
-
+  <link href="{{STATIC_URL}}css/bootstrap.css" rel="stylesheet">
   <link href="{{STATIC_URL}}css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link href="{{STATIC_URL}}css/local.css" rel="stylesheet">
 
   {% block css-overrides %}{% endblock css-overrides %}
 
-  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
