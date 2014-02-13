@@ -1,0 +1,68 @@
+<div class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom:0px;">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {% block brand %}<a class="brand" href="/">Personal Genome Project</a>{% endblock brand %}
+      <div class="nav-collapse collapse">
+
+	<ul class="nav pull-right">
+
+          {% if active == "About" %}
+          <li class="active"><a href="#">PersonalGenomes.org <b class="caret"></b></a></li>
+          {% else %}
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PersonalGenomes.org <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'organization:mission' %}">Our mission</a></li>
+              <li><a href="{% url 'organization:people' %}">People</a></li>
+              <li><a href="{% url 'organization:sharing' %}">Sharing Policies</a></li>
+              <li><a href="{% url 'organization:contact-us' %}">Contact Us</a></li>
+              <li class="divider"></li>
+              <li><a href="{% url 'organization:press' %}">Press</a></li>
+              <li><a href="{% url 'organization:publications' %}">Publications</a></li>
+            </ul>
+          </li>
+          {% endif %}
+
+          {% if active == "Participate" %}
+          <li class="active"><a href="#">Participate <b class="caret"></b></a></li>
+          {% else %}
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Participate <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'organization:pgp' %}">About the PGP</a></li>
+              <li><a href="{% url 'organization:why-participate' %}">Why participate</a></li>
+              <li><a href="{% url 'organization:non-anonymous' %}">Non-Anonymous</a></li>
+              <li><a href="{% url 'organization:risks-benefits' %}">Risks & Benefits</a></li>
+              <li><a href="{% url 'organization:pgp-sign-up' %}">Sign-up</a></li>
+            </ul>
+          </li>
+          {% endif %}
+
+          {% if active == "Global_Network" %}
+          <li class="active"><a href="#">Global Network <b class="caret"></b></a></li>
+          {% else %}
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Global Network <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url 'organization:network' %}">PGP Network</a></li>
+              <li><a href="{% url 'organization:join-network' %}">Starting a PGP Site</a></li>
+              <li class="divider"></li>
+              <li><a href="{% url 'harvard:index' %}"><i class="icon-double-angle-right">  </i>PGP Harvard</a></li>
+              <li><a href="{% url 'canada:index' %}"><i class="icon-double-angle-right">  </i>PGP Canada</a></li>
+              <li><a href="{% url 'uk:index' %}"><i class="icon-double-angle-right">  </i>PGP UK</a></li>
+            </ul>
+          </li>
+          {% endif %}
+
+          <li><a href="{% url 'organization:donate' %}">Donate</a></li>
+	</ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+

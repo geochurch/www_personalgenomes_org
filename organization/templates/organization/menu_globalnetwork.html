@@ -1,8 +1,8 @@
 {% extends "organization/index.html" %}
 
-{% block navbar_globalnetwork %}
-<li class="active"><a href="#">Global Network <b class="caret"></b></a></li>
-{% endblock navbar_globalnetwork %}
+{% block navbar %}
+{% include "organization/navbar_top.html" with active="Global_Network" %}
+{% block navbar %}
 
 {% block navpills %}
 <ul class="nav nav-pills pull-right" style="margin-top:2px;">
