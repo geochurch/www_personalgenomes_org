@@ -68,3 +68,13 @@ i {
 .infobox {
     padding-bottom: 10px;
 }
+
+/* Anchor links fail because the content starts under the navbar.
+   This fix is adapted from:
+   http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/  */
+span.anchor-tag:before {
+  display: block;
+  content: "";
+  height:55px;
+  margin:-55px 0 0;
+}

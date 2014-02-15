@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, url
-from django.views.generic import TemplateView
+from django.views.generic import RedirectView, TemplateView
 from www_personalgenomes_org.views import redirect_to_name
 
 urlpatterns = patterns(
@@ -25,7 +25,9 @@ urlpatterns = patterns(
     url(r'^/data/?', TemplateView.as_view(template_name='harvard/data.html'),
         name='data'),
 
+    url(r'^/documents/?', RedirectView.as_view(url='/harvard/sign-up#documents'),
+        name='documents'),
+
     url(r'^/people/?$', redirect_to_name, {'url_name': 'harvard:about-us'}),
     url(r'^/protocols/?', redirect_to_name, {'url_name': 'harvard:sign-up'}),
-    url(r'^/documents/?', redirect_to_name, {'url_name': 'harvard:sign-up'}),
     )
