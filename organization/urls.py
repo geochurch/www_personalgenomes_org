@@ -20,6 +20,10 @@ urlpatterns = patterns(
         TemplateView.as_view(template_name='organization/sharing.html'),
         name='sharing'),
 
+    url(r'^/data/?',
+        TemplateView.as_view(template_name='organization/data.html'),
+        name='get-data'),
+
     url(r'^/contact-us/?',
         TemplateView.as_view(template_name='organization/contact-us.html'),
         name='contact-us'),

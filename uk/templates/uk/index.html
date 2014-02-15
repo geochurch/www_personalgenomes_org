@@ -1,31 +1,17 @@
-{% extends "base.html" %}
+{% extends "www_personalgenomes_org/index.html" %}
 
 {% block title %}Personal Genome Project: United Kingdom{% endblock title %}
 
-{% block brand %}<a class="brand" href="/">Personal Genome Project</a><a class="brand" href="{% url 'uk:index' %}"><i class="icon-double-angle-right">   </i>United Kingdom</a>{% endblock brand %}
+{% block navbar %}
+{% include "uk/navbar_top.html" %}
+{% endblock navbar %}
 
-{% block navbar_contents %}
-<li><a href="{% url 'uk:index' %}">PGP UK</a></li>
-<li><a href="{% url 'uk:people' %}">People</a></li>
-<li><a href="{% url 'uk:documents' %}">Documents</a></li>
-<li><a href="{% url 'uk:enrollment' %}">Enrollment</a></li>
-<form class="navbar-form form-inline pull-right">
-  <a class="btn btn-small btn-primary" href="{% url 'organization:network' %}">Other PGP sites</a>
-</form>
-{% endblock navbar_contents %}
+{% block index_mainbox_content %}
+The Personal Genome Project UK is dedicated to creating public UK genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices—our approach is to invite willing participants to publicly share their personal data for the greater good.
+{% endblock index_mainbox_content %}
 
-{% block main %}
-<div class="hero-unit" style="margin-top:25px">
-  <div class="row-fluid">
-    <div class="span9">
-      <h1>PGP UK</h1>
-      <p>The Personal Genome Project UK is dedicated to creating public UK genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices&mdash;our approach is to invite willing participants to publicly share their personal data for the greater good.</p>
-      <a class="btn btn-primary btn-large" href="{% url 'uk:enrollment' %}">Read more about enrollment</a>
-    </div>
-    <div class="span3">
-      <img src="/static/img/uk/pgpuk-logo-only-transp.png"/>
-    </div>
-  </div>
+{% block index_link_about_pgp %}{% url 'uk:about-pgp' %}{% endblock index_link_about_pgp %}
 
-</div>
-{% endblock main %}
+{% block index_link_sign_up %}{% url 'uk:sign-up' %}{% endblock index_link_sign_up %}
+
+{% block index_link_data %}{% url 'uk:data' %}{% endblock index_link_data %}

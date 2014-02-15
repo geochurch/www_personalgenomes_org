@@ -1,0 +1,40 @@
+{% extends "www_personalgenomes_org/sign-up.html" %}
+
+{% block title %}Personal Genome Project: Canada{% endblock title %}
+
+{% block navbar %}
+{% include "canada/navbar_top.html" with active="Sign-up" %}
+{% endblock navbar %}
+
+{% block main %}
+<h2 style="margin-top:34px;">Sign Up for the PGP</h2>
+<p>Our site is working hard right now to get an online enrollment process set up. We'll let you know as soon as it's ready!</p>
+
+<hr />
+
+<h2>Consent Forms</h2>
+
+<div class="alert">
+  <p><strong>Please Note:</strong>This consent form is for review purposes only. If you are interested in participating please <a href="{% url 'canada:contact' %}">contact us</a> and send us your email address. In the near future our website will support the registration and consent process. We will inform you when the website is fully functional.</p>
+</div>
+
+<table class="table">
+  <tr>
+    <td>
+      <h4>Consent for Participation (Full)</h4>
+    </td>
+    <td style="width:15%;min-width:110px">
+      <a class="btn" href="/static/docs/canada/PGPCanada_Full_Consent_Form_Jan2012.pdf"><i class="icon-file-text-alt">   </i>Get PDF</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h4>PGP Canada Mini-Consent Form</h4>
+    </td>
+    <td>
+      <a class="btn" href="/static/docs/canada/PGPC_Mini_Consent.pdf"><i class="icon-file-text-alt">   </i>Get PDF</a>
+    </td>
+  </tr>
+</table>
+{% endblock main %}
+

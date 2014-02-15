@@ -1,0 +1,40 @@
+{% extends "www_personalgenomes_org/about-us.html" %}
+
+{% block title %}Personal Genome Project: Canada{% endblock title %}
+
+{% block navbar %}
+{% include "canada/navbar_top.html" with active="About-us" %}
+{% endblock navbar %}
+
+{% block main %}
+<h2 style="margin-top:34px;">PGP Canada</h2>
+<p>In an unprecedented achievement, the Human Genome Project provided the first drafts of nearly complete human genome sequences in 2001 after more than a decade of effort by scientists worldwide. This information is now being used to advance medicine, human biology, and knowledge of human origins.
+
+We foresee a day when many individuals will want to get their own genome sequenced so that they may use this information to understand such things as their individual risk profiles for disease, their physical and biological characteristics, and their personal ancestries. To get to this point will require a critical mass of interested users, tools for obtaining and interpreting genome information, and supportive policy, research, and service communities. To catalyze these developments, we launched the Personal Genome Project Canada (PGP-Canada).</p>
+
+<hr />
+
+<h2>Contact us</h2>
+
+<p>For questions or more information about the Personal Genome Project Canada, please use the form below to contact us.</p>
+<form action="{% url 'canada:contact' %}" method="post">
+  <table class="table lead">
+    <tr><td>Subject:</td>
+      <td><input class="span8" type="text" name="subject"></td>
+    </tr>
+    <tr><td>Your email:</td>
+      <td><input class="span4" type="text" name="email"></td>
+    </tr>
+    <tr><td>Message:</td>
+      <td><textarea class="span8" name="message" rows="10" cols="50"></textarea></td>
+    </tr>
+    <tr><td></td>
+      <td>
+	{% csrf_token %}
+	<input class="btn btn-primary btn-large" type="submit" value="Submit message">
+      </td>
+    </tr>
+  </table>
+</form>
+
+{% endblock main %}

@@ -2,14 +2,14 @@
 
 {% block navbar %}
 {% include "organization/navbar_top.html" with active="Participate" %}
-{% block navbar %}
+{% endblock navbar %}
 
 {% block navpills %}
 <ul class="nav nav-pills pull-right" style="margin-bottom:0px;margin-top:2px;" >
-  <li><a href="{% url 'organization:pgp' %}">About the PGP</a></li>
-  <li><a href="{% url 'organization:why-participate' %}">Why participate</a></li>
-  <li><a href="{% url 'organization:non-anonymous' %}">Non-Anonymous</a></li>
-  <li><a href="{% url 'organization:risks-benefits' %}">Risks & Benefits</a></li>
-  <li><a href="{% url 'organization:pgp-sign-up' %}">Sign-up</a></li>
+  <li{% if active == "organization:pgp" %} class="active"{% endif %}><a href="{% url 'organization:pgp' %}">About the PGP</a></li>
+  <li{% if active == "organization:why-participate" %} class="active"{% endif %}><a href="{% url 'organization:why-participate' %}">Why participate</a></li>
+  <li{% if active == "organization:non-anonymous" %} class="active"{% endif %}><a href="{% url 'organization:non-anonymous' %}">Non-Anonymous</a></li>
+  <li{% if active == "organization:risks-benefits" %} class="active"{% endif %}><a href="{% url 'organization:risks-benefits' %}">Risks & Benefits</a></li>
+  <li{% if active == "organization:pgp-sign-up" %} class="active"{% endif %}><a href="{% url 'organization:pgp-sign-up' %}">Sign-up</a></li>
 </ul>
 {% endblock navpills %}

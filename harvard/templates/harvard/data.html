@@ -1,4 +1,10 @@
-{% extends "harvard/index.html" %}
+{% extends "www_personalgenomes_org/data.html" %}
+
+{% block title %}Personal Genome Project: Harvard Medical School{% endblock title %}
+
+{% block navbar %}
+{% include "harvard/navbar_top.html" with active="Data" %}
+{% endblock navbar %}
 
 {% block main %}
 <h2 style="margin-top:34px;">Data & Samples</h2>
