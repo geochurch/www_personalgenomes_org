@@ -12,18 +12,20 @@ urlpatterns = patterns(
         name='about-pgp'),
     url(r'^/sign-up/?', TemplateView.as_view(template_name='harvard/sign-up.html'),
         name='sign-up'),
+    url(r'^/data/?', TemplateView.as_view(template_name='harvard/data.html'),
+        name='data'),
     url(r'^/news/?', TemplateView.as_view(template_name='harvard/news.html'),
         name='news'),
+    url(r'^/global-network/?', TemplateView.as_view(template_name='harvard/global-network.html'),
+        name='global-network'),
 
-
+    # Content not linked on navbar and/or index page.
     url(r'^/historic-documents/?', TemplateView.as_view(template_name='harvard/historic-documents.html'),
         name='historic-documents'),
     url(r'^/howitworks/?', TemplateView.as_view(template_name='harvard/howitworks.html'),
         name='howitworks'),
     url(r'^/collection-centers/?', TemplateView.as_view(template_name='harvard/collection-centers.html'),
         name='collection-centers'),
-    url(r'^/data/?', TemplateView.as_view(template_name='harvard/data.html'),
-        name='data'),
 
     url(r'^/documents/?', RedirectView.as_view(url='/harvard/sign-up#documents'),
         name='documents'),
