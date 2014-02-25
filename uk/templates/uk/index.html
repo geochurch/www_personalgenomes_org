@@ -17,3 +17,7 @@ The Personal Genome Project UK is dedicated to creating public UK genome, health
 {% block index_link_data %}{% url 'uk:data' %}{% endblock index_link_data %}
 
 {% block index_link_global_network %}{% url 'uk:global-network' %}{% endblock index_link_global_network %}
+
+{% block footer %}
+{% include "uk/footer.html" %}
+{% endblock footer %}

@@ -1,56 +1,40 @@
-{% extends "organization/menu_about.html" %}
+{% extends "www_personalgenomes_org/contact-us.html" %}
 
-{% block main %}
-<h2 class="top-heading">Contact PersonalGenomes.org</h2>
+{% block title %}Personal Genome Project: PersonalGenomes.org{% endblock title %}
 
-<p class="lead">
-  PersonalGenomes.org is a United States 501(c)(3) nonprofit organization that organizes the <a href="{% url 'organization:pgp' %}">Personal Genome Project</a>, as well as the <a href="http://www.getconference.org">GET conference</a> and the <a href="http://www.openhumans.org">Open Humans Network</a>.
-</p>
-<p class="lead">
-If you would like to contact a regional Personal Genome Project, please look at our <a href="{% url 'organization:network' %}">global network</a> to find your local project.
-</p>
-<div class="lead">
+{% block navbar %}
+{% include "organization/navbar_top.html" with active="About" %}
+{% endblock navbar %}
+
+{% block navpills %}
+<div class="row">
+  <ul class="nav nav-pills pull-right" style="margin-bottom:0px;margin-top:2px;">
+    <li><a href="{% url 'organization:mission' %}">Our mission</a></li>
+    <li><a href="{% url 'organization:people' %}">People</a></li>
+    <li><a href="{% url 'organization:sharing' %}">Sharing Policies</a></li>
+    <li><a href="{% url 'organization:contact-us' %}">Contact Us</a></li>
+    <li><a href="{% url 'organization:press' %}">Press</a></li>
+    <li><a href="{% url 'organization:publications' %}">Publications</a></li>
+  </ul>
+</div>
+{% endblock navpills %}
+
+{% block contact_local %}
+<h2>Contact PersonalGenomes.org</h2>
 <table class="table table-hover">
   <tr>
-    <td style="width:40%;">
-      <strong>Postal Address:</strong>
-    </td>
-    <td>
-      PersonalGenomes.org<br />
+    <td><h4>Postal Address:</h4></td>
+    <td>PersonalGenomes.org<br />
       423 Brookline Avenue, #323<br />
-      Boston MA 02215-5410
-    </td>
+      Boston MA 02215-5410</td>
   </tr>
   <tr>
-    <td>
-      <strong>Press and media inquiries:</strong>
-    </td>
-    <td>
-      <a href="mailto:press@personalgenomes.org">press@personalgenomes.org</a>
-    </td>
+    <td><h4>Press and media inquiries:</h4></td>
+    <td><a href="mailto:press@personalgenomes.org">press@personalgenomes.org</a></td>
   </tr>
   <tr>
-    <td>
-      <strong>Website and content related inquiries:</strong>
-    </td>
-    <td>
-      <a href="mailto:website@personalgenomes.org">website@personalgenomes.org</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h4>Donation related inquiries:</h4>
-    </td>
-    <td>
-      <a href="mailto:giving@personalgenomes.org">giving@personalgenomes.org</a>
-    </td>
+    <td><h4>Donation related inquiries:</h4></td>
+    <td><a href="mailto:giving@personalgenomes.org">giving@personalgenomes.org</a></td>
   </tr>
 </table>
-    </div>
-</div>
-
-{% endblock main %}
-
-{% block footer %}
-{% include "organization/footer.html" %}
-{% endblock footer %}
+{% endblock contact_local %}

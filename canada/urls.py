@@ -19,6 +19,7 @@ urlpatterns = patterns(
         name='news'),
     url(r'^/global-network/?', TemplateView.as_view(template_name='canada/global-network.html'),
         name='global-network'),
+    url(r'^/contact-us/?', views.contact, name='contact-us'),
 
     url(r'^/project/?', TemplateView.as_view(template_name='canada/project.html'),
         name='project'),

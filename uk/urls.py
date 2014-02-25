@@ -19,4 +19,6 @@ urlpatterns = patterns(
         name='news'),
     url(r'^/global-network/?', TemplateView.as_view(template_name='uk/global-network.html'),
         name='global-network'),
+    url(r'^/contact-us/?', TemplateView.as_view(template_name='uk/contact-us.html'),
+        name='contact-us'),
     )
