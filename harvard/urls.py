@@ -18,6 +18,8 @@ urlpatterns = patterns(
         name='news'),
     url(r'^/global-network/?', TemplateView.as_view(template_name='harvard/global-network.html'),
         name='global-network'),
+    url(r'^/contact-us/?', TemplateView.as_view(template_name='harvard/contact-us.html'),
+        name='contact-us'),
 
     # Content not linked on navbar and/or index page.
     url(r'^/historic-documents/?', TemplateView.as_view(template_name='harvard/historic-documents.html'),
