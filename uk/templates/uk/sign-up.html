@@ -1,0 +1,67 @@
+{% extends "www_personalgenomes_org/sign-up.html" %}
+
+{% block title %}Personal Genome Project: United Kingdom{% endblock title %}
+
+{% block navbar %}
+{% include "uk/navbar_top.html" with active="Sign-up" %}
+{% endblock navbar %}
+
+{% block main %}
+<h2 style="margin-top:34px">Enrollment Process and Requirements</h2>
+
+<p class="lead">Enrolling in the PGP-UK is an online process. Individuals considering participation should closely review our study guide and consent forms. To qualify for enrollment, prospective participants must complete an online exam to demonstrate their comprehension of the risks and protocols associated with being a member of the PGP-UK.</p>
+
+<p><strong>Requirements:</strong></p>
+<ul style="margin-bottom:15px">
+  <li>Willing to share genetic, health and trait data in a public and non-anonymous manner.</li>
+  <li>United Kingdom citizen or permanent resident.</li>
+  <li>At least 21 years of age.</li>
+  <li>Capable of giving autonomous consent. We do not permit enrollment through legal guardianship, for example.</li>
+  <li>Identical (monozygotic) twins are welcome, but both twins must complete the enrollment process to be eligible.</li>
+</ul>
+
+<a class="btn btn-primary btn-large" href="https://my.personalgenomes.org.uk/international_participants"><i class="icon-external-link">   </i>Register your interest in PGP-UK</a>
+
+<hr />
+
+<h2 style="margin-top:34px;">Participation Documents</h2>
+
+<div class="alert">
+  <p><strong>Please Note:</strong> The consent forms below are for review purposes only, the signature boxes are not functional in the pdf. Once participants begin the online eligibility screening and enrollment process, they are provided with instructions for electronically signing the consent forms.</p>
+</div>
+
+<table class="table">
+  <tr>
+    <td>
+      <h4>Consent for participation</h4>
+      <p>The consent for participation, or the "full-consent". This is the main consent document participants are expected to understand and agree to when enrolling. Approved 06/06/2013.</p>
+    </td>
+    <td style="width:20%;min-width:110px">
+      <a class="btn" href="/static/docs/uk/PGP-UK_FullConsent_06Jun13.pdf" style="margin-top:10px"><i class="icon-file-text-alt">   </i>Get PDF</a>
+    </td> 
+  </tr>
+  <tr>
+    <td>
+      <h4>Study guide</h4>
+      <p>This study guide explains many of the key protocols, as well as potential risks for participants when receiving and publishing whole genome data through our project. Individuals must pass an exam testing understanding of this material before they can apply to enroll in the study.
+    </td>
+    <td>
+      <a class="btn" href="http://www.pgpstudy.org" style="margin-top:10px"><i class="icon-external-link">   </i>Visit study guide site</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h4>Consent for Eligibility Screening</h4>
+      <p>Consent for Eligibility Screening, or the "mini-consent". Participants must agree to this before beginning the enrollment process. Approval renewed 02/21/2013.</p>
+    </td>
+    <td>
+      <a class="btn" href="/static/docs/uk/PGP-UK_MiniConsent_06Jun13.pdf" style="margin-top:10px"><i class="icon-file-text-alt">   </i>Get PDF</a>
+    </td>
+  </tr>
+</table>
+
+{% endblock main %}
+
+{% block footer %}
+{% include "uk/footer.html" %}
+{% endblock footer %}

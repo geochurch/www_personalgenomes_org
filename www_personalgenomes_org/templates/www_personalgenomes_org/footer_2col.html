@@ -1,0 +1,24 @@
+<div class="row-fluid">
+  <div class="span6">
+    <h5>PGP Global Network</h5>
+    <p>
+      <a href="{% url 'harvard:index' %}">United States</a>
+      <i> </i>&bull;<i> </i>
+      <a href="{% url 'canada:index' %}">Canada</a>
+      <i> </i>&bull;<i> </i>
+      <a href="{% url 'uk:index' %}">United Kingdom</a>
+    </p>
+  </div>
+  <div class="span6">
+    <h5>Website information</h5>
+    <p>
+      <a href="{% block contact_us_url %}{% url 'contact-us' %}{% endblock contact_us_url %}">Contact Us</a>
+      <i> </i>&bull;<i> </i>
+      <a href="{% url 'organization:index' %}"><span class="h5">About PersonalGenomes.org</span></a>
+      <i> </i>&bull;<i> </i>
+      <a href="{% url 'tos' %}">Terms of Service</a>
+      <i> </i>&bull;<i> </i>
+      <a href="{% url 'website-privacy-policy' %}">Privacy Policy</a>
+    </p>
+  </div>
+</div>

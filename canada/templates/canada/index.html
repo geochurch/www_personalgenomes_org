@@ -1,52 +1,23 @@
-{% extends "base.html" %}
+{% extends "www_personalgenomes_org/index.html" %}
 
 {% block title %}Personal Genome Project: Canada{% endblock title %}
 
-{% block brand %}<a class="brand" href="/">Personal Genome Project</a><a class="brand" href="/canada"><i class="icon-double-angle-right">   </i>Canada</a>{% endblock brand %}
+{% block navbar %}
+{% include "canada/navbar_top.html" %}
+{% endblock navbar %}
 
-{% block navpills %}
-<div class="row-fluid" style="margin-top:4px;">
-  <div class="span10">
-    <ul class="nav nav-tabs">
-      <li><a href="{% url 'canada:index' %}">PGP Canada</a></li>
-      <li><a href="{% url 'canada:project' %}">Project Overview</a></li>
-      <li><a href="{% url 'canada:consent' %}">Consent Form</a></li>
-      <li><a href="{% url 'canada:contact' %}">Contact</a></li>
-    </ul>
-  </div>
-  <div class="span2">
-    <a class="btn pull-right" style="margin-top:8px;" href="{% url 'network' %}">Other PGP sites</a>
-  </div>
-</div>
-{% endblock navpills %}
+{# Uncomment and use this block to customize front page text. #}
+{# {% block index_mainbox_content %} #}
+{# {% endblock index_mainbox_content %} #}
 
-{% block main %}
-<div class="hero-unit">
-  <div class="row-fluid">
-    <div class="span8">
-      <h1>PGP Canada</h1>
-      <h3>Volunteers from the public working together with researchers to advance personal genomics.</h3>
-    </div>
-    <div class="span4">
-      <img src="/static/img/canada/pgp_canada_logo.png"/>
-    </div>
-  </div>
-  <div class="row-fluid">
-    <p>We believe individuals from the general public have a vital role to play in making personal genomes useful. We are recruiting volunteers who are willing to share their genome sequence and many types of personal information with the research community and the general public, so that together we will be better able to advance our understanding of genetic and environmental contributions to human health and disease.</p>
-  </div>
-  <div class="row-fluid">
-    <div class="span3">
-      <a class="btn btn-primary" href="{% url 'canada:project' %}">Project Overview</a>
-    </div>
-    <div class="span3">
-      <a class="btn btn-primary" href="{% url 'canada:consent' %}">Consent Form</a>
-    </div>
-    <div class="span3">
-      <a class="btn btn-primary" href="{% url 'canada:contact' %}">Contact Us</a>
-    </div>
-    <div class="span3">
-      <a class="btn btn-primary" href="http://www.personalgenomes.ca/"><i class="icon-external-link">   </i>Visit our external site!</a>
-    </div>
-  </div>
-</div>
-{% endblock main %}
+{% block index_link_about_pgp %}{% url 'canada:about-pgp' %}{% endblock index_link_about_pgp %}
+
+{% block index_link_sign_up %}{% url 'canada:sign-up' %}{% endblock index_link_sign_up %}
+
+{% block index_link_data %}{% url 'canada:data' %}{% endblock index_link_data %}
+
+{% block index_link_global_network %}{% url 'canada:global-network' %}{% endblock index_link_global_network %}
+
+{% block footer %}
+{% include "canada/footer.html" %}
+{% endblock footer %}
