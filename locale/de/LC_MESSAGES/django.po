@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-26 20:36-0500\n"
+"POT-Creation-Date: 2014-02-26 20:55-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,8 +66,8 @@ msgstr ""
 "genetischen Daten ist ein ausdrückliches Ziel. DAHER arbeitet die PGP mit "
 "den Teilnehmern bereit, die Erwartungen an Privatsphäre zu verzichten. "
 "Dieser Verzicht ist nicht für jedermann, aber kommen Sie mit den "
-"Freiwilligen, die einen wertvollen und nachhaltigen Beitrag zur "
-"Wissenschaft zu machen."
+"Freiwilligen, die einen wertvollen und nachhaltigen Beitrag zur Wissenschaft "
+"zu machen."
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:15
 #, fuzzy
@@ -104,16 +104,20 @@ msgid ""
 "human experience to produce even more extensive collections of associated "
 "data."
 msgstr ""
-"Das Genom ist nur ein Teil der Geschichte: Gene nicht mit der Umwelt zu interagieren Merkmalen zu bilden. Teilnehmer dazu beitragen kann, anderen öffentlichen Daten wählen zu öffentlichen Daten über ihre Gesundheit und Charakterzüge zu bauen. Wir versuchen auch, die Teilnehmer mit Forschungsprojekten interessiert Profi andere Aspekte der menschlichen Erfahrung, um noch umfang Assoziierte Datensammlungen produzieren verbinden."
+"Das Genom ist nur ein Teil der Geschichte: Gene nicht mit der Umwelt zu "
+"interagieren Merkmalen zu bilden. Teilnehmer dazu beitragen kann, anderen "
+"öffentlichen Daten wählen zu öffentlichen Daten über ihre Gesundheit und "
+"Charakterzüge zu bauen. Wir versuchen auch, die Teilnehmer mit "
+"Forschungsprojekten interessiert Profi andere Aspekte der menschlichen "
+"Erfahrung, um noch umfang Assoziierte Datensammlungen produzieren verbinden."
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-default.html:6
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:7
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:32
 #, fuzzy
 msgid "Sharing Personal Genomes"
 msgstr "Austausch von persönlichen Genome"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-default.html:7
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:8
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:35
+#, fuzzy
 msgid ""
 "The Personal Genome Project was founded in 2005 and is dedicated to creating "
 "public genome, health, and trait data. Sharing data is critical to "
@@ -128,17 +132,13 @@ msgstr ""
 "Teilnehmer einladen bereit, öffentlich zu teilen ihre persönlichen Daten für "
 "das Wohl behindert."
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-default.html:8
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:38
 #, fuzzy
 msgid "Learn more about the PGP"
 msgstr "Über die PGP"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-mainpanel-localized.html:9
-#, fuzzy
-msgid "Learn about the PGP"
-msgstr "Über die PGP"
-
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:52
+#, fuzzy
 msgid ""
 "Donating your genome and health data to science is a great way to enable "
 "advances in understanding human genetics, biology, and health. We seek "
@@ -152,10 +152,12 @@ msgstr ""
 "Ressource geworden."
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:54
+#, fuzzy
 msgid "Learn about participating"
 msgstr "Erfahren Sie mehr über die Teilnahme"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:59
+#, fuzzy
 msgid ""
 "Open data is a critical component of the scientific method, but genomes are "
 "both identifiable and predictive. As a result, many studies choose to "
@@ -170,10 +172,12 @@ msgstr ""
 "die Zusammenarbeit und verbessern unser Verständnis der Genome."
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:61
+#, fuzzy
 msgid "Use PGP data"
 msgstr "Verwenden Sie PGP-Daten"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:66
+#, fuzzy
 msgid ""
 "The pilot group for the Personal Genome Project has been based at Harvard, "
 "but we are a global group, with projects starting around the world."
@@ -182,108 +186,6 @@ msgstr ""
 "wir sind eine globale Gruppe, beginnend mit Projekten auf der ganzen Welt."
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:68
+#, fuzzy
 msgid "Meet our PGP groups"
 msgstr "Treffen Sie unsere PGP Gruppen"
-
-#~ msgid "About"
-#~ msgstr "Über"
-
-#~ msgid "Our mission"
-#~ msgstr "Unsere Mission"
-
-#~ msgid "Publications"
-#~ msgstr "Veröffentlichungen"
-
-#~ msgid "related sites"
-#~ msgstr "verwandten seiten"
-
-#~ msgid "PGP Blog"
-#~ msgstr "PGP Blog"
-
-#~ msgid "GET Conference"
-#~ msgstr "GET-Konferenz"
-
-#~ msgid "Why participate"
-#~ msgstr "Warum teilnehmen"
-
-#~ msgid "Non-Anonymous"
-#~ msgstr "Nicht anonym"
-
-#~ msgid "Risks & Benefits"
-#~ msgstr "Risiken und Vorteile"
-
-#~ msgid "Sign-up"
-#~ msgstr "Anmelde"
-
-#~ msgid "Research"
-#~ msgstr "Forschung"
-
-#~ msgid "Get Data"
-#~ msgstr "Erhalten Daten"
-
-#~ msgid "PGP Network"
-#~ msgstr "PGP Netzwerk"
-
-#~ msgid "Starting a PGP Site"
-#~ msgstr "Starten eines PGP-Website"
-
-#~ msgid "Support us"
-#~ msgstr "unterstützen Sie uns"
-
-#~ msgid "Contact Us"
-#~ msgstr "Kontaktieren Sie uns"
-
-#~ msgid "Terms of Service"
-#~ msgstr "Nutzungsbedingungen"
-
-#~ msgid "Privacy Policy"
-#~ msgstr "Datenschutz"
-
-#~ msgid "Stay connected"
-#~ msgstr "Bleiben"
-
-#~ msgid "Additional sites"
-#~ msgstr "Weitere Websites"
-
-#~ msgid "Blog"
-#~ msgstr "Blog"
-
-#~ msgid "Learn more"
-#~ msgstr "Erfahren Sie mehr"
-
-#~ msgid ""
-#~ "The pilot PGP site at Harvard University was founded in 2005 and has over "
-#~ "3,000 participants!"
-#~ msgstr ""
-#~ "Der Pilot PGP-Website an der Harvard University wurde 2005 gegründet und "
-#~ "hat über 3.000 Teilnehmern!"
-
-#~ msgid "Learn about<br/>PGP Harvard"
-#~ msgstr "Erfahren Sie<br/>mehr über<br/>PGP Harvard"
-
-#~ msgid ""
-#~ "Founded in 2012, PGP Canada is located at the McLaughlin Centre at the "
-#~ "University of Toronto."
-#~ msgstr ""
-#~ "Im Jahr 2012 gegründet, ist PGP Kanada an der McLaughlin Center an der "
-#~ "Universität von Toronto."
-
-#~ msgid "Learn about<br/>PGP Canada"
-#~ msgstr "Erfahren Sie<br/>mehr über<br/>PGP Canada"
-
-#~ msgid ""
-#~ "Founded in 2013, PGP United Kingdom is located at University College "
-#~ "London."
-#~ msgstr ""
-#~ "Im Jahr 2013 gegründet, ist PGP Großbritannien am University College "
-#~ "London."
-
-#~ msgid "Learn about<br/>PGP UK"
-#~ msgstr "Erfahren Sie<br/>mehr über<br/>PGP UK"
-
-#~ msgid "Why participate?"
-#~ msgstr "Warum teilnehmen?"
-
-#, fuzzy
-#~ msgid "Read about PGP Canada enrollment"
-#~ msgstr "Erfahren Sie<br/>mehr über<br/>PGP Canada"
