@@ -6,39 +6,39 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="brand" href="{% url 'canada:index' %}">Personal Genome Project: Canada</a>
+      <a class="brand" href="{% url 'canada:index' %}">{% trans "Personal Genome Project" %}: {% trans "Canada" %}</a>
       <div class="nav-collapse collapse">
 
 	<ul class="nav pull-right">
 
           {% if active == "About-us" %}
-          <li class="active"><a href="{% url 'canada:about-us' %}">About us</a></li>
+          <li class="active"><a href="{% url 'canada:about-us' %}">{% trans "About us" %}</a></li>
           {% else %}
-          <li><a href="{% url 'canada:about-us' %}">About us</a></li>
+          <li><a href="{% url 'canada:about-us' %}">{% trans "About us" %}</a></li>
           {% endif %}
 
           {% if active == "About-PGP" %}
-          <li class="active"><a href="{% url 'canada:about-pgp' %}">About the PGP</a></li>
+          <li class="active"><a href="{% url 'canada:about-pgp' %}">{% trans "About the PGP" %}</a></li>
           {% else %}
-          <li><a href="{% url 'canada:about-pgp' %}">About the PGP</a></li>
+          <li><a href="{% url 'canada:about-pgp' %}">{% trans "About the PGP" %}</a></li>
           {% endif %}
 
           {% if active == "Sign-up" %}
-          <li class="active"><a href="{% url 'canada:sign-up' %}">Sign up</a></li>
+          <li class="active"><a href="{% url 'canada:sign-up' %}">{% trans "Sign up" %}</a></li>
           {% else %}
-          <li><a href="{% url 'canada:sign-up' %}">Sign up</a></li>
+          <li><a href="{% url 'canada:sign-up' %}">{% trans "Sign up" %}</a></li>
           {% endif %}
 
           {% if active == "Data" %}
-          <li class="active"><a href="{% url 'canada:data' %}">Data</a></li>
+          <li class="active"><a href="{% url 'canada:data' %}">{% trans "Data" %}</a></li>
           {% else %}
-          <li><a href="{% url 'canada:data' %}">Data</a></li>
+          <li><a href="{% url 'canada:data' %}">{% trans "Data" %}</a></li>
           {% endif %}
 
           {% if active == "Papers_and_press" %}
-          <li class="active"><a href="{% url 'canada:news' %}">Papers & Press</a></li>
+          <li class="active"><a href="{% url 'canada:news' %}">{% trans "Papers & Press" %}</a></li>
           {% else %}
-          <li><a href="{% url 'canada:news' %}">Papers & Press</a></li>
+          <li><a href="{% url 'canada:news' %}">{% trans "Papers & Press" %}</a></li>
           {% endif %}
 
 	</ul>

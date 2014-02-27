@@ -6,43 +6,43 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="brand" href="{% url 'harvard:index' %}">Personal Genome Project: Harvard Medical School</a>
+      <a class="brand" href="{% url 'harvard:index' %}">{% trans "Personal Genome Project" %}: {% trans "Harvard Medical School" %}</a>
       <div class="nav-collapse collapse">
 
 	<ul class="nav pull-right">
 
           {% if active == "About-us" %}
-          <li class="active"><a href="{% url 'harvard:about-us' %}">About us</a></li>
+          <li class="active"><a href="{% url 'harvard:about-us' %}">{% trans "About us" %}</a></li>
           {% else %}
-          <li><a href="{% url 'harvard:about-us' %}">About us</a></li>
+          <li><a href="{% url 'harvard:about-us' %}">{% trans "About us" %}</a></li>
           {% endif %}
 
           {% if active == "About-PGP" %}
-          <li class="active"><a href="{% url 'harvard:about-pgp' %}">About the PGP</a></li>
+          <li class="active"><a href="{% url 'harvard:about-pgp' %}">{% trans "About the PGP" %}</a></li>
           {% else %}
-          <li><a href="{% url 'harvard:about-pgp' %}">About the PGP</a></li>
+          <li><a href="{% url 'harvard:about-pgp' %}">{% trans "About the PGP" %}</a></li>
           {% endif %}
 
           {% if active == "Sign-up" %}
-          <li class="active"><a href="{% url 'harvard:sign-up' %}">Sign up</a></li>
+          <li class="active"><a href="{% url 'harvard:sign-up' %}">{% trans "Sign up" %}</a></li>
           {% else %}
-          <li><a href="{% url 'harvard:sign-up' %}">Sign up</a></li>
+          <li><a href="{% url 'harvard:sign-up' %}">{% trans "Sign up" %}</a></li>
           {% endif %}
 
           {% if active == "Data" %}
-          <li class="active"><a href="{% url 'harvard:data' %}">Data</a></li>
+          <li class="active"><a href="{% url 'harvard:data' %}">{% trans "Data" %}</a></li>
           {% else %}
-          <li><a href="{% url 'harvard:data' %}">Data</a></li>
+          <li><a href="{% url 'harvard:data' %}">{% trans "Data" %}</a></li>
           {% endif %}
 
           {% if active == "Papers_and_press" %}
-          <li class="active"><a href="{% url 'harvard:news' %}">Papers & Press</a></li>
+          <li class="active"><a href="{% url 'harvard:news' %}">{% trans "Papers & Press" %}</a></li>
           {% else %}
-          <li><a href="{% url 'harvard:news' %}">Papers & Press</a></li>
+          <li><a href="{% url 'harvard:news' %}">{% trans "Papers & Press" %}</a></li>
           {% endif %}
 
           <form class="navbar-form form-inline pull-right">
-            <a class="btn btn-small" style="margin-top:8px;margin-left:10px;" href="http://my.personalgenomes.org"><i class="icon-external-link"> </i>Participant log in</a>
+            <a class="btn btn-small" style="margin-top:8px;margin-left:10px;" href="http://my.personalgenomes.org"><i class="icon-external-link"> </i>{% trans "Participant log in" %}</a>
           </form>
 
 	</ul>

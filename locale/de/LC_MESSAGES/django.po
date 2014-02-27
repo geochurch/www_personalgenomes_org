@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-26 20:55-0500\n"
+"POT-Creation-Date: 2014-02-26 21:49-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,82 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: canada/templates/canada/navbar_top.html:9
+#: harvard/templates/harvard/navbar_top.html:9
+#: organization/templates/organization/navbar_top.html:9
+#: uk/templates/uk/navbar_top.html:9
+#, fuzzy
+msgid "Personal Genome Project"
+msgstr "Persönliches Genom-Projekt"
+
+#: canada/templates/canada/navbar_top.html:9
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:7
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:7
+#, fuzzy
+msgid "Canada"
+msgstr "Kanada"
+
+#: canada/templates/canada/navbar_top.html:15
+#: canada/templates/canada/navbar_top.html:17
+#: harvard/templates/harvard/navbar_top.html:15
+#: harvard/templates/harvard/navbar_top.html:17
+#: uk/templates/uk/navbar_top.html:15 uk/templates/uk/navbar_top.html.py:17
+msgid "About us"
+msgstr "Über uns"
+
+#: canada/templates/canada/navbar_top.html:21
+#: canada/templates/canada/navbar_top.html:23
+#: harvard/templates/harvard/navbar_top.html:21
+#: harvard/templates/harvard/navbar_top.html:23
+#: uk/templates/uk/navbar_top.html:21 uk/templates/uk/navbar_top.html.py:23
 #: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:6
 #, fuzzy
 msgid "About the PGP"
 msgstr "Über die PGP"
+
+#: canada/templates/canada/navbar_top.html:27
+#: canada/templates/canada/navbar_top.html:29
+#: harvard/templates/harvard/navbar_top.html:27
+#: harvard/templates/harvard/navbar_top.html:29
+#: uk/templates/uk/navbar_top.html:27 uk/templates/uk/navbar_top.html.py:29
+#, fuzzy
+msgid "Sign up"
+msgstr "Anmeldung"
+
+#: canada/templates/canada/navbar_top.html:33
+#: canada/templates/canada/navbar_top.html:35
+#: harvard/templates/harvard/navbar_top.html:33
+#: harvard/templates/harvard/navbar_top.html:35
+#: uk/templates/uk/navbar_top.html:33 uk/templates/uk/navbar_top.html.py:35
+#, fuzzy
+msgid "Data"
+msgstr "Daten"
+
+#: canada/templates/canada/navbar_top.html:39
+#: canada/templates/canada/navbar_top.html:41
+#: harvard/templates/harvard/navbar_top.html:39
+#: harvard/templates/harvard/navbar_top.html:41
+#: uk/templates/uk/navbar_top.html:39 uk/templates/uk/navbar_top.html.py:41
+#, fuzzy
+msgid "Papers & Press"
+msgstr "Publikationen & Presse"
+
+#: harvard/templates/harvard/navbar_top.html:9
+#, fuzzy
+msgid "Harvard Medical School"
+msgstr "Harvard Medical School"
+
+#: harvard/templates/harvard/navbar_top.html:45
+#, fuzzy
+msgid "Participant log in"
+msgstr "Teilnehmer einloggen"
+
+#: uk/templates/uk/navbar_top.html:9
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:9
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:9
+#, fuzzy
+msgid "United Kingdom"
+msgstr "Vereinigtes Königreich"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:10
 #, fuzzy
@@ -110,6 +182,52 @@ msgstr ""
 "Charakterzüge zu bauen. Wir versuchen auch, die Teilnehmer mit "
 "Forschungsprojekten interessiert Profi andere Aspekte der menschlichen "
 "Erfahrung, um noch umfang Assoziierte Datensammlungen produzieren verbinden."
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:3
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:3
+#, fuzzy
+msgid "PGP Global Network"
+msgstr "PGP Globales Netzwerk"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:5
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:5
+#, fuzzy
+msgid "United States"
+msgstr "Vereinigte Staaten"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:13
+#, fuzzy
+msgid "Website information"
+msgstr "Website-Informationen"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:15
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:15
+#, fuzzy
+msgid "Contact Us"
+msgstr "Kontaktieren Sie Uns"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:17
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:17
+#, fuzzy
+msgid "About PersonalGenomes.org"
+msgstr "Über PersonalGenomes.org"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:19
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:19
+#, fuzzy
+msgid "Terms of Service"
+msgstr "Nutzungsbedingungen"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:21
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:21
+#, fuzzy
+msgid "Privacy Policy"
+msgstr "Datenschutzrichtlinie"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:25
+#, fuzzy
+msgid "Stay connected"
+msgstr "Bleiben Sie verbunden"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:32
 #, fuzzy
