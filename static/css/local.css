@@ -1,3 +1,24 @@
+/* Our local icons as a font */
+ @font-face {
+  font-family: 'PersonalGenomesOrgIcons';
+  src: url('/static/fonts/PersonalGenomesOrgIcons.eot');
+  src: url('/static/fonts/PersonalGenomesOrgIcons.eot') format('embedded-opentype'), url('/static/fonts/PersonalGenomesOrgIcons.woff') format('woff'), url('/static/fonts/PersonalGenomesOrgIcons.ttf') format('truetype'), url('/static/fonts/PersonalGenomesOrgIcons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.pgorg-icon {
+  display: inline-block;
+  font-family: PersonalGenomesOrgIcons;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.pgorg-icon-translation:before {
+  content: "T";
+}
+
 /* Sticky footer styles
    -------------------------------------------------- */
 html,
