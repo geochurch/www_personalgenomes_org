@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-26 21:49-0500\n"
+"POT-Creation-Date: 2014-03-04 15:20-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,82 +18,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: canada/templates/canada/navbar_top.html:9
-#: harvard/templates/harvard/navbar_top.html:9
-#: organization/templates/organization/navbar_top.html:9
-#: uk/templates/uk/navbar_top.html:9
-#, fuzzy
-msgid "Personal Genome Project"
-msgstr "Persönliches Genom-Projekt"
+#: www_personalgenomes_org/settings.py:178
+msgid "German"
+msgstr "Deutsch"
 
-#: canada/templates/canada/navbar_top.html:9
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:7
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:7
-#, fuzzy
-msgid "Canada"
-msgstr "Kanada"
+#: www_personalgenomes_org/settings.py:179
+msgid "English"
+msgstr "Englisch"
 
-#: canada/templates/canada/navbar_top.html:15
-#: canada/templates/canada/navbar_top.html:17
-#: harvard/templates/harvard/navbar_top.html:15
-#: harvard/templates/harvard/navbar_top.html:17
-#: uk/templates/uk/navbar_top.html:15 uk/templates/uk/navbar_top.html.py:17
-msgid "About us"
-msgstr "Über uns"
-
-#: canada/templates/canada/navbar_top.html:21
-#: canada/templates/canada/navbar_top.html:23
-#: harvard/templates/harvard/navbar_top.html:21
-#: harvard/templates/harvard/navbar_top.html:23
-#: uk/templates/uk/navbar_top.html:21 uk/templates/uk/navbar_top.html.py:23
 #: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:6
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:23
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:25
 #, fuzzy
 msgid "About the PGP"
 msgstr "Über die PGP"
-
-#: canada/templates/canada/navbar_top.html:27
-#: canada/templates/canada/navbar_top.html:29
-#: harvard/templates/harvard/navbar_top.html:27
-#: harvard/templates/harvard/navbar_top.html:29
-#: uk/templates/uk/navbar_top.html:27 uk/templates/uk/navbar_top.html.py:29
-#, fuzzy
-msgid "Sign up"
-msgstr "Anmeldung"
-
-#: canada/templates/canada/navbar_top.html:33
-#: canada/templates/canada/navbar_top.html:35
-#: harvard/templates/harvard/navbar_top.html:33
-#: harvard/templates/harvard/navbar_top.html:35
-#: uk/templates/uk/navbar_top.html:33 uk/templates/uk/navbar_top.html.py:35
-#, fuzzy
-msgid "Data"
-msgstr "Daten"
-
-#: canada/templates/canada/navbar_top.html:39
-#: canada/templates/canada/navbar_top.html:41
-#: harvard/templates/harvard/navbar_top.html:39
-#: harvard/templates/harvard/navbar_top.html:41
-#: uk/templates/uk/navbar_top.html:39 uk/templates/uk/navbar_top.html.py:41
-#, fuzzy
-msgid "Papers & Press"
-msgstr "Publikationen & Presse"
-
-#: harvard/templates/harvard/navbar_top.html:9
-#, fuzzy
-msgid "Harvard Medical School"
-msgstr "Harvard Medical School"
-
-#: harvard/templates/harvard/navbar_top.html:45
-#, fuzzy
-msgid "Participant log in"
-msgstr "Teilnehmer einloggen"
-
-#: uk/templates/uk/navbar_top.html:9
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:9
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:9
-#, fuzzy
-msgid "United Kingdom"
-msgstr "Vereinigtes Königreich"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:10
 #, fuzzy
@@ -163,6 +101,7 @@ msgstr ""
 "verwandten umfangreiche Genom-und andere Personaldaten."
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:18
+#, fuzzy
 msgid "Genomes, Environments, and Traits"
 msgstr "Genome, Umwelt, und Traits"
 
@@ -183,58 +122,70 @@ msgstr ""
 "Forschungsprojekten interessiert Profi andere Aspekte der menschlichen "
 "Erfahrung, um noch umfang Assoziierte Datensammlungen produzieren verbinden."
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:3
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:3
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:5
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:5
 #, fuzzy
 msgid "PGP Global Network"
 msgstr "PGP Globales Netzwerk"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:5
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:5
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:7
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:7
 #, fuzzy
 msgid "United States"
 msgstr "Vereinigte Staaten"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:13
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:9
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:9
+#, fuzzy
+msgid "Canada"
+msgstr "Kanada"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:11
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:11
+#, fuzzy
+msgid "United Kingdom"
+msgstr "Vereinigtes Königreich"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:15
 #, fuzzy
 msgid "Website information"
 msgstr "Website-Informationen"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:15
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:15
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:17
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:17
 #, fuzzy
 msgid "Contact Us"
 msgstr "Kontaktieren Sie Uns"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:17
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:17
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:19
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:19
 #, fuzzy
 msgid "About PersonalGenomes.org"
 msgstr "Über PersonalGenomes.org"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:19
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:19
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:21
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:21
 #, fuzzy
 msgid "Terms of Service"
 msgstr "Nutzungsbedingungen"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:21
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:21
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:23
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:23
 #, fuzzy
 msgid "Privacy Policy"
 msgstr "Datenschutzrichtlinie"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:25
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:27
 #, fuzzy
 msgid "Stay connected"
 msgstr "Bleiben Sie verbunden"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:32
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:20
 #, fuzzy
 msgid "Sharing Personal Genomes"
 msgstr "Austausch von persönlichen Genome"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:35
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:23
 #, fuzzy
 msgid ""
 "The Personal Genome Project was founded in 2005 and is dedicated to creating "
@@ -250,12 +201,12 @@ msgstr ""
 "Teilnehmer einladen bereit, öffentlich zu teilen ihre persönlichen Daten für "
 "das Wohl behindert."
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:38
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:26
 #, fuzzy
 msgid "Learn more about the PGP"
 msgstr "Über die PGP"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:52
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:40
 #, fuzzy
 msgid ""
 "Donating your genome and health data to science is a great way to enable "
@@ -269,12 +220,12 @@ msgstr ""
 "spenden vielfältigen persönlichen Informationen, um eine öffentliche "
 "Ressource geworden."
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:54
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:42
 #, fuzzy
 msgid "Learn about participating"
 msgstr "Erfahren Sie mehr über die Teilnahme"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:59
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:47
 #, fuzzy
 msgid ""
 "Open data is a critical component of the scientific method, but genomes are "
@@ -289,12 +240,12 @@ msgstr ""
 "auf Forscher. Die Daten des öffentlichen PGP ist eine gemeinsame Basis für "
 "die Zusammenarbeit und verbessern unser Verständnis der Genome."
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:61
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:49
 #, fuzzy
 msgid "Use PGP data"
 msgstr "Verwenden Sie PGP-Daten"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:66
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:54
 #, fuzzy
 msgid ""
 "The pilot group for the Personal Genome Project has been based at Harvard, "
@@ -303,7 +254,46 @@ msgstr ""
 "Die Pilotgruppe für das Personal Genome Project hat in Harvard basiert, aber "
 "wir sind eine globale Gruppe, beginnend mit Projekten auf der ganzen Welt."
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:68
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:56
 #, fuzzy
 msgid "Meet our PGP groups"
 msgstr "Treffen Sie unsere PGP Gruppen"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:17
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:19
+#, fuzzy
+msgid "About us"
+msgstr "Über uns"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:29
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:31
+#, fuzzy
+msgid "Sign up"
+msgstr "Anmeldung"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:35
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:37
+#, fuzzy
+msgid "Data"
+msgstr "Daten"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:41
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:43
+#, fuzzy
+msgid "Papers & Press"
+msgstr "Publikationen & Presse"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:58
+#, python-format
+#, fuzzy
+msgid "Change to %(lang_name)s"
+msgstr "Wechseln Sie in %(lang_name)s"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:67
+#, fuzzy
+msgid "Participant log in"
+msgstr "Teilnehmer einloggen"
+
+#, fuzzy
+#~ msgid "Harvard Medical School"
+#~ msgstr "Harvard Medical School"
