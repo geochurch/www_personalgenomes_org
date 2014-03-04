@@ -114,6 +114,9 @@ urlpatterns = patterns(
     url(r'donate/other.html/?$', views.redirect_to_name, {'url_name':'donate'}),
     url(r'donate/matching.html/?$', views.redirect_to_name, {'url_name':'donate'}),
 
+    # Internationalization language-handling views
+    (r'^i18n/', include('django.conf.urls.i18n')),
+
     # Footer pages
 
     url(r'^contact-us/?$',

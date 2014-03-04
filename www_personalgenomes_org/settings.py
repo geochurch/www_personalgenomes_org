@@ -1,6 +1,7 @@
 # Django settings for www_personalgenomes_org project.
 
 import os
+from django.utils.translation import ugettext_lazy as _
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -171,3 +172,12 @@ GEOIP_PATH = os.path.normpath(os.path.join(BASE_DIR, 'extras/geoip'))
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
 )
+
+# Languages we're using...
+LANGUAGES = (
+    ('de', _('German')),
+    ('en', _('English')),
+)
+
+# Don't make session data persistent.
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
