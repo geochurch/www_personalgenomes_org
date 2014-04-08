@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="brand" href="{% url site_shortname|add:':index' %}">{% trans site_longname %}</a>
+      <a class="brand" href="{% url site_shortname|add:':index' %}">{% if icon %}<img src="{{icon}}" style="max-height:16px;"/> {% endif %}{% trans site_longname %}</a>
       <div class="nav-collapse collapse">
 
 	<ul class="nav pull-right">
