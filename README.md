@@ -58,17 +58,16 @@ test -f ~/.bashrc && source ~/.bashrc
 5. run `brew doctor` to check all is well.
 6. run `brew update` to make sure it's up-to-date.
 7. run `brew install python --with-brewed-openssl` to install Python from Homebrew.
-8. run `brew install mysql` to install MySQL.
-9. run `pip install virtualenv virtualenvwrapper` to install virtualenv using pip, our Python package manager of choice.
-10. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
-11. To make virtualenv and virtualenvwrapper commands work in future terminals, add the following
+8. run `pip install virtualenv virtualenvwrapper` to install virtualenv using pip, our Python package manager of choice.
+9. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
+10. To make virtualenv and virtualenvwrapper commands work in future terminals, add the following
 to your `~/.bashrc` (or create a `.bashrc` file in your home directory if one doesn't exist):
 `export WORKON_HOME=$HOME/.virtualenvs` and
 `source /usr/local/bin/virtualenvwrapper.sh`.
 
 #### Linux ####
 
-1. **(Root user action)** Install python/pip/MySQL dependencies: `sudo apt-get install python-pip python-dev mysql-client libmysqlclient-dev`
+1. **(Root user action)** Install python/pip dependencies: `sudo apt-get install python-pip python-dev`
 2. **(Root user action)** Use pip to install virtualenv and virtualenvwrapper: `sudo pip install virtualenv virtualenvwrapper`
 3. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
 4. To make virtualenv and virtualenvwrapper commands work in future terminals, add the 
@@ -89,17 +88,6 @@ virtualenv's python path: `add2virtualenv $PWD`
 
 In the future, you should run the `workon www_pg_org` command whenever you work on and run this code.
 
-### Set up MySQL (untested for Mac) ###
-
-1. **(Root user action)** Install MySQL server: `sudo apt-get install mysql-server`
-2. Log in to MySQL as root: `mysql -u root -p`
-3. Within MySQL, create the new database: `CREATE DATABASE www_personalgenomes_org;`
-4. Within MySQL, add the user to access the database:
-`grant all privileges on www_personalgenomes_org.* to pgorg@localhost identified by 'glassworks';`
-5. Edit `www_personalgenomes_org/settings.py` in the project tree: change the database password to the one you actually used in the previous step.
-6. Navigate to the top directory in the project and initialize the database by running: `python manage.py syncdb`.
-This will prompt you to create a superuser for Django's auth system, go ahead and do that too.
-
 Running the site
 ----------------
 
@@ -109,44 +97,8 @@ You can run the site now by navigating to the top directory of the project and r
 `python manage.py runserver`. You can then load the site by opening a web browser and
 navigating to `http://localhost:8000`.
 
-### Apache server with WSGI ###
-
-(These instructions are useful if you want to set up a demo site to stage and share potential updates.)
-
-You can use WSGI to run the site with an Apache server with the following steps:
-
-1. **(Root user action)** Install Apache's WSGI mod with `sudo apt-get install libapache2-mod-wsgi`
-2. **(Root user action)** Enable it with `sudo a2enmod wsgi`
-3. **(Root user action)** Edit Apache's default in sites-available (`/etc/apache2/sites-available/default`)
-to contain lines like the following:
-
-```
-<VirtualHost *:80>
-
-  <Directory /path/to/project/www_personalgenomes_org/www_personalgenomes_org>
-    <Files wsgi.py>
-      Order deny,allow 
-      Allow from all
-    </Files>
-  </Directory>
-
-  Alias /static/ /path/to/project/www_personalgenomes_org/static/
-
-  WSGIDaemonProcess pgpsite python-path=/path/to/project/www_personalgenomes_org/path/to/homedir/.virtualenvs/www_pg_org/lib/python2.7/site-packages
-  WSGIProcessGroup pgpsite
-  WSGIScriptAlias / /path/to/project/www_personalgenomes_org-master/www_personalgenomes_org/wsgi.py/
-
-  <Directory /path/to/project/www_personalgenomes_org/static>
-    Order deny,allow
-    Allow from all
-  </Directory>
-  
-</VirtualHost>
-```
-
-**Notes:** 
-* Check what your own path is for virtualenv's site-packages (step 3), you may have a different python version.
-* Make sure permissions are set to give access to the files for the project.
+Because the development settings (which are default) use SQLite, no additional installation of
+database software should be needed for local development. (SQLite is included in Python.)
 
 ### Running on AWS Elastic Beanstalk ###
 
