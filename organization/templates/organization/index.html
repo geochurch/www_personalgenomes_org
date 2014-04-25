@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Personal Genome Project: PersonalGenomes.org{% endblock title %}
+
+{% block brand %}<a class="brand" href="/">Personal Genome Project</a><a class="brand" href="/organization"><i class="icon-double-angle-right">   </i>PersonalGenomes.org</a>{% endblock brand %}
+
+{% block main %}
+<div class="hero-unit" style="margin-top:25px;">
+  <h1>PersonalGenomes.org</h1>
+  <p class="lead">PersonalGenomes.org is a charitable organization working to generate, aggregate and interpret human biological and trait data on an unprecedented scale. Our mission is to make a wide spectrum of data about humans accessible to increase biological literacy and improve human health. PersonalGenomes.org's efforts are informed by values encouraging greater transparency and collaboration between researchers and participants. The organization supports the Personal Genome Project (PGP) global network. The first PGP research study was founded at Harvard Medical School in 2005, and PGP sites now exist at leading institutions in four countries. We also produce the annual <a href="http://www.getconference.org">Genomes, Environments and Traits (GET) Conference</a>.</p>
+  <p>
+    <a class="btn btn-large btn-primary" href="{% url 'organization:mission' %}">Read about our mission  <i> </i><i class="icon-angle-right"></i></a>
+  </p>
+</div>
+
+{% endblock main %}
+
+{% block footer %}
+{% include "organization/footer.html" %}
+{% endblock footer %}

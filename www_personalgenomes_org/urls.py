@@ -94,6 +94,8 @@ urlpatterns = patterns(
         TemplateView.as_view(template_name='www_personalgenomes_org/join-network.html'),
         name='join-network'),
 
+    url(r'^organization',
+        include('organization.urls', namespace="organization")),
     url(r'^harvard',
         include('harvard.urls', namespace="harvard")),
     url(r'^canada',
@@ -111,6 +113,9 @@ urlpatterns = patterns(
     url(r'donate/index.html/?$', views.redirect_to_name, {'url_name':'donate'}),
     url(r'donate/other.html/?$', views.redirect_to_name, {'url_name':'donate'}),
     url(r'donate/matching.html/?$', views.redirect_to_name, {'url_name':'donate'}),
+
+    # Internationalization language-handling views
+    (r'^i18n/', include('django.conf.urls.i18n')),
 
     # Footer pages
 

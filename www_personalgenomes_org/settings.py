@@ -1,9 +1,9 @@
 # Django settings for www_personalgenomes_org project.
 
 import os
+from django.utils.translation import ugettext_lazy as _
 
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
-SITE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -72,7 +72,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.normpath(os.path.join(SITE_ROOT, 'static')),
+    os.path.normpath(os.path.join(BASE_DIR, 'static')),
 )
 
 # List of finder classes that know how to find static files in
@@ -99,6 +99,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -112,7 +113,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.normpath(os.path.join(SITE_ROOT, 'templates')),
+    os.path.normpath(os.path.join(BASE_DIR, 'templates')),
 )
 
 INSTALLED_APPS = (
@@ -127,6 +128,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'www_personalgenomes_org',
+    'organization',
     'harvard',
     'canada',
     'uk',
@@ -164,4 +166,18 @@ LOGGING = {
 # GeoIP configuration
 # This includes GeoLite data created by MaxMind,
 # available from http://www.maxmind.com
-GEOIP_PATH = os.path.normpath(os.path.join(SITE_ROOT, 'extras/geoip'))
+GEOIP_PATH = os.path.normpath(os.path.join(BASE_DIR, 'extras/geoip'))
+
+# Translation files for internationalization and localization.
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
+
+# Languages we're using...
+LANGUAGES = (
+    ('de', _('German')),
+    ('en', _('English')),
+)
+
+# Don't make session data persistent.
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True

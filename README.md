@@ -58,16 +58,27 @@ test -f ~/.bashrc && source ~/.bashrc
 5. run `brew doctor` to check all is well.
 6. run `brew update` to make sure it's up-to-date.
 7. run `brew install python --with-brewed-openssl` to install Python from Homebrew.
+<<<<<<< HEAD
 8. run `pip install virtualenv virtualenvwrapper` to install virtualenv using pip, our Python package manager of choice.
 9. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
 10. To make virtualenv and virtualenvwrapper commands work in future terminals, add the following
+=======
+8. ~~run `brew install mysql` to install MySQL.~~ Default settings now use SQLite, hopefully this works immediately as SQLite is included in Python.
+9. run `pip install virtualenv virtualenvwrapper` to install virtualenv using pip, our Python package manager of choice.
+10. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
+11. To make virtualenv and virtualenvwrapper commands work in future terminals, add the following
+>>>>>>> 7a05a0335e3b0335e0d0b9ec85925d5b3e1778cd
 to your `~/.bashrc` (or create a `.bashrc` file in your home directory if one doesn't exist):
 `export WORKON_HOME=$HOME/.virtualenvs` and
 `source /usr/local/bin/virtualenvwrapper.sh`.
 
 #### Linux ####
 
+<<<<<<< HEAD
 1. **(Root user action)** Install python/pip dependencies: `sudo apt-get install python-pip python-dev`
+=======
+1. **(Root user action)** Install python/pip ~~/MySQL~~ dependencies: `sudo apt-get install python-pip python-dev` ~~` mysql-client libmysqlclient-dev`~~ Default settings now use SQLite, hopefully this works immediately as SQLite is included in Python.
+>>>>>>> 7a05a0335e3b0335e0d0b9ec85925d5b3e1778cd
 2. **(Root user action)** Use pip to install virtualenv and virtualenvwrapper: `sudo pip install virtualenv virtualenvwrapper`
 3. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
 4. To make virtualenv and virtualenvwrapper commands work in future terminals, add the 
@@ -88,6 +99,14 @@ virtualenv's python path: `add2virtualenv $PWD`
 
 In the future, you should run the `workon www_pg_org` command whenever you work on and run this code.
 
+<<<<<<< HEAD
+=======
+### Initialize the database ###
+
+Navigate to the top directory in the project and initialize the database by running: `python manage.py syncdb`.
+This will prompt you to create a superuser for Django's auth system, go ahead and do that too.
+
+>>>>>>> 7a05a0335e3b0335e0d0b9ec85925d5b3e1778cd
 Running the site
 ----------------
 

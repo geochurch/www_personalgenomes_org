@@ -1,4 +1,4 @@
-from django.core.mail import send_mail
+from django.core.mail import send_mail, BadHeaderError
 from django.shortcuts import render
 from django.contrib import messages
 
@@ -31,4 +31,4 @@ def contact(request):
         messages.error(request, '<h4>Error with contact form submission:</h4>' +
                                 '<li>' + '</li><li>'.join(errors) + '</li>',
                                 extra_tags='htmlsafe')
-    return render(request, 'canada/contact.html')
+    return render(request, 'canada/contact-us.html')

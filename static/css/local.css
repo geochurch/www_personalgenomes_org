@@ -1,0 +1,101 @@
+/* Our local icons as a font */
+ @font-face {
+  font-family: 'PersonalGenomesOrgIcons';
+  src: url('/static/fonts/PersonalGenomesOrgIcons.eot');
+  src: url('/static/fonts/PersonalGenomesOrgIcons.eot') format('embedded-opentype'), url('/static/fonts/PersonalGenomesOrgIcons.woff') format('woff'), url('/static/fonts/PersonalGenomesOrgIcons.ttf') format('truetype'), url('/static/fonts/PersonalGenomesOrgIcons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.pgorg-icon {
+  display: inline-block;
+  font-family: PersonalGenomesOrgIcons;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.pgorg-icon-translation:before {
+  content: "T";
+}
+
+/* Sticky footer styles
+   -------------------------------------------------- */
+html,
+body {
+    height: 100%;
+/* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -120px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 120px;
+    line-height: 22px;
+}
+
+#footer {
+    background: linear-gradient(#EEF8E2, rgba(255,255,255,0) );
+    background: -webkit-linear-gradient(#EEF8E2, rgba(255,255,255,0) );
+    font-family: "Raleway";
+}
+#footer h5 {
+    margin: 15px 0px 8px;
+}
+#footer hr {
+    border-top: 3px solid #E9F8D5;
+    border-bottom: 0px solid #ffffff;
+    margin: 0px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Hack to allow more spacing around Font Awesome icons */
+i {
+    white-space:pre;
+}
+
+/* Stuff for our staff pages */
+.bio h4,.bio h5,.bio p {
+    margin:12px;
+}
+.bio img {
+    float:right;
+    margin:12px;
+}
+/* Remove top margin for correct spacing of the top and heading */
+.top-heading {
+    margin-top:0px;
+}
+
+/* Style for the front page layouts */
+.infobox {
+    padding-bottom: 10px;
+}
+
+/* Anchor links fail because the content starts under the navbar.
+   This fix is adapted from:
+   http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/  */
+span.anchor-tag:before {
+  display: block;
+  content: "";
+  height:55px;
+  margin:-55px 0 0;
+}

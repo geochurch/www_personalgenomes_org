@@ -1,0 +1,40 @@
+{% extends "www_personalgenomes_org/contact-us.html" %}
+
+{% block title %}Personal Genome Project: PersonalGenomes.org{% endblock title %}
+
+{% block navbar %}
+{% include "organization/navbar_top.html" with active="About" %}
+{% endblock navbar %}
+
+{% block navpills %}
+<div class="row">
+  <ul class="nav nav-pills pull-right" style="margin-bottom:0px;margin-top:2px;">
+    <li><a href="{% url 'organization:mission' %}">Our mission</a></li>
+    <li><a href="{% url 'organization:people' %}">People</a></li>
+    <li><a href="{% url 'organization:sharing' %}">Sharing Policies</a></li>
+    <li><a href="{% url 'organization:contact-us' %}">Contact Us</a></li>
+    <li><a href="{% url 'organization:press' %}">Press</a></li>
+    <li><a href="{% url 'organization:publications' %}">Publications</a></li>
+  </ul>
+</div>
+{% endblock navpills %}
+
+{% block contact_local %}
+<h2>Contact PersonalGenomes.org</h2>
+<table class="table table-hover">
+  <tr>
+    <td><h4>Postal Address:</h4></td>
+    <td>PersonalGenomes.org<br />
+      423 Brookline Avenue, #323<br />
+      Boston MA 02215-5410</td>
+  </tr>
+  <tr>
+    <td><h4>Press and media inquiries:</h4></td>
+    <td><a href="mailto:press@personalgenomes.org">press@personalgenomes.org</a></td>
+  </tr>
+  <tr>
+    <td><h4>Donation related inquiries:</h4></td>
+    <td><a href="mailto:giving@personalgenomes.org">giving@personalgenomes.org</a></td>
+  </tr>
+</table>
+{% endblock contact_local %}

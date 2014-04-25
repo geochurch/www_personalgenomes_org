@@ -1,40 +1,23 @@
-{% extends "base.html" %}
+{% extends "www_personalgenomes_org/index.html" %}
 
-{% block title %}Personal Genome Project: Harvard{% endblock title %}
+{% block title %}Personal Genome Project: Harvard Medical School{% endblock title %}
 
-{% block brand %}<a class="brand" href="/">Personal Genome Project</a><a class="brand" href="/harvard"><i class="icon-double-angle-right">   </i>Harvard</a>{% endblock brand %}
+{% block navbar %}
+{% include "www_personalgenomes_org/navbar_top.html" with site_shortname="harvard" site_longname="Personal Genome Project: Harvard Medical School" login_url="https://my.pgp-hms.org" %}
+{% endblock navbar %}
 
-{% block navpills %}
-<div class="row-fluid" style="margin-top:4px;">
-  <div class="span8">
-    <ul class="nav nav-tabs">
-      <li><a href="{% url 'harvard:index' %}">Harvard PGP</a></li>
-      <li><a href="{% url 'harvard:people' %}">People</a></li>
-      <li><a href="{% url 'harvard:documents' %}">Documents</a></li>
-      <li><a href="{% url 'harvard:protocols' %}">Enrollment & Protocols</a></li>
-      <li><a href="{% url 'harvard:data' %}" style="margin-right:20px">Data & Samples</a></li>
-    </ul>
-  </div>
-  <div class="span4">
-    <div class="pull-right">
-      <a class="btn" style="margin-top:8px;" href="{% url 'network' %}">Other PGP sites</a>
-      <a class="btn btn-primary" style="margin-top:8px;" href="http://my.personalgenomes.org"><i class="icon-external-link"> </i>Participant log in</a>
-      </div>
-  </div>
-</div>
-{% endblock navpills %}
+{# Uncomment and use this block to customize front page text. #}
+{# {% block index_mainbox_content %} #}
+{# {% endblock index_mainbox_content %} #}
 
-{% block main %}
-<div class="hero-unit">
-  <div class="row-fluid">
-    <div class="span9">
-      <h1>PGP Harvard</h1>
-      <p>The Harvard Personal Genome Project was initiated by George Church in 2005. As the first site in the global network, it has been devoted to prototyping and evaluating the open consent framework and related research practices. It began with a pilot study of ten fully identified individuals, known as the “PGP-10” and has incrementally scaled-up the cohort to thousands of enrolled volunteers.</p>
-      <a class="btn btn-primary btn-large" href="{% url 'harvard:protocols' %}">Read about enrollment</a>
-    </div>
-    <div class="span3">
-      <img style="max-width:200px;float:right" src="/static/img/harvard/NRB_Ave_Louis_Pasteur.jpg"/>
-    </div>
-  </div>
-</div>
-{% endblock main %}
+{% block index_link_about_pgp %}{% url 'harvard:about-pgp' %}{% endblock index_link_about_pgp %}
+
+{% block index_link_sign_up %}{% url 'harvard:sign-up' %}{% endblock index_link_sign_up %}
+
+{% block index_link_data %}{% url 'harvard:data' %}{% endblock index_link_data %}
+
+{% block index_link_global_network %}{% url 'harvard:global-network' %}{% endblock index_link_global_network %}
+
+{% block footer %}
+{% include "harvard/footer.html" %}
+{% endblock footer %}
