@@ -1,8 +1,14 @@
-{% extends "uk/index.html" %}
+{% extends "www_personalgenomes_org/sign-up.html" %}
+
+{% block title %}Personal Genome Project: United Kingdom{% endblock title %}
+
+{% block navbar %}
+{% include "www_personalgenomes_org/navbar_top.html" with site_shortname="uk" site_longname="Personal Genome Project: United Kingdom" icon="/static/img/uk/uk-flag.jpg" active="Sign-up" %}
+{% endblock navbar %}
 
 {% block main %}
 
-<h2 class="top-heading">PGP-UK Enrolment Process and Requirements</h2>
+<h2 style="margin-top:34px;">PGP-UK Enrolment Process and Requirements</h2>
 
 <p class="lead">Enrolling in the PGP-UK is an online process. Individuals considering participation should closely review our <a href="#Enroltag">enrolment process</a> study guide and consent forms</a>. To qualify for enrollment, prospective participants must complete an online exam to demonstrate their comprehension of the risks and protocols associated with being a member of the PGP-UK.</p>
 
