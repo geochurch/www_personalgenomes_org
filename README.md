@@ -88,9 +88,6 @@ virtualenv's python path: `add2virtualenv $PWD`
 
 In the future, you should run the `workon www_pg_org` command whenever you work on and run this code.
 
-Running the site
-----------------
-
 ### Running locally (works immediately!) ###
 
 You can run the site now by navigating to the top directory of the project and running

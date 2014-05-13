@@ -1,0 +1,42 @@
+{% extends "www_personalgenomes_org/news.html" %}
+
+{% block title %}Personal Genome Project: Canada{% endblock title %}
+
+{% block navbar %}
+{% include "www_personalgenomes_org/navbar_top.html" with site_shortname="canada" site_longname="Personal Genome Project: Canada" active="Papers_and_press" %}
+{% endblock navbar %}
+
+{# Put publications material in the "our_papers" block to replace the default. #}
+{# {% block our_papers %} #}
+{# {% endblock our_papers %} #}
+
+{# Put press content in the "our_press" block to replace the default. #}
+{% block our_press %}
+
+<h3>Articles and links about PGP Canada</h3>
+<div class="row-fluid">
+  <div class="span10 offset1">
+    <p>
+      <a href="http://www.youtube.com/watch?v=QbOAbgiKros">Introducing the Canadian Personal Genome Project w/ Stephen Scherer, Jill Davies & Carolyn Abraham</a> <em>[video]</em> April, 2013.
+    </p>
+
+    <p>
+      <a href="http://www.guardian.co.uk/science/occams-corner/2012/dec/18/human-genome-canada-personal">The human genome: Canada gets personal</a> by Richard Wintle, <em>The Guardian</em>, December 18, 2012.
+    </p>
+
+    <p>
+      <a href="http://www.theglobeandmail.com/news/national/time-to-lead/would-you-make-your-dna-and-health-data-public-if-it-may-help-cure-disease/article6090038/">Would you make your DNA and health data public if it may help cure disease?</a> by Carolyn Abraham <em>The Globe and Mail</em>, December 7, 2012.
+    </p>
+
+  </div>
+</div>
+
+<p style="margin-top:40px;">Want to learn more? Check out the press links maintained by PersonalGenomes.org to see an aggregate of news from all PGP sites:</p>
+
+<p><a href="{% url 'organization:press' %}" class="btn" style="margin:30px">PersonalGenomes.org's news about PGP sites around the world <i> </i><i class="icon-double-angle-right"></i></a></p>
+
+{% endblock our_press %}
+
+{% block footer %}
+{% include "canada/footer.html" %}
+{% endblock footer %}

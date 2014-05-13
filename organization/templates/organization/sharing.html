@@ -1,0 +1,96 @@
+{% extends "organization/menu_about.html" %}
+{% load i18n %}
+
+{% block main %}
+
+<h2 class="top-heading">{% trans "Sharing Policies" %}</h2>
+
+<p>{% trans "PersonalGenomes.org is committed to sharing resources with the scientific community and the general public, so that people may collaborate in ways that have not been possible before.  We think this will promote discovery and accelerate our ability to understand how genomes and the environment combine to form human traits.  To this end, these are some of the legal tools we use in our research." %}</p>
+
+<div class="heroine-unit">
+  <h3>{% trans "Open Consent" %}</h3>
+  {% url 'harvard:documents' as harvard_docs_url %}
+  <p>
+    {% blocktrans %}
+    Our <a href="{{ harvard_docs_url }}">"open consent" protocol is available</a> for use and modification by PGP affiliates or other similar "public genomics" research studies.
+    {% endblocktrans %}
+    <ul>
+      <li>
+        {% blocktrans with article_url="http://arep.med.harvard.edu/pdf/Lunshof08.pdf" %}
+        Read the Nature Reviews Genetics publication from April 2008.  (<a href="{{ article_url }}">PDF</a>)
+        {% endblocktrans %}
+      </li>
+      <li>
+        {% blocktrans with article_url="/static/docs/harvard/whitepaper_consent_04302007.pdf" %}
+        Read the original white paper on open consent from April 2007, published by George Church, Jeantine Lunshof, and Daniel Vorhaus. (<a href={{ article_url }}>PDF</a>)
+        {% endblocktrans %}
+      </li>
+    </ul>
+  </p>
+</div>
+
+<div class="heroine-unit">
+  <h3>{% trans "Open Data" %}</h3>
+  <p>{% trans "We are creating a public repository of integrated genomic, environmental, and trait datasets." %}</p>
+  <ul>
+    <li>
+      <strong>CC0</strong> - <a href="http://creativecommons.org/publicdomain/zero/1.0/legalcode">http://creativecommons.org/publicdomain/zero/1.0/legalcode</a>
+    </li>
+  </ul>
+</div>
+
+<div class="heroine-unit">
+  <h3>{% trans "Open Source Software Licenses" %}</h3>
+  <p>{% trans "Our software development efforts are committed to using GPL and less restrictive (permissive and GPL compatible) open source licenses." %}</p>
+  <div class="row-fluid">
+    <div class="span6">
+      <ul>
+	<li>
+	  <strong>GNU AGPLv3</strong> - <a href="http://www.gnu.org/licenses/agpl-3.0.html">http://www.gnu.org/licenses/agpl-3.0.html</a>
+	</li>
+	<li>
+	  <strong>GNU GPLv3</strong> - <a href="http://www.gnu.org/licenses/gpl-3.0.html">http://www.gnu.org/licenses/gpl-3.0.html</a>
+	</li>
+      </ul>
+    </div>
+    <div class="span6">
+      <ul>
+	<li>
+	  <strong>Apache v2 License</strong> - <a href="http://www.apache.org/licenses/LICENSE-2.0.html">http://www.apache.org/licenses/LICENSE-2.0.html</a>
+	</li>
+	<li>
+	  <strong>CC0</strong> - <a href="http://creativecommons.org/publicdomain/zero/1.0/legalcode ">http://creativecommons.org/publicdomain/zero/1.0/legalcode </a>
+	</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="heroine-unit">
+  <h3>{% trans "Open Access Text and Other Media Licenses" %}</h3>
+  <div class="row-fluid">
+    <div class="span6">
+      <ul>
+	<li>
+	  <strong>CC-BY-SA</strong> - <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">http://creativecommons.org/licenses/by-sa/3.0/legalcode</a>
+	</li>
+	<li>
+	  <strong>CC-BY</strong> - <a href="http://creativecommons.org/licenses/by/3.0/legalcode">http://creativecommons.org/licenses/by/3.0/legalcode</a>
+	</li>
+      </ul>
+    </div>
+    <div class="span6">
+      <ul>
+	<li>
+	  <strong>CC0</strong> - <a href="http://creativecommons.org/publicdomain/zero/1.0/legalcode ">http://creativecommons.org/publicdomain/zero/1.0/legalcode </a>
+	</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% endblock main %}
+
+{% block footer %}
+{% include "organization/footer.html" %}
+{% endblock footer %}

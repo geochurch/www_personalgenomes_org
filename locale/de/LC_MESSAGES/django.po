@@ -1,0 +1,299 @@
+# German translations for www_personalgenomes_org
+# Copyright (C) 2014, PersonalGenomes.org
+# This file is distributed under the same license as the www_personalgenomes_org package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-03-04 15:20-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: www_personalgenomes_org/settings.py:178
+msgid "German"
+msgstr "Deutsch"
+
+#: www_personalgenomes_org/settings.py:179
+msgid "English"
+msgstr "Englisch"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:6
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:23
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:25
+#, fuzzy
+msgid "About the PGP"
+msgstr "Über die PGP"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:10
+#, fuzzy
+msgid ""
+"The Personal Genome Project (PGP) is creating a freely available scientific "
+"resource that brings together genomic, environmental and human trait data. "
+"These data are donated by volunteers enrolled in a PGP study from our global "
+"network. Initiated by George Church at Harvard Medical School in 2005, the "
+"PGP has pioneered ethical, legal, and technical aspects related to the "
+"creation of public resources involving highly identifiable data like human "
+"genomes."
+msgstr ""
+"Das Personal Genome Project (PGP) ist die Schaffung eines frei verfügbaren "
+"wissenschaftlichen Ressourcen, die genomische, Umwelt-und menschliche "
+"Eigenschaft Daten zusammen bringt. Diese Daten werden von Freiwilligen PGP "
+"Eingeschriebene in einer Studie von unserem weltweiten Netzwerk gespendet. "
+"George Church von der Harvard Medical School initiiert im Jahr 2005 hat sich "
+"die PGP die ethischen, rechtlichen und technischen Aspekte der Schaffung der "
+"öffentlichen Mittel mit hoch identifizierbare Daten wie menschliche Genome "
+"bezogene Pionierarbeit geleistet."
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:12
+#, fuzzy
+msgid "Public Data, Methods, and Materials"
+msgstr "Öffentliche Daten, Methoden und Materialien"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:13
+#, fuzzy
+msgid ""
+"We believe sharing is good for science and society. The PGP is dedicated to "
+"creating public resources that everyone can access. Privacy, confidentiality "
+"and anonymity are impossible to guarantee in a context like the PGP where "
+"public sharing of genetic data is an explicit goal. Therefore, the PGP "
+"collaborates with participants willing to waive expectations of privacy. "
+"This waiver is not for everyone, but the volunteers who join make a valuable "
+"and lasting contribution to science."
+msgstr ""
+"Wir glauben, Sharing ist gut für die Wissenschaft und Gesellschaft. PGP ist "
+"für die Schaffung öffentlicher Ressourcen gewidmet Dass jeder zugreifen "
+"kann. Datenschutz, Geheimhaltung und Anonymität sind unmöglich zu "
+"garantieren, in einem Kontext wie dem PGP wo öffentliche Nutzung von "
+"genetischen Daten ist ein ausdrückliches Ziel. DAHER arbeitet die PGP mit "
+"den Teilnehmern bereit, die Erwartungen an Privatsphäre zu verzichten. "
+"Dieser Verzicht ist nicht für jedermann, aber kommen Sie mit den "
+"Freiwilligen, die einen wertvollen und nachhaltigen Beitrag zur Wissenschaft "
+"zu machen."
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:15
+#, fuzzy
+msgid "Ongoing Participatory Research"
+msgstr "Laufende Partizipative Forschung"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:16
+#, fuzzy
+msgid ""
+"We love the people behind the data. Our project aims to maintain lifelong "
+"relationships with participants. We want to collaborate on tracking health "
+"and other traits as they unfold over the course of a participant’s life. We "
+"also want to better understand the benefits and risks related to accessing "
+"and sharing extensive genomic and other personal data."
+msgstr ""
+"Wir lieben die Menschen hinter den Daten. Unser Projekt zielt darauf ab, "
+"lebenslange Beziehungen mit Teilnehmern pflegen. Wir wollen auf die "
+"Verfolgung Gesundheit und andere Merkmale Spitzenböen entfalten sich im "
+"Laufe des Lebens eines Teilnehmers zusammen. Wollen wir auch den Nutzen und "
+"die Risiken besser zu verstehen, Zugriff auf und den Austausch von "
+"verwandten umfangreiche Genom-und andere Personaldaten."
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:18
+#, fuzzy
+msgid "Genomes, Environments, and Traits"
+msgstr "Genome, Umwelt, und Traits"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp.html:19
+#, fuzzy
+msgid ""
+"The genome is just a part of the story: genes interact with the environment "
+"to form traits. Participants may choose to contribute other public data to "
+"build public records of their health and traits. We also try to connect "
+"participants with research projects interested in profiling other aspects of "
+"human experience to produce even more extensive collections of associated "
+"data."
+msgstr ""
+"Das Genom ist nur ein Teil der Geschichte: Gene nicht mit der Umwelt zu "
+"interagieren Merkmalen zu bilden. Teilnehmer dazu beitragen kann, anderen "
+"öffentlichen Daten wählen zu öffentlichen Daten über ihre Gesundheit und "
+"Charakterzüge zu bauen. Wir versuchen auch, die Teilnehmer mit "
+"Forschungsprojekten interessiert Profi andere Aspekte der menschlichen "
+"Erfahrung, um noch umfang Assoziierte Datensammlungen produzieren verbinden."
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:5
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:5
+#, fuzzy
+msgid "PGP Global Network"
+msgstr "PGP Globales Netzwerk"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:7
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:7
+#, fuzzy
+msgid "United States"
+msgstr "Vereinigte Staaten"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:9
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:9
+#, fuzzy
+msgid "Canada"
+msgstr "Kanada"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:11
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:11
+#, fuzzy
+msgid "United Kingdom"
+msgstr "Vereinigtes Königreich"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:15
+#, fuzzy
+msgid "Website information"
+msgstr "Website-Informationen"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:17
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:17
+#, fuzzy
+msgid "Contact Us"
+msgstr "Kontaktieren Sie Uns"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:19
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:19
+#, fuzzy
+msgid "About PersonalGenomes.org"
+msgstr "Über PersonalGenomes.org"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:21
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:21
+#, fuzzy
+msgid "Terms of Service"
+msgstr "Nutzungsbedingungen"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:23
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:23
+#, fuzzy
+msgid "Privacy Policy"
+msgstr "Datenschutzrichtlinie"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:27
+#, fuzzy
+msgid "Stay connected"
+msgstr "Bleiben Sie verbunden"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:20
+#, fuzzy
+msgid "Sharing Personal Genomes"
+msgstr "Austausch von persönlichen Genome"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:23
+#, fuzzy
+msgid ""
+"The Personal Genome Project was founded in 2005 and is dedicated to creating "
+"public genome, health, and trait data. Sharing data is critical to "
+"scientific progress, but has been hampered by traditional research "
+"practices&mdash;our approach is to invite willing participants to publicly "
+"share their personal data for the greater good."
+msgstr ""
+"Der Personal Genome Project wurde im Jahr 2005 gegründet und ist auf die "
+"Schaffung öffentlichen Genom-, Gesundheits-und Merkmalsdaten gewidmet. Das "
+"Austauschen von Daten ist entscheidend für wissenschaftlichen Fortschritt, "
+"hat aber von den traditionellen Forschungspraxis&mdash;Unser Ansatz ist es, "
+"Teilnehmer einladen bereit, öffentlich zu teilen ihre persönlichen Daten für "
+"das Wohl behindert."
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:26
+#, fuzzy
+msgid "Learn more about the PGP"
+msgstr "Über die PGP"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:40
+#, fuzzy
+msgid ""
+"Donating your genome and health data to science is a great way to enable "
+"advances in understanding human genetics, biology, and health. We seek "
+"volunteers willing to donate diverse personal information to become a public "
+"resource."
+msgstr ""
+"Spenden Sie Ihre Genom-und Gesundheitsdaten für die Wissenschaft ist ein "
+"guter Weg, um Fortschritte im Verständnis der menschlichen Genetik, Biologie "
+"und Gesundheit zu ermöglichen. Wir suchen Freiwillige bereit sind, zu "
+"spenden vielfältigen persönlichen Informationen, um eine öffentliche "
+"Ressource geworden."
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:42
+#, fuzzy
+msgid "Learn about participating"
+msgstr "Erfahren Sie mehr über die Teilnahme"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:47
+#, fuzzy
+msgid ""
+"Open data is a critical component of the scientific method, but genomes are "
+"both identifiable and predictive. As a result, many studies choose to "
+"withhold data from participants and restrict access to researchers.  The "
+"PGP's public data is a common ground to collaborate and improve our "
+"understanding of genomes."
+msgstr ""
+"Offene Daten ist eine kritische Komponente der wissenschaftlichen Methode, "
+"aber beide Genome identifizierbar und prädiktive sind. Als Ergebnis vieler "
+"Studien wählen, um Daten von den Teilnehmern zurückzuhalten und den Zugriff "
+"auf Forscher. Die Daten des öffentlichen PGP ist eine gemeinsame Basis für "
+"die Zusammenarbeit und verbessern unser Verständnis der Genome."
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:49
+#, fuzzy
+msgid "Use PGP data"
+msgstr "Verwenden Sie PGP-Daten"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:54
+#, fuzzy
+msgid ""
+"The pilot group for the Personal Genome Project has been based at Harvard, "
+"but we are a global group, with projects starting around the world."
+msgstr ""
+"Die Pilotgruppe für das Personal Genome Project hat in Harvard basiert, aber "
+"wir sind eine globale Gruppe, beginnend mit Projekten auf der ganzen Welt."
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:56
+#, fuzzy
+msgid "Meet our PGP groups"
+msgstr "Treffen Sie unsere PGP Gruppen"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:17
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:19
+#, fuzzy
+msgid "About us"
+msgstr "Über uns"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:29
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:31
+#, fuzzy
+msgid "Sign up"
+msgstr "Anmeldung"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:35
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:37
+#, fuzzy
+msgid "Data"
+msgstr "Daten"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:41
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:43
+#, fuzzy
+msgid "Papers & Press"
+msgstr "Publikationen & Presse"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:58
+#, python-format
+#, fuzzy
+msgid "Change to %(lang_name)s"
+msgstr "Wechseln Sie in %(lang_name)s"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:67
+#, fuzzy
+msgid "Participant log in"
+msgstr "Teilnehmer einloggen"
+
+#, fuzzy
+#~ msgid "Harvard Medical School"
+#~ msgstr "Harvard Medical School"

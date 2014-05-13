@@ -1,13 +1,19 @@
-{% extends "base.html" %}
+{% extends "www_personalgenomes_org/index.html" %}
 
 {% block main %}
-<div class="lead">
-<h2 style="margin-top:34px">Contact Us</h2>
+<div style="height:34px;width:1px;"></div>
+{% block contact_local %}
+<h2>Contact this PGP site</h2>
+<p class="lead">Our team hasn't set up our communications yet, we'll get back to you soon with contact information!<p>
+{% endblock contact_local %}
+<hr />
+<h3>Website and more general questions</h3>
 
-<table class="table table-hover">
+<p>This website is managed by <a href="{% url 'organization:index' %}">PersonalGenomes.org</a>, a United States 501(c)(3) nonprofit organization that organizes the <a href="{% url 'organization:pgp' %}">Personal Genome Project</a>. If you would like to learn more about PersonalGenomes.org, please <a href="{% url 'organization:index' %}">visit the organization site</a>.</p>
+<table class="table table-hover table-condensed">
   <tr>
     <td style="width:40%;">
-      <strong>Postal Address:</strong>
+      <h5>Postal Address:</h5>
     </td>
     <td>
       PersonalGenomes.org<br />
@@ -17,31 +23,12 @@
   </tr>
   <tr>
     <td>
-      <strong>Press and media inquiries:</strong>
-    </td>
-    <td>
-      <a href="mailto:press@personalgenomes.org">press@personalgenomes.org</a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <strong>Website and content related inquiries:</strong>
+      <h5>Website inquiries:</h5>
     </td>
     <td>
       <a href="mailto:website@personalgenomes.org">website@personalgenomes.org</a>
     </td>
   </tr>
-  <tr>
-    <td>
-      <h4>Donation related inquiries:</h4>
-    </td>
-    <td>
-      <a href="mailto:giving@personalgenomes.org">giving@personalgenomes.org</a>
-    </td>
-  </tr>
 </table>
-    </div>
-  <div class="span1"></div>
-</div>
 
 {% endblock main %}

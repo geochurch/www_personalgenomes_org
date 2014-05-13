@@ -1,42 +1,59 @@
 {% extends "base.html" %}
+{% load i18n %}
 
-{% block css-overrides %}
-<style>
-  .infobox {
-    padding-bottom: 10px;
-  }
-</style>
-{% endblock css-overrides %}
+{% block title %}
+  {% if country_code == 'CA' %}
+    Personal Genome Project: Canada
+  {% elif country_code == 'GB' %}
+    Personal Genome Project: United Kingdom
+  {% elif country_code == 'US' %}
+    Personal Genome Project: United States
+  {% else %}
+    Personal Genome Project
+  {% endif %}
+{% endblock title %}
 
 {% block main %}
-
-{% if country.country_code == 'US' or country.country_code == 'CA' or country.country_code == 'GB' %}
-{% include "www_personalgenomes_org/index-mainpanel-localized.html" %}
-{% else %}
-{% include "www_personalgenomes_org/index-mainpanel-default.html" %}
-{% endif %}
+<div class="heroine-unit" style="margin-top:25px;">
+  <div class="row-fluid">
+    <div class="span9">
+      <h1>{% trans "Sharing Personal Genomes" %}</h1>
+      <p class="info">
+        {% block index_mainbox_content %}
+        {% trans "The Personal Genome Project was founded in 2005 and is dedicated to creating public genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices&mdash;our approach is to invite willing participants to publicly share their personal data for the greater good." %}
+        {% endblock index_mainbox_content %}
+      </p>
+      <p><a href="{% block index_link_about_pgp %}{% url 'organization:pgp' %}{% endblock index_link_about_pgp %}" class="btn btn-primary btn-large">{% trans "Learn more about the PGP" %}<i>  </i><i class="icon-angle-right"></i></a></p>
+    </div>
+    <div class="span3">
+      <div style="text-align:center;margin-right:auto;margin-left:auto;">
+        <img src="/static/img/pgp-logo-only-color-transp.png" style="max-width:182px;"/>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="row-fluid">
   <div class="span4">
     <div class="infobox" id="infobox1">
-      <h2>Why participate?</h2>
-      <p>Donating your genome and health data to science is a great way to enable advances in understanding human genetics, biology, and health. We seek volunteers willing to donate diverse personal information to become a public resource.</p>
+      <h2>Participation</h2>
+      <p>{% trans "Donating your genome and health data to science is a great way to enable advances in understanding human genetics, biology, and health. We seek volunteers willing to donate diverse personal information to become a public resource." %}</p>
     </div>
-    <p><a class="btn" href="{% url 'why-participate' %}">Learn about participating <i> </i><i class="icon-angle-right"></i></a></p>
+    <p><a class="btn" href="{% block index_link_sign_up %}{% url 'organization:pgp-sign-up' %}{% endblock index_link_sign_up %}">{% trans "Learn about participating" %} <i> </i><i class="icon-angle-right"></i></a></p>
   </div>
   <div class="span4">
     <div class="infobox" id="infobox2">
-      <h2>Open Data</h2>
-      <p>Open data is a critical component of the scientific method, but genomes are both identifiable and predictive. As a result, many studies choose to withhold data from participants and restrict access to researchers.  The PGP's public data is a common ground to collaborate and improve our understanding of genomes.</p>
+      <h2>{% trans "Open Data" %}</h2>
+      <p>{% trans "Open data is a critical component of the scientific method, but genomes are both identifiable and predictive. As a result, many studies choose to withhold data from participants and restrict access to researchers.  The PGP's public data is a common ground to collaborate and improve our understanding of genomes." %}</p>
     </div>
-    <p><a class="btn" style="margin-top:0px;" href="{% url 'harvard:data' %}">Use PGP data <i> </i><i class="icon-double-angle-right"></i></a></p>
+    <p><a class="btn" style="margin-top:0px;" href="{% block index_link_data %}{% url 'organization:get-data' %}{% endblock index_link_data %}">{% trans "Use PGP data" %} <i> </i><i class="icon-angle-right"></i></a></p>
   </div>
   <div class="span4">
     <div class="infobox" id="infobox3">
-      <h2>Global Network</h2>
-      <p>The pilot group for the Personal Genome Project has been based at Harvard, but we are a global group, with projects starting around the world.</p>
+      <h2>{% trans "Global Network" %}</h2>
+      <p>{% trans "The pilot group for the Personal Genome Project has been based at Harvard, but we are a global group, with projects starting around the world." %}</p>
     </div>
-    <p><a class="btn" href="{% url 'network' %}">Meet our PGP groups <i> </i><i class="icon-angle-right"></i></a></p>
+    <p><a class="btn" href="{% block index_link_global_network %}{% url 'organization:network' %}{% endblock index_link_global_network %}">{% trans "Meet our PGP groups" %} <i> </i><i class="icon-double-angle-right"></i></a></p>
   </div>
 </div>
 {% endblock main %}
@@ -69,3 +86,7 @@
     $( window ).resize(resize_infobox);
     </script>
 {% endblock extrajs %}
+
+{% block footer %}
+{% include "organization/footer.html" %}
+{% endblock footer %}

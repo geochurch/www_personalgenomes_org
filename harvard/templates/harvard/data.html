@@ -1,8 +1,15 @@
-{% extends "harvard/index.html" %}
+{% extends "www_personalgenomes_org/data.html" %}
+
+{% block title %}Personal Genome Project: Harvard Medical School{% endblock title %}
+
+{% block navbar %}
+{% include "www_personalgenomes_org/navbar_top.html" with site_shortname="harvard" site_longname="Personal Genome Project: Harvard Medical School" login_url="https://my.pgp-hms.org" active="Data" %}
+{% endblock navbar %}
 
 {% block main %}
+<h2 style="margin-top:34px;">Data & Samples</h2>
+
 <div class="lead">
-<h2 class="top-heading">Data & Samples</h2>
 
 <div class="heroine-unit">
   <div class="row-fluid">
@@ -65,3 +72,7 @@
 </div>
 
 {% endblock main %}
+
+{% block footer %}
+{% include "harvard/footer.html" %}
+{% endblock footer %}

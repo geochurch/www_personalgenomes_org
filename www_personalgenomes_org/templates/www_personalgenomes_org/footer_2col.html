@@ -1,0 +1,26 @@
+{% load i18n %}
+
+<div class="row-fluid">
+  <div class="span6">
+    <h5>{% trans "PGP Global Network" %}</h5>
+    <p>
+      <a href="{% url 'harvard:index' %}">{% trans "United States" %}</a>
+      <i> </i>&bull;<i> </i>
+      <a href="{% url 'canada:index' %}">{% trans "Canada" %}</a>
+      <i> </i>&bull;<i> </i>
+      <a href="{% url 'uk:index' %}">{% trans "United Kingdom" %}</a>
+    </p>
+  </div>
+  <div class="span6">
+    <h5>{% trans "Website information" %}</h5>
+    <p>
+      <a href="{% block contact_us_url %}{% url 'contact-us' %}{% endblock contact_us_url %}">{% trans "Contact Us" %}</a>
+      <i> </i>&bull;<i> </i>
+      <a href="{% url 'organization:index' %}"><span class="h5">{% trans "About PersonalGenomes.org" %}</span></a>
+      <i> </i>&bull;<i> </i>
+      <a href="{% url 'tos' %}">{% trans "Terms of Service" %}</a>
+      <i> </i>&bull;<i> </i>
+      <a href="{% url 'website-privacy-policy' %}">{% trans "Privacy Policy" %}</a>
+    </p>
+  </div>
+</div>
