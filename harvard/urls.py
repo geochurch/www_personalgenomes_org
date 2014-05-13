@@ -2,6 +2,8 @@ from django.conf.urls import patterns, url
 from django.views.generic import RedirectView, TemplateView
 from www_personalgenomes_org.views import redirect_to_name
 
+from . import views
+
 urlpatterns = patterns(
     '',
     url(r'^/?$', TemplateView.as_view(template_name='harvard/index.html'),
@@ -18,8 +20,7 @@ urlpatterns = patterns(
         name='news'),
     url(r'^/global-network/?', TemplateView.as_view(template_name='harvard/global-network.html'),
         name='global-network'),
-    url(r'^/contact-us/?', TemplateView.as_view(template_name='harvard/contact-us.html'),
-        name='contact-us'),
+    url(r'^/contact-us/?', views.contact, name='contact-us'),
 
     # Content not linked on navbar and/or index page.
     url(r'^/historic-documents/?', TemplateView.as_view(template_name='harvard/historic-documents.html'),

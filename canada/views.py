@@ -9,18 +9,26 @@ def contact(request):
         if not request.POST.get('subject', ''):
             has_req_entries = False
             errors.append('Enter a subject.')
-        if not (request.POST.get('email', '') and '@' in request.POST['email']):
+        if not (request.POST.get('sender_email', '') and '@' in request.POST['sender_email']):
             has_req_entries = False
             errors.append('Enter a valid e-mail address.')
         if not request.POST.get('message', ''):
             has_req_entries = False
             errors.append('Enter a message.')
+        if ('<' in request.POST.get('sender_name', '') or '>' in request.POST.get('sender_name', '')):
+            has_req_entries = False
+            errors.append('Please do not put angle brackets in your name.')
         if has_req_entries:
+            if request.POST.get('sender_name'):
+                sender = (request.POST.get('sender_name') +
+                          ' <' + request.POST.get('sender_email') + '>')
+            else:
+                sender = request.POST.get('sender_email')
             try:
                 send_mail(
                     request.POST['subject'],
                     request.POST['message'],
-                    request.POST['email'],
+                    sender,
                     ['crm@sickkids.ca'],
                     fail_silently=False,
                 )
