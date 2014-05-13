@@ -6,9 +6,33 @@
 {% include "www_personalgenomes_org/navbar_top.html" with site_shortname="harvard" site_longname="Personal Genome Project: Harvard Medical School" login_url="https://my.pgp-hms.org" %}
 {% endblock navbar %}
 
-{# Put contact information in the "contact_local" block to replace the default. #}
-{# {% block contact_local %} #}
-{# {% endblock contact_local %} #}
+{% block contact_local %}
+<h2>Contact PGP Harvard</h2>
+
+<p>For questions or more information about the Harvard Personal Genome Project, please use the form below to contact us.</p>
+<form action="{% url 'harvard:contact-us' %}" method="post">
+  <table class="table lead">
+    <tr><td>Subject:</td>
+      <td><input class="span8" type="text" name="subject"></td>
+    </tr>
+    <tr><td>Your email:</td>
+      <td><input class="span4" type="text" name="sender_email"></td>
+    </tr>
+    <tr><td>Your name:</td>
+      <td><input class="span4" type="text" name="sender_name"></td>
+    </tr>
+    <tr><td>Message:</td>
+      <td><textarea class="span8" name="message" rows="10" cols="50"></textarea></td>
+    </tr>
+    <tr><td></td>
+      <td>
+	{% csrf_token %}
+	<input class="btn btn-primary btn-large" type="submit" value="Submit message">
+      </td>
+    </tr>
+  </table>
+</form>
+{% endblock contact_local %}
 
 {% block footer %}
 {% include "harvard/footer.html" %}
