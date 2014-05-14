@@ -3,35 +3,31 @@
 
 {% block main %}
 <div class="lead">
-  <h2 class="top-heading">{% trans "Global Network" %}</h2>
+  <h2 class="top-heading">Global Network</h2>
   <p>
     {% url 'join-network' as joinnetwork_url %}
-    {% blocktrans %}
     We work with world-class institutions and leading researchers to establish new Personal Genome Project (PGP) sites around the globe. Each PGP site in our network adheres to a set of guidelines and best practices for creating open genomic data. Learn how to <a href="{{ joinnetwork_url }}">establish a PGP site</a> in your country.
-    {% endblocktrans %}
   </p>
 </div>
 
 <hr />
 
-<h3>{% trans "North America" %}</h3>
+<h3>North America</h3>
 <div class="row-fluid">
   <div class="span6">
-    <p><strong>{% trans "PGP Harvard (United States)" %}</strong><br />
-      {% blocktrans %}
+    <p><strong>PGP Harvard (United States)</strong><br />
       George Church Lab<br />
       Harvard Medical School<br />
       Founded Aug 2005
-      {% endblocktrans %}
     </p>
-      <p><a class="btn" href="{% url 'harvard:index' %}"><i class="icon-double-angle-right">  </i>{% trans "Visit PGP Harvard subsite" %}</a></p>
+      <p><a class="btn" href="{% url 'harvard:index' %}"><i class="icon-double-angle-right">  </i>Visit PGP Harvard subsite</a></p>
   </div>
   <div class="span6">
     <p><strong>PGP Canada</strong><br />
     McLaughlin Centre, University of Toronto and<br />
     The Centre for Applied Genomics, Hospital for Sick Children<br />
     Founded Dec 2012</p>
-    <p><a class="btn" href="{% url 'canada:index' %}"><i class="icon-double-angle-right">  </i>{% trans "Visit PGP Canada subsite" %}</a></p>
+    <p><a class="btn" href="{% url 'canada:index' %}"><i class="icon-double-angle-right">  </i>Visit PGP Canada subsite</a></p>
   </div>
 </div>
 
@@ -43,10 +39,10 @@
     Stephan Beck Lab<br />
     University College London<br />
     Founded November 2013<p>
-    <p><a class="btn" href="{% url 'uk:index' %}"><i class="icon-double-angle-right"> </i>{% trans "Visit PGP UK subsite" %}</a></p>
+    <p><a class="btn" href="{% url 'uk:index' %}"><i class="icon-double-angle-right"> </i>Visit PGP UK subsite</a></p>
   </div>
   <div class="span6">
-    {% trans "Second European site in development for early 2014." %}
+    Second European site in development for spring/summer 2014.
   </div>
 </div>
 
@@ -55,7 +51,7 @@
 <h4>South America</h4>
 <div class="row-fluid">
   <div class="span6">
-    {% trans "Site in development." %}
+    Site in development.
   </div>
   <div class="span6">
   </div>
@@ -66,7 +62,7 @@
 <h4>Asia</h4>
 <div class="row-fluid">
   <div class="span6">
-    {% trans "Site in development." %}
+    Site in development.
   </div>
   <div class="span6">
   </div>

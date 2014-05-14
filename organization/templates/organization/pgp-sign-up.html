@@ -3,51 +3,47 @@
 
 {% block main %}
 
-<h2 class="top-heading">{% trans "Sign up at a PGP site" %}</h2>
+<h2 class="top-heading">Sign up at a PGP site</h2>
 
 <hr />
 
-<h3>{% trans "Currently available sites and eligibility requirements" %}</h3>
+<h3>Currently available sites and eligibility requirements</h3>
 
 <div class="row-fluid">
   <div class="span6">
     <div class="heroine-unit">
       <div style="max-width:460px;margin-left:auto;margin-right:auto;">
-	<h3>{% trans "PGP Harvard" %}</h3>
-	<p style="margin-bottom:6px">{% trans "Founded in Aug 2005." %}</p>
+	<h3>PGP Harvard</h3>
+	<p style="margin-bottom:6px">Founded in Aug 2005.</p>
 	<p style="">
-          {% blocktrans %}
           George Church Lab at Harvard Medical School<br />
 	  Boston, MA  United States of America
-          {% endblocktrans %}
         </p>
-	<p style="margin-bottom:0px"><strong>{% trans "Requirements:" %}</strong></p>
+	<p style="margin-bottom:0px"><strong>Requirements:</strong></p>
 	<ul>
-	  <li>{% trans "United States citizen or permanent resident" %}</li>
-	  <li>{% trans "At least 21 years of age" %}</li>
+	  <li>United States citizen or permanent resident</li>
+	  <li>At least 21 years of age</li>
 	</ul>
-	<a class="btn btn-primary btn-large" href="{% url 'harvard:sign-up' %}" style="margin-bottom:20px"><i class="icon-double-angle-right">  </i>{% trans "Read about HPGP enrollment" %}</a>
+	<a class="btn btn-primary btn-large" href="{% url 'harvard:sign-up' %}" style="margin-bottom:20px"><i class="icon-double-angle-right">  </i>Read about Harvard PGP enrollment</a>
       </div>
     </div>
   </div>
   <div class="span6">
     <div class="heroine-unit">
       <div style="max-width:460px;margin-left:auto;margin-right:auto;">
-	<h3>{% trans "PGP Canada" %}</h3>
-	<p style="margin-bottom:6px">{% trans "Founded in Dec 2012." %}</p>
+	<h3>PGP Canada</h3>
+	<p style="margin-bottom:6px">Founded in Dec 2012.</p>
 	<p style="line-spacing:110%">
-          {% blocktrans %}
           McLaughlin Centre, University of Toronto and <br/>
           The Centre for Applied Genomics, Hospital for Sick Children<br/>
           Toronto, ON  Canada
-          {% endblocktrans %}
         </p>
-	<p style="margin-bottom:0px"><strong>{% trans "Requirements:" %}</strong></p>
+	<p style="margin-bottom:0px"><strong>Requirements:</strong></p>
 	<ul>
-	  <li>{% trans "Canadian citizen" %}</li>
-	  <li>{% trans "At least 18 years of age" %}</li>
+	  <li>Canadian citizen</li>
+	  <li>At least 18 years of age</li>
 	</ul>
-	<a class="btn btn-primary btn-large" href="{% url 'canada:sign-up' %}" style="margin-bottom:20px"><i class="icon-double-angle-right">  </i>{% trans "Read about PGP Canada enrollment"</a>
+	<a class="btn btn-primary btn-large" href="{% url 'canada:sign-up' %}" style="margin-bottom:20px"><i class="icon-double-angle-right">  </i>Read about PGP Canada enrollment</a>
       </div>
     </div>
   </div>
@@ -57,20 +53,18 @@
     <div class="heroine-unit">
       <div style="max-width:460px;margin-left:auto;margin-right:auto;">
 	<h3>PGP UK</h3>
-	<p style="margin-bottom:6px">{% trans "Founded in Nov 2013." %}</p>
+	<p style="margin-bottom:6px">Founded in Nov 2013.</p>
 	<p style="line-spacing:110%">
-          {% blocktrans %}
           Stephan Beck Lab<br />
           University College London<br />
           London, United Kingdom
-          {% endblocktrans %}
         </p>
-	<p style="margin-bottom:0px"><strong>{% trans "Requirements:" %}</strong></p>
+	<p style="margin-bottom:0px"><strong>Requirements:</strong></p>
 	<ul>
-	  <li>{% trans "United Kingdom citizen or permanent resident" %}</li>
-	  <li>{% trans "At least 21 years of age" %}</li>
+	  <li>United Kingdom citizen or permanent resident</li>
+	  <li>At least 21 years of age</li>
 	</ul>
-	<a class="btn btn-primary btn-large" href="{% url 'uk:sign-up' %}" style="margin-bottom:20px"><i class="icon-double-angle-right">  </i>{% trans "Read about PGP UK enrollment" %}</a>
+	<a class="btn btn-primary btn-large" href="{% url 'uk:sign-up' %}" style="margin-bottom:20px"><i class="icon-double-angle-right">  </i>Read about PGP UK enrollment</a>
       </div>
     </div>
   </div>
@@ -78,11 +72,11 @@
 
 <hr />
 
-<h3>{% trans "Don't meet requirements for the sites above?" %}</h3>
+<h3>Don't meet requirements for the sites above?</h3>
 
-<p>{% trans "For individuals unable to join our existing projects due to citizenship and residency requirements, we invite you to record your interest in the PGP. Knowing your country helps us prioritize international expansion efforts. Also, by registering your interest we will be able to notify you if an opportunity later appears." %}</p>
+<p>For individuals unable to join our existing projects due to citizenship and residency requirements, we invite you to record your interest in the PGP. Knowing your country helps us prioritize international expansion efforts. Also, by registering your interest we will be able to notify you if an opportunity later appears.</p>
 
-<a class="btn" href="https://my.personalgenomes.org/international_participants"><i class="icon-external-link">  </i> {% trans "Register your interest in a PGP for your country" %}</a>
+<a class="btn" href="https://my.personalgenomes.org/international_participants"><i class="icon-external-link">  </i> Register your interest in a PGP for your country</a>
 
 {% endblock main %}
 
