@@ -2,38 +2,42 @@
 
 {% block main %}
 
-<h2 style="margin-top:34px;">Global Network</h2>
+<h2 style="margin-top:34px;">{% trans "Global Network" %}</h2>
 
-<p>PersonalGenomes.org works with world-class institutions and leading researchers to establish new Personal Genome Project (PGP) sites around the globe. Each PGP site in the network adheres to a set of guidelines and best practices for creating open genomic data. Learn how to <a href="{% url 'organization:join-network' %}">establish a PGP site</a> in your country.</p>
+<p>
+{% blocktrans %}
+PersonalGenomes.org works with world-class institutions and leading researchers to establish new Personal Genome Project (PGP) sites around the globe. Each PGP site in the network adheres to a set of guidelines and best practices for creating open genomic data. Learn how to <a href="/organization/join-network">establish a PGP site</a> in your country.
+{% endblocktrans %}
+</p>
 
 <hr />
 
-<h3>North America</h3>
+<h3>{% trans "North America" %}</h3>
 <div class="row-fluid">
   <div class="span6">
-    <p><strong>PGP Harvard (United States)</strong><br />
+    <p><strong>{% trans "PGP Harvard (United States)" %}</strong><br />
       George Church Lab<br />
       Harvard Medical School<br />
-      Founded Aug 2005</p>
-      <p><a class="btn" href="{% url 'harvard:index' %}"><i class="icon-double-angle-right">  </i>Visit PGP Harvard subsite</a></p>
+      {% trans "Founded Aug 2005" %}</p>
+      <p><a class="btn" href="{% url 'harvard:index' %}"><i class="icon-double-angle-right">  </i>{% trans "Visit PGP Harvard subsite" %}</a></p>
   </div>
   <div class="span6">
-    <p><strong>PGP Canada</strong><br />
+    <p><strong>{% trans "PGP Canada" %}</strong><br />
     McLaughlin Centre, University of Toronto and<br />
     The Centre for Applied Genomics, Hospital for Sick Children<br />
-    Founded Dec 2012</p>
-    <p><a class="btn" href="{% url 'canada:index' %}"><i class="icon-double-angle-right">  </i>Visit PGP Canada subsite</a></p>
+    {% trans "Founded Dec 2012" %}</p>
+    <p><a class="btn" href="{% url 'canada:index' %}"><i class="icon-double-angle-right">  </i>{% trans "Visit PGP Canada subsite" %}</a></p>
   </div>
 </div>
 
 <hr />
-<h4>Europe</h4>
+<h4>{% trans "Europe" %}</h4>
 <div class="row-fluid">
   <div class="span6">
-    <p><strong>PGP-UK</strong><br />
+    <p><strong>PGP UK</strong><br />
     Stephan Beck Lab<br />
     University College London<br />
-    Founded November 2013<p>
+    {% trans "Founded November 2013" %}<p>
     <p><a class="btn" href="{% url 'uk:index' %}"><i class="icon-double-angle-right"> </i>Visit PGP UK subsite</a></p>
   </div>
   <div class="span6">
@@ -43,10 +47,10 @@
 
 <hr />
 
-<h4>South America</h4>
+<h4>{% trans "South America" %}</h4>
 <div class="row-fluid">
   <div class="span6">
-    Site in development.
+    {% trans "Site in development." %}
   </div>
   <div class="span6">
   </div>
@@ -54,10 +58,10 @@
 
 <hr />
 
-<h4>Asia</h4>
+<h4>{% trans "Asia" %}</h4>
 <div class="row-fluid">
   <div class="span6">
-    Site in development.
+    {% trans "Site in development." %}
   </div>
   <div class="span6">
   </div>

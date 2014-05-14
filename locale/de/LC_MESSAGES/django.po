@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-04 15:20-0500\n"
+"POT-Creation-Date: 2014-05-14 13:59-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,6 +122,61 @@ msgstr ""
 "Forschungsprojekten interessiert Profi andere Aspekte der menschlichen "
 "Erfahrung, um noch umfang Assoziierte Datensammlungen produzieren verbinden."
 
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-us.html:5
+msgid "Our site"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-us.html:7
+msgid ""
+"We're working hard to add content for this section, please come back soon!"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/contact-us.html:6
+msgid "Contact this PGP site"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/contact-us.html:10
+#, fuzzy
+msgid "Website and more general questions"
+msgstr "Website-Informationen"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/contact-us.html:13
+msgid ""
+"\n"
+"This website is managed by <a href=\"/organization\">PersonalGenomes.org</"
+"a>, a United States 501(c)(3) nonprofit organization that organizes the <a "
+"href=\"/organization/pgp\">Personal Genome Project</a>. If you would like to "
+"learn more about PersonalGenomes.org, please <a href=\"/organization\">visit "
+"the organization site</a>.\n"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/contact-us.html:20
+msgid "Postal Address"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/contact-us.html:30
+#, fuzzy
+msgid "Website inquiries"
+msgstr "Website-Informationen"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/data.html:5
+#, fuzzy
+msgid "Our Data"
+msgstr "Daten"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/data.html:8
+msgid ""
+"\n"
+"Our site is working hard right now to collect and release public genome and "
+"health data. For now, you may want to visit the data shared by the <a href="
+"\"/harvard\">Personal Genome Project at Harvard Medical School</a>.\n"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/data.html:13
+#, fuzzy
+msgid "Get data from the PGP at Harvard Medical School"
+msgstr "Harvard Medical School"
+
 #: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col.html:5
 #: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:5
 #, fuzzy
@@ -175,10 +230,72 @@ msgstr "Nutzungsbedingungen"
 msgid "Privacy Policy"
 msgstr "Datenschutzrichtlinie"
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_3col.html:27
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:5
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:53
 #, fuzzy
-msgid "Stay connected"
-msgstr "Bleiben Sie verbunden"
+msgid "Global Network"
+msgstr "PGP Globales Netzwerk"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:8
+msgid ""
+"\n"
+"PersonalGenomes.org works with world-class institutions and leading "
+"researchers to establish new Personal Genome Project (PGP) sites around the "
+"globe. Each PGP site in the network adheres to a set of guidelines and best "
+"practices for creating open genomic data. Learn how to <a href=\"/"
+"organization/join-network\">establish a PGP site</a> in your country.\n"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:15
+msgid "North America"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:18
+#, fuzzy
+msgid "PGP Harvard (United States)"
+msgstr "Vereinigte Staaten"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:21
+msgid "Founded Aug 2005"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:22
+msgid "Visit PGP Harvard subsite"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:25
+#, fuzzy
+msgid "PGP Canada"
+msgstr "Kanada"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:28
+msgid "Founded Dec 2012"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:29
+msgid "Visit PGP Canada subsite"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:34
+msgid "Europe"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:40
+msgid "Founded November 2013"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:50
+msgid "South America"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:53
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:64
+msgid "Site in development."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network.html:61
+msgid "Asia"
+msgstr ""
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:20
 #, fuzzy
@@ -224,6 +341,11 @@ msgstr ""
 #, fuzzy
 msgid "Learn about participating"
 msgstr "Erfahren Sie mehr über die Teilnahme"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:46
+#, fuzzy
+msgid "Open Data"
+msgstr "Daten"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index.html:47
 #, fuzzy
@@ -284,8 +406,7 @@ msgid "Papers & Press"
 msgstr "Publikationen & Presse"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top.html:58
-#, python-format
-#, fuzzy
+#, fuzzy, python-format
 msgid "Change to %(lang_name)s"
 msgstr "Wechseln Sie in %(lang_name)s"
 
@@ -294,6 +415,47 @@ msgstr "Wechseln Sie in %(lang_name)s"
 msgid "Participant log in"
 msgstr "Teilnehmer einloggen"
 
+#: www_personalgenomes_org/templates/www_personalgenomes_org/news.html:5
+msgid "Our Papers"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/news.html:8
+msgid ""
+"Our team looks forward to reporting on our work soon. Check out the "
+"publications list maintained by PersonalGenomes.org to see an aggregate of "
+"PGP publications from around the world!"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/news.html:10
+msgid "View PersonalGenomes.org's list of global PGP papers"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/news.html:15
 #, fuzzy
-#~ msgid "Harvard Medical School"
-#~ msgstr "Harvard Medical School"
+msgid "Our Press"
+msgstr "Publikationen & Presse"
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/news.html:18
+msgid ""
+"We haven't yet put together a selection of news articles related to our "
+"project. Check out the press links maintained by PersonalGenomes.org to see "
+"an aggregate of news from all PGP sites."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/news.html:20
+msgid "Get aggregate PGP news maintained by PersonalGenomes.org"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sign-up.html:5
+msgid "Sign Up for the PGP"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/sign-up.html:7
+msgid ""
+"Our site is working hard right now to get our enrollment process set up. We "
+"hope to provide more information about enrollment soon!"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Stay connected"
+#~ msgstr "Bleiben Sie verbunden"

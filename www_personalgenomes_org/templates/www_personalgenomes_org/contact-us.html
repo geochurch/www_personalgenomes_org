@@ -3,17 +3,21 @@
 {% block main %}
 <div style="height:34px;width:1px;"></div>
 {% block contact_local %}
-<h2>Contact this PGP site</h2>
+<h2>{% trans "Contact this PGP site" %}</h2>
 <p class="lead">Our team hasn't set up our communications yet, we'll get back to you soon with contact information!<p>
 {% endblock contact_local %}
 <hr />
-<h3>Website and more general questions</h3>
+<h3>{% trans "Website and more general questions" %}</h3>
 
-<p>This website is managed by <a href="{% url 'organization:index' %}">PersonalGenomes.org</a>, a United States 501(c)(3) nonprofit organization that organizes the <a href="{% url 'organization:pgp' %}">Personal Genome Project</a>. If you would like to learn more about PersonalGenomes.org, please <a href="{% url 'organization:index' %}">visit the organization site</a>.</p>
+<p>
+{% blocktrans %}
+This website is managed by <a href="/organization">PersonalGenomes.org</a>, a United States 501(c)(3) nonprofit organization that organizes the <a href="/organization/pgp">Personal Genome Project</a>. If you would like to learn more about PersonalGenomes.org, please <a href="/organization">visit the organization site</a>.
+{% endblocktrans %}
+</p>
 <table class="table table-hover table-condensed">
   <tr>
     <td style="width:40%;">
-      <h5>Postal Address:</h5>
+      <h5>{% trans "Postal Address" %}:</h5>
     </td>
     <td>
       PersonalGenomes.org<br />
@@ -23,7 +27,7 @@
   </tr>
   <tr>
     <td>
-      <h5>Website inquiries:</h5>
+      <h5>{% trans "Website inquiries" %}:</h5>
     </td>
     <td>
       <a href="mailto:website@personalgenomes.org">website@personalgenomes.org</a>
