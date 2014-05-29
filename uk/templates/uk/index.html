@@ -8,20 +8,7 @@
 
 {% block notification-box %}
 <div style="border-style:solid;border-width:5px;border-color:red;margin-top:10px;margin-bottom:-10px;border-radius:6px;padding:10px 20px;">
-<p>May 19, 2014</p>
-<p>Dear PGP-UK volunteers,</p>
-
-<p>We are devastated by the email problem, which was the result of human error, and sincerely apologise for it and any distress it may have caused.</p>
-
-<p>We immediately responded to stop the problem spreading and will ensure that this does not happen again. We ask you for your patience and understanding while we investigate what went wrong.</p>
-
-<p>Everyone who requested to be removed from PGP-UK will be removed and not receive any future announcements.</p>
- 
-<p>Once again, we apologise profusely to everyone affected and thank you for your continued support.</p>
- 
-<p>PGP-UK Team<br/>
-Contact details: <a href="http://www.personalgenomes.org/uk/contact-us">http://www.personalgenomes.org/uk/contact-us</a></p>
-</div>
+<span class="lead"><b>May 19, 2014</b>: We sincerely apologise for the email problem May 17-18. <a href="{% url 'uk:email-storm-incident-and-apology' %}">Click here to read more.</a></span></div>
 {% endblock notification-box %}
 
 {% block index_mainbox_content %}
