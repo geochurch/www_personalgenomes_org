@@ -25,7 +25,8 @@ DATABASES = {
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = ['.personalgenomes.org',
                  'personalgenomesorg-production.elasticbeanstalk.com',
-                 'personalgenomesorg-staging.elasticbeanstalk.com']
+                 'personalgenomesorg-staging.elasticbeanstalk.com',
+                 'localhost', '127.0.0.1']
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name

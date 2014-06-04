@@ -1,0 +1,49 @@
+{% extends "uk/index.html" %}
+
+{% block notification-box %}{% endblock notification-box %}
+
+{% block main %}
+<center><div class="well" style="margin-top:10px;">The following is a copy of <a href="/static/docs/uk/Apology_Email_Sent_23_May_2014.pdf">an email</a> sent 23 May 2014.</div></center>
+<h2>May 17-18 Email Storm Incident and Apology</h2>
+
+<p>Dear Personal Genome Project UK volunteers,</p>
+<p>We are profoundly sorry about the email problem that occurred May 17-18, which was caused by a stupid error on our behalf. We sincerely apologise for any distress it may have caused you. If you wish to be removed from this list and have no further contact with the project, please reply to this email or use the unsubscribe link.</p>
+<p>In total, one person’s PGP-UK ID #, along with 220 email addresses and names were revealed to the list. Compared to other data misuses this may appear insignificant but we regard this as a serious breach of your trust, as we take our obligations to you very seriously. Here is a detailed explanation of the events.</p>
+
+<h3>Detailed account of the email storm incident</h3>
+<p>Since the United Kingdom based branch of the Personal Genome Project was announced in November 2013, approximately 10,460 people registered to be notified when informed consent and online enrolment opens.</p>
+<p>On Saturday the 17th of May 2014 at 8:42pm, the Personal Genome Project UK staff sent an email to this list of registrants, announcing that enrolment was now open and providing instructions on how to begin the online process. It was a short-lived proud moment as within a few hours it became clear that a dreadful mistake had been made.</p>
+<p>Just before midnight on Saturday, one person replied to the email, intending to reach only the Personal Genome Project UK staff. Because that person had a question about their account, they included their name, email address, and PGP-UK ID # in the email. Unfortunately, due to a configuration error on our end, this email message was sent to the entire mailing list. Neither the email nor the PGP profile associated with it contained any health, DNA, or other personal information, and this individual has been given the opportunity to obtain a new PGP-UK ID #, if they choose, or, like any participant, they may withdraw from the project entirely.</p>
+<p>Within a few hours, approximately 220 people replied to the email list in a similar manner, thereby sharing their email addresses, and possibly their name, with the rest of the list. These replies created an "email storm" - a phenomenon where a large mailing list is bombarded with numerous responses, each received by everyone else on the list. In this case, 220 emails were sent to 10,460 individuals, or 2.3 million emails in total. In effect, a massive amount of email spam was accidentally created.</p>
+<p>Upon realizing that a mistake had been made, Personal Genome Project UK staff held an emergency meeting and immediately began working to solve the problem. By 2AM on 18th of May 2014 the misconfigured email address was turned off.</p>
+<p>On Monday May 19th, Personal Genome Project UK staff posted an apology and details of the investigation of the incident on the project website:</p>
+<p><a href="{% url 'uk:email-storm-incident-and-apology' %}">http://personalgenomes.org/uk/email-storm-incident-and-apology</a></p>
+
+<h3>Belated apology</h3>
+<p>We would have liked to send everyone a personal apology by email much sooner. Due to the fact that this incident was an email configuration problem, we were reluctant to send any more email until we had more fully investigated the incident and improved our email distribution processes. Thank you for your patience and understanding over the past few days.</p>
+<p>Everyone who already requested to be removed from PGP-UK will not receive any future announcements from us. If you would like to remove your email from the list, please send your request to us directly: pgp-uk@ucl.ac.uk or use the unsubscribe link in this email.</p>
+
+<h3>Thank you for your support</h3>
+<p>As an open, community-driven research study we are acutely aware that the success of this project relies on the ongoing engagement, trust, and support of its members. We also know that we cannot honestly promise you that this is the last mistake that we will ever make over the life of this project. But, we do want to let you know that when major incidents occur, we will notify you and sort them out as quickly as we can.</p>
+<p>Once again, we apologise profusely to everyone affected.</p>
+<p>Sincerely,<br/>
+Stephan Beck, Jane Kaye, Rifat Hamoudi, Emanuele Libertini, Paul Harrison<br/>
+Personal Genome Project UK Staff</p>
+<p>Mailing Address:</p>
+<p>Professor Stephan Beck<br/>
+Personal Genome Project UK<br/>
+Research Department of Cancer Biology<br/>
+Cancer Institute<br/>
+Faculty of Medical Sciences<br/>
+University College London<br/>
+Paul O'Gorman Building<br/>
+72, Huntley Street<br/>
+London<br/>
+WC1E 6BT</p>
+{% endblock main %}
+
+{% block footer %}
+{% include "uk/footer.html" %}
+{% endblock footer %}
+
+
