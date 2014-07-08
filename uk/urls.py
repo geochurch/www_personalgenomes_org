@@ -21,4 +21,8 @@ urlpatterns = patterns(
         name='global-network'),
     url(r'^/contact-us/?', TemplateView.as_view(template_name='uk/contact-us.html'),
         name='contact-us'),
+    url(r'^/email-storm-incident-and-apology-message/?', TemplateView.as_view(template_name='uk/email-storm-incident-and-apology-message.html'),
+        name='email-storm-incident-and-apology-message'),
+    url(r'^/email-storm-incident-and-apology/?', TemplateView.as_view(template_name='uk/email-storm-incident-and-apology.html'),
+        name='email-storm-incident-and-apology'),
     )
