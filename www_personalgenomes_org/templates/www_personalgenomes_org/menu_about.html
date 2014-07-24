@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block navbar_about %}
+<li class="active"><a href="#">About <b class="caret"></b></a></li>
+{% endblock navbar_about %}
+
+{% block navpills %}
+<div class="row">
+  <ul class="nav nav-pills pull-right" style="margin-bottom:0px;margin-top:2px;">
+    <li><a href="{% url 'mission' %}">Our mission</a></li>
+    <li><a href="{% url 'people' %}">People</a></li>
+    <li><a href="{% url 'sharing' %}">Sharing Policies</a></li>
+    <li><a href="{% url 'press' %}">Press</a></li>
+    <li><a href="{% url 'publications' %}">Publications</a></li>
+    <li><a href="http://blog.personalgenomes.org"><i class="icon-external-link"></i> PGP Blog</a></li>
+    <li><a href="http://www.getconference.org"><i class="icon-external-link"></i> GET Conference</a></li>
+  </ul>
+</div>
+{% endblock navpills %}
