@@ -37,10 +37,10 @@
           <li><a href="{% url site_shortname|add:':data' %}">{% trans "Data" %}</a></li>
           {% endif %}
 
-          {% if active == "Papers_and_press" %}
-          <li class="active"><a href="{% url site_shortname|add:':news' %}">{% trans "Papers & Press" %}</a></li>
+          {% if active == "Papers_and_news" %}
+          <li class="active"><a href="{% url site_shortname|add:':news' %}">{% trans "Papers & News" %}</a></li>
           {% else %}
-          <li><a href="{% url site_shortname|add:':news' %}">{% trans "Papers & Press" %}</a></li>
+          <li><a href="{% url site_shortname|add:':news' %}">{% trans "Papers & News" %}</a></li>
           {% endif %}
 
           {# Comment out language drop-down as long as translations aren't done. #}

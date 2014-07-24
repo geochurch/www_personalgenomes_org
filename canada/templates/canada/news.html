@@ -3,15 +3,15 @@
 {% block title %}Personal Genome Project: Canada{% endblock title %}
 
 {% block navbar %}
-{% include "www_personalgenomes_org/navbar_top.html" with site_shortname="canada" site_longname="Personal Genome Project: Canada" active="Papers_and_press" %}
+{% include "www_personalgenomes_org/navbar_top.html" with site_shortname="canada" site_longname="Personal Genome Project: Canada" active="Papers_and_news" %}
 {% endblock navbar %}
 
 {# Put publications material in the "our_papers" block to replace the default. #}
 {# {% block our_papers %} #}
 {# {% endblock our_papers %} #}
 
-{# Put press content in the "our_press" block to replace the default. #}
-{% block our_press %}
+{# Put press content in the "our_news" block to replace the default. #}
+{% block our_news %}
 
 <h3>Articles and links about PGP Canada</h3>
 <div class="row-fluid">
@@ -35,7 +35,7 @@
 
 <p><a href="{% url 'organization:press' %}" class="btn" style="margin:30px">PersonalGenomes.org's news about PGP sites around the world <i> </i><i class="icon-double-angle-right"></i></a></p>
 
-{% endblock our_press %}
+{% endblock our_news %}
 
 {% block footer %}
 {% include "canada/footer.html" %}

@@ -3,17 +3,22 @@
 {% block title %}Personal Genome Project: United Kingdom{% endblock title %}
 
 {% block navbar %}
-{% include "www_personalgenomes_org/navbar_top.html" with site_shortname="uk" site_longname="Personal Genome Project: United Kingdom" icon="/static/img/uk/uk-flag.jpg" active="Papers_and_press" login_url="https://my.personalgenomes.org.uk" %}
+{% include "www_personalgenomes_org/navbar_top.html" with site_shortname="uk" site_longname="Personal Genome Project: United Kingdom" icon="/static/img/uk/uk-flag.jpg" active="Papers_and_news" login_url="https://my.personalgenomes.org.uk" %}
 {% endblock navbar %}
 
 {% block main %}
-<h2 style="margin-top:34px;">Press</h2>
+<h2 style="margin-top:34px;">News</h2>
 
-<h3>News Articles about the Personal Genome Project - United Kingdom</h3>
+<h3>News about the Personal Genome Project - United Kingdom</h3>
 
 <table class="table table-striped">
 
-<tr><th>Press item</th><th>Media</th></tr>
+<tr><th>Item</th><th>Media</th></tr>
+
+<tr>
+<td><p><a href="{% url 'uk:email-storm-incident-and-apology-message' %}">PGP UK email storm incident and apology</a></p></td>
+<td><span class="label label-info">Communications</span></td>
+</tr>
 
 <tr>
 <td><p><a href="/static/docs/uk/140218_PGP-UK_Bristol.pdf">Professor Stephan Beck presentation on PGP-UK at the Integrative Epidemiology Unit public lecture on genome sequencing, University of Bristol</a></p></td>

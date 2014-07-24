@@ -6,11 +6,6 @@
 {% include "www_personalgenomes_org/navbar_top.html" with site_shortname="uk" site_longname="Personal Genome Project: United Kingdom" icon="/static/img/uk/uk-flag.jpg" login_url="https://my.personalgenomes.org.uk" %}
 {% endblock navbar %}
 
-{% block notification-box %}
-<div style="border-style:solid;border-width:3px;border-color:red;margin-top:10px;margin-bottom:-10px;border-radius:6px;padding:7px 20px;">
-<span class="lead">We sincerely apologise for the email problem May 17-18. <a href="{% url 'uk:email-storm-incident-and-apology-message' %}">Click here to read more.</a></span></div>
-{% endblock notification-box %}
-
 {% block index_mainbox_content %}
 The Personal Genome Project UK is dedicated to creating public UK genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices—our approach is to invite willing participants to publicly share their personal data for the greater good.
 {% endblock index_mainbox_content %}

@@ -13,13 +13,13 @@
 
 <hr />
 
-<h2>{% trans "Our Press" %}</h2>
+<h2>{% trans "Our News" %}</h2>
 
-{% block our_press %}
+{% block our_news %}
 <p>{% trans "We haven't yet put together a selection of news articles related to our project. Check out the press links maintained by PersonalGenomes.org to see an aggregate of news from all PGP sites." %}</p>
 
 <p><a href="{% url 'organization:press' %}" class="btn" style="margin:30px">{% trans "Get aggregate PGP news maintained by PersonalGenomes.org" %} <i> </i><i class="icon-double-angle-right"></i></a></p>
-{% endblock our_press %}
+{% endblock our_news %}
 
 {% endblock main %}
 

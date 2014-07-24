@@ -3,7 +3,7 @@
 {% block title %}Personal Genome Project: Harvard Medical School{% endblock title %}
 
 {% block navbar %}
-{% include "www_personalgenomes_org/navbar_top.html" with site_shortname="harvard" site_longname="Personal Genome Project: Harvard Medical School" login_url="https://my.pgp-hms.org" active="Papers_and_press" %}
+{% include "www_personalgenomes_org/navbar_top.html" with site_shortname="harvard" site_longname="Personal Genome Project: Harvard Medical School" login_url="https://my.pgp-hms.org" active="Papers_and_news" %}
 {% endblock navbar %}
 
 {% block our_papers %}
@@ -136,7 +136,7 @@ George Church. Molecular Systems Biology, Dec 2005. (<a href="http://www.nature.
 </table>
 {% endblock our_papers %}
 
-{% block our_press %}
+{% block our_news %}
 <h3>Blog</h3>
 <div class="row-fluid">
   <div class="span1"></div>
@@ -420,7 +420,7 @@ George Church. Molecular Systems Biology, Dec 2005. (<a href="http://www.nature.
 </div>
 
 <div style="height:40px;width:1px;"></div>
-{% endblock our_press %}
+{% endblock our_news %}
 
 {% block footer %}
 {% include "harvard/footer.html" %}
