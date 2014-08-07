@@ -1,7 +1,24 @@
 {% extends "www_personalgenomes_org/data.html" %}
+{% load i18n %}
 
-{% block title %}Personal Genome Project: United Kingdom{% endblock title %}
+{% block title %}Personal Genome Project: PersonalGenomes.org{% endblock title %}
 
-{% block navbar %}
-{% include "uk/navbar_top.html" with active="Data" %}
-{% endblock navbar %}
+{% block brand %}<a class="brand" href="/">Personal Genome Project</a><a class="brand" href="/organization"><i class="icon-double-angle-right">   </i>PersonalGenomes.org</a>{% endblock brand %}
+
+{% block main %}
+
+<h2 style="margin-top:34px;">{% trans "PGP Data" %}</h2>
+
+<p>
+{% blocktrans %}
+Right now the only site with significant public data is the pilot site, the <a href="/harvard">Personal Genome Project at Harvard Medical School</a> &ndash; click the button below to check it out! We look forward to seeing data from other PGP sites soon!
+{% endblocktrans %}
+</p>
+
+<p><a href="{% url 'harvard:data' %}" class="btn" style="margin:30px;">{% trans "Get data from the PGP at Harvard Medical School" %} <i> </i><i class="icon-double-angle-right"></i></a></p>
+
+{% endblock main %}
+
+{% block footer %}
+{% include "organization/footer.html" %}
+{% endblock footer %}
