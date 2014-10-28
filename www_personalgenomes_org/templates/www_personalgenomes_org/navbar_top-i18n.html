@@ -1,0 +1,81 @@
+{% load i18n %}
+
+{# Another version of this page exists that uses i18n because it contains #}
+{# content that should be seen in all subsites. #}
+
+<div class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom:0px;">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="{% url site_shortname|add:':index' %}">{% if icon %}<img src="{{icon}}" style="max-height:16px;"/> {% endif %}{% trans site_longname %}</a>
+      <div class="nav-collapse collapse">
+
+	<ul class="nav pull-right">
+
+          {% if active == "About-us" %}
+          <li class="active"><a href="{% url site_shortname|add:':about-us' %}">{% trans "About us" %}</a></li>
+          {% else %}
+          <li><a href="{% url site_shortname|add:':about-us' %}">{% trans "About us" %}</a></li>
+          {% endif %}
+
+          {% if active == "About-PGP" %}
+          <li class="active"><a href="{% url site_shortname|add:':about-pgp' %}">{% trans "About the PGP" %}</a></li>
+          {% else %}
+          <li><a href="{% url site_shortname|add:':about-pgp' %}">{% trans "About the PGP" %}</a></li>
+          {% endif %}
+
+          {% if active == "Sign-up" %}
+          <li class="active"><a href="{% url site_shortname|add:':sign-up' %}">{% trans "Sign up" %}</a></li>
+          {% else %}
+          <li><a href="{% url site_shortname|add:':sign-up' %}">{% trans "Sign up" %}</a></li>
+          {% endif %}
+
+          {% if active == "Data" %}
+          <li class="active"><a href="{% url site_shortname|add:':data' %}">{% trans "Data" %}</a></li>
+          {% else %}
+          <li><a href="{% url site_shortname|add:':data' %}">{% trans "Data" %}</a></li>
+          {% endif %}
+
+          {% if active == "Papers_and_news" %}
+          <li class="active"><a href="{% url site_shortname|add:':news' %}">{% trans "Papers & News" %}</a></li>
+          {% else %}
+          <li><a href="{% url site_shortname|add:':news' %}">{% trans "Papers & News" %}</a></li>
+          {% endif %}
+
+          {# Comment out language drop-down as long as translations aren't done. #}
+          {% comment %}
+          <li class="dropdown">
+            {% get_language_info_list for LANGUAGES as languages %}
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><small><i class="icon-caret-down"></i>{% for language in languages %}{% if language.code == LANGUAGE_CODE %} {{ language.name_local }}{% endif %}{% endfor %}</small></a>
+            <ul class="dropdown-menu">
+              {% for language in languages %}
+                {% if language.code == LANGUAGE_CODE %}
+                  <li class="active"><a href="#">{{ language.name_local }}</a></li>
+                {% else %}
+                  <form action="{% url 'set_language' %}" method="post" style="margin:0px;">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to }}" />
+                    <input name="language" type="hidden" value="{{ language.code }}" />
+                    <input class="form-control btn btn-small" type="submit" value="{% blocktrans with lang_name=language.name_local %}Change to {{ lang_name }}{% endblocktrans %}" style="margin:5px;"/>
+                  </form>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </li>
+          {% endcomment %}
+
+          {% if login_url %}
+          <form class="navbar-form form-inline pull-right">
+            <a class="btn btn-small" style="margin-top:8px;margin-left:10px;" href="{{ login_url }}"><i class="icon-external-link"> </i>{% trans "Participant log in" %}</a>
+          </form>
+          {% endif %}
+
+	</ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>

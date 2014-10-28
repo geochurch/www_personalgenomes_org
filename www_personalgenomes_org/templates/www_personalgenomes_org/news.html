@@ -1,24 +1,35 @@
 {% extends "base.html" %}
-{% load i18n %}
 
 {% block main %}
 
-<h2 style="margin-top:34px;">{% trans "Our Papers" %}</h2>
+<h2 style="margin-top:34px;">Our Papers</h2>
 
 {% block our_papers %}
-<p>{% trans "Our team looks forward to reporting on our work soon. Check out the publications list maintained by PersonalGenomes.org to see an aggregate of PGP publications from around the world!" %}</p>
+<p>
+    Our team looks forward to reporting on our work soon. Check out the
+    publications list maintained by PersonalGenomes.org to see an aggregate of
+    PGP publications from around the world!
+</p>
 
-<p><a href="{% url 'organization:publications' %}" class="btn" style="margin:30px">{% trans "View PersonalGenomes.org's list of global PGP papers" %} <i> </i><i class="icon-double-angle-right"></i></a></p>
+<p><a href="{% url 'organization:publications' %}" class="btn"
+    style="margin:30px">View PersonalGenomes.org's list of global PGP papers
+    <i> </i><i class="icon-double-angle-right"></i></a></p>
 {% endblock our_papers %}
 
 <hr />
 
-<h2>{% trans "Our News" %}</h2>
+<h2>Our News</h2>
 
 {% block our_news %}
-<p>{% trans "We haven't yet put together a selection of news articles related to our project. Check out the press links maintained by PersonalGenomes.org to see an aggregate of news from all PGP sites." %}</p>
+<p>
+    We haven't yet put together a selection of news articles related to our
+    project. Check out the press links maintained by PersonalGenomes.org to see
+    an aggregate of news from all PGP sites.
+</p>
 
-<p><a href="{% url 'organization:press' %}" class="btn" style="margin:30px">{% trans "Get aggregate PGP news maintained by PersonalGenomes.org" %} <i> </i><i class="icon-double-angle-right"></i></a></p>
+<p><a href="{% url 'organization:press' %}" class="btn" style="margin:30px">
+    Get aggregate PGP news maintained by PersonalGenomes.org<i> </i>
+    <i class="icon-double-angle-right"></i></a></p>
 {% endblock our_news %}
 
 {% endblock main %}

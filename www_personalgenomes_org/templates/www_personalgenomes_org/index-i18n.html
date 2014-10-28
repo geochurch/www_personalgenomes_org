@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% load i18n %}
+{# Another version of this page exists that uses i18n because it contains #}
+{# content that should be seen in all subsites. #}
+
 {% block title %}
   {% if country_code == 'CA' %}
     Personal Genome Project: Canada
@@ -16,9 +20,7 @@
 <div class="heroine-unit" style="margin-top:25px;">
   <div class="row-fluid">
     <div class="span9">
-      <h1>{% block index_mainbox_heading %}
-          Sharing Personal Genomes
-          {% endblock %}</h1>
+      <h1>{% trans "Sharing Personal Genomes" %}</h1>
       <p class="info">
         {% block index_mainbox_content %}
         The Personal Genome Project was founded in 2005 and is dedicated to
@@ -49,47 +51,57 @@
 <div class="row-fluid">
   <div class="span4">
     <div class="infobox" id="infobox1">
-      <h2>Participation</h2>
-      <p>Donating your genome and health data to science is a great
+      <h2>{% trans "Participation" %}</h2>
+      <p>{% blocktrans %}
+          Donating your genome and health data to science is a great
           way to enable advances in understanding human genetics, biology, and
           health. We seek volunteers willing to donate diverse personal
-          information to become a public resource.</p>
+          information to become a public resource.
+          {% endblocktrans %}
+      </p>
     </div>
     <p><a class="btn"
         href="{% block index_link_sign_up %}
               {% url 'organization:pgp-sign-up' %}
               {% endblock index_link_sign_up %}">
-              Learn about participating
-              <i> </i><i class="icon-angle-right"></i></a>
-    </p>
+              {% trans "Learn about participating" %}<i> </i>
+        <i class="icon-angle-right"></i></a></p>
   </div>
   <div class="span4">
     <div class="infobox" id="infobox2">
-      <h2>Open Data</h2>
-      <p>Open data is a critical component of the scientific method,
+      <h2>{% trans "Open Data" %}</h2>
+      <p>{% blocktrans %}
+          Open data is a critical component of the scientific method,
           but genomes are both identifiable and predictive. As a result, many
           studies choose to withhold data from participants and restrict access
           to researchers.  The PGP's public data is a common ground to
-          collaborate and improve our understanding of genomes.</p>
+          collaborate and improve our understanding of genomes.
+          {% endblocktrans %}
+      </p>
     </div>
     <p><a class="btn" style="margin-top:0px;"
         href="{% block index_link_data %}
               {% url 'organization:get-data' %}
               {% endblock index_link_data %}">
-        Use PGP data <i> </i><i class="icon-angle-right"></i></a></p>
+        {% block index_button_data_text %}Use PGP data{% endblock %}
+        <i> </i><i class="icon-angle-right"></i></a></p>
   </div>
   <div class="span4">
     <div class="infobox" id="infobox3">
-      <h2>Global Network</h2>
-      <p>The pilot group for the Personal Genome Project has been based at
+      <h2>{% trans "Global Network" %}</h2>
+      <p>
+          {% blocktrans %}
+          The pilot group for the Personal Genome Project has been based at
           Harvard, but we are a global group, with projects starting around the
-          world.</p>
+          world.
+          {% endblocktrans %}
+      </p>
     </div>
     <p><a class="btn"
         href="{% block index_link_global_network %}
               {% url 'organization:network' %}
               {% endblock index_link_global_network %}">
-              Meet our PGP groups
+              {% trans "Meet our PGP groups" %}
               <i> </i><i class="icon-double-angle-right"></i></a></p>
   </div>
 </div>

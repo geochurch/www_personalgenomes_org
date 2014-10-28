@@ -1,82 +1,93 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {# Another version of this page exists that uses i18n because it contains #}
 {# content that should be seen in all subsites. #}
 
 {% block main %}
 
-<h2 style="margin-top:34px;">Global Network</h2>
+<h2 style="margin-top:34px;">{% trans "Global Network" %}</h2>
 
 <p>
+{% blocktrans %}
 PersonalGenomes.org works with world-class institutions and leading researchers
 to establish new Personal Genome Project (PGP) sites around the globe. Each PGP
 site in the network adheres to a set of guidelines and best practices for
 creating open genomic data. Learn how to <a href="/organization/join-network">
 establish a PGP site</a> in your country.
+{% endblocktrans %}
 </p>
 
 <hr />
 
-<h3>North America</h3>
+<h3>{% trans "North America" %}</h3>
 <div class="row-fluid">
   <div class="span6">
     <p>
+      {% blocktrans %}
       <strong>PGP Harvard (United States)</strong><br />
       George Church Lab<br />
       Harvard Medical School<br />
       Founded Aug 2005
+      {% endblocktrans %}
     </p>
     <p><a class="btn" href="{% url 'harvard:index' %}">
         <i class="icon-double-angle-right">  </i>
-        Visit PGP Harvard subsite
+        {% trans "Visit PGP Harvard subsite" %}
         </a></p>
   </div>
   <div class="span6">
     <p>
+      {% blocktrans %}
       <strong>PGP Canada</strong><br />
       McLaughlin Centre, University of Toronto and<br />
       The Centre for Applied Genomics, Hospital for Sick Children<br />
       Founded Dec 2012
+      {% endblocktrans %}
     </p>
     <p><a class="btn" href="{% url 'canada:index' %}">
         <i class="icon-double-angle-right">  </i>
-        Visit PGP Canada subsite</a></p>
+        {% trans "Visit PGP Canada subsite" %}</a></p>
   </div>
 </div>
 
 <hr />
-<h4>Europe</h4>
+<h4>{% trans "Europe" %}</h4>
 <div class="row-fluid">
   <div class="span6">
     <p>
+      {% blocktrans %}
       <strong>PGP UK</strong><br />
       Stephan Beck Lab<br />
       University College London<br />
       Founded November 2013
+      {% endblocktrans %}
     </p>
     <p><a class="btn" href="{% url 'uk:index' %}">
         <i class="icon-double-angle-right"> </i>
-        Visit PGP UK subsite</a></p>
+        {% trans "Visit PGP UK subsite" %}</a></p>
   </div>
   <div class="span6">
       <p>
+        {% blocktrans %}
         <strong>Genom Austria</strong> (the Austrian PGP)<br />
         CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences<br />
         Vienna, Austria<br />
         Founded in June 2014
+        {% endblocktrans %}
       </p>
       <p><a class="btn" href="{% url 'austria:index' %}">
           <i class="icon-double-angle-right"> </i>
-          Visit Genom Austria subsite</a></p>
+          {% trans "Visit Genom Austria subsite" %}</a></p>
   </div>
 </div>
 
 <hr />
 
-<h4>South America</h4>
+<h4>{% trans "South America" %}</h4>
 <div class="row-fluid">
   <div class="span6">
-    Site in development.
+    {% trans "Site in development." %}
   </div>
   <div class="span6">
   </div>
@@ -84,10 +95,10 @@ establish a PGP site</a> in your country.
 
 <hr />
 
-<h4>Asia</h4>
+<h4>{% trans "Asia" %}</h4>
 <div class="row-fluid">
   <div class="span6">
-    Site in development.
+    {% trans "Site in development." %}
   </div>
   <div class="span6">
   </div>

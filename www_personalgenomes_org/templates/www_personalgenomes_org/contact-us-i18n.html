@@ -1,5 +1,6 @@
-{% extends "www_personalgenomes_org/index.html" %}
+{% extends "www_personalgenomes_org/contact-us.html" %}
 
+{% load i18n %}
 {# Another version of this page exists that uses i18n because it contains #}
 {# content that should be seen in all subsites. #}
 
@@ -16,29 +17,33 @@
 
 <hr />
 
-<h3>Website and more general questions</h3>
+<h3>{% trans "Website and more general questions" %}</h3>
 <p>
+    {% blocktrans %}
     This website is managed by <a href="/organization">PersonalGenomes.org</a>,
     a United States 501(c)(3) nonprofit organization that organizes the
     <a href="/organization/pgp">Personal Genome Project</a>. If you would like
     to learn more about PersonalGenomes.org, please
     <a href="/organization">visit the organization site</a>.
+    {% endblocktrans %}
 </p>
 
 <table class="table table-hover table-condensed">
   <tr>
     <td style="width:40%;">
-      <h5>Postal Address:</h5>
+      <h5>{% trans "Postal Address" %}:</h5>
     </td>
     <td>
+        {% blocktrans %}
         PersonalGenomes.org<br />
         423 Brookline Avenue, #323<br />
         Boston MA 02215-5410
+        {% endblocktrans %}
     </td>
   </tr>
   <tr>
     <td>
-      <h5>Website inquiries:</h5>
+      <h5>{% trans "Website inquiries" %}:</h5>
     </td>
     <td>
       <a href="mailto:website@personalgenomes.org">website@personalgenomes.org</a>
