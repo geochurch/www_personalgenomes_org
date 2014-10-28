@@ -1,0 +1,47 @@
+{% extends "www_personalgenomes_org/news.html" %}
+{% load i18n %}
+
+{% block title %}Genom Austria: the Austrian Personal Genome Project{% endblock title %}
+
+{% block navbar %}
+{% include "www_personalgenomes_org/navbar_top-i18n.html" with site_shortname="austria" site_longname="Genom Austria: the Austrian Personal Genome Project" active="Papers_and_news" %}
+{% endblock navbar %}
+
+{% block main %}
+<h2 style="margin-top:34px;">{% trans "Press" %}</h2>
+
+<p class="lead">
+    {% blocktrans %}
+    Press information and the most important reports and news articles about
+    Genom Austria are listed on the following website:
+    <a href="http://press.genomaustria.at">http://press.genomaustria.at</a>
+    {% endblocktrans %}
+</p>
+
+<p class="lead">
+    {% trans "Contact address for all questions:" %}
+    <a href="mailto:info@genomaustria.at">info@genomaustria.at</a>
+</p>
+
+<hr />
+
+{% blocktrans %}
+Further information about the international PGP are available from the
+following websites:
+{% endblocktrans %}
+
+<ul>
+  <li>{% blocktrans %}
+    <a href="http://blog.personalgenomes.org">The Personal Genome
+    Project blog</a> posts news related to our project, including photos,
+    interviews, and updates.
+    {% endblocktrans %}</li>
+  <li>{% blocktrans %}
+    <a href="harvard/news">Scientific papers and news articles about the Personal Genome Project at Harvard</a>
+    {% endblocktrans %}</li>
+</ul>
+{% endblock main %}
+
+{% block footer %}
+{% include "austria/footer.html" %}
+{% endblock footer %}

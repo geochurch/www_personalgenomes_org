@@ -1,0 +1,45 @@
+{% extends "www_personalgenomes_org/sign-up.html" %}
+{% load i18n %}
+
+{% block title %}Genom Austria: the Austrian Personal Genome Project{% endblock title %}
+
+{% block navbar %}
+{% include "www_personalgenomes_org/navbar_top-i18n.html" with site_shortname="austria" site_longname="Genom Austria: the Austrian Personal Genome Project" active="Sign-up" %}
+{% endblock navbar %}
+
+{% block main %}
+<h2 style="margin-top:34px;">{% trans "Sign up for Genom Austria" %}</h2>
+
+<p>
+    {% blocktrans %}
+    Genom Austria (the Austrian PGP) <br/>
+    Founded in June 2014 <br/>
+    CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences <br/>
+    Vienna, Austria
+    {% endblocktrans %}
+</p>
+
+<span class="lead"><b>{% trans "Requirements:" %}</b></span>
+<ul>
+    <li><span class="lead">{% trans "At least 18 years of age" %}</span></li>
+    <li><span class="lead">{% blocktrans %}
+        No citizenship requirement, but preference will be given to volunteers
+        living in Austria and the neighboring countries
+        {% endblocktrans %}
+    </span></li>
+</ul>
+
+<hr />
+<h3>{% trans "Register on the Genom Austria website" %}</h3>
+
+<p><a class="btn btn-large" href="http://anmeldung.genomaustria.at/">{% trans "In German:" %} http://anmeldung.genomaustria.at/</a></p>
+<p><a class="btn btn-large" href="http://signup.genomeaustria.at/">{% trans "In English:" %} http://signup.genomaustria.at/</a></p>
+
+<hr />
+<h3>{% trans "Contact information" %}</h3>
+<p class="lead">{% trans "Contact address for all questions:" %} <a href="mailto:info@genomaustria.at">info@genomaustria.at</a></p>
+{% endblock main %}
+
+{% block footer %}
+{% include "canada/footer.html" %}
+{% endblock footer %}

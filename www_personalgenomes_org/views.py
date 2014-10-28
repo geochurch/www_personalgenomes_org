@@ -31,5 +31,7 @@ def index(request):
         return render(request, 'uk/index.html')
     elif country_code == 'US':
         return render(request, 'harvard/index.html')
+    elif country_code == 'AT':
+        return render(request, 'austria/index.html')
     else:
         return render(request, 'www_personalgenomes_org/index.html')

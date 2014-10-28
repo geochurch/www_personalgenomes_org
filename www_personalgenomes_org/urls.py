@@ -72,6 +72,8 @@ urlpatterns = patterns(
         include('canada.urls', namespace="canada")),
     url(r'^uk',
         include('uk.urls', namespace="uk")),
+    url(r'^austria',
+        include('austria.urls', namespace="austria")),
 
     # Support page
     url(r'^donate/?$', views.redirect_to_name, {'url_name':'organization:donate'}),

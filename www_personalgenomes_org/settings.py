@@ -135,6 +135,7 @@ INSTALLED_APPS = (
     'harvard',
     'canada',
     'uk',
+    'austria',
 )
 
 # A sample logging configuration. The only tangible logging
