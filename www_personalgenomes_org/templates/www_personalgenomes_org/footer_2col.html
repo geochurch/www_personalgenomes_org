@@ -12,6 +12,8 @@
       <a href="{% url 'uk:index' %}">United Kingdom</a>
       <i> </i>&bull;<i> </i>
       <a href="{% url 'austria:index' %}">Austria</a>
+      <br/>
+      <a href="{% block global_network_url %}{% url 'organization:network' %}{% endblock %}">Learn about our network</a>
     </p>
   </div>
   <div class="span6">
