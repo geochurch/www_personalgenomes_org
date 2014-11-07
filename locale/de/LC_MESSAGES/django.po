@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-28 18:17-0400\n"
+"POT-Creation-Date: 2014-11-07 16:21-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,107 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: austria/templates/austria/about-us.html:11
-msgid "Genom Austria"
+#: austria/templates/austria/about.html:7
+msgid "About Genom Austria"
 msgstr ""
 
-#: austria/templates/austria/about-us.html:13
+#: austria/templates/austria/about.html:10
 msgid ""
 "\n"
-"    Genom Austria is a non-profit research and open science project that is\n"
-"    based at the CeMM Research Center of Molecular Medicine of the Austrian\n"
-"    Academy of Science. The project is a collaboration with the Medicine\n"
-"    University of Vienna, with Harvard Medical School and with the\n"
-"    PersonalGenomes.org foundation.\n"
-"    "
-msgstr ""
-
-#: austria/templates/austria/about-us.html:31
-msgid "Project Leader of Genom Austria"
-msgstr ""
-
-#: austria/templates/austria/about-us.html:32
-msgid ""
-"\n"
-"        Christoph Bock is a genome scientist and a principal investigator\n"
-"        at CeMM. He is also a guest professor at the Medical University\n"
-"        of Vienna's department for laboratory medicine, the coordinator\n"
-"        of the Biomedical Sequencing Facility and adjunct group leader at\n"
-"        the Max Planck Institute for Informatics. He has a background in\n"
-"        bioinformatics and epigenomics, with a PhD from the Max Planck\n"
-"        Institute for Informatics (Germany) and postdoctoral research at\n"
-"        the Broad Institute and Harvard University (Cambridge, USA).\n"
-"        "
-msgstr ""
-
-#: austria/templates/austria/about-us.html:48
-#: austria/templates/austria/about-us.html:67
-#: austria/templates/austria/about-us.html:84
-msgid "Steering Board Member"
-msgstr ""
-
-#: austria/templates/austria/about-us.html:49
-msgid ""
-"\n"
-"        Christiane Druml is a bioethics expert and chairwoman of the\n"
-"        Austrian Bioethics Commission. She is also the Vice Rector\n"
-"        for Clinical Affairs at the Medical University of Vienna.\n"
-"        She studied law at the University of Vienna and obtained her\n"
-"        PhD in the field of international law. From 1992 until\n"
-"        October 2011 she was Managing Director of the Ethics\n"
-"        Committee of the Medical University of Vienna. She has\n"
-"        contributed to the high ethical standards for medical\n"
-"        research both nationally and internationally, for example as\n"
-"        a member of the UNESCO’s International Bioethics Committee.\n"
-"        "
-msgstr ""
-
-#: austria/templates/austria/about-us.html:68
-msgid ""
-"\n"
-"        Helga Nowotny is professor emeritus for social studies of science\n"
-"        at the ETH Zurich and a founding member of the European Research\n"
-"        Council (ERC). From 2007 to 2010 she was Vice President and from\n"
-"        2011 to 2013 president of the ERC. She holds PhD degrees in law\n"
-"        from the University of Vienna and from Columbia University (New\n"
-"        York) and an honorary doctorate from the Weizmann Institute of\n"
-"        Science. She is a foreign member of the Royal Swedish Academy of\n"
-"        Sciences and a longtime member of the Academia Europaea.\n"
-"        "
-msgstr ""
-
-#: austria/templates/austria/about-us.html:85
-msgid ""
-"\n"
-"        Michael Speicher is a specialist in medical genetics and chairman\n"
-"        of the Austrian Society of Human Genetics. He is the directory of\n"
-"        the Institute of Human Genetics at the Medical University of Graz.\n"
-"        He studied computer science at the University of Dortmund and\n"
-"        medicine at the University of Essen. He worked as a postdoctoral\n"
-"        researcher at Yale University and as a physician-scientist at\n"
-"        several German universities (Essen, Heidelberg and Munich). His\n"
-"        research focuses on cancer genetics and genomics.\n"
-"        "
-msgstr ""
-
-#: austria/templates/austria/about-us.html:101
-msgid "Chairman of Steering Board &amp; Overall Responsibility"
-msgstr ""
-
-#: austria/templates/austria/about-us.html:102
-msgid ""
-"\n"
-"        Giulio Superti-Furga is a molecular biologist and the Scientific\n"
-"        Director of CeMM. He performed his undergraduate and graduate\n"
-"        studies in molecular biology at the University of Zurich,\n"
-"        Switzerland, at Genentech Inc., South San Francisco, USA, and at\n"
-"        the Institute for Molecular Pathology in Vienna (I.M.P.), Austria.\n"
-"        He was a post-doctoral fellow and Team Leader at the European\n"
-"        Molecular Biology Laboratory (EMBL) and Scientific Director of\n"
-"        Cellzome, Inc. He is a member of Austrian Academy of Sciences, the\n"
-"        German Academy of Sciences Leopoldina and of the European\n"
-"        Molecular Biology Organization.\n"
-"        "
+"  Genom Austria is an open science research project based at the CeMM\n"
+"  Research Center of Molecular Medicine of the Austrian Academy of\n"
+"  Science. Our collaborators include the Medicine University of Vienna,\n"
+"  Harvard Medical School and the PersonalGenomes.org foundation which\n"
+"  coordinates the Global Network of Personal Genome Projects.\n"
+"  "
 msgstr ""
 
 #: austria/templates/austria/contact-us.html:11
@@ -149,23 +61,18 @@ msgstr ""
 msgid "Genom Austria data"
 msgstr ""
 
-#: austria/templates/austria/index.html:13
+#: austria/templates/austria/index.html:11
 msgid ""
 "\n"
-"Genom Austria (the Austrian Personal Genome Project) is dedicated to\n"
-"creating a dataset of highly annotated open-access genomes and to\n"
-"contribute to the public discussion about genomes in science, medicine\n"
-"and society. Sharing data is critical to scientific progress, but has been\n"
-"hampered by traditional research practices – our approach is to invite\n"
-"willing participants to publicly share their personal data for the greater\n"
-"good.\n"
+"Genom Austria is dedicated to creating a dataset of highly annotated\n"
+"open-access genomes and to contribute to the public discussion about\n"
+"genomes in science, medicine and society. Sharing data is critical to\n"
+"scientific progress, but has been hampered by traditional research\n"
+"practices – our approach is to invite willing participants to publicly\n"
+"share their personal data for the greater good.\n"
 msgstr ""
 
-#: austria/templates/austria/index.html:29
-msgid "Learn more about Genom Austria"
-msgstr ""
-
-#: austria/templates/austria/index.html:41
+#: austria/templates/austria/index.html:34
 msgid "Use Genom Austria data"
 msgstr ""
 
@@ -207,6 +114,94 @@ msgid ""
 "    "
 msgstr ""
 
+#: austria/templates/austria/people.html:18
+msgid "Project Leader of Genom Austria"
+msgstr ""
+
+#: austria/templates/austria/people.html:19
+msgid ""
+"\n"
+"        Christoph Bock is a genome scientist and a principal investigator\n"
+"        at CeMM. He is also a guest professor at the Medical University\n"
+"        of Vienna's department for laboratory medicine, the coordinator\n"
+"        of the Biomedical Sequencing Facility and adjunct group leader at\n"
+"        the Max Planck Institute for Informatics. He has a background in\n"
+"        bioinformatics and epigenomics, with a PhD from the Max Planck\n"
+"        Institute for Informatics (Germany) and postdoctoral research at\n"
+"        the Broad Institute and Harvard University (Cambridge, USA).\n"
+"        "
+msgstr ""
+
+#: austria/templates/austria/people.html:35
+#: austria/templates/austria/people.html:54
+#: austria/templates/austria/people.html:71
+msgid "Steering Board Member"
+msgstr ""
+
+#: austria/templates/austria/people.html:36
+msgid ""
+"\n"
+"        Christiane Druml is a bioethics expert and chairwoman of the\n"
+"        Austrian Bioethics Commission. She is also the Vice Rector\n"
+"        for Clinical Affairs at the Medical University of Vienna.\n"
+"        She studied law at the University of Vienna and obtained her\n"
+"        PhD in the field of international law. From 1992 until\n"
+"        October 2011 she was Managing Director of the Ethics\n"
+"        Committee of the Medical University of Vienna. She has\n"
+"        contributed to the high ethical standards for medical\n"
+"        research both nationally and internationally, for example as\n"
+"        a member of the UNESCO’s International Bioethics Committee.\n"
+"        "
+msgstr ""
+
+#: austria/templates/austria/people.html:55
+msgid ""
+"\n"
+"        Helga Nowotny is professor emeritus for social studies of science\n"
+"        at the ETH Zurich and a founding member of the European Research\n"
+"        Council (ERC). From 2007 to 2010 she was Vice President and from\n"
+"        2011 to 2013 president of the ERC. She holds PhD degrees in law\n"
+"        from the University of Vienna and from Columbia University (New\n"
+"        York) and an honorary doctorate from the Weizmann Institute of\n"
+"        Science. She is a foreign member of the Royal Swedish Academy of\n"
+"        Sciences and a longtime member of the Academia Europaea.\n"
+"        "
+msgstr ""
+
+#: austria/templates/austria/people.html:72
+msgid ""
+"\n"
+"        Michael Speicher is a specialist in medical genetics and chairman\n"
+"        of the Austrian Society of Human Genetics. He is the directory of\n"
+"        the Institute of Human Genetics at the Medical University of Graz.\n"
+"        He studied computer science at the University of Dortmund and\n"
+"        medicine at the University of Essen. He worked as a postdoctoral\n"
+"        researcher at Yale University and as a physician-scientist at\n"
+"        several German universities (Essen, Heidelberg and Munich). His\n"
+"        research focuses on cancer genetics and genomics.\n"
+"        "
+msgstr ""
+
+#: austria/templates/austria/people.html:88
+msgid "Chairman of Steering Board &amp; Overall Responsibility"
+msgstr ""
+
+#: austria/templates/austria/people.html:89
+msgid ""
+"\n"
+"        Giulio Superti-Furga is a molecular biologist and the Scientific\n"
+"        Director of CeMM. He performed his undergraduate and graduate\n"
+"        studies in molecular biology at the University of Zurich,\n"
+"        Switzerland, at Genentech Inc., South San Francisco, USA, and at\n"
+"        the Institute for Molecular Pathology in Vienna (I.M.P.), Austria.\n"
+"        He was a post-doctoral fellow and Team Leader at the European\n"
+"        Molecular Biology Laboratory (EMBL) and Scientific Director of\n"
+"        Cellzome, Inc. He is a member of Austrian Academy of Sciences, the\n"
+"        German Academy of Sciences Leopoldina and of the European\n"
+"        Molecular Biology Organization.\n"
+"        "
+msgstr ""
+
 #: austria/templates/austria/sign-up.html:11
 msgid "Sign up for Genom Austria"
 msgstr ""
@@ -214,8 +209,8 @@ msgstr ""
 #: austria/templates/austria/sign-up.html:14
 msgid ""
 "\n"
-"    Genom Austria (the Austrian PGP) <br/>\n"
-"    Founded in June 2014 <br/>\n"
+"    Genom Austria<br/>\n"
+"    Founded in November 2014 <br/>\n"
 "    CeMM Research Center for Molecular Medicine of the Austrian Academy\n"
 "    of Sciences <br/>\n"
 "    Vienna, Austria\n"
@@ -262,74 +257,71 @@ msgstr ""
 msgid "English"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp-i18n.html:9
-#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:26
-#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:28
-msgid "About the PGP"
-msgstr ""
-
-#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp-i18n.html:14
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-i18n.html:17
+#, python-format
 msgid ""
 "\n"
-"    The Personal Genome Project (PGP) is creating a freely available\n"
-"    scientific resource that brings together genomic, environmental and\n"
-"    human trait data. These data are donated by volunteers enrolled in a\n"
-"    PGP study from our global network. Initiated by George Church at\n"
-"    Harvard Medical School in 2005, the PGP has pioneered ethical, legal,\n"
-"    and technical aspects related to the creation of public resources\n"
-"    involving highly identifiable data like human genomes.\n"
-"    "
+"  %(our_site)s is a member of the Global Network of Personal\n"
+"  Genome Projects (PGP), a group of research studies creating\n"
+"  freely available scientific resources that bring together\n"
+"  genomic, environmental and human trait data donated by\n"
+"  volunteers. Initiated by George Church at Harvard Medical\n"
+"  School in 2005, the Personal Genome Project has pioneered\n"
+"  ethical, legal, and technical aspects related to the creation\n"
+"  of public resources involving highly identifiable data like\n"
+"  human genomes. Read more about the Global Network.\n"
+"  "
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp-i18n.html:25
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-i18n.html:30
 msgid "Public Data, Methods, and Materials"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp-i18n.html:27
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-i18n.html:32
 msgid ""
 "\n"
-"    We believe sharing is good for science and society. The PGP is\n"
-"    dedicated to creating public resources that everyone can access.\n"
-"    Privacy, confidentiality and anonymity are impossible to guarantee\n"
-"    in a context like the PGP where public sharing of genetic data is an\n"
-"    explicit goal. Therefore, the PGP collaborates with participants\n"
-"    willing to waive expectations of privacy. This waiver is not for\n"
-"    everyone, but the volunteers who join make a valuable and lasting\n"
-"    contribution to science.\n"
-"    "
+"  We believe sharing is good for science and society. Our project is\n"
+"  dedicated to creating public resources that everyone can access.\n"
+"  Privacy, confidentiality and anonymity are impossible to guarantee\n"
+"  in a context like this research study where public sharing of\n"
+"  genetic data is an explicit goal. Therefore, our project\n"
+"  collaborates with participants willing to waive expectations of\n"
+"  privacy. This waiver is not for everyone, but the participants\n"
+"  who join make a valuable and lasting contribution to science.\n"
+"  "
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp-i18n.html:39
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-i18n.html:44
 msgid "Ongoing Participatory Research"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp-i18n.html:41
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-i18n.html:46
 msgid ""
 "\n"
-"    We love the people behind the data. Our project aims to maintain\n"
-"    lifelong relationships with participants. We want to collaborate\n"
-"    on tracking health and other traits as they unfold over the course\n"
-"    of a participant’s life. We also want to better understand the\n"
-"    benefits and risks related to accessing and sharing extensive\n"
-"    genomic and other personal data.\n"
-"    "
+"  We love the people behind the data. Our project aims to maintain\n"
+"  lifelong relationships with participants. We want to collaborate\n"
+"  on tracking health and other traits as they unfold over the course\n"
+"  of a participant’s life. We also want to better understand the\n"
+"  benefits and risks related to accessing and sharing extensive\n"
+"  genomic and other personal data.\n"
+"  "
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp-i18n.html:51
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-i18n.html:56
 msgid "Genomes, Environments, and Traits"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/about-pgp-i18n.html:53
+#: www_personalgenomes_org/templates/www_personalgenomes_org/about-i18n.html:58
 msgid ""
 "\n"
-"    The genome is just a part of the story: genes interact with\n"
-"    the environment to form traits. Participants may choose to\n"
-"    contribute other public data to build public records of their\n"
-"    health and traits. We also try to connect participants with\n"
-"    research projects interested in profiling other aspects of human\n"
-"    experience to produce even more extensive collections of\n"
-"    associated data.\n"
-"    "
+"  The genome is just a part of the story: genes interact with\n"
+"  the environment to form traits. Participants may choose to\n"
+"  contribute other public data to build public records of their\n"
+"  health and traits. We also try to connect participants with\n"
+"  research projects interested in profiling other aspects of human\n"
+"  experience to produce even more extensive collections of\n"
+"  associated data.\n"
+"  "
 msgstr ""
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/contact-us-i18n.html:20
@@ -385,47 +377,47 @@ msgstr ""
 msgid "Austria"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col-i18n.html:20
-msgid "Website information"
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col-i18n.html:18
+msgid "Learn about our network"
 msgstr ""
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col-i18n.html:22
-msgid "Contact Us"
+msgid "Website information"
 msgstr ""
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col-i18n.html:24
-msgid "About PersonalGenomes.org"
+msgid "Contact Us"
 msgstr ""
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col-i18n.html:26
-msgid "Terms of Service"
+msgid "About PersonalGenomes.org"
 msgstr ""
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col-i18n.html:28
+msgid "Terms of Service"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/footer_2col-i18n.html:30
 msgid "Privacy Policy"
 msgstr ""
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:9
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:94
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:92
 msgid "Global Network"
 msgstr ""
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:12
 msgid ""
 "\n"
-"PersonalGenomes.org works with world-class institutions and leading\n"
-"researchers to establish new Personal Genome Project (PGP) sites\n"
-"around the globe. Each PGP site in the network adheres to a set of\n"
-"guidelines and best practices for creating open genomic data. Learn\n"
-"how to <a href=\"/organization/join-network\">establish a PGP site</a>\n"
-"in your country.\n"
+"The Global Network of Personal Genome Projects (PGP) includes researchers\n"
+"at many leading institutions around the globe.\n"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:24
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:20
 msgid "North America"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:28
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:24
 msgid ""
 "\n"
 "      <strong>PGP Harvard (United States)</strong><br />\n"
@@ -435,11 +427,11 @@ msgid ""
 "      "
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:37
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:33
 msgid "Visit PGP Harvard subsite"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:42
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:38
 msgid ""
 "\n"
 "      <strong>PGP Canada</strong><br />\n"
@@ -449,15 +441,15 @@ msgid ""
 "      "
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:51
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:47
 msgid "Visit PGP Canada subsite"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:56
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:52
 msgid "Europe"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:60
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:56
 msgid ""
 "\n"
 "      <strong>PGP UK</strong><br />\n"
@@ -467,14 +459,14 @@ msgid ""
 "      "
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:69
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:65
 msgid "Visit PGP UK subsite"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:73
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:69
 msgid ""
 "\n"
-"        <strong>Genom Austria</strong> (the Austrian PGP)<br />\n"
+"        <strong>Genom Austria</strong><br />\n"
 "        CeMM Research Center for Molecular Medicine of the Austrian\n"
 "        Academy of Sciences<br />\n"
 "        Vienna, Austria<br />\n"
@@ -482,32 +474,118 @@ msgid ""
 "        "
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:83
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:79
 msgid "Visit Genom Austria subsite"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:89
-msgid "South America"
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:85
+msgid "Guidelines"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:92
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:103
-msgid "Site in development."
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:88
+msgid ""
+"\n"
+"  Members of the Global Network of Personal Genome Projects (PGP)\n"
+"  adhere to the following guidelines:\n"
+"  "
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:100
-msgid "Asia"
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:97
+msgid "(a) Public Data."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:98
+msgid ""
+"\n"
+"        Participants are invited to publicly share their genomic and\n"
+"        trait data in an integrated, publicly-accessible format using a\n"
+"        CC0 waiver or equivalent public domain license.\n"
+"        "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:104
+msgid "(b) Non-anonymous."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:105
+msgid ""
+"\n"
+"        The risks of participant re-identification are addressed up\n"
+"        front, as an integral part of the consent and enrollment\n"
+"        process; neither anonymity nor confidentiality of participant\n"
+"        identities or their data are promised to research participants.\n"
+"        "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:112
+msgid "(c) Equal access."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:113
+msgid ""
+"\n"
+"        Participants are provided access to their individual research\n"
+"        data in a timely and complete fashion (i.e., raw data and not\n"
+"        just summary results, where feasible).\n"
+"        "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:123
+msgid "(d) Oversight."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:124
+msgid ""
+"\n"
+"        Each member must at all times maintain current Institutional\n"
+"        Review Board (IRB) approval or local equivalent, and will work\n"
+"        with PersonalGenomes.org to continue to implement identified\n"
+"        best practices for responsible public genomics research.\n"
+"        "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:131
+msgid "(e) Not for profit."
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:132
+msgid ""
+"\n"
+"        The research project is managed or sponsored by a non-profit\n"
+"        organization (or local equivalent). In addition, other than\n"
+"        purposes of reasonable cost recovery, the member shall not sell\n"
+"        or license participant data or tissues.\n"
+"        "
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:145
+msgid "Join the network"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/global-network-i18n.html:148
+msgid ""
+"\n"
+"  If you are a researcher and you wish to receive the benefits of being\n"
+"  a member of this network,  there is a competitive application process.\n"
+"  For more information about becoming a member site, please\n"
+"  <a href=\"http://www.personalgenomes.org/organization/contact-us\">\n"
+"    contact us</a>.\n"
+"  "
 msgstr ""
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:25
 msgid "Sharing Personal Genomes"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:56
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:39
+msgid "Learn more"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:54
 msgid "Participation"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:57
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:55
 msgid ""
 "\n"
 "          Donating your genome and health data to science is a great\n"
@@ -517,15 +595,15 @@ msgid ""
 "          "
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:69
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:67
 msgid "Learn about participating"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:74
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:72
 msgid "Open Data"
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:75
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:73
 msgid ""
 "\n"
 "          Open data is a critical component of the scientific method,\n"
@@ -537,22 +615,29 @@ msgid ""
 "          "
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:96
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:95
 msgid ""
 "\n"
-"          The pilot group for the Personal Genome Project has been\n"
-"          based at Harvard, but we are a global group, with projects\n"
-"          starting around the world.\n"
-"          "
+"            We are a member of the Global Network of Personal Genome\n"
+"            Projects.  Since the Personal Genome Project was launched at\n"
+"            Harvard Medical School in 2005, the network has grown to\n"
+"            include researchers at many leading institutions around the\n"
+"            globe.\n"
+"            "
 msgstr ""
 
-#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:107
-msgid "Meet our PGP groups"
+#: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:109
+msgid "Meet the Network"
 msgstr ""
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:20
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:22
-msgid "About us"
+msgid "About"
+msgstr ""
+
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:26
+#: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:28
+msgid "People"
 msgstr ""
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:32
