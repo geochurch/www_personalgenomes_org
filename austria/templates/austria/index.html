@@ -1,9 +1,7 @@
 {% extends "www_personalgenomes_org/index-i18n.html" %}
 {% load i18n %}
 
-{% block title %}
-Genom Austria: the Austrian Personal Genome Project
-{% endblock title %}
+{% block title %}Genom Austria{% endblock title %}
 
 {% block navbar %}
 {% include "www_personalgenomes_org/navbar_top-i18n.html" with site_shortname="austria" site_longname="Genom Austria" %}
@@ -11,23 +9,18 @@ Genom Austria: the Austrian Personal Genome Project
 
 {% block index_mainbox_content %}
 {% blocktrans %}
-Genom Austria (the Austrian Personal Genome Project) is dedicated to
-creating a dataset of highly annotated open-access genomes and to
-contribute to the public discussion about genomes in science, medicine
-and society. Sharing data is critical to scientific progress, but has been
-hampered by traditional research practices – our approach is to invite
-willing participants to publicly share their personal data for the greater
-good.
+Genom Austria is dedicated to creating a dataset of highly annotated
+open-access genomes and to contribute to the public discussion about
+genomes in science, medicine and society. Sharing data is critical to
+scientific progress, but has been hampered by traditional research
+practices – our approach is to invite willing participants to publicly
+share their personal data for the greater good.
 {% endblocktrans %}
 {% endblock index_mainbox_content %}
 
 {% block index_link_about %}
 {% url 'austria:about' %}
 {% endblock index_link_about %}
-
-{% block index_mainbox_button_text %}
-{% trans "Learn more about Genom Austria" %}
-{% endblock %}
 
 {% block index_link_sign_up %}
 {% url 'austria:sign-up' %}
@@ -40,6 +33,14 @@ good.
 {% block index_button_data_text %}
 {% trans "Use Genom Austria data" %}
 {% endblock %}
+
+{% block index_global_network_content %}
+  {% blocktrans %}
+  The pilot group for the Personal Genome Project has been
+  based at Harvard, but we are a global group, with projects
+  starting around the world.
+  {% endblocktrans %}
+{% endblock index_global_network_content %}
 
 {% block index_link_global_network %}
 {% url 'austria:global-network' %}

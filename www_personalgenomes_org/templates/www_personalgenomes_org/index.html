@@ -34,9 +34,7 @@
                   {% url 'organization:pgp' %}
                   {% endblock index_link_about %}"
           class="btn btn-primary btn-large">
-          {% block index_mainbox_button_text %}
-          Learn more about the PGP
-          {% endblock %}<i>  </i><i class="icon-angle-right"></i>
+            Learn more<i>  </i><i class="icon-angle-right"></i>
           </a></p>
     </div>
     <div class="span3">
@@ -83,15 +81,21 @@
   <div class="span4">
     <div class="infobox" id="infobox3">
       <h2>Global Network</h2>
-      <p>The pilot group for the Personal Genome Project has been based at
-          Harvard, but we are a global group, with projects starting around the
-          world.</p>
+      <p>
+        {% block index_global_network_content %}
+          We are a member of the Global Network of Personal Genome
+          Projects.  Since the Personal Genome Project was launched at
+          Harvard Medical School in 2005, the network has grown to
+          include researchers at many leading institutions around the
+          globe.
+        {% endblock index_global_network_content %}
+      </p>
     </div>
     <p><a class="btn"
         href="{% block index_link_global_network %}
               {% url 'organization:network' %}
               {% endblock index_link_global_network %}">
-              Meet our PGP groups
+              Meet the Network
               <i> </i><i class="icon-double-angle-right"></i></a></p>
   </div>
 </div>
