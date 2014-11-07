@@ -1,0 +1,23 @@
+{% extends "www_personalgenomes_org/about.html" %}
+
+{% block title %}Personal Genome Project: Harvard Medical School{% endblock title %}
+
+{% block navbar %}
+{% include "www_personalgenomes_org/navbar_top.html" with site_shortname="harvard" site_longname="Personal Genome Project: Harvard" login_url="https://my.pgp-hms.org" active="About" %}
+{% endblock navbar %}
+
+{% block about-us %}
+<h2 style="margin-top:34px;">PGP Harvard</h2>
+
+<p class="lead">
+  The Harvard Personal Genome Project is the founding pilot project in
+  PGP network. Our project hosts publicly shared genomic and health data
+  from thousands of participants.
+</p>
+{% endblock about-us %}
+
+{% block about-pgp-site-longname %}PGP Harvard{% endblock %}
+
+{% block footer %}
+{% include "harvard/footer.html" %}
+{% endblock footer %}

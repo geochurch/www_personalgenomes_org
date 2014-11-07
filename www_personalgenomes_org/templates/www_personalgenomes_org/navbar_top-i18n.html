@@ -16,16 +16,16 @@
 
 	<ul class="nav pull-right">
 
-          {% if active == "About-us" %}
-          <li class="active"><a href="{% url site_shortname|add:':about-us' %}">{% trans "About us" %}</a></li>
+          {% if active == "About" %}
+          <li class="active"><a href="{% url site_shortname|add:':about' %}">{% trans "About" %}</a></li>
           {% else %}
-          <li><a href="{% url site_shortname|add:':about-us' %}">{% trans "About us" %}</a></li>
+          <li><a href="{% url site_shortname|add:':about' %}">{% trans "About" %}</a></li>
           {% endif %}
 
-          {% if active == "About-PGP" %}
-          <li class="active"><a href="{% url site_shortname|add:':about-pgp' %}">{% trans "About the PGP" %}</a></li>
+          {% if active == "People" %}
+          <li class="active"><a href="{% url site_shortname|add:':people' %}">{% trans "People" %}</a></li>
           {% else %}
-          <li><a href="{% url site_shortname|add:':about-pgp' %}">{% trans "About the PGP" %}</a></li>
+          <li><a href="{% url site_shortname|add:':people' %}">{% trans "People" %}</a></li>
           {% endif %}
 
           {% if active == "Sign-up" %}

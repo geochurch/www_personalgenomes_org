@@ -6,7 +6,7 @@ Genom Austria: the Austrian Personal Genome Project
 {% endblock title %}
 
 {% block navbar %}
-{% include "www_personalgenomes_org/navbar_top-i18n.html" with site_shortname="austria" site_longname="Genom Austria: the Austrian Personal Genome Project" %}
+{% include "www_personalgenomes_org/navbar_top-i18n.html" with site_shortname="austria" site_longname="Genom Austria" %}
 {% endblock navbar %}
 
 {% block index_mainbox_content %}
@@ -21,9 +21,9 @@ good.
 {% endblocktrans %}
 {% endblock index_mainbox_content %}
 
-{% block index_link_about_pgp %}
-{% url 'austria:about-pgp' %}
-{% endblock index_link_about_pgp %}
+{% block index_link_about %}
+{% url 'austria:about' %}
+{% endblock index_link_about %}
 
 {% block index_mainbox_button_text %}
 {% trans "Learn more about Genom Austria" %}

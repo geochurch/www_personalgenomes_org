@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{# Another version of this page exists that uses i18n because it contains #}
+{# content that should be seen in all subsites. #}
+
+{% block main %}
+
+{% block about-us %}
+<h2>About our project</h2>
+
+<p>We still need to add content for this section, please come back soon!</p>
+{% endblock about-us %}
+
+<h3 style="margin-top:34px;">{% trans "About the PGP global network" %}</h3>
+
+<img src="/static/img/pgp-logo-only-transp.png" style="float:right;width:20%;margin-left:10px">
+
+<p>
+  {% block about-pgp-site-longname %}Our project{% endblock %}
+  {% blocktrans with our_site='' %}
+    {{our_site}} is a member of the Personal Genome Project global network.
+    {% endblocktrans %}
+</p>
+
+<p>
+  {% blocktrans %}
+  The Personal Genome Project (PGP) global network is creating a
+  freely available scientific resources that bring together genomic,
+  environmental and human trait data. These data are donated by
+  volunteers enrolled in projects in the global network. Initiated
+  by George Church at Harvard Medical School in 2005, the Personal
+  Genome Project has pioneered ethical, legal, and technical aspects
+  related to the creation of public resources involving highly
+  identifiable data like human genomes.
+  {% endblocktrans %}
+</p>
+
+<h4>{% trans "Public Data, Methods, and Materials" %}</h4>
+<p>
+  {% blocktrans %}
+  We believe sharing is good for science and society. PGP projects are
+  dedicated to creating public resources that everyone can access.
+  Privacy, confidentiality and anonymity are impossible to guarantee
+  in a context like the PGP where public sharing of genetic data is an
+  explicit goal. Therefore, PGP projects collaborate with participants
+  willing to waive expectations of privacy. This waiver is not for
+  everyone, but the volunteers who join make a valuable and lasting
+  contribution to science.
+  {% endblocktrans %}
+</p>
+
+<h4>{% trans "Ongoing Participatory Research" %}</h4>
+<p>
+  {% blocktrans %}
+  We love the people behind the data. Our projects aim to maintain
+  lifelong relationships with participants. We want to collaborate
+  on tracking health and other traits as they unfold over the course
+  of a participant’s life. We also want to better understand the
+  benefits and risks related to accessing and sharing extensive
+  genomic and other personal data.
+  {% endblocktrans %}
+</p>
+
+<h4>{% trans "Genomes, Environments, and Traits" %}</h4>
+<p>
+  {% blocktrans %}
+  The genome is just a part of the story: genes interact with
+  the environment to form traits. Participants may choose to
+  contribute other public data to build public records of their
+  health and traits. We also try to connect participants with
+  research projects interested in profiling other aspects of human
+  experience to produce even more extensive collections of
+  associated data.
+  {% endblocktrans %}
+</p>
+
+{% endblock main %}
+
+{% block footer %}
+{% include "www_personalgenomes_org/footer_2col.html" %}
+{% endblock footer %}
