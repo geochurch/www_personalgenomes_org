@@ -50,10 +50,14 @@
   <div class="span4">
     <div class="infobox" id="infobox1">
       <h2>Participation</h2>
-      <p>Donating your genome and health data to science is a great
-          way to enable advances in understanding human genetics, biology, and
-          health. We seek volunteers willing to donate diverse personal
-          information to become a public resource.</p>
+      <p>
+        {% block index_content_sign_up %}
+        Donating your genome and health data to science is a great
+        way to enable advances in understanding human genetics, biology,
+        and health. We seek volunteers willing to donate diverse
+        personal information to become a public resource.
+        {% endblock index_content_sign_up %}
+      </p>
     </div>
     <p><a class="btn"
         href="{% block index_link_sign_up %}
@@ -69,7 +73,7 @@
       <p>Open data is a critical component of the scientific method,
           but genomes are both identifiable and predictive. As a result, many
           studies choose to withhold data from participants and restrict access
-          to researchers.  The PGP's public data is a common ground to
+          to researchers. The PGP's public data is a common ground to
           collaborate and improve our understanding of genomes.</p>
     </div>
     <p><a class="btn" style="margin-top:0px;"
@@ -95,7 +99,7 @@
         href="{% block index_link_global_network %}
               {% url 'organization:network' %}
               {% endblock index_link_global_network %}">
-              Meet the Network
+              Network
               <i> </i><i class="icon-double-angle-right"></i></a></p>
   </div>
 </div>

@@ -8,13 +8,13 @@
 {% endblock navbar %}
 
 {% block main %}
-<h2 style="margin-top:34px;">{% trans "Press" %}</h2>
+<h2 style="margin-top:34px;">{% trans "News" %}</h2>
 
 <p class="lead">
     {% blocktrans %}
-    Press information and the most important reports and news articles
-    about Genom Austria are listed on the following website:
-    <a href="http://press.genomaustria.at">http://press.genomaustria.at</a>
+    Press information and relevant reports and news articles
+    about Genom Austria are listed on the Genome Asutria website:
+    <a href="http://www.genomaustria.at">http://www.genomaustria.at</a>
     {% endblocktrans %}
 </p>
 
@@ -26,18 +26,21 @@
 <hr />
 
 {% blocktrans %}
-Further information about the international PGP are available from the
+Information about other members of the Global Network of Personal Genome Projects are available from the
 following websites:
 {% endblocktrans %}
 
 <ul>
   <li>{% blocktrans %}
     <a href="http://blog.personalgenomes.org">The Personal Genome
-    Project blog</a> posts news related to our project, including photos,
-    interviews, and updates.
+    Project blog</a> posts news and upadates about the
+    Personal Genome Project at Harvard and the other projects that
+    are associated with PersonalGenomes.org.
     {% endblocktrans %}</li>
   <li>{% blocktrans %}
-    <a href="harvard/news">Scientific papers and news articles about the Personal Genome Project at Harvard</a>
+    <a href="http://www.PersonalGenomes.org/harvard/news">The news page
+      of the Personal Genome Project at Harvard</a> lists scientific papers and
+      news reporting about the Personal Genome Project
     {% endblocktrans %}</li>
 </ul>
 {% endblock main %}

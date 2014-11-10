@@ -24,15 +24,15 @@
           {% endif %}
 
           {% if active == "People" %}
-          <li class="active"><a href="{% url site_shortname|add:':people' %}">People</a></li>
+          <li class="active"><a href="{% url site_shortname|add:':people' %}">Team</a></li>
           {% else %}
-          <li><a href="{% url site_shortname|add:':people' %}">People</a></li>
+          <li><a href="{% url site_shortname|add:':people' %}">Team</a></li>
           {% endif %}
 
           {% if active == "Sign-up" %}
-          <li class="active"><a href="{% url site_shortname|add:':sign-up' %}">Sign up</a></li>
+          <li class="active"><a href="{% url site_shortname|add:':sign-up' %}">Volunteer</a></li>
           {% else %}
-          <li><a href="{% url site_shortname|add:':sign-up' %}">Sign up</a></li>
+          <li><a href="{% url site_shortname|add:':sign-up' %}">Volunteer</a></li>
           {% endif %}
 
           {% if active == "Data" %}
@@ -42,9 +42,9 @@
           {% endif %}
 
           {% if active == "Papers_and_news" %}
-          <li class="active"><a href="{% url site_shortname|add:':news' %}">Papers &amp; News</a></li>
+          <li class="active"><a href="{% url site_shortname|add:':news' %}">News</a></li>
           {% else %}
-          <li><a href="{% url site_shortname|add:':news' %}">Papers &amp; News</a></li>
+          <li><a href="{% url site_shortname|add:':news' %}">News</a></li>
           {% endif %}
 
           {% if login_url %}

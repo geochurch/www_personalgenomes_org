@@ -8,34 +8,38 @@
 {% endblock navbar %}
 
 {% block main %}
-<h2 style="margin-top:34px;">{% trans "Sign up for Genom Austria" %}</h2>
+<h2 style="margin-top:34px;">{% trans "Pre-registration for Genom Austria" %}</h2>
 
 <p>
     {% blocktrans %}
-    Genom Austria<br/>
-    Founded in November 2014 <br/>
-    CeMM Research Center for Molecular Medicine of the Austrian Academy
-    of Sciences <br/>
-    Vienna, Austria
-    {% endblocktrans %}
+    Genom Austria is accepting pre-registration by volunteers who are
+    are considering to make their genome publicly available as part
+    of Genom Austria.
+
+    Pre-registering as a volunteer does not gurantee participation,
+    as there will initially be resources available for only a handful
+    of participants. Furthermore, in order to meet the highest ethical
+    standards, all volunteers have to confirm that they understand the
+    implications of making their personal genomes publicly available.
+{% endblocktrans %}
 </p>
 
-<span class="lead"><b>{% trans "Requirements:" %}</b></span>
+<span class="lead"><b>{% trans "Requirements for volunteers:" %}</b></span>
 <ul>
     <li><span class="lead">{% trans "At least 18 years of age" %}</span></li>
     <li><span class="lead">
         {% blocktrans %}
         No citizenship requirement, but preference will be given to
-        volunteers living in Austria and the neighboring countries
+        volunteers who live in Austria or have other connections to Austria
         {% endblocktrans %}
     </span></li>
 </ul>
 
 <hr />
-<h3>{% trans "Register on the Genom Austria website" %}</h3>
-
-<p><a class="btn btn-large" href="http://anmeldung.genomaustria.at/">{% trans "In German:" %} http://anmeldung.genomaustria.at/</a></p>
-<p><a class="btn btn-large" href="http://signup.genomeaustria.at/">{% trans "In English:" %} http://signup.genomaustria.at/</a></p>
+<p>{% trans "Pre-registration on the Genom Austria website" %}:</p>
+<p><a class="btn btn-large" href="http://www.genomaustria.at">
+    <i class="icon-external-link">  </i>
+    {% trans "Genom Austria" %}</a></p>
 
 <hr />
 <h3>{% trans "Contact information" %}</h3>

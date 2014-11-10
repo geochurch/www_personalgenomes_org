@@ -3,21 +3,31 @@
 
 {% block title %}Genom Austria{% endblock title %}
 
+{% block index_define_global_url %}
+{% url 'austria:global-network' as global_url %}
+{% endblock %}
+
 {% block about-lead %}
 <h2 style="margin-top:34px;">{% trans "About Genom Austria" %}</h2>
 
+<img src="/static/img/austria/genom-austria-logo.png" style="float:right;width:40%;margin-left:10px">
+
 <p class="lead">
   {% blocktrans %}
-  Genom Austria is an open science research project based at the CeMM
+  Genom Austria is an open science project based at the CeMM
   Research Center of Molecular Medicine of the Austrian Academy of
-  Science. Our collaborators include the Medicine University of Vienna,
-  Harvard Medical School and the PersonalGenomes.org foundation which
+  Sciences. Our collaborators include the Medicine University of Vienna,
+  Harvard Medical School and the PersonalGenomes.org foundation, which
   coordinates the Global Network of Personal Genome Projects.
+  Genom Austria is committed to the principles for Personal Genome
+  Projects defined by George Church at Harvard Medical School in 2005.
   {% endblocktrans %}
 </p>
 {% endblock about-lead %}
 
 {% block about-pgp-site-longname %}Genom Austria{% endblock %}
+
+{% block about_global_url %}{% url 'austria:global-network'%}{% endblock %}
 
 {% block navbar %}
 {% include "www_personalgenomes_org/navbar_top-i18n.html" with site_shortname="austria" site_longname="Genom Austria" active="About" %}

@@ -8,27 +8,27 @@
 {% endblock navbar %}
 
 {% block main %}
-<h2 style="margin-top:34px;">{% trans "Datasets of Genom Austria" %}</h2>
+<h2 style="margin-top:34px;">{% trans "Genom Austria Data" %}</h2>
 
 <p class="lead">
     {% blocktrans %}
-    Genom Austria has initially sequenced three personal genomes to
-    illustrate the kind of data that the project will produce. These data
-    and the corresponding annotations and initial interpretations are
-    available from the Genom Austria website:
+    Genom Austria has initially sequenced two personal genomes to
+    illustrate the kind of data that the project will produce. These
+    data and initial interpretations are available from the
+    Genom Austria website:
     {% endblocktrans %}
-    <a href="http://data.genomaustria.at">http://data.genomaustria.at</a>
-    <p><a class="btn btn-large" href="http://data.genomaustria.at">
+    <a href="http://www.genomaustria.at">http://www.genomaustria.at</a>
+    <p><a class="btn btn-large" href="http://www.genomaustria.at">
         <i class="icon-external-link">  </i>
-        {% trans "Genom Austria data" %}</a></p>
+        {% trans "Genom Austria" %}</a></p>
 </p>
 
 <hr />
 <p class="lead">
-    Additional PGP datasets are available from other projects:
+    {% trans "Additional PGP datasets are available from other projects:" %}
 </p>
 <p>
-    <a class="btn" href="/harvard/data">PGP Harvard data</a>
+    <a class="btn" href="/harvard/data">{% trans "PGP Harvard data" %}</a>
 </p>
 {% endblock main %}
 

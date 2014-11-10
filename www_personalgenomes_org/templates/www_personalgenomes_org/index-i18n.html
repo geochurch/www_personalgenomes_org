@@ -52,12 +52,12 @@
   <div class="span4">
     <div class="infobox" id="infobox1">
       <h2>{% trans "Participation" %}</h2>
-      <p>{% blocktrans %}
+      <p>{% block index_content_sign_up %}
           Donating your genome and health data to science is a great
           way to enable advances in understanding human genetics, biology,
           and health. We seek volunteers willing to donate diverse
           personal information to become a public resource.
-          {% endblocktrans %}
+         {% endblock index_content_sign_up %}
       </p>
     </div>
     <p><a class="btn"
@@ -74,7 +74,7 @@
           Open data is a critical component of the scientific method,
           but genomes are both identifiable and predictive. As a result,
           many studies choose to withhold data from participants and
-          restrict access to researchers.  The PGP's public data is a
+          restrict access to researchers. The PGP's public data is a
           common ground to collaborate and improve our understanding of
           genomes.
           {% endblocktrans %}
@@ -106,7 +106,7 @@
         href="{% block index_link_global_network %}
               {% url 'organization:network' %}
               {% endblock index_link_global_network %}">
-              {% trans "Meet the Network" %}
+              {% trans "Network" %}
               <i> </i><i class="icon-double-angle-right"></i></a></p>
   </div>
 </div>

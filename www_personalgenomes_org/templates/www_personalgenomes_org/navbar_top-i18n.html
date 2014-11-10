@@ -23,15 +23,16 @@
           {% endif %}
 
           {% if active == "People" %}
-          <li class="active"><a href="{% url site_shortname|add:':people' %}">{% trans "People" %}</a></li>
+          <li class="active"><a href="{% url site_shortname|add:':people' %}">{% trans "Team" %}</a></li>
           {% else %}
-          <li><a href="{% url site_shortname|add:':people' %}">{% trans "People" %}</a></li>
+          <li><a href="{% url site_shortname|add:':people' %}">{% trans "Team" %}</a></li>
           {% endif %}
 
           {% if active == "Sign-up" %}
-          <li class="active"><a href="{% url site_shortname|add:':sign-up' %}">{% trans "Sign up" %}</a></li>
+          {# Translators: "Volunteer" used as a verb. #}
+          <li class="active"><a href="{% url site_shortname|add:':sign-up' %}">{% trans "Volunteer" %}</a></li>
           {% else %}
-          <li><a href="{% url site_shortname|add:':sign-up' %}">{% trans "Sign up" %}</a></li>
+          <li><a href="{% url site_shortname|add:':sign-up' %}">{% trans "Volunteer" %}</a></li>
           {% endif %}
 
           {% if active == "Data" %}
@@ -41,13 +42,11 @@
           {% endif %}
 
           {% if active == "Papers_and_news" %}
-          <li class="active"><a href="{% url site_shortname|add:':news' %}">{% trans "Papers & News" %}</a></li>
+          <li class="active"><a href="{% url site_shortname|add:':news' %}">{% trans "News" %}</a></li>
           {% else %}
-          <li><a href="{% url site_shortname|add:':news' %}">{% trans "Papers & News" %}</a></li>
+          <li><a href="{% url site_shortname|add:':news' %}">{% trans "News" %}</a></li>
           {% endif %}
 
-          {# Comment out language drop-down as long as translations aren't done. #}
-          {% comment %}
           <li class="dropdown">
             {% get_language_info_list for LANGUAGES as languages %}
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><small><i class="icon-caret-down"></i>{% for language in languages %}{% if language.code == LANGUAGE_CODE %} {{ language.name_local }}{% endif %}{% endfor %}</small></a>
@@ -66,7 +65,6 @@
               {% endfor %}
             </ul>
           </li>
-          {% endcomment %}
 
           {% if login_url %}
           <form class="navbar-form form-inline pull-right">
