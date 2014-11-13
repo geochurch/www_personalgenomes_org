@@ -57,10 +57,11 @@ test -f ~/.bashrc && source ~/.bashrc
 4. Install Homebrew following the instructions on their site [http://brew.sh/](http://brew.sh/)
 5. run `brew doctor` to check all is well.
 6. run `brew update` to make sure it's up-to-date.
-7. run `brew install python --with-brewed-openssl` to install Python from Homebrew.
-8. run `pip install virtualenv virtualenvwrapper` to install virtualenv using pip, our Python package manager of choice.
-9. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
-10. To make virtualenv and virtualenvwrapper commands work in future terminals, add the following
+7. run `brew install geoip postgresql` to install the GeoIP library and PostgreSQL if needed.
+8. run `brew install python --with-brewed-openssl` to install Python from Homebrew.
+9. run `pip install virtualenv virtualenvwrapper` to install virtualenv using pip, our Python package manager of choice.
+10. Make a directory to store your virtual environments: `mkdir ~/.virtualenvs`
+11. To make virtualenv and virtualenvwrapper commands work in future terminals, add the following
 to your `~/.bashrc` (or create a `.bashrc` file in your home directory if one doesn't exist):
 `export WORKON_HOME=$HOME/.virtualenvs` and
 `source /usr/local/bin/virtualenvwrapper.sh`.
