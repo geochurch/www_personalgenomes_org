@@ -7,12 +7,10 @@
 {% url 'austria:global-network' as global_url %}
 {% endblock %}
 
-{% block about-lead %}
+{% block main %}
 <h2 style="margin-top:34px;">{% trans "About Genom Austria" %}</h2>
 
-<img src="/static/img/austria/genom-austria-logo.png" style="float:right;width:40%;margin-left:10px">
-
-<p class="lead">
+<p>
   {% blocktrans %}
   Genom Austria is an open science project based at the CeMM
   Research Center of Molecular Medicine of the Austrian Academy of
@@ -23,11 +21,52 @@
   Projects defined by George Church at Harvard Medical School in 2005.
   {% endblocktrans %}
 </p>
-{% endblock about-lead %}
 
-{% block about-pgp-site-longname %}Genom Austria{% endblock %}
+<img src="/static/img/austria/genom-austria-logo.png"
+  style="max-width:800px;width:100%;display:block;margin-left:auto;margin-right:auto;"/>
 
-{% block about_global_url %}{% url 'austria:global-network'%}{% endblock %}
+<h3 style="margin-top:20px;">{% trans "Public Data, Methods, and Materials" %}</h3>
+
+<p>
+  {% blocktrans %}
+  We believe data sharing is good for science and society. Our project
+  is dedicated to creating a public resource of personal genomes that
+  everyone can access. Privacy, confidentiality and anonymity are
+  impossible to guarantee in a context like this research study where
+  public sharing of genetic data is an explicit goal. Therefore, our
+  project collaborates with participants who are fully aware of the
+  implications and privacy concerns of making their personal genome
+  data public. Volunteering is not for everyone, but the participants
+  who join make a valuable and lasting contribution to science.
+  {% endblocktrans %}
+</p>
+
+<h3 style="margin-top:20px;">{% trans "Ongoing Participatory Research" %}</h3>
+
+<p>
+  {% blocktrans %}
+  We respect the people behind the data, and we aim to maintain strong
+  relationships with participants. For example, we would like to
+  collaborate on tracking health and other traits as they unfold over
+  time. We also want to better understand the benefits and risks
+  related to accessing and sharing personal genomes and other types of
+  data.
+  {% endblocktrans %}
+</p>
+
+<h3 style="margin-top:20px;">{% trans "Genomes, Environments, and Traits" %}</h3>
+<p style="margin-bottom:40px;">
+  {% blocktrans %}
+  Personal genomes are just one part of the story, and genes interact
+  with the environment to form traits. Participants may thus choose to
+  contribute other public data to build public records of their health
+  and traits. We also try to connect participants with research,
+  education, and citizen science projects that involve personal genome
+  data.
+  {% endblocktrans %}
+</p>
+
+{% endblock main %}
 
 {% block navbar %}
 {% include "www_personalgenomes_org/navbar_top-i18n.html" with site_shortname="austria" site_longname="Genom Austria" active="About" %}

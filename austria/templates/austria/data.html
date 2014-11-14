@@ -10,22 +10,25 @@
 {% block main %}
 <h2 style="margin-top:34px;">{% trans "Genom Austria Data" %}</h2>
 
-<p class="lead">
+<p>
     {% blocktrans %}
     Genom Austria has initially sequenced two personal genomes to
     illustrate the kind of data that the project will produce. These
-    data and initial interpretations are available from the
-    Genom Austria website:
+    data, together with initial interpretations, are available from
+    the Genom Austria website:
     {% endblocktrans %}
-    <a href="http://www.genomaustria.at">http://www.genomaustria.at</a>
     <p><a class="btn btn-large" href="http://www.genomaustria.at">
         <i class="icon-external-link">  </i>
         {% trans "Genom Austria" %}</a></p>
 </p>
 
-<hr />
-<p class="lead">
-    {% trans "Additional PGP datasets are available from other projects:" %}
+<hr style="margin:30px 0px;"/>
+<p>
+    {% blocktrans %}
+    In addition, personal genomes from other members of the Global
+    Network of Personal Genome Projects are available from the PGP
+    Harvard website:
+    {% endblocktrans %}
 </p>
 <p>
     <a class="btn" href="/harvard/data">{% trans "PGP Harvard data" %}</a>

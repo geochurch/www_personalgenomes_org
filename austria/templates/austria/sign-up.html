@@ -8,42 +8,42 @@
 {% endblock navbar %}
 
 {% block main %}
-<h2 style="margin-top:34px;">{% trans "Pre-registration for Genom Austria" %}</h2>
+<h2 style="margin-top:34px;">{% trans "Pre-registration as a Volunteer" %}</h2>
 
 <p>
     {% blocktrans %}
-    Genom Austria is accepting pre-registration by volunteers who are
-    are considering to make their genome publicly available as part
-    of Genom Austria.
-
-    Pre-registering as a volunteer does not gurantee participation,
-    as there will initially be resources available for only a handful
-    of participants. Furthermore, in order to meet the highest ethical
-    standards, all volunteers have to confirm that they understand the
-    implications of making their personal genomes publicly available.
+    Genom Austria is accepting pre-registration by volunteers who
+    would like to analyze their personal genomes and to make them
+    publicly available as part of Genom Austria. Pre-registering as
+    a volunteer does not guarantee participation, as there will
+    initially be sufficient resources available for only a handful
+    of participants. Furthermore, in order to meet the highest
+    ethical standards, all volunteers have to confirm in several
+    steps that they understand the implications of making their
+    personal genomes publicly available.
 {% endblocktrans %}
 </p>
 
-<span class="lead"><b>{% trans "Requirements for volunteers:" %}</b></span>
+<b style="margin-top:20px;display:block;">{% trans "Requirements for volunteers:" %}</b>
 <ul>
-    <li><span class="lead">{% trans "At least 18 years of age" %}</span></li>
-    <li><span class="lead">
+    <li style="margin-top:10px;">{% trans "At least 18 years of age" %}</li>
+    <li style="margin-top:10px;">
         {% blocktrans %}
         No citizenship requirement, but preference will be given to
         volunteers who live in Austria or have other connections to Austria
         {% endblocktrans %}
-    </span></li>
+    </li>
 </ul>
 
-<hr />
+<hr style="margin:35px 0px 20px;"/>
 <p>{% trans "Pre-registration on the Genom Austria website" %}:</p>
 <p><a class="btn btn-large" href="http://www.genomaustria.at">
     <i class="icon-external-link">  </i>
     {% trans "Genom Austria" %}</a></p>
 
-<hr />
+<hr style="margin:35px 0px 20px;"/>
 <h3>{% trans "Contact information" %}</h3>
-<p class="lead">{% trans "Contact address for all questions:" %} <a href="mailto:info@genomaustria.at">info@genomaustria.at</a></p>
+<p>{% trans "Contact address for all questions:" %} <a href="mailto:info@genomaustria.at">info@genomaustria.at</a></p>
 {% endblock main %}
 
 {% block footer %}

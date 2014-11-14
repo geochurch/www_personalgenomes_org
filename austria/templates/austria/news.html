@@ -10,37 +10,46 @@
 {% block main %}
 <h2 style="margin-top:34px;">{% trans "News" %}</h2>
 
-<p class="lead">
-    {% blocktrans %}
-    Press information and relevant reports and news articles
-    about Genom Austria are listed on the Genome Asutria website:
-    <a href="http://www.genomaustria.at">http://www.genomaustria.at</a>
-    {% endblocktrans %}
+<p>
+  {% blocktrans %}
+  Genom Austria was launched on 25 November 2014.
+  {% endblocktrans %}
 </p>
 
-<p class="lead">
+<a class="btn btn-primary" href="#" style="margin:10px 0px 30px;">{% trans "Download press release (PDF)" %}</a>
+
+<p>
+  {% blocktrans %}
+  Additional press information and relevant articles about Genom Austria
+  are listed on the Genome Austria website (in German):
+  {% endblocktrans %}
+  <a href="http://www.genomaustria.at">http://www.genomaustria.at</a>
+</p>
+
+<p>
     {% trans "Contact address for all questions:" %}
     <a href="mailto:info@genomaustria.at">info@genomaustria.at</a>
 </p>
 
-<hr />
+<hr style="margin:30px 0px;"/>
 
-{% blocktrans %}
-Information about other members of the Global Network of Personal Genome Projects are available from the
-following websites:
-{% endblocktrans %}
+<p>
+  {% blocktrans %}
+  Information about other members of the Global Network of Personal
+  Genome Projects are available from the following websites:
+  {% endblocktrans %}
+</p>
 
 <ul>
-  <li>{% blocktrans %}
-    <a href="http://blog.personalgenomes.org">The Personal Genome
-    Project blog</a> posts news and upadates about the
-    Personal Genome Project at Harvard and the other projects that
-    are associated with PersonalGenomes.org.
+  <li style="margin-top:20px;">{% blocktrans %}
+    <a href="http://blog.personalgenomes.org">Personal Genome
+    Project blog</a>: News and updates about the Personal Genome Project
+    at Harvard and the other projects associated with PersonalGenomes.org.
     {% endblocktrans %}</li>
-  <li>{% blocktrans %}
-    <a href="http://www.PersonalGenomes.org/harvard/news">The news page
-      of the Personal Genome Project at Harvard</a> lists scientific papers and
-      news reporting about the Personal Genome Project
+  <li style="margin-top:20px;">{% blocktrans %}
+    <a href="http://www.PersonalGenomes.org/harvard/news">News page
+      of the Personal Genome Project at Harvard</a>: Scientific papers
+      and news reporting about the Personal Genome Project.
     {% endblocktrans %}</li>
 </ul>
 {% endblock main %}

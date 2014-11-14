@@ -70,11 +70,16 @@
   <div class="span4">
     <div class="infobox" id="infobox2">
       <h2>Open Data</h2>
-      <p>Open data is a critical component of the scientific method,
-          but genomes are both identifiable and predictive. As a result, many
-          studies choose to withhold data from participants and restrict access
-          to researchers. The PGP's public data is a common ground to
-          collaborate and improve our understanding of genomes.</p>
+      <p>
+        {% block index_content_data %}
+        Open data is a critical component of the scientific method,
+        but genomes are both identifiable and predictive. As a result,
+        many studies choose to withhold data from participants and
+        restrict access to researchers. The PGP's public data is a
+        common ground to collaborate and improve our understanding
+        of genomes.
+        {% endblock index_content_data %}
+      </p>
     </div>
     <p><a class="btn" style="margin-top:0px;"
         href="{% block index_link_data %}
@@ -99,7 +104,7 @@
         href="{% block index_link_global_network %}
               {% url 'organization:network' %}
               {% endblock index_link_global_network %}">
-              Network
+              Find out about the network
               <i> </i><i class="icon-double-angle-right"></i></a></p>
   </div>
 </div>
