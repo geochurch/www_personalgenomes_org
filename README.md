@@ -92,7 +92,7 @@ In the future, you should run the `workon www_pg_org` command whenever you work 
 ### Running locally (works immediately!) ###
 
 You can run the site now by navigating to the top directory of the project and running
-`python manage.py runserver`. You can then load the site by opening a web browser and
+`python manage.py runserver --insecure`. You can then load the site by opening a web browser and
 navigating to `http://localhost:8000`.
 
 Because the development settings (which are default) use SQLite, no additional installation of
