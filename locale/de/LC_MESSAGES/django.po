@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PersonalGenomes.org Website\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-13 22:47-0500\n"
-"PO-Revision-Date: 2014-11-10 15:19+0100\n"
+"POT-Creation-Date: 2014-11-19 15:53-0500\n"
+"PO-Revision-Date: 2014-11-19 22:56+0100\n"
 "Last-Translator: Christoph Bock <cbock@cemm.oeaw.ac.at>\n"
 "Language-Team: Christoph Bock <cbock@cemm.oeaw.ac.at>\n"
 "Language: de\n"
@@ -23,16 +23,17 @@ msgstr ""
 msgid "About Genom Austria"
 msgstr "Über Genom Austria"
 
-#: austria/templates/austria/about.html:14
+#: austria/templates/austria/about.html:17
 msgid ""
 "\n"
 "  Genom Austria is an open science project based at the CeMM\n"
 "  Research Center of Molecular Medicine of the Austrian Academy of\n"
-"  Sciences. Our collaborators include the Medicine University of Vienna,\n"
+"  Sciences. Our collaborators include the Medical University of Vienna,\n"
 "  Harvard Medical School and the PersonalGenomes.org foundation, which\n"
 "  coordinates the Global Network of Personal Genome Projects.\n"
-"  Genom Austria is committed to the principles for Personal Genome\n"
-"  Projects defined by George Church at Harvard Medical School in 2005.\n"
+"  Genom Austria is committed to the principles for open, public and\n"
+"  non-commercial Personal Genome Projects as defined by George Church\n"
+"  at Harvard Medical School in 2005.\n"
 "  "
 msgstr ""
 "\n"
@@ -41,16 +42,16 @@ msgstr ""
 "kooperieren dabei mit der Medizinischen Universität Wien, der Harvard "
 "Medical School und der PersonalGenomes.org Stiftung, die das \"Globale "
 "Network of Personal Genome Projects\" koordiniert. Genom Austria bekennt "
-"sich zu den Grundsätzen von persönlichen Genomprojekten, die im Jahr 2005 "
-"von George Church an der Harvard Medical School aufgestellt wurden."
+"sich zu den Grundsätzen eines offenen und nichtkommerziellen persönlichen "
+"Genomprojektes, die im Jahr 2005 von George Church an der Harvard Medical "
+"School aufgestellt wurden."
 
-#: austria/templates/austria/about.html:28
+#: austria/templates/austria/about.html:29
 #: www_personalgenomes_org/templates/www_personalgenomes_org/about-i18n.html:30
 msgid "Public Data, Methods, and Materials"
 msgstr "Öffentliche Daten und freie Zugänglichkeit"
 
-#: austria/templates/austria/about.html:31
-#, fuzzy
+#: austria/templates/austria/about.html:32
 msgid ""
 "\n"
 "  We believe data sharing is good for science and society. Our project\n"
@@ -65,25 +66,24 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"Wir glauben, dass das Teilen von Daten eine gute Sache ist. Unser Projekt "
-"ist der Schaffung einer öffentlichen Sammlung persönlicher Genome gewidmet, "
-"auf die jede interessierte Person frei zugreifen kann. In diesem "
-"Zusammenhang ist es natürlich nicht möglich, vollständigen Datenschutz, "
-"Vertraulichkeit und Anonymität zu garantieren, wie es bei medizinischen "
-"Studien der Fall ist. Daher richtet sich dieses Projekt an jede "
-"TeilnehmerInnen, die auf ihre Privatsphäre im Hinblick auf genomische und "
-"gewisse andere Daten verzichten können und wollen. Dieses Projekt eignet "
-"sich nur jeden, aber die freiwilligen TeilnehmerInnen werden einen "
-"wertvollen und nachhaltigen Beitrag zur Wissenschaft und zum "
+"Das Teilen von Daten ist wichtig für den wissenschaftlichen Fortschritt. "
+"Daher soll eine öffentlichen Sammlung persönlicher Genome geschaffen werden, "
+"auf die jede interessierte Person frei zugreifen kann. Genomische "
+"Informationen sind wie ein Fingerabdruck, und es ist es nicht möglich, "
+"vollständigen Datenschutz, Vertraulichkeit und Anonymität zu garantieren, "
+"wie es bei medizinischen Studien der Fall ist. Daher richtet sich dieses "
+"Projekt an jede TeilnehmerInnen, die bereit sind, ihre persönlichen "
+"Genomdaten ohne Einschränkungen und Vorbehalte zu veröffentlichen. Dieses "
+"Projekt eignet sich nur jeden, aber die freiwilligen TeilnehmerInnen werden "
+"einen wertvollen und nachhaltigen Beitrag zur Wissenschaft und zum "
 "gesellschaftlichen Dialog über die Genomforschung leisten."
 
-#: austria/templates/austria/about.html:44
+#: austria/templates/austria/about.html:45
 #: www_personalgenomes_org/templates/www_personalgenomes_org/about-i18n.html:45
 msgid "Ongoing Participatory Research"
 msgstr "Partizipierende Forschung"
 
-#: austria/templates/austria/about.html:47
-#, fuzzy
+#: austria/templates/austria/about.html:48
 msgid ""
 "\n"
 "  We respect the people behind the data, and we aim to maintain strong\n"
@@ -101,13 +101,12 @@ msgstr ""
 "im Laufe der Zeit entfalten, und wir wollen besser verstehen, welcher Nutzen "
 "und welche Risiken sich aus dem Zugang zu persönlichen Genomdaten ergeben."
 
-#: austria/templates/austria/about.html:57
+#: austria/templates/austria/about.html:58
 #: www_personalgenomes_org/templates/www_personalgenomes_org/about-i18n.html:57
 msgid "Genomes, Environments, and Traits"
 msgstr "Genome, Umwelt und persönliche Eigenschaften"
 
-#: austria/templates/austria/about.html:59
-#, fuzzy
+#: austria/templates/austria/about.html:60
 msgid ""
 "\n"
 "  Personal genomes are just one part of the story, and genes interact\n"
@@ -126,7 +125,8 @@ msgstr ""
 "zur eigenen Gesundheit zu sammeln und zur Verfügung zu stellen. Außerdem "
 "versuchen wir, den TeilnehmerInnen bei Interesse den freiwilligen Zugang zu "
 "weiteren Forschungsprojekten zu ermöglichen, so dass sie noch umfangreichere "
-"Daten über sich selbst sammeln können."
+"Daten über sich selbst sammeln können.\n"
+"  "
 
 #: austria/templates/austria/contact-us.html:11
 msgid "Contact Genom Austria"
@@ -143,7 +143,6 @@ msgid "Genom Austria Data"
 msgstr "Genom Austria Daten"
 
 #: austria/templates/austria/data.html:14
-#, fuzzy
 msgid ""
 "\n"
 "    Genom Austria has initially sequenced two personal genomes to\n"
@@ -159,13 +158,12 @@ msgstr ""
 "produzieren wird. Sie sind auf der Webseite von Genom Austria frei "
 "zugänglich:"
 
-#: austria/templates/austria/data.html:22
+#: austria/templates/austria/data.html:23
 #: austria/templates/austria/sign-up.html:42
 msgid "Genom Austria"
 msgstr "Genom Austria"
 
-#: austria/templates/austria/data.html:27
-#, fuzzy
+#: austria/templates/austria/data.html:28
 msgid ""
 "\n"
 "    In addition, personal genomes from other members of the Global\n"
@@ -174,13 +172,12 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"Informationen über andere Mitglieder des Global Network of Personal Genome "
-"Projects finden Sie auf folgenden Webseiten:\n"
-"\n"
+"Darüber hinaus sind persönliche Genome von anderen Mitgliedern des Global "
+"Network of Personal Genome Projects auf der PGP Harvard-Website abrufbar:"
 
-#: austria/templates/austria/data.html:34
+#: austria/templates/austria/data.html:35
 msgid "PGP Harvard data"
-msgstr ""
+msgstr "PGP Harvard Daten"
 
 #: austria/templates/austria/index.html:11
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:26
@@ -188,37 +185,37 @@ msgid "Sharing Personal Genomes"
 msgstr "Persönliche Genome teilen"
 
 #: austria/templates/austria/index.html:13
-#, fuzzy
 msgid ""
 "\n"
-"    Genom Austria aims to create a dataset of openly available\n"
-"    human genomes and contribute to the public discussion about\n"
-"    genomes in science, medicine and society. Sharing genome data is "
-"critical to\n"
-"    scientific progress, but has been hampered by traditional research\n"
-"    practices. Our approach is to invite volunteering participants to "
-"publicly\n"
-"    share their personal genome data for the greater good.\n"
+"    Genom Austria, as part of the Global Network of Personal Genome\n"
+"    Projects, aims to create a dataset of openly available human genomes.\n"
+"    It also contributes to the public discussion about genomes in science,\n"
+"    medicine and society. Sharing genome data is critical to scientific\n"
+"    progress, but has been hampered by traditional research practices. Our\n"
+"    approach is to invite volunteering participants to publicly share\n"
+"    their personal genome data for the greater good.\n"
 "    "
 msgstr ""
 "\n"
-"Genom Austria soll eine frei verfügbare Sammlung persönlicher Genome zum "
-"Nutzen von Wissenschaft und Gesellschaft erstellen. Außerdem trägt das "
-"Projekt zur öffentlichen Diskussion über Genome in Wissenschaft, Medizin und "
-"Gesellschaft bei. Die freie Verfügbarkeit von Genomdaten ist wichtig für den "
-"wissenschaftlichen Fortschritt und ermöglicht einen informierten "
-"öffentlichen Dialog über die Möglichkeiten, Grenzen und Risiken dieser "
-"Daten. Im Gegensatz zum strengen Datenschutz medizinischer "
+"Genom Austria trägt als Mitglied des Global Network of Personal Genome "
+"Projects dazu bei, eine frei verfügbare Sammlung persönlicher Genome für die "
+"Wissenschaft und die Gesellschaft zu schaffen. Außerdem soll das Projekt "
+"eine öffentliche Diskussion über Genome in Wissenschaft, Medizin und "
+"Gesellschaft anstoßen. Die freie Verfügbarkeit von Genomdaten ist dabei "
+"wichtig für den wissenschaftlichen Fortschritt und ermöglicht einen "
+"informierten öffentlichen Dialog über die Möglichkeiten, Grenzen und Risiken "
+"dieser Daten. Im Gegensatz zum strengen Datenschutz medizinischer "
 "Forschungsprojekte basiert Genom Austria auf der Bereitschaft der "
 "freiwilligen TeilnehmerInnen, ihre Daten der Allgemeinheit zu spenden und "
 "frei zu veröffentlichen.\n"
+"  "
 
-#: austria/templates/austria/index.html:29
+#: austria/templates/austria/index.html:30
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:41
 msgid "Learn more"
 msgstr "Weitere Informationen"
 
-#: austria/templates/austria/index.html:40
+#: austria/templates/austria/index.html:41
 msgid ""
 "\n"
 "Genom Austria invites participation of volunteers who are willing to\n"
@@ -226,8 +223,13 @@ msgid ""
 "publicly and freely available is a great way to help advance our\n"
 "understanding of human genetics, biology, and medicine.\n"
 msgstr ""
+"\n"
+"Genom Austria richtet sich an Freiwillige, die ihr persönliches Genom mit "
+"der Öffentlichkeit teilen wollen. Indem sie ihre persönlichen Genomdaten "
+"frei und öffentlich verfügbar machen, leisten die TeilnehmerInnen einen "
+"wichtigen Beitrag zur biologischen und medizinischen Forschung\n"
 
-#: austria/templates/austria/index.html:53
+#: austria/templates/austria/index.html:54
 msgid ""
 "\n"
 "Open data sharing is very important for science. But because personal\n"
@@ -236,13 +238,18 @@ msgid ""
 "are openly and freely available for both scientists and the general\n"
 "public.\n"
 msgstr ""
+"\n"
+"Freie und öffentliche Daten sind wichtig für die Wissenschaft. Weil "
+"persönliche Genome identizierbar und prädiktiv sind, beschränken viele "
+"Forschungsprojekte den Zugang zu die Daten. Hingegen sind die Daten von "
+"Genom Austria für Wissenschaftler und für die breite Öffentlichkeit frei "
+"zugänglich.\n"
 
-#: austria/templates/austria/index.html:67
+#: austria/templates/austria/index.html:68
 msgid "View Genom Austria data"
 msgstr "Genom Austria Daten anschauen"
 
-#: austria/templates/austria/index.html:71
-#, fuzzy
+#: austria/templates/austria/index.html:72
 msgid ""
 "\n"
 "Genom Austria is a member of the Global Network of Personal Genome\n"
@@ -251,9 +258,12 @@ msgid ""
 "at many leading institutions around the globe.\n"
 msgstr ""
 "\n"
-"Das Global Network of Personal Genome Projects umfasst Projekte und "
-"WissenschaftlerInnen an international führenden Forschungsinstituten in "
-"folgenden Ländern:\n"
+"Genom Austria ist Mitglied des Global Network of Personal Genome Projects. "
+"Seit dem Start des Personal Genome Project an der Harvard Medical School im "
+"Jahr 2005 hat sich rund um das Thema persönliche Genome ein internationales "
+"Netzwerk von kooperierenden Wissenschaftlern und Forschungsinstituten "
+"entwickelt.\n"
+"\n"
 
 #: austria/templates/austria/news.html:11
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:45
@@ -267,13 +277,15 @@ msgid ""
 "  Genom Austria was launched on 25 November 2014.\n"
 "  "
 msgstr ""
+"\n"
+"Genom Austria wurde am 25. November 2014 gestartet.\n"
+"  "
 
 #: austria/templates/austria/news.html:19
 msgid "Download press release (PDF)"
-msgstr ""
+msgstr "Pressemitteilung herunterladen (PDF)"
 
 #: austria/templates/austria/news.html:22
-#, fuzzy
 msgid ""
 "\n"
 "  Additional press information and relevant articles about Genom Austria\n"
@@ -281,12 +293,11 @@ msgid ""
 "  "
 msgstr ""
 "\n"
-"Presseinformation und Berichte zu Genom Austria finden Sie auf Genom Austria "
-"Website: <a href=\"http://www.genomaustria.at\">http://www.genomaustria.at</"
-"a>"
+"Zusätzliche Pressematerialien und Berichte zu Genom Austria finden Sie auf "
+"Genom Austria Website: <a href=\"http://www.genomaustria.at\">http://www."
+"genomaustria.at</a>"
 
 #: austria/templates/austria/news.html:37
-#, fuzzy
 msgid ""
 "\n"
 "  Information about other members of the Global Network of Personal\n"
@@ -296,10 +307,9 @@ msgstr ""
 "\n"
 "Informationen über andere Mitglieder des Global Network of Personal Genome "
 "Projects finden Sie auf folgenden Webseiten:\n"
-"\n"
+"  "
 
 #: austria/templates/austria/news.html:44
-#, fuzzy
 msgid ""
 "\n"
 "    <a href=\"http://blog.personalgenomes.org\">Personal Genome\n"
@@ -308,13 +318,12 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"<a href=\"http://blog.PersonalGenomes.org\">Das Personal Genome Project "
-"Blog</a> berichtet über die Arbeit des Personal Genome Project an der "
-"Harvard-Universität und über die anderen Projekte, die mit PersonalGenomes."
-"org assoziiert sind."
+"<a href=\"http://blog.PersonalGenomes.org\">Personal Genome Project Blog</"
+"a>: Neuigkeiten über die Arbeit des Personal Genome Project an der Harvard-"
+"Universität und über andere Projekte, die mit PersonalGenomes.org assoziiert "
+"sind."
 
 #: austria/templates/austria/news.html:49
-#, fuzzy
 msgid ""
 "\n"
 "    <a href=\"http://www.PersonalGenomes.org/harvard/news\">News page\n"
@@ -323,10 +332,10 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"<a href=\"http://www.PersonalGenomes.org/harvard/news\">Die News-Seite des "
-"Personal Genome Project an der Harvard-Universität</a> führt "
-"wissenschaftliche Veröffentlichungen und Medienberichte auf, die mit dem "
-"Personal Genome Project in Verbindung stehen"
+"<a href=\"http://www.PersonalGenomes.org/harvard/news\">News-Seite des "
+"Personal Genome Project an der Harvard-Universität</a>: Wissenschaftliche "
+"Veröffentlichungen und Medienberichte, die mit dem Personal Genome Project "
+"in Verbindung stehen"
 
 #: austria/templates/austria/people.html:11
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:26
@@ -335,7 +344,6 @@ msgid "Team"
 msgstr "Team"
 
 #: austria/templates/austria/people.html:14
-#, fuzzy
 msgid ""
 "\n"
 "  Genom Austria is run by an interdisciplinary team of scientist at the\n"
@@ -354,7 +362,6 @@ msgid "Project Leader of Genom Austria"
 msgstr "Projektleiter Genom Austria"
 
 #: austria/templates/austria/people.html:27
-#, fuzzy
 msgid ""
 "\n"
 "        Christoph Bock is a genome scientist and principal investigator\n"
@@ -371,16 +378,15 @@ msgstr ""
 "Christoph Bock ist Genom-Wissenschaftler und Forschungsgruppenleiter am "
 "CeMM. Er hat außerdem eine Gastprofessor an der Medizinischen Universität "
 "Wien inne, ist Koordinator der Biomedical Sequencing Facility und "
-"assoziierter Gruppenleiter am Max Planck Institut für Informatik in "
-"Deutschland. Seine Ausbildung in den Bereichen Bioinformatik und Epigenomik "
-"hat er mit einem Doktortitel am Max-Planck-Institut für Informatik "
-"abgeschlossen, und er hat als Postdoc am Broad Institute und der Harvard-"
-"Universität in den USA gearbeitet."
+"assoziierter Gruppenleiter am Max Planck Institut für Informatik. Seine "
+"Ausbildung in den Bereichen Bioinformatik und Epigenomik hat er mit einem "
+"Doktortitel am Max-Planck-Institut für Informatik abgeschlossen, und er hat "
+"als Postdoc am Broad Institute und der Harvard-Universität in den USA "
+"gearbeitet."
 
 #: austria/templates/austria/people.html:43
-#, fuzzy
 msgid "Project Co-leader &amp; Medical Expert"
-msgstr "Ko-Projektleiter und medizinischer Experte"
+msgstr "Ko-Projektleiter &amp; medizinischer Experte"
 
 #: austria/templates/austria/people.html:44
 msgid ""
@@ -413,7 +419,6 @@ msgid "Chairman of Steering Board &amp; Overall Responsibility"
 msgstr "Steering Board Vorsitzender &amp; Gesamtverantwortung"
 
 #: austria/templates/austria/people.html:60
-#, fuzzy
 msgid ""
 "\n"
 "        Giulio Superti-Furga is a molecular biologist and the Scientific\n"
@@ -432,15 +437,9 @@ msgstr ""
 "Forschungszentrums für Molekulare Medizin der Österreichischen Akademie der "
 "Wissenschaften. Er gilt als einer der weltweit führenden "
 "Forscherpersönlichkeiten auf den Gebieten der biochemischen Pharmakologie "
-"und der molekularen Medizin. Seine Arbeit über die Aufklärung molekularer "
-"Netzwerke gehört zu den bahnbrechenden und meistzitierten der "
-"postgenomischen Ära. Er ist ein Fürsprecher systembiologischer Ansätze in "
-"der Medizin und der Arzneimittelforschung und hat sich zum Ziel gesetzt, "
-"Grundlagen- und klinische Forschung für eine personalisierte, vorbeugende "
-"und voraussagenden Medizin der Zukunft zu verknüpfen. Superti-Furga ist "
-"Mitglied der Österreichischen Akademie der Wissenschaften, der Academia "
-"Eurepaea, der Deutschen Akademie der Naturforscher Leopoldina und der "
-"European Molecular Biology Organization."
+"und der molekularen Medizin. Superti-Furga ist Mitglied der Österreichischen "
+"Akademie der Wissenschaften, der Academia Eurepaea, der Deutschen Akademie "
+"der Naturforscher Leopoldina und der European Molecular Biology Organization."
 
 #: austria/templates/austria/people.html:79
 #: austria/templates/austria/people.html:98
@@ -471,13 +470,9 @@ msgstr ""
 "Klinische Angelegenheiten der Medizinischen Universität Wien. Internationale "
 "Reputation erhielt sie unter anderem durch ihren Einsatz für die Einhaltung "
 "einer transparenten und höchsten ethischen Grundsätzen verpflichteten "
-"medizinischen Forschung. Diese Ziele verfolgte sie etwa auch durch die "
-"Etablierung der „Vienna Initiative to Save European Academic "
-"Research“ (VISEAR) im Jahr 2005, die den Fokus auf die Bedeutung der nicht-"
-"kommerziell finanzierten klinischen Forschung innerhalb Europas legen sollte."
+"medizinischen Forschung."
 
 #: austria/templates/austria/people.html:99
-#, fuzzy
 msgid ""
 "\n"
 "        Markus Hengstschläger received his PhD at the age of 24 with\n"
@@ -493,17 +488,13 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"Markus Hengstschläger ist in Oberösterreich geboren und promovierte im Alter "
-"von 24 Jahren mit Auszeichnung. Er war zu diesem Zeitpunkt "
-"Forschungsassistent am Vienna Biocenter. Ein Erwin-Schrödinger-Stipendium "
-"ermöglichte ihm, sich an der Yale University im Bereich der Humangenetik zu "
-"spezialisieren. Im Alter von 29 Jahren wurde er an der Medizinischen "
-"Universität Wien zum Associate Professor ernannt und mit 35 Jahren auf den "
-"Lehrstuhl für medizinische Genetik berufen. Seine Erfolge in der "
-"Grundlagenforschung betreffen unter anderem die Entdeckung von Stammzellen "
-"im menschlichen Fruchtwasser und die Erforschung angeborener tuberöser "
-"Sklerosen. Außerdem ist er an der Medizinischen Universiät Wien in der Lehre "
-"und in der medizingenetischen Routinediagnostik tätig."
+"Markus Hengstschläger promovierte im Alter von 24 Jahren mit Auszeichnung am "
+"Vienna Biocenter. Ein Erwin-Schrödinger-Stipendium ermöglichte ihm, sich an "
+"der Yale University im Bereich der Humangenetik zu spezialisieren. Im Alter "
+"von 29 Jahren wurde er an der Medizinischen Universität Wien zum Associate "
+"Professor ernannt und mit 35 Jahren auf den Lehrstuhl für medizinische "
+"Genetik berufen. Seine Forschungserfolge betreffen unter anderem Stammzellen "
+"im menschlichen Fruchtwasser und angeborene tuberöse Sklerosen."
 
 #: austria/templates/austria/people.html:118
 msgid ""
@@ -525,15 +516,8 @@ msgstr ""
 "dessen Präsidentin gewählt. Sie promovierte in Wien im Fach Jura, gefolgt "
 "von einem Ph.D. an der Columbia University, New York, bevor sie ihre "
 "wissenschaftliche Laufbahn in der Wissenschafts- und Technikforschung "
-"begann. Helga Nowotny ist im Hochschulrat der Ludwig Maximilians Universität "
-"München und in diversen internationalen Advisory Boards vertreten. Sie ist "
-"auswärtiges Mitglied der Royal Swedish Academy of Sciences und langjähriges "
-"Mitglied der Academia Europaea. Sie hat zahlreiche Ehrungen und "
-"Auszeichnungen erhalten. Im Herbst 2013 erhielt sie die Ehrendoktorwürde des "
-"Weizmann Institute of Science. Helga Nowotny hat mehr als 300 Artikel in "
-"Wissenschaftsjournalen veröffentlicht. 2009 erschien ihr Buch (mit Giuseppe "
-"Testa) \"Die gläsernen Gene: Die Erfindung des Individuums im molekularen "
-"Zeitalter\" im Suhrkamp Verlag."
+"begann.2009 erschien ihr Buch (mit Giuseppe Testa) \"Die gläsernen Gene: Die "
+"Erfindung des Individuums im molekularen Zeitalter\"."
 
 #: austria/templates/austria/people.html:137
 msgid ""
@@ -551,26 +535,17 @@ msgstr ""
 "\n"
 "Michael Speicher hat Informatik an der Universität Dortmund und Humanmedizin "
 "an der Universität Essen studiert. Nach einer Assistenzarztzeit an der "
-"Inneren Klinik am Westdeutschen Tumorzentrum der Universität Essen war er "
-"als „Post-Doc“ zunächst am Institut für Humangenetik der Universität "
-"Heidelberg gefolgt von einem mehrjährigen Forschungsaufenthalt an der Yale "
-"University in den USA. Anschließend war er an den humangenetischen "
-"Instituten an der Luwigs-Maximillians und an der Technischen Universität "
-"München und ist seit Jänner 2006 Vorstand am Institut für Humangenetik an "
-"der Medizinischen Universität Graz. Er ist Facharzt für Medizinische "
-"Genetik, Vorsitzender der Österreichischen Gesellschaft für Humangenetik und "
-"in zahlreichen humangenetischen Gremien tätig. Seine Forschungsschwerpunkte "
-"sind hereditäre Tumorsyndrome, Keimbahn und somatische Mutationen, "
-"Einzelzellanalysen und die sogenannten „liquid biopsies“ zur Überwachung "
-"residueller Tumorerkrankungen."
+"Universität Essen und Forschungsaufenthalten an der Universität Heidelberg, "
+"an der Yale University und in München ist seit 2006 Vorstand am Institut für "
+"Humangenetik an der Medizinischen Universität Graz. Er ist Facharzt für "
+"Medizinische Genetik, Vorsitzender der Österreichischen Gesellschaft für "
+"Humangenetik und in zahlreichen humangenetischen Gremien tätig."
 
 #: austria/templates/austria/sign-up.html:11
-#, fuzzy
 msgid "Pre-registration as a Volunteer"
-msgstr "Voranmeldung für Genom Austria"
+msgstr "Voranmeldung für freiwillige TeilnehmerInnen"
 
 #: austria/templates/austria/sign-up.html:14
-#, fuzzy
 msgid ""
 "\n"
 "    Genom Austria is accepting pre-registration by volunteers who\n"
@@ -584,9 +559,9 @@ msgid ""
 "    personal genomes publicly available.\n"
 msgstr ""
 "\n"
-"Interessierte Personen, die einer Veröffentlichung ihres persönlichen Genoms "
-"aufgeschlossen sind, können sich als potentielle TeilnehmerInnen von Genom "
-"Austria voranmelden.\n"
+"Interessierte Personen, die ihr persönliches Genom analysieren und "
+"veröffentlichen wollen, können sich als potentielle TeilnehmerInnen von "
+"Genom Austria voranmelden.\n"
 "\n"
 "Die Voranmeldung garantiert keine Teilnahme an Genom Austria, da das Projekt "
 "anfangs nur eine Handvoll TeilnehmerInnen aufnehmen kann. Außerdem ist es "
@@ -1052,20 +1027,18 @@ msgid "Open Data"
 msgstr "Öffentliche Daten"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/index-i18n.html:112
-#, fuzzy
 msgid "Find out about the network"
-msgstr "Teil des Netzwerks werden"
+msgstr "Mehr über das Netzwerk erfahren"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:20
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:22
 msgid "About"
 msgstr "Projekt"
 
-#. Translators: "Volunteer" used as a verb.
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:33
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:35
-msgid "Volunteer"
-msgstr ""
+msgid "Volunteers"
+msgstr "Freiwillige"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:39
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:41
@@ -1075,7 +1048,7 @@ msgstr "Daten"
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:62
 #, python-format
 msgid "Change to %(lang_name)s"
-msgstr ""
+msgstr "Sprache auswählen: %(lang_name)s"
 
 #: www_personalgenomes_org/templates/www_personalgenomes_org/navbar_top-i18n.html:71
 msgid "Participant log in"

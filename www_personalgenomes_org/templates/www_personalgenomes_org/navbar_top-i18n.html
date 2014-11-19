@@ -29,10 +29,9 @@
           {% endif %}
 
           {% if active == "Sign-up" %}
-          {# Translators: "Volunteer" used as a verb. #}
-          <li class="active"><a href="{% url site_shortname|add:':sign-up' %}">{% trans "Volunteer" %}</a></li>
+          <li class="active"><a href="{% url site_shortname|add:':sign-up' %}">{% trans "Volunteers" %}</a></li>
           {% else %}
-          <li><a href="{% url site_shortname|add:':sign-up' %}">{% trans "Volunteer" %}</a></li>
+          <li><a href="{% url site_shortname|add:':sign-up' %}">{% trans "Volunteers" %}</a></li>
           {% endif %}
 
           {% if active == "Data" %}
