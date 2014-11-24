@@ -35,7 +35,12 @@
 
 <p>
     {% trans "Contact address for all questions:" %}
-    <a href="mailto:info@genomaustria.at">info@genomaustria.at</a>
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == "de" %}
+      <a href="mailto:info@genomaustria.at">info@genomaustria.at</a>
+    {% else %}
+      <a href="mailto:contact@genomaustria.at">contact@genomaustria.at</a>
+    {% endif %}
 </p>
 
 <hr style="margin:30px 0px;"/>

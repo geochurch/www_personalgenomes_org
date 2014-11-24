@@ -44,7 +44,14 @@
 
 <hr style="margin:35px 0px 20px;"/>
 <h3>{% trans "Contact information" %}</h3>
-<p>{% trans "Contact address for all questions:" %} <a href="mailto:info@genomaustria.at">info@genomaustria.at</a></p>
+<p>{% trans "Contact address for all questions:" %}
+  {% get_current_language as LANGUAGE_CODE %}
+  {% if LANGUAGE_CODE == "de" %}
+  <a href="mailto:info@genomaustria.at">info@genomaustria.at</a>
+  {% else %}
+  <a href="mailto:contact@genomaustria.at">contact@genomaustria.at</a>
+  {% endif %}
+</p>
 {% endblock main %}
 
 {% block footer %}
