@@ -1,8 +1,24 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect
 from django.core.urlresolvers import reverse, reverse_lazy
 from django.views.generic import RedirectView, TemplateView
 from django.shortcuts import redirect, render
 from django.contrib.gis.geoip import GeoIP
+
+
+def csrf_failure(request, reason=""):
+    response = "Request failed. Reason: " + reason
+    if reason == 'CSRF cookie not set.':
+        response += (
+            "<p>Sorry, we're unable to complete this request because we " +
+            "didn't receive an authentication cookie.</p>" +
+            "<p>This may be because you have prevented the site from " +
+            "using cookies, in which case many features (e.g. language " +
+            "preferences) will be unavailable to you.</p>"
+            "<p>If you do allow cookies, this may be a bug in the site. " +
+            "You can contact site administrators at " +
+            "website@personalgenomes.org.")
+    return HttpResponse(response)
+
 
 def redirect_to_name(request, url_name):
     """Redirects to URL with name url_name"""

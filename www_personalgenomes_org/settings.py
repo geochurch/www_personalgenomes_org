@@ -1,6 +1,7 @@
 # Django settings for www_personalgenomes_org project.
 
 import os
+
 from django.utils.translation import ugettext_lazy as _
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -185,3 +186,6 @@ LANGUAGES = (
 
 # Don't make session data persistent.
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+# Give people more explanation for CSRF cookie failure
+CSRF_FAILURE_VIEW = 'www_personalgenomes_org.views.csrf_failure'
