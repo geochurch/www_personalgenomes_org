@@ -16,7 +16,14 @@
   {% endblocktrans %}
 </p>
 
-<a class="btn btn-primary" href="#" style="margin:10px 0px 30px;">{% trans "Download press release (PDF)" %}</a>
+{% get_current_language as LANGUAGE_CODE %}
+<a class="btn btn-primary"
+  {% if LANGUAGE_CODE == "de" %}
+    href="/static/docs/austria/Genom_Austria_Press_Release_German.pdf"
+  {% else %}
+    href="/static/docs/austria/Genom_Austria_Press_Release_English.pdf"
+  {% endif %}
+    style="margin:10px 0px 30px;">{% trans "Download press release (PDF)" %}</a>
 
 <p>
   {% blocktrans %}
