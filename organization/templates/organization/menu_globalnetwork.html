@@ -3,13 +3,3 @@
 {% block navbar %}
 {% include "organization/navbar_top.html" with active="Global_Network" %}
 {% endblock navbar %}
-
-{% block navpills %}
-<ul class="nav nav-pills pull-right" style="margin-top:2px;">
-  <li><a href="{% url 'organization:network' %}">PGP Network</a></li>
-  <li><a href="{% url 'organization:join-network' %}">Starting a PGP Site</a></li>
-  <li><a href="{% url 'harvard:index' %}"><i class="icon-double-angle-right">  </i>PGP Harvard</a></li>
-  <li><a href="{% url 'canada:index' %}"><i class="icon-double-angle-right">  </i>PGP Canada</a></li>
-  <li><a href="{% url 'uk:index' %}"><i class="icon-double-angle-right">  </i>PGP UK</a></li>
-</ul>
-{% endblock navpills %}
