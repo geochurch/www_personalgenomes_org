@@ -1,0 +1,155 @@
+{% extends "www_personalgenomes_org/people.html" %}
+{% load i18n %}
+
+{% block title %}Genom Austria{% endblock title %}
+
+{% block navbar %}
+{% include "www_personalgenomes_org/navbar_top-i18n.html" with site_shortname="austria" site_longname="Genom Austria" active="People"%}
+{% endblock navbar %}
+
+{% block main %}
+<h2 style="margin-top:34px;">{% trans "Team" %}</h2>
+
+<p>
+  {% blocktrans %}
+  Genom Austria is run by an interdisciplinary team of scientists at the
+  CeMM Research Center for Molecular Medicine of the Austrian Academy of
+  Sciences and at the Medical University of Vienna.
+  {% endblocktrans %}
+</p>
+
+<ul class="thumbnails">
+
+  <li class="span4 bio">
+    <img src="/static/img/austria/Christoph-Bock.jpg" class="img-rounded" style="max-width:100px"/>
+    <h4>Christoph Bock</h4>
+    <h5>{% trans "Project Leader of Genom Austria" %}</h5>
+    <p>{% blocktrans %}
+        Christoph Bock is a genome scientist and principal investigator
+        at CeMM. He is also a guest professor at the Medical University
+        of Vienna's Department for Laboratory Medicine, coordinator of
+        the Biomedical Sequencing Facility and adjunct group leader at
+        the Max Planck Institute for Informatics. He has a background in
+        bioinformatics and epigenomics, with a PhD from the Max Planck
+        Institute for Informatics (Germany) and postdoctoral research at
+        the Broad Institute and Harvard University (Cambridge, USA).
+        {% endblocktrans %}
+    </p>
+  </li>
+
+  <li class="span4 bio">
+    <img src="/static/img/austria/Christopher-Binder.jpg" class="img-rounded" style="max-width:100px"/>
+    <h4>Christoph Binder</h4>
+    <h5>{% trans "Project Co-leader &amp; Medical Expert" %}</h5>
+    <p>{% blocktrans %}
+        Christoph Binder obtained his MD degree at the University of Vienna
+        in 1997 and received his PhD in Molecular Pathology at the University
+        of California San Diego (UCSD) in 2002. Following postdoctoral training
+        at UCSD, he joined the Department of Laboratory Medicine of the Medical
+        University of Vienna and became Principal Investigator at CeMM in 2006.
+        In 2009 he was appointed Professor of Atherosclerosis Research at the
+        Medical University of Vienna.
+        {% endblocktrans %}
+    </p>
+  </li>
+
+  <li class="span4 bio">
+    <img src="/static/img/austria/Giulio-Superti-Furga.jpg" class="img-rounded" style="max-width:100px"/>
+    <h4>Giulio Superti-Furga</h4>
+    <h5>{% trans "Chairman of Steering Board &amp; Overall Responsibility" %}</h5>
+    <p>{% blocktrans %}
+        Giulio Superti-Furga is a molecular biologist and the Scientific
+        Director of CeMM. He performed his undergraduate and graduate
+        studies at the University of Zurich (Switzerland), at Genentech
+        (USA), and at the Institute for Molecular Pathology Vienna
+        (Austria). He was a postdoctoral fellow and Team Leader at the
+        European Molecular Biology Laboratory and co-founder of Cellzome.
+        He is a member of the Austrian Academy of Sciences, the Academia
+        Eurepaea, the German Academy of Sciences Leopoldina and the
+        European Molecular Biology Organization.
+        {% endblocktrans %}
+    </p>
+  </li>
+</ul>
+<ul class="thumbnails">
+
+  <li class="span4 bio">
+    <img src="/static/img/austria/Christiane-Druml.jpg" class="img-rounded" style="max-width:100px"/>
+    <h4>Christiane Druml</h4>
+    <h5>{% trans "Steering Board Member" %}</h5>
+    <p>{% blocktrans %}
+        Christiane Druml is a bioethics expert and chairwoman of the
+        Austrian Bioethics Commission. She is also the Vice Rector
+        for Clinical Affairs at the Medical University of Vienna.
+        She studied law at the University of Vienna and obtained her
+        PhD in the field of international law. From 1992 until
+        October 2011 she was Managing Director of the Ethics
+        Committee of the Medical University of Vienna. She has
+        contributed to the high ethical standards for medical
+        research, both nationally and internationally, for example as
+        a member of the UNESCO’s International Bioethics Committee.
+        {% endblocktrans %}
+    </p>
+  </li>
+
+  <li class="span4 bio">
+    <img src="/static/img/austria/Markus-Hengstschlaeger.jpg" class="img-rounded" style="max-width:100px"/>
+    <h4>Markus Hengstschläger</h4>
+    <h5>{% trans "Steering Board Member" %}</h5>
+    <p>{% blocktrans %}
+        Markus Hengstschläger received his PhD at the age of 24 with
+        special distinction; he was then a research assistant at the
+        Vienna Biocenter. An Erwin Schrödinger bursary enabled him to
+        further specialize on human genetics at Yale University. At the
+        age of 29 he was appointed an associate professor and became
+        professor for medical genetics at 35. He is involved in basic
+        research at the Medical University of Vienna (discovery of stem
+        cells in human amniotic fluid, research on congenital tuberous
+        sclerosis, etc.), teaching and routine diagnostics in the field
+        of medical genetics.
+        {% endblocktrans %}
+    </p>
+  </li>
+
+  <li class="span4 bio">
+    <img src="/static/img/austria/Helga-Nowotny.jpg" class="img-rounded" style="max-width:100px"/>
+    <h4>Helga Nowotny</h4>
+    <h5>{% trans "Steering Board Member" %}</h5>
+    <p>{% blocktrans %}
+        Helga Nowotny is professor emeritus for social studies of science
+        at the ETH Zurich and a founding member of the European Research
+        Council (ERC). From 2007 to 2010 she was Vice President and from
+        2011 to 2013 president of the ERC. She holds PhD degrees in law
+        from the University of Vienna and from Columbia University (New
+        York) and an honorary doctorate from the Weizmann Institute of
+        Science. She is a foreign member of the Royal Swedish Academy of
+        Sciences and a longtime member of the Academia Europaea.
+        {% endblocktrans %}
+    </p>
+  </li>
+</ul>
+<ul class="thumbnails">
+
+  <li class="span4 bio">
+    <img src="/static/img/austria/Michael-Speicher.jpg" class="img-rounded" style="max-width:100px"/>
+    <h4>Michael Speicher</h4>
+    <h5>{% trans "Steering Board Member" %}</h5>
+    <p>{% blocktrans %}
+        Michael Speicher is a specialist in medical genetics and chairman
+        of the Austrian Society of Human Genetics. He is the Director of
+        the Institute of Human Genetics at the Medical University of Graz.
+        He studied computer science at the University of Dortmund and
+        medicine at the University of Essen. He worked as a postdoctoral
+        researcher at Yale University and as a physician-scientist at
+        several German universities (Essen, Heidelberg and Munich). His
+        research focuses on cancer genetics and genomics.
+        {% endblocktrans %}
+    </p>
+  </li>
+
+</ul>
+{% endblock main %}
+
+{% block footer %}
+{% include "austria/footer.html" %}
+{% endblock footer %}

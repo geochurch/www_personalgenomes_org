@@ -1,0 +1,41 @@
+{% extends "www_personalgenomes_org/data.html" %}
+{% load i18n %}
+
+{% block title %}Genom Austria{% endblock title %}
+
+{% block navbar %}
+{% include "www_personalgenomes_org/navbar_top-i18n.html" with site_shortname="austria" site_longname="Genom Austria" active="Data" %}
+{% endblock navbar %}
+
+{% block main %}
+<h2 style="margin-top:34px;">{% trans "Genom Austria Data" %}</h2>
+
+<p>
+    {% blocktrans %}
+    Genom Austria has initially sequenced two personal genomes to
+    illustrate the kind of data that the project will produce. These
+    data, together with initial interpretations, are available from
+    the Genom Austria website:
+    {% endblocktrans %}
+</p>
+<p style="margin-top:20px;"><a class="btn btn-large" href="http://www.genomaustria.at">
+        <i class="icon-external-link">  </i>
+        {% trans "Genom Austria" %}</a>
+</p>
+
+<hr style="margin:30px 0px;"/>
+<p>
+    {% blocktrans %}
+    In addition, personal genomes from other members of the Global
+    Network of Personal Genome Projects are available from the PGP
+    Harvard website:
+    {% endblocktrans %}
+</p>
+<p>
+    <a class="btn" href="/harvard/data">{% trans "PGP Harvard data" %}</a>
+</p>
+{% endblock main %}
+
+{% block footer %}
+{% include "austria/footer.html" %}
+{% endblock footer %}

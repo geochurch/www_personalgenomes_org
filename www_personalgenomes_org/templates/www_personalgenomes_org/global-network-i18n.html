@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{# Another version of this page exists that uses i18n because it contains #}
+{# content that should be seen in all subsites. #}
+
+{% block main %}
+
+<h2 style="margin-top:34px;">{% trans "Global Network" %}</h2>
+
+<p>
+{% blocktrans %}
+The Global Network of Personal Genome Projects includes researchers
+at many leading institutions around the globe.
+{% endblocktrans %}
+</p>
+
+<hr />
+
+<h4>{% trans "North America" %}</h4>
+<div class="row-fluid">
+  <div class="span6">
+    <p>
+      {% blocktrans %}
+      <strong>PGP Harvard (United States)</strong><br />
+      George Church Lab<br />
+      Harvard Medical School<br />
+      Founded Aug 2005
+      {% endblocktrans %}
+    </p>
+    <p><a class="btn" href="{% url 'harvard:index' %}">
+        <i class="icon-double-angle-right">  </i>
+        {% trans "Visit PGP Harvard subsite" %}
+        </a></p>
+  </div>
+  <div class="span6">
+    <p>
+      {% blocktrans %}
+      <strong>PGP Canada</strong><br />
+      McLaughlin Centre, University of Toronto and<br />
+      The Centre for Applied Genomics, Hospital for Sick Children<br />
+      Founded Dec 2012
+      {% endblocktrans %}
+    </p>
+    <p><a class="btn" href="{% url 'canada:index' %}">
+        <i class="icon-double-angle-right">  </i>
+        {% trans "Visit PGP Canada subsite" %}</a></p>
+  </div>
+</div>
+
+<hr />
+<h4>{% trans "Europe" %}</h4>
+<div class="row-fluid">
+  <div class="span6">
+    <p>
+      {% blocktrans %}
+      <strong>PGP UK</strong><br />
+      Stephan Beck Lab<br />
+      University College London<br />
+      Founded November 2013
+      {% endblocktrans %}
+    </p>
+    <p><a class="btn" href="{% url 'uk:index' %}">
+        <i class="icon-double-angle-right"> </i>
+        {% trans "Visit PGP UK subsite" %}</a></p>
+  </div>
+  <div class="span6">
+      <p>
+        {% blocktrans %}
+        <strong>Genom Austria</strong><br />
+        CeMM Research Center for Molecular Medicine of the Austrian
+        Academy of Sciences<br />
+        Vienna, Austria<br />
+        Founded in November 2014
+        {% endblocktrans %}
+      </p>
+      <p><a class="btn" href="{% url 'austria:index' %}">
+          <i class="icon-double-angle-right"> </i>
+          {% trans "Visit Genom Austria subsite" %}</a></p>
+  </div>
+</div>
+
+<hr />
+
+<h3>{% trans "Guidelines" %}</h3>
+
+<p>
+  {% blocktrans %}
+  Members of the Global Network of Personal Genome Projects
+  adhere to the following guidelines:
+  {% endblocktrans %}
+</p>
+
+<div class="row-fluid">
+  <div class="span6">
+    <ul class="li-main">
+      <li><strong>{% trans "(a) Public Data." %}</strong>
+        {% blocktrans %}
+        Participants are invited to publicly share their genomic and
+        trait data in an integrated, publicly-accessible format using a
+        CC0 waiver or equivalent public domain license.
+        {% endblocktrans %}
+      </li>
+      <li><strong>{% trans "(b) Non-anonymous." %}</strong>
+        {% blocktrans %}
+        The risks of participant re-identification are addressed up
+        front, as an integral part of the consent and enrollment
+        process; neither anonymity nor confidentiality of participant
+        identities or their data are promised to research participants.
+        {% endblocktrans %}
+      </li>
+      <li><strong>{% trans "(c) Equal access." %}</strong>
+        {% blocktrans %}
+        Participants are provided access to their individual research
+        data in a timely and complete fashion (i.e., raw data and not
+        just summary results, where feasible).
+        {% endblocktrans %}
+      </li>
+    </ul>
+  </div>
+  <div class="span6">
+    <ul class="li-main">
+      <li><strong>{% trans "(d) Oversight." %}</strong>
+        {% blocktrans %}
+        Each member must at all times maintain current Institutional
+        Review Board (IRB) approval or local equivalent, and will work
+        with PersonalGenomes.org to continue to implement identified
+        best practices for responsible public genomics research.
+        {% endblocktrans %}
+      </li>
+      <li><strong>{% trans "(e) Not for profit." %}</strong>
+        {% blocktrans %}
+        The research project is managed or sponsored by a non-profit
+        organization (or local equivalent). In addition, other than
+        purposes of reasonable cost recovery, the member shall not sell
+        or license participant data or tissues.
+        {% endblocktrans %}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<hr />
+
+<h3>{% trans "Join the network" %}</h3>
+
+<p style="margin-bottom:40px;">
+  {% blocktrans %}
+  If you are a researcher and you wish to receive the benefits of being
+  a member of this network, there is a competitive application process.
+  For more information about becoming a member site, please
+  <a href="http://www.PersonalGenomes.org/organization/contact-us">
+    contact PersonalGenomes.org</a>.
+  {% endblocktrans %}
+</p>
+
+{% endblock main %}
+
+{% block footer %}
+{% include "www_personalgenomes_org/footer_2col.html" %}
+{% endblock footer %}

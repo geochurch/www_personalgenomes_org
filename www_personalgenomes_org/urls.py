@@ -72,6 +72,8 @@ urlpatterns = patterns(
         include('canada.urls', namespace="canada")),
     url(r'^uk',
         include('uk.urls', namespace="uk")),
+    url(r'^austria',
+        include('austria.urls', namespace="austria")),
 
     # Support page
     url(r'^donate/?$', views.redirect_to_name, {'url_name':'organization:donate'}),
@@ -82,6 +84,7 @@ urlpatterns = patterns(
     url(r'^donate/matching.html/?$', views.redirect_to_name, {'url_name':'organization:donate'}),
 
     # Internationalization language-handling views
+    # url(r'^i18n/setlang/$', views.set_language, name='set_language'),
     (r'^i18n/', include('django.conf.urls.i18n')),
 
     # Footer pages

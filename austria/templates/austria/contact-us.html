@@ -1,0 +1,24 @@
+{% extends "www_personalgenomes_org/contact-us-i18n.html" %}
+{% load i18n %}
+
+{% block title %}Genom Austria{% endblock title %}
+
+{% block navbar %}
+{% include "www_personalgenomes_org/navbar_top-i18n.html" with site_shortname="austria" site_longname="Genom Austria" %}
+{% endblock navbar %}
+
+{% block contact_local %}
+<h2>{% trans "Contact Genom Austria" %}</h3>
+<p>{% trans "Contact address for all questions:" %}
+{% get_current_language as LANGUAGE_CODE %}
+  {% if LANGUAGE_CODE == "de" %}
+    <a href="mailto:info@genomaustria.at">info@genomaustria.at</a>
+  {% else %}
+    <a href="mailto:contact@genomaustria.at">contact@genomaustria.at</a>
+  {% endif %}
+</p>
+{% endblock contact_local %}
+
+{% block footer %}
+{% include "austria/footer.html" %}
+{% endblock footer %}

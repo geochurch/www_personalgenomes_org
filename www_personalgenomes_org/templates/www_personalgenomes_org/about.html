@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{# Another version of this page exists that uses i18n because it contains #}
+{# content that should be seen in all subsites. #}
+
+{% block main %}
+{% block about-lead %}
+<h2>About Our Project</h2>
+<img src="/static/img/pgp-logo-only-transp.png" style="float:right;width:20%;margin-left:10px">
+{% endblock about-lead %}
+
+<p>
+  {% block about-pgp-site-longname %}Our project{% endblock %}
+  is a member of the Global Network of Personal
+  Genome Projects (PGP), a group of research studies creating
+  freely available scientific resources that bring together
+  genomic, environmental and human trait data donated by
+  volunteers. Initiated by George Church at Harvard Medical
+  School in 2005, the Personal Genome Project has pioneered
+  ethical, legal, and technical aspects related to the creation
+  of public resources involving highly identifiable data like
+  human genomes.
+</p>
+
+<h3>Public Data, Methods, and Materials</h3>
+<p>
+  We believe sharing is good for science and society. Our project is
+  dedicated to creating public resources that everyone can access.
+  Privacy, confidentiality and anonymity are impossible to guarantee
+  in a context like this research study where public sharing of
+  genetic data is an explicit goal. Therefore, our project
+  collaborates with participants who are fully aware of the
+  implications and privacy concerns of making their data public.
+  Volunteering is not for everyone, but the participants
+  who join make a valuable and lasting contribution to science.
+</p>
+
+<h3>Ongoing Participatory Research</h3>
+<p>
+  We respect the people behind the data, and we aim to maintain
+  strong relationsihps with participants. We want to collaborate
+  on tracking health and other traits as they unfold over time
+  We also want to better understand the
+  benefits and risks related to accessing and sharing personal
+  genomes and other types of data.
+</p>
+
+<h3>Genomes, Environments, and Traits</h3>
+
+<p>
+  The genome is just a part of the story: genes interact with
+  the environment to form traits. Participants may choose to
+  contribute other public data to build public records of their
+  health and traits. We also try to connect participants with
+  research, education, and citizen science projects that
+  are connected to personal genome data.
+</p>
+{% endblock main %}
+
+{% block footer %}
+{% include "www_personalgenomes_org/footer_2col.html" %}
+{% endblock footer %}

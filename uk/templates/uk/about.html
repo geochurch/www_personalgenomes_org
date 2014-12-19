@@ -1,0 +1,21 @@
+{% extends "www_personalgenomes_org/about.html" %}
+
+{% block title %}Personal Genome Project: United Kingdom{% endblock title %}
+
+{% block navbar %}
+{% include "www_personalgenomes_org/navbar_top.html" with site_shortname="uk" site_longname="Personal Genome Project: UK" icon="/static/img/uk/uk-flag.jpg" active="About" login_url="https://my.personalgenomes.org.uk" %}
+{% endblock navbar %}
+
+{% block about-lead %}
+<h2 style="margin-top:34px;">About PGP UK</h2>
+<p class="lead">
+  Founded in 2013 by Stephan Beck, the United Kingdom Personal
+  Genome Project is located at University College London.
+</p>
+{% endblock about-lead %}
+
+{% block about-pgp-site-longname %}PGP UK{% endblock %}
+
+{% block footer %}
+{% include "uk/footer.html" %}
+{% endblock footer %}

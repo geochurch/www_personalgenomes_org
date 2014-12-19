@@ -1,26 +1,28 @@
-{% load i18n %}
-
 <div class="row-fluid">
   <div class="span4">
-    <h5>{% trans "PGP Global Network" %}</h5>
+    <h5>PGP Global Network</h5>
     <p>
-      <a href="{% url 'harvard:index' %}">{% trans "United States" %}</a>
+      <a href="{% url 'harvard:index' %}">United States</a>
       <i> </i>&bull;<i> </i>
-      <a href="{% url 'canada:index' %}">{% trans "Canada" %}</a>
+      <a href="{% url 'canada:index' %}">Canada</a>
       <i> </i>&bull;<i> </i>
-      <a href="{% url 'uk:index' %}">{% trans "United Kingdom" %}</a>
+      <a href="{% url 'uk:index' %}">United Kingdom</a>
+      <i> </i>&bull;<i> </i>
+      <a href="{% url 'austria:index' %}">Austria</a>
+      <br/>
+      <a href="{% block global_network_url %}{% url 'organization:network' %}{% endblock %}">Learn about our network</a>
     </p>
   </div>
   <div class="span4">
     <h5>Website information</h5>
     <p>
-      <a href="{% block contact_us_url %}{% url 'contact-us' %}{% endblock contact_us_url %}">{% trans "Contact Us" %}</a>
+      <a href="{% block contact_us_url %}{% url 'contact-us' %}{% endblock contact_us_url %}">Contact Us</a>
       <i> </i>&bull;<i> </i>
-      <a href="{% url 'organization:index' %}"><span class="h5">{% trans "About PersonalGenomes.org" %}</span></a>
+      <a href="{% url 'organization:index' %}"><span class="h5">About PersonalGenomes.org</span></a>
       <br />
-      <a href="{% url 'tos' %}">{% trans "Terms of Service" %}</a>
+      <a href="{% url 'tos' %}">Terms of Service</a>
       <i> </i>&bull;<i> </i>
-      <a href="{% url 'website-privacy-policy' %}">{% trans "Privacy Policy" %}</a>
+      <a href="{% url 'website-privacy-policy' %}">Privacy Policy</a>
     </p>
   </div>
   <div class="span4">

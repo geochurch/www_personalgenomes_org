@@ -1,0 +1,59 @@
+{% extends "www_personalgenomes_org/sign-up.html" %}
+{% load i18n %}
+
+{% block title %}Genom Austria{% endblock title %}
+
+{% block navbar %}
+{% include "www_personalgenomes_org/navbar_top-i18n.html" with site_shortname="austria" site_longname="Genom Austria" active="Sign-up" %}
+{% endblock navbar %}
+
+{% block main %}
+<h2 style="margin-top:34px;">{% trans "Pre-registration as a Volunteer" %}</h2>
+
+<p>
+    {% blocktrans %}
+    Genom Austria is accepting pre-registration by volunteers who
+    would like to analyze their personal genomes and make them
+    publicly available as part of Genom Austria. Pre-registering
+    as a volunteer does not guarantee participation because in
+    the initial phase of the project there will be sufficient
+    resources for only a handful of participants. Furthermore, in
+    order to meet the highest ethical standards, all volunteers
+    will have to confirm at several stages that they understand
+    the implications of making their personal genome publicly
+    available.
+    {% endblocktrans %}
+</p>
+
+<b style="margin-top:34px;display:block;">{% trans "Requirements for volunteers:" %}</b>
+<ul>
+    <li style="margin-top:10px;">{% trans "At least 18 years of age" %}</li>
+    <li style="margin-top:10px;">
+        {% blocktrans %}
+        No citizenship requirement, but preference will be given to
+        volunteers who live in Austria or have other connections to Austria
+        {% endblocktrans %}
+    </li>
+</ul>
+
+<hr style="margin:35px 0px 20px;"/>
+<p>{% trans "Pre-registration on the Genom Austria website" %}:</p>
+<p><a class="btn btn-large" href="http://www.genomaustria.at">
+    <i class="icon-external-link">  </i>
+    {% trans "Genom Austria" %}</a></p>
+
+<hr style="margin:35px 0px 20px;"/>
+<h3>{% trans "Contact information" %}</h3>
+<p>{% trans "Contact address for all questions:" %}
+  {% get_current_language as LANGUAGE_CODE %}
+  {% if LANGUAGE_CODE == "de" %}
+  <a href="mailto:info@genomaustria.at">info@genomaustria.at</a>
+  {% else %}
+  <a href="mailto:contact@genomaustria.at">contact@genomaustria.at</a>
+  {% endif %}
+</p>
+{% endblock main %}
+
+{% block footer %}
+{% include "canada/footer.html" %}
+{% endblock footer %}
