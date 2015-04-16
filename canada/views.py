@@ -29,7 +29,7 @@ def contact(request):
                     request.POST['subject'],
                     request.POST['message'],
                     sender,
-                    ['hin.lee@utoronto.ca'],
+                    ['personalgenomeprojectcanada@gmail.com'],
                     fail_silently=False,
                 )
                 messages.success(request, "Thanks! Your message has been sent.")
