@@ -29,7 +29,7 @@ def contact(request):
                     request.POST['subject'],
                     request.POST['message'],
                     sender,
-                    ['crm@sickkids.ca'],
+                    ['hin.lee@utoronto.ca'],
                     fail_silently=False,
                 )
                 messages.success(request, "Thanks! Your message has been sent.")
