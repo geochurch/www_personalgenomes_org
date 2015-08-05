@@ -23,8 +23,6 @@ urlpatterns = patterns(
     url(r'^/contact-us/?', views.contact, name='contact-us'),
 
     # Content not linked on navbar and/or index page.
-    url(r'^/historic-documents/?', TemplateView.as_view(template_name='harvard/historic-documents.html'),
-        name='historic-documents'),
     url(r'^/howitworks/?', TemplateView.as_view(template_name='harvard/howitworks.html'),
         name='howitworks'),
     url(r'^/collection-centers/?', TemplateView.as_view(template_name='harvard/collection-centers.html'),
