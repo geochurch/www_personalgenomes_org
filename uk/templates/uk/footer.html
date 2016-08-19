@@ -1,5 +1,15 @@
-{% extends "www_personalgenomes_org/footer_2col.html" %}
+{% extends "www_personalgenomes_org/footer_3col.html" %}
 
 {% block global_network_url %}{% url 'uk:global-network' %}{% endblock %}
 
 {% block contact_us_url %}{% url 'uk:contact-us' %}{% endblock %}
+
+{% block col3_title %}Stay connected with PGP-UK{% endblock col3_title %}
+
+{% block col3_contents %}
+      <a href="https://twitter.com/PGPUK_genomes"><i class="icon-twitter"> </i>Twitter</a>
+      <i> </i>&bull;<i> </i>
+      <a href="https://pgpukblog.wordpress.com"><i class="icon-pencil"> </i>Blog</a>
+      <i> </i>&bull;<i> </i>
+      <a href="http://getconference.com"><i class="icon-group">  </i>GET Conference</a>
+{% endblock col3_contents %}
