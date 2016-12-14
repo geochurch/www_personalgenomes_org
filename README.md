@@ -2,7 +2,7 @@ www_personalgenomes_org
 =======================
 
 This is the website for [www.personalgenomes.org](http://www.personalgenomes.org), implemented using Django.
-So far no database features have been used, although there's a good chance we'll use such features in the future.
+So far no database features have been used, although there's a chance we'll use such features in the future.
 
 Submitting updates to the site
 ------------------------------
