@@ -18,6 +18,7 @@ To do this, you should:
 5. (Necessary before doing step 7.) Pull upstream changes from the PersonalGenomesOrg repository (and have these in your Github repository) before sending a pull request.
 6. Push changes to your Github repository.
 7. [Send a "pull request"](https://help.github.com/articles/creating-a-pull-request) to the PersonalGenomesOrg repository on Github.
+8. Email madeleine@personalgenomes.org to notify Madeleine of the requested update.
 
 Installation
 ------------
