@@ -1,8 +1,7 @@
 www_personalgenomes_org
 =======================
 
-This is the website for [www.personalgenomes.org](http://www.personalgenomes.org), implemented using Django.
-So far no database features have been used, although there's a chance we'll use such features in the future.
+This is the website for [www.personalgenomes.org](http://www.personalgenomes.org), implemented using Django. This enables our site to use IP address to display defaualt content based on the country a viewer is in, and to allow Austrian users to view a German version of their site. So far no database features have been used, although there's a chance we'll use such features in the future.
 
 Submitting updates to the site
 ------------------------------
